@@ -1,5 +1,5 @@
 Application/User/gui/DefaultViewView.o: \
- C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/defaultview_screen/DefaultViewView.cpp \
+ Y:/boschWork/PROJECT/Team1/MyApplication_6/TouchGFX/gui/src/defaultview_screen/DefaultViewView.cpp \
  ../../TouchGFX/gui/include/gui/defaultview_screen/DefaultViewView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/defaultview_screen/DefaultViewViewBase.hpp \
  ../../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \
