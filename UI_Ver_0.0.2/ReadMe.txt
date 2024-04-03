@@ -1,0 +1,5 @@
+- Add Separate screens for every sensor
+- Change Menu Tree
+- Add Date Setting Page
+- Add Time Setting Page 
+- Add About Page
