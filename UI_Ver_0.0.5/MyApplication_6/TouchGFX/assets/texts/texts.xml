@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="texts.xsd" Version="4.23.2">
+  <Languages>
+    <Language Id="GB" />
+  </Languages>
+  <Texts>
+    <TextGroup Id="Group1" />
+    <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_4AD3" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">&lt;&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_UQLB" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">&lt;&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_8O7C" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">&lt;&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_JSVE" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_IAKU" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Weather station</Translation>
+      </Text>
+      <Text Id="__SingleUse_UP7D" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">-</Translation>
+      </Text>
+      <Text Id="__SingleUse_K18O" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">-</Translation>
+      </Text>
+      <Text Id="__SingleUse_XY79" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">-</Translation>
+      </Text>
+      <Text Id="__SingleUse_3JAI" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Y</Translation>
+      </Text>
+      <Text Id="__SingleUse_NJNH" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">M</Translation>
+      </Text>
+      <Text Id="__SingleUse_4FMU" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">D</Translation>
+      </Text>
+      <Text Id="__SingleUse_OC5C" Alignment="Center" TypographyId="Typography_01">
+        <Translation Language="GB">About</Translation>
+      </Text>
+      <Text Id="__SingleUse_FTBM" Alignment="Center" TypographyId="Typography_01">
+        <Translation Language="GB">Time</Translation>
+      </Text>
+      <Text Id="__SingleUse_MUN4" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Weather station</Translation>
+      </Text>
+      <Text Id="__SingleUse_HN5H" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_86OG" Alignment="Center" TypographyId="Typography_01">
+        <Translation Language="GB">Date</Translation>
+      </Text>
+      <Text Id="__SingleUse_YUNA" Alignment="Center" TypographyId="Typography_01">
+        <Translation Language="GB">Alarm</Translation>
+      </Text>
+      <Text Id="__SingleUse_BWPU" Alignment="Center" TypographyId="Typography_01">
+        <Translation Language="GB">Home Page</Translation>
+      </Text>
+      <Text Id="__SingleUse_C71A" Alignment="Center" TypographyId="Typography_01">
+        <Translation Language="GB">Statistics</Translation>
+      </Text>
+      <Text Id="__SingleUse_LIZW" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_DF27" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Weather station</Translation>
+      </Text>
+      <Text Id="__SingleUse_NJRH" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">Name : Weather Station&#10;Ver : 0.0.2&#10;&#10;Product ID : 1001&#10;&#10;&#10;&#10;&#10;&#10;&#10;@Bosch Career Camp&#10;All Rights Reserved </Translation>
+      </Text>
+      <Text Id="__SingleUse_8Q8P" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_0VIV" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Weather station</Translation>
+      </Text>
+      <Text Id="__SingleUse_L6YL" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">None </Translation>
+      </Text>
+      <Text Id="__SingleUse_YJPG" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Temperature&#10;Inside</Translation>
+      </Text>
+      <Text Id="__SingleUse_A0ZD" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">None </Translation>
+      </Text>
+      <Text Id="__SingleUse_6FIR" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Ambient light</Translation>
+      </Text>
+      <Text Id="__SingleUse_NW7Q" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">None </Translation>
+      </Text>
+      <Text Id="__SingleUse_Q09J" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Pressure</Translation>
+      </Text>
+      <Text Id="__SingleUse_PG2R" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">None </Translation>
+      </Text>
+      <Text Id="__SingleUse_LAVD" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Humidity</Translation>
+      </Text>
+      <Text Id="__SingleUse_XRTI" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Carbon monoxide</Translation>
+      </Text>
+      <Text Id="__SingleUse_GP4Z" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">val = &lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_6NB9" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Weather station</Translation>
+      </Text>
+      <Text Id="__SingleUse_68EU" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB"></Translation>
+      </Text>
+    </TextGroup>
+  </Texts>
+  <Typographies>
+    <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WidgetWildcardCharacters="0123456789 :APM" WildcardCharacterRanges="0x20-0x7e" />
+    <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WidgetWildcardCharacters="0123456789 :APM" />
+    <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Typography_00" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Typography_01" Font="verdana.ttf" Size="15" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+  </Typographies>
+</TextDatabase>
