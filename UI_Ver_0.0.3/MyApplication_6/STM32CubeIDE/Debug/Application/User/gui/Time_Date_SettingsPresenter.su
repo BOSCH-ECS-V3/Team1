@@ -1,0 +1,5 @@
+../../TouchGFX/gui/include/gui/time_date_settings_screen/Time_Date_SettingsPresenter.hpp:28:13:Time_Date_SettingsPresenter::~Time_Date_SettingsPresenter()	0	static
+C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/time_date_settings_screen/Time_Date_SettingsPresenter.cpp:10:6:virtual void Time_Date_SettingsPresenter::activate()	0	static
+../../TouchGFX/gui/include/gui/time_date_settings_screen/Time_Date_SettingsPresenter.hpp:28:13:virtual Time_Date_SettingsPresenter::~Time_Date_SettingsPresenter()	8	static
+../../TouchGFX/gui/include/gui/time_date_settings_screen/Time_Date_SettingsPresenter.hpp:28:13:virtual void* Time_Date_SettingsPresenter::_ZThn4_N27Time_Date_SettingsPresenterD1Ev()	0	static
+C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/time_date_settings_screen/Time_Date_SettingsPresenter.cpp:4:1:Time_Date_SettingsPresenter::Time_Date_SettingsPresenter(Time_Date_SettingsView&)	8	static
