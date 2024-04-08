@@ -1,2 +1,0 @@
-- Device tree ready
-- Date & time fixed 

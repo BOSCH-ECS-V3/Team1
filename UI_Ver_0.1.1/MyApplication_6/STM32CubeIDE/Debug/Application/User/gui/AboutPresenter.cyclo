@@ -1,9 +1,0 @@
-../../TouchGFX/gui/include/gui/model/ModelListener.hpp:18:18:virtual void ModelListener::updateValue(int)	1
-../../TouchGFX/gui/include/gui/model/ModelListener.hpp:23:18:virtual void ModelListener::current_Clock(int*)	1
-../../TouchGFX/gui/include/gui/model/ModelListener.hpp:28:18:virtual void ModelListener::current_Date_value(int*)	1
-../../TouchGFX/gui/include/gui/model/ModelListener.hpp:32:18:virtual void ModelListener::updated_Clock(int*)	1
-../../TouchGFX/gui/include/gui/about_screen/AboutPresenter.hpp:28:13:AboutPresenter::~AboutPresenter()	1
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/about_screen/AboutPresenter.cpp:10:6:virtual void AboutPresenter::activate()	1
-../../TouchGFX/gui/include/gui/about_screen/AboutPresenter.hpp:28:13:virtual AboutPresenter::~AboutPresenter()	1
-../../TouchGFX/gui/include/gui/about_screen/AboutPresenter.hpp:28:13:virtual void* AboutPresenter::_ZThn4_N14AboutPresenterD1Ev()	1
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/about_screen/AboutPresenter.cpp:4:1:AboutPresenter::AboutPresenter(AboutView&)	1

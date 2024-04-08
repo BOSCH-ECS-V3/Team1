@@ -1,1 +1,0 @@
-- Added Temperature Statistics Page

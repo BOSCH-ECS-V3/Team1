@@ -1,5 +1,0 @@
-../../TouchGFX/gui/include/gui/defaultview_screen/DefaultViewPresenter.hpp:28:13:DefaultViewPresenter::~DefaultViewPresenter()	1
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/defaultview_screen/DefaultViewPresenter.cpp:10:6:virtual void DefaultViewPresenter::activate()	1
-../../TouchGFX/gui/include/gui/defaultview_screen/DefaultViewPresenter.hpp:28:13:virtual DefaultViewPresenter::~DefaultViewPresenter()	1
-../../TouchGFX/gui/include/gui/defaultview_screen/DefaultViewPresenter.hpp:28:13:virtual void* DefaultViewPresenter::_ZThn4_N20DefaultViewPresenterD1Ev()	1
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/defaultview_screen/DefaultViewPresenter.cpp:4:1:DefaultViewPresenter::DefaultViewPresenter(DefaultViewView&)	1

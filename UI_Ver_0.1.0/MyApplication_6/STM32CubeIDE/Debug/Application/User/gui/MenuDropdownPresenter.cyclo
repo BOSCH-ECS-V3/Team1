@@ -1,5 +1,0 @@
-../../TouchGFX/gui/include/gui/menudropdown_screen/MenuDropdownPresenter.hpp:28:13:MenuDropdownPresenter::~MenuDropdownPresenter()	1
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/menudropdown_screen/MenuDropdownPresenter.cpp:10:6:virtual void MenuDropdownPresenter::activate()	1
-../../TouchGFX/gui/include/gui/menudropdown_screen/MenuDropdownPresenter.hpp:28:13:virtual MenuDropdownPresenter::~MenuDropdownPresenter()	1
-../../TouchGFX/gui/include/gui/menudropdown_screen/MenuDropdownPresenter.hpp:28:13:virtual void* MenuDropdownPresenter::_ZThn4_N21MenuDropdownPresenterD1Ev()	1
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/menudropdown_screen/MenuDropdownPresenter.cpp:4:1:MenuDropdownPresenter::MenuDropdownPresenter(MenuDropdownView&)	1

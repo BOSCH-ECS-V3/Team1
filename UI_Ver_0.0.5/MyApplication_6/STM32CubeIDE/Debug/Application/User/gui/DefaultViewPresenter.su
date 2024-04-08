@@ -1,9 +1,0 @@
-../../TouchGFX/gui/include/gui/model/ModelListener.hpp:18:18:virtual void ModelListener::updateValue(int)	0	static
-../../TouchGFX/gui/include/gui/model/ModelListener.hpp:23:18:virtual void ModelListener::current_Clock(int*)	0	static
-../../TouchGFX/gui/include/gui/model/ModelListener.hpp:28:18:virtual void ModelListener::updated_Clock(int*)	0	static
-../../TouchGFX/gui/include/gui/defaultview_screen/DefaultViewPresenter.hpp:28:13:DefaultViewPresenter::~DefaultViewPresenter()	0	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/defaultview_screen/DefaultViewPresenter.cpp:10:6:virtual void DefaultViewPresenter::activate()	0	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/defaultview_screen/DefaultViewPresenter.cpp:20:6:virtual void DefaultViewPresenter::update_Clock(int*)	0	static
-../../TouchGFX/gui/include/gui/defaultview_screen/DefaultViewPresenter.hpp:28:13:virtual DefaultViewPresenter::~DefaultViewPresenter()	8	static
-../../TouchGFX/gui/include/gui/defaultview_screen/DefaultViewPresenter.hpp:28:13:virtual void* DefaultViewPresenter::_ZThn4_N20DefaultViewPresenterD1Ev()	0	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/defaultview_screen/DefaultViewPresenter.cpp:4:1:DefaultViewPresenter::DefaultViewPresenter(DefaultViewView&)	8	static

@@ -1,0 +1,10 @@
+../../TouchGFX/gui/include/gui/model/ModelListener.hpp:18:18:virtual void ModelListener::updateValue(int)	0	static
+../../TouchGFX/gui/include/gui/model/ModelListener.hpp:23:18:virtual void ModelListener::current_Clock(int*)	0	static
+../../TouchGFX/gui/include/gui/model/ModelListener.hpp:28:18:virtual void ModelListener::current_Date_value(int*)	0	static
+../../TouchGFX/gui/include/gui/model/ModelListener.hpp:32:18:virtual void ModelListener::updated_Clock(int*)	0	static
+../../TouchGFX/gui/include/gui/model/ModelListener.hpp:36:18:virtual void ModelListener::current_Sensor_values(int*)	0	static
+../../TouchGFX/gui/include/gui/statistics_ambient_1_screen/Statistics_Ambient_1Presenter.hpp:28:13:Statistics_Ambient_1Presenter::~Statistics_Ambient_1Presenter()	0	static
+C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/statistics_ambient_1_screen/Statistics_Ambient_1Presenter.cpp:10:6:virtual void Statistics_Ambient_1Presenter::activate()	0	static
+../../TouchGFX/gui/include/gui/statistics_ambient_1_screen/Statistics_Ambient_1Presenter.hpp:28:13:virtual Statistics_Ambient_1Presenter::~Statistics_Ambient_1Presenter()	8	static
+../../TouchGFX/gui/include/gui/statistics_ambient_1_screen/Statistics_Ambient_1Presenter.hpp:28:13:virtual void* Statistics_Ambient_1Presenter::_ZThn4_N29Statistics_Ambient_1PresenterD1Ev()	0	static
+C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/statistics_ambient_1_screen/Statistics_Ambient_1Presenter.cpp:4:1:Statistics_Ambient_1Presenter::Statistics_Ambient_1Presenter(Statistics_Ambient_1View&)	8	static

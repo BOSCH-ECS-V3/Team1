@@ -1,0 +1,10 @@
+../../TouchGFX/gui/include/gui/model/ModelListener.hpp:18:18:virtual void ModelListener::updateValue(int)	1
+../../TouchGFX/gui/include/gui/model/ModelListener.hpp:23:18:virtual void ModelListener::current_Clock(int*)	1
+../../TouchGFX/gui/include/gui/model/ModelListener.hpp:28:18:virtual void ModelListener::current_Date_value(int*)	1
+../../TouchGFX/gui/include/gui/model/ModelListener.hpp:32:18:virtual void ModelListener::updated_Clock(int*)	1
+../../TouchGFX/gui/include/gui/model/ModelListener.hpp:36:18:virtual void ModelListener::current_Sensor_values(int*)	1
+../../TouchGFX/gui/include/gui/statistics_presure_screen/Statistics_PresurePresenter.hpp:28:13:Statistics_PresurePresenter::~Statistics_PresurePresenter()	1
+C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/statistics_presure_screen/Statistics_PresurePresenter.cpp:10:6:virtual void Statistics_PresurePresenter::activate()	1
+../../TouchGFX/gui/include/gui/statistics_presure_screen/Statistics_PresurePresenter.hpp:28:13:virtual Statistics_PresurePresenter::~Statistics_PresurePresenter()	1
+../../TouchGFX/gui/include/gui/statistics_presure_screen/Statistics_PresurePresenter.hpp:28:13:virtual void* Statistics_PresurePresenter::_ZThn4_N27Statistics_PresurePresenterD1Ev()	1
+C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/statistics_presure_screen/Statistics_PresurePresenter.cpp:4:1:Statistics_PresurePresenter::Statistics_PresurePresenter(Statistics_PresureView&)	1

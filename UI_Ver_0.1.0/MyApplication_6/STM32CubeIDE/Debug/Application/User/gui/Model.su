@@ -1,4 +1,0 @@
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/model/Model.cpp:6:1:Model::Model()	8	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/model/Model.cpp:11:6:void Model::tick()	8	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/model/Model.cpp:77:6:void Model::update_Clock(int*)	0	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/model/Model.cpp:83:6:void Model::update_Date(int*)	0	static
