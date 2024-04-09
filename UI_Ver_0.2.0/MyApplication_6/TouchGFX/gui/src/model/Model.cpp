@@ -83,11 +83,23 @@ void Model::tick()
 	current_Sensor_values[5] = 80 ;
 
 	modelListener->current_Sensor_values(current_Sensor_values);
+
+	// -------------------------------- Passing backround intensity to view pages
+
+	/*
+	 *
+	 * Import algorithm for calculating brightness based on ASL value
+	 *
+	 *
+	 */
+
+	modelListener->set_brightness_level(brightness);
 }
 
 void Model::update_Clock(int updated_Clock_Values[3])
 {
 	// Receive data from Clock View
+	// Element[0] - hours , element[1] - minutes , element[2] - seconds
 	Clock_Values[0] = updated_Clock_Values[0];
 	Clock_Values[1] = updated_Clock_Values[1];
 	Clock_Values[2] = updated_Clock_Values[2];
@@ -95,6 +107,7 @@ void Model::update_Clock(int updated_Clock_Values[3])
 void Model::update_Date(int updated_Date_Values[3])
 {
 	// Receive data from Data View
+	// element[0] - Days , element[1] - months , element[2] - year
 	current_Date_values[0] = updated_Date_Values[0];
 	current_Date_values[1] = updated_Date_Values[1];
 	current_Date_values[2] = updated_Date_Values[2];

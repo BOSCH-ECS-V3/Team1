@@ -37,6 +37,11 @@ public:
     {
     	// sending current sensor values to presenter Default page
     };
+    virtual void set_brightness_level(int brightness)
+    {
+    	// sending brightness level to view pages
+    	// this function is same for every page of the screen !!
+    }
 protected:
     Model* model;
 };

@@ -3,8 +3,9 @@
 ../../TouchGFX/gui/include/gui/model/ModelListener.hpp:28:18:virtual void ModelListener::current_Date_value(int*)	0	static
 ../../TouchGFX/gui/include/gui/model/ModelListener.hpp:32:18:virtual void ModelListener::updated_Clock(int*)	0	static
 ../../TouchGFX/gui/include/gui/model/ModelListener.hpp:36:18:virtual void ModelListener::current_Sensor_values(int*)	0	static
-../../TouchGFX/gui/include/gui/statistics_humidity_screen/Statistics_HumidityPresenter.hpp:28:13:Statistics_HumidityPresenter::~Statistics_HumidityPresenter()	0	static
+../../TouchGFX/gui/include/gui/statistics_humidity_screen/Statistics_HumidityPresenter.hpp:29:13:Statistics_HumidityPresenter::~Statistics_HumidityPresenter()	0	static
 C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/statistics_humidity_screen/Statistics_HumidityPresenter.cpp:10:6:virtual void Statistics_HumidityPresenter::activate()	0	static
-../../TouchGFX/gui/include/gui/statistics_humidity_screen/Statistics_HumidityPresenter.hpp:28:13:virtual Statistics_HumidityPresenter::~Statistics_HumidityPresenter()	8	static
-../../TouchGFX/gui/include/gui/statistics_humidity_screen/Statistics_HumidityPresenter.hpp:28:13:virtual void* Statistics_HumidityPresenter::_ZThn4_N28Statistics_HumidityPresenterD1Ev()	0	static
+C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/statistics_humidity_screen/Statistics_HumidityPresenter.cpp:20:6:virtual void Statistics_HumidityPresenter::set_brightness_level(int)	0	static
+../../TouchGFX/gui/include/gui/statistics_humidity_screen/Statistics_HumidityPresenter.hpp:29:13:virtual Statistics_HumidityPresenter::~Statistics_HumidityPresenter()	8	static
+../../TouchGFX/gui/include/gui/statistics_humidity_screen/Statistics_HumidityPresenter.hpp:29:13:virtual void* Statistics_HumidityPresenter::_ZThn4_N28Statistics_HumidityPresenterD1Ev()	0	static
 C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/statistics_humidity_screen/Statistics_HumidityPresenter.cpp:4:1:Statistics_HumidityPresenter::Statistics_HumidityPresenter(Statistics_HumidityView&)	8	static

@@ -16,3 +16,9 @@ void Statistics_Gas_sensorPresenter::deactivate()
 {
 
 }
+void Statistics_Gas_sensorPresenter::set_brightness_level(int brightness)
+{
+	// passing value to view
+
+	view.set_brightness_level(brightness);
+}

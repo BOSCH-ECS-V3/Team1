@@ -61,8 +61,8 @@ protected:
      * Member Declarations
      */
     touchgfx::Box __background;
-    touchgfx::Box box1;
-    touchgfx::TextArea textArea1;
+    touchgfx::Box Backround;
+    touchgfx::TextArea Header_Text;
     touchgfx::ButtonWithLabel Menu_Button;
     touchgfx::DigitalClock digitalClock1;
     touchgfx::DigitalClock digitalClock_RealTime;
@@ -73,6 +73,7 @@ protected:
     touchgfx::ButtonWithIcon Minutes_Val_Down;
     touchgfx::ButtonWithIcon Seconds_Val_Up;
     touchgfx::ButtonWithIcon Seconds_Val_Down;
+    touchgfx::Box Screen_Brightness;
 
 private:
 

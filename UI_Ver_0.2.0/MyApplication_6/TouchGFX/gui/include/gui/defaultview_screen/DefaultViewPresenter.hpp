@@ -31,6 +31,8 @@ public:
 
     virtual void current_Sensor_values(int current_Sensor_values[]);
 
+    virtual void set_brightness_level(int brightness);
+
 private:
     DefaultViewPresenter();
 

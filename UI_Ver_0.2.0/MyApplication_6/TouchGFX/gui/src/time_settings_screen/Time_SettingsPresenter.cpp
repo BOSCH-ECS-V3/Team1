@@ -26,3 +26,7 @@ void Time_SettingsPresenter::update_Clock(int Clock_Value[3])
 	model->update_Clock(Clock_Value);
 }
 
+void Time_SettingsPresenter::set_brightness_level(int brightness)
+{
+	view.set_brightness_level(brightness);
+}

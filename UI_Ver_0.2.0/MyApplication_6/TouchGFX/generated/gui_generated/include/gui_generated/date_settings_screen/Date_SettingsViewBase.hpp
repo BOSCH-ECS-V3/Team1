@@ -61,8 +61,8 @@ protected:
      * Member Declarations
      */
     touchgfx::Box __background;
-    touchgfx::Box box1;
-    touchgfx::TextArea textArea1;
+    touchgfx::Box Backround;
+    touchgfx::TextArea Header_Text;
     touchgfx::ButtonWithLabel Menu_Button;
     touchgfx::ButtonWithIcon Submit_Date;
     touchgfx::ButtonWithIcon Day_Val_Up;
@@ -80,6 +80,7 @@ protected:
     touchgfx::TextArea YearText;
     touchgfx::TextAreaWithOneWildcard Year_Val;
     touchgfx::TextAreaWithOneWildcard current_Year_Val;
+    touchgfx::Box Screen_Brightness;
 
     /*
      * Wildcard Buffers

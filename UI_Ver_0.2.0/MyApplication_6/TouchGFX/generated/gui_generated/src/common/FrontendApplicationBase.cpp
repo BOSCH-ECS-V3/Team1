@@ -11,8 +11,8 @@
 #include <platform/driver/lcd/LCD16bpp.hpp>
 #include <gui/defaultview_screen/DefaultViewView.hpp>
 #include <gui/defaultview_screen/DefaultViewPresenter.hpp>
-#include <gui/menudropdown_1_screen/MenuDropdown_1View.hpp>
-#include <gui/menudropdown_1_screen/MenuDropdown_1Presenter.hpp>
+#include <gui/menudropdown_screen/MenuDropdownView.hpp>
+#include <gui/menudropdown_screen/MenuDropdownPresenter.hpp>
 #include <gui/about_screen/AboutView.hpp>
 #include <gui/about_screen/AboutPresenter.hpp>
 #include <gui/time_settings_screen/Time_SettingsView.hpp>
@@ -63,17 +63,17 @@ void FrontendApplicationBase::gotoDefaultViewScreenNoTransitionImpl()
     touchgfx::makeTransition<DefaultViewView, DefaultViewPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
-// MenuDropdown_1
+// MenuDropdown
 
-void FrontendApplicationBase::gotoMenuDropdown_1ScreenNoTransition()
+void FrontendApplicationBase::gotoMenuDropdownScreenNoTransition()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoMenuDropdown_1ScreenNoTransitionImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoMenuDropdownScreenNoTransitionImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoMenuDropdown_1ScreenNoTransitionImpl()
+void FrontendApplicationBase::gotoMenuDropdownScreenNoTransitionImpl()
 {
-    touchgfx::makeTransition<MenuDropdown_1View, MenuDropdown_1Presenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<MenuDropdownView, MenuDropdownPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
 // About

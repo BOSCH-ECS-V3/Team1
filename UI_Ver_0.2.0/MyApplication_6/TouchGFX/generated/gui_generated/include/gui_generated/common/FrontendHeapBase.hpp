@@ -14,8 +14,8 @@
 
 #include <gui/defaultview_screen/DefaultViewView.hpp>
 #include <gui/defaultview_screen/DefaultViewPresenter.hpp>
-#include <gui/menudropdown_1_screen/MenuDropdown_1View.hpp>
-#include <gui/menudropdown_1_screen/MenuDropdown_1Presenter.hpp>
+#include <gui/menudropdown_screen/MenuDropdownView.hpp>
+#include <gui/menudropdown_screen/MenuDropdownPresenter.hpp>
 #include <gui/about_screen/AboutView.hpp>
 #include <gui/about_screen/AboutPresenter.hpp>
 #include <gui/time_settings_screen/Time_SettingsView.hpp>
@@ -57,7 +57,7 @@ public:
      * @note All view types used in the application MUST be added to this list!
      */
     typedef touchgfx::meta::TypeList< DefaultViewView,
-            touchgfx::meta::TypeList< MenuDropdown_1View,
+            touchgfx::meta::TypeList< MenuDropdownView,
             touchgfx::meta::TypeList< AboutView,
             touchgfx::meta::TypeList< Time_SettingsView,
             touchgfx::meta::TypeList< Date_SettingsView,
@@ -80,7 +80,7 @@ public:
      * @note All presenter types used in the application MUST be added to this list!
      */
     typedef touchgfx::meta::TypeList< DefaultViewPresenter,
-            touchgfx::meta::TypeList< MenuDropdown_1Presenter,
+            touchgfx::meta::TypeList< MenuDropdownPresenter,
             touchgfx::meta::TypeList< AboutPresenter,
             touchgfx::meta::TypeList< Time_SettingsPresenter,
             touchgfx::meta::TypeList< Date_SettingsPresenter,

@@ -13,15 +13,15 @@ AboutViewBase::AboutViewBase() :
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     add(__background);
 
-    box1.setPosition(0, 0, 240, 320);
-    box1.setColor(touchgfx::Color::getColorFromRGB(43, 43, 43));
-    add(box1);
+    Backround.setPosition(0, 0, 240, 320);
+    Backround.setColor(touchgfx::Color::getColorFromRGB(43, 43, 43));
+    add(Backround);
 
-    WeatherStation.setXY(20, 15);
-    WeatherStation.setColor(touchgfx::Color::getColorFromRGB(128, 128, 128));
-    WeatherStation.setLinespacing(0);
-    WeatherStation.setTypedText(touchgfx::TypedText(T___SINGLEUSE_0VIV));
-    add(WeatherStation);
+    Header_Text.setXY(20, 15);
+    Header_Text.setColor(touchgfx::Color::getColorFromRGB(128, 128, 128));
+    Header_Text.setLinespacing(0);
+    Header_Text.setTypedText(touchgfx::TypedText(T___SINGLEUSE_0VIV));
+    add(Header_Text);
 
     Menu_Button.setXY(197, 7);
     Menu_Button.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_OUTLINE_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_OUTLINE_PRESSED_ID));
@@ -31,11 +31,16 @@ AboutViewBase::AboutViewBase() :
     Menu_Button.setAction(buttonCallback);
     add(Menu_Button);
 
-    textArea1.setXY(24, 75);
-    textArea1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    textArea1.setLinespacing(0);
-    textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_NJRH));
-    add(textArea1);
+    Text.setXY(24, 75);
+    Text.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    Text.setLinespacing(0);
+    Text.setTypedText(touchgfx::TypedText(T___SINGLEUSE_NJRH));
+    add(Text);
+
+    Screen_Brightness.setPosition(0, 0, 240, 320);
+    Screen_Brightness.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    Screen_Brightness.setAlpha(0);
+    add(Screen_Brightness);
 }
 
 AboutViewBase::~AboutViewBase()
@@ -53,8 +58,8 @@ void AboutViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
     if (&src == &Menu_Button)
     {
         //Menu_Button
-        //When Menu_Button clicked change screen to MenuDropdown_1
-        //Go to MenuDropdown_1 with no screen transition
-        application().gotoMenuDropdown_1ScreenNoTransition();
+        //When Menu_Button clicked change screen to MenuDropdown
+        //Go to MenuDropdown with no screen transition
+        application().gotoMenuDropdownScreenNoTransition();
     }
 }

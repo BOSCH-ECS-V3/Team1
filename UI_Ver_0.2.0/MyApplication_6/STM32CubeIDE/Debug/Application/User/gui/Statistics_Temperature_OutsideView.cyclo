@@ -6,3 +6,4 @@ C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/statistics_temperature_outs
 ../../TouchGFX/gui/include/gui/statistics_temperature_outside_screen/Statistics_Temperature_OutsideView.hpp:11:13:virtual Statistics_Temperature_OutsideView::~Statistics_Temperature_OutsideView()	1
 C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/statistics_temperature_outside_screen/Statistics_Temperature_OutsideView.cpp:3:1:Statistics_Temperature_OutsideView::Statistics_Temperature_OutsideView()	1
 C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/statistics_temperature_outside_screen/Statistics_Temperature_OutsideView.cpp:8:6:virtual void Statistics_Temperature_OutsideView::setupScreen()	1
+C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/statistics_temperature_outside_screen/Statistics_Temperature_OutsideView.cpp:17:6:virtual void Statistics_Temperature_OutsideView::set_brightness_level(int)	1

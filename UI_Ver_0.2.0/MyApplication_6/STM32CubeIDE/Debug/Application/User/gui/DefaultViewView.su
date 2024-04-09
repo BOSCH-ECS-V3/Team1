@@ -9,3 +9,4 @@ C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/defaultview_screen/DefaultV
 C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/defaultview_screen/DefaultViewView.cpp:3:1:DefaultViewView::DefaultViewView()	8	static
 C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/defaultview_screen/DefaultViewView.cpp:8:6:virtual void DefaultViewView::setupScreen()	16	static
 C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/defaultview_screen/DefaultViewView.cpp:31:6:virtual void DefaultViewView::handleTickEvent()	16	static
+C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/defaultview_screen/DefaultViewView.cpp:59:6:virtual void DefaultViewView::set_brightness_level(int)	0	static

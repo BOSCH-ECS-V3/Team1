@@ -27,9 +27,6 @@
     <ClCompile Include="..\..\gui\src\about_screen\AboutPresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\about_screen\AboutView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\about_screen\AboutViewBase.cpp"/>
-    <ClCompile Include="..\..\gui\src\menudropdown_1_screen\MenuDropdown_1Presenter.cpp"/>
-    <ClCompile Include="..\..\gui\src\menudropdown_1_screen\MenuDropdown_1View.cpp"/>
-    <ClCompile Include="..\..\generated\gui_generated\src\menudropdown_1_screen\MenuDropdown_1ViewBase.cpp"/>
     <ClCompile Include="..\..\gui\src\containers\SettingsDropDown.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\containers\SettingsDropDownBase.cpp"/>
     <ClCompile Include="..\..\gui\src\date_settings_screen\Date_SettingsPresenter.cpp"/>
@@ -56,6 +53,9 @@
     <ClCompile Include="..\..\gui\src\statistics_temperature_inside_screen\Statistics_Temperature_InsidePresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\statistics_temperature_inside_screen\Statistics_Temperature_InsideView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\statistics_temperature_inside_screen\Statistics_Temperature_InsideViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\menudropdown_screen\MenuDropdownPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\menudropdown_screen\MenuDropdownView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\menudropdown_screen\MenuDropdownViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xml"/>
@@ -212,9 +212,6 @@
     <ClInclude Include="..\..\gui\include\gui\about_screen\AboutPresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\about_screen\AboutView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\about_screen\AboutViewBase.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\menudropdown_1_screen\MenuDropdown_1Presenter.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\menudropdown_1_screen\MenuDropdown_1View.hpp"/>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\menudropdown_1_screen\MenuDropdown_1ViewBase.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\containers\SettingsDropDown.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\SettingsDropDownBase.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\date_settings_screen\Date_SettingsPresenter.hpp"/>
@@ -241,6 +238,9 @@
     <ClInclude Include="..\..\gui\include\gui\statistics_temperature_inside_screen\Statistics_Temperature_InsidePresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\statistics_temperature_inside_screen\Statistics_Temperature_InsideView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\statistics_temperature_inside_screen\Statistics_Temperature_InsideViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\menudropdown_screen\MenuDropdownPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\menudropdown_screen\MenuDropdownView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\menudropdown_screen\MenuDropdownViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

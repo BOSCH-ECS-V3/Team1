@@ -16,3 +16,8 @@ void Statistics_Temperature_InsidePresenter::deactivate()
 {
 
 }
+
+void Statistics_Temperature_InsidePresenter::set_brightness_level(int brightness)
+{
+	view.set_brightness_level(brightness);
+}

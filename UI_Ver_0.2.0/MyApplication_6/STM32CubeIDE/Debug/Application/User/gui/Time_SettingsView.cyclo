@@ -14,3 +14,4 @@ C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_S
 C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsView.cpp:71:6:virtual void Time_SettingsView::Minutes_Down()	1
 C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsView.cpp:79:6:virtual void Time_SettingsView::Seconds_Up()	1
 C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsView.cpp:87:6:virtual void Time_SettingsView::Seconds_Down()	1
+C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsView.cpp:97:6:virtual void Time_SettingsView::set_brightness_level(int)	1

@@ -16,9 +16,9 @@ Statistics_Temperature_InsideViewBase::Statistics_Temperature_InsideViewBase() :
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     add(__background);
 
-    backround.setPosition(0, 0, 240, 320);
-    backround.setColor(touchgfx::Color::getColorFromRGB(43, 43, 43));
-    add(backround);
+    Backround.setPosition(0, 0, 240, 320);
+    Backround.setColor(touchgfx::Color::getColorFromRGB(43, 43, 43));
+    add(Backround);
 
     Header_backround.setPosition(0, 0, 240, 52);
     Header_backround.setColor(touchgfx::Color::getColorFromRGB(56, 89, 255));
@@ -181,6 +181,11 @@ Statistics_Temperature_InsideViewBase::Statistics_Temperature_InsideViewBase() :
     Graphic_Temperature_Inside.addDataPoint(30.72865f);
     Graphic_Temperature_Inside.addDataPoint(47.4041f);
     add(Graphic_Temperature_Inside);
+
+    Screen_Brightness.setPosition(0, 0, 240, 320);
+    Screen_Brightness.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    Screen_Brightness.setAlpha(0);
+    add(Screen_Brightness);
 }
 
 Statistics_Temperature_InsideViewBase::~Statistics_Temperature_InsideViewBase()
@@ -198,8 +203,8 @@ void Statistics_Temperature_InsideViewBase::buttonCallbackHandler(const touchgfx
     if (&src == &Menu_Button)
     {
         //MenuDropdown
-        //When Menu_Button clicked change screen to MenuDropdown_1
-        //Go to MenuDropdown_1 with no screen transition
-        application().gotoMenuDropdown_1ScreenNoTransition();
+        //When Menu_Button clicked change screen to MenuDropdown
+        //Go to MenuDropdown with no screen transition
+        application().gotoMenuDropdownScreenNoTransition();
     }
 }

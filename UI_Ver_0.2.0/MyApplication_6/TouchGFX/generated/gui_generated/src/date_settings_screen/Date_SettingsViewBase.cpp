@@ -13,15 +13,15 @@ Date_SettingsViewBase::Date_SettingsViewBase() :
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     add(__background);
 
-    box1.setPosition(0, 0, 240, 320);
-    box1.setColor(touchgfx::Color::getColorFromRGB(43, 43, 43));
-    add(box1);
+    Backround.setPosition(0, 0, 240, 320);
+    Backround.setColor(touchgfx::Color::getColorFromRGB(43, 43, 43));
+    add(Backround);
 
-    textArea1.setXY(20, 15);
-    textArea1.setColor(touchgfx::Color::getColorFromRGB(128, 128, 128));
-    textArea1.setLinespacing(0);
-    textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_DF27));
-    add(textArea1);
+    Header_Text.setXY(20, 15);
+    Header_Text.setColor(touchgfx::Color::getColorFromRGB(128, 128, 128));
+    Header_Text.setLinespacing(0);
+    Header_Text.setTypedText(touchgfx::TypedText(T___SINGLEUSE_DF27));
+    add(Header_Text);
 
     Menu_Button.setXY(197, 7);
     Menu_Button.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_OUTLINE_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_OUTLINE_PRESSED_ID));
@@ -144,6 +144,11 @@ Date_SettingsViewBase::Date_SettingsViewBase() :
     current_Year_Val.resizeToCurrentText();
     current_Year_Val.setTypedText(touchgfx::TypedText(T___SINGLEUSE_7YMK));
     add(current_Year_Val);
+
+    Screen_Brightness.setPosition(0, 0, 240, 320);
+    Screen_Brightness.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    Screen_Brightness.setAlpha(0);
+    add(Screen_Brightness);
 }
 
 Date_SettingsViewBase::~Date_SettingsViewBase()
@@ -161,9 +166,9 @@ void Date_SettingsViewBase::buttonCallbackHandler(const touchgfx::AbstractButton
     if (&src == &Menu_Button)
     {
         //Interaction1
-        //When Menu_Button clicked change screen to MenuDropdown_1
-        //Go to MenuDropdown_1 with no screen transition
-        application().gotoMenuDropdown_1ScreenNoTransition();
+        //When Menu_Button clicked change screen to MenuDropdown
+        //Go to MenuDropdown with no screen transition
+        application().gotoMenuDropdownScreenNoTransition();
     }
     if (&src == &Day_Val_Up)
     {

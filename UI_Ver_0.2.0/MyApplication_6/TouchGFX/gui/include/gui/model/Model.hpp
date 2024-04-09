@@ -32,6 +32,8 @@ protected:
 
     int current_Sensor_values[6]={0,0,0,0,0,0};
 
+    int brightness = 190 ;
+
 
 };
 

@@ -330,14 +330,14 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/defaultview_screen/DefaultViewView.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/MenuDropdown_1Presenter.cpp</name>
+			<name>Application/User/gui/MenuDropdownPresenter.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/menudropdown_1_screen/MenuDropdown_1Presenter.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/menudropdown_screen/MenuDropdownPresenter.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/MenuDropdown_1View.cpp</name>
+			<name>Application/User/gui/MenuDropdownView.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/menudropdown_1_screen/MenuDropdown_1View.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/menudropdown_screen/MenuDropdownView.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/gui/Model.cpp</name>
@@ -530,9 +530,9 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/defaultview_screen/DefaultViewViewBase.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/MenuDropdown_1ViewBase.cpp</name>
+			<name>Application/User/generated/MenuDropdownViewBase.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/menudropdown_1_screen/MenuDropdown_1ViewBase.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/menudropdown_screen/MenuDropdownViewBase.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/Statistics_Ambient_1ViewBase.cpp</name>

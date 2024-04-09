@@ -55,6 +55,12 @@ void DefaultViewView::current_Sensor_values(int current_Sensor_values[])
     Unicode::snprintf(Presure_ValBuffer, PRESURE_VAL_SIZE, "%d", Pressure_Sensor_value);
     Unicode::snprintf(Ambient_ValBuffer, AMBIENT_VAL_SIZE, "%d", Ambient_Light_Sensor_value);
     Unicode::snprintf(Carbon_ValBuffer, CARBON_VAL_SIZE, "%d", Gas_Sensor_value );
-
-
 };
+void DefaultViewView::set_brightness_level(int brightness)
+{
+	// Setting screen brightness level
+
+	Screen_Brightness.setAlpha(brightness);
+	Screen_Brightness.invalidate();
+
+}

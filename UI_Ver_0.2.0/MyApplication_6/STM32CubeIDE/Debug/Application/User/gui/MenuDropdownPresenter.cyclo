@@ -1,5 +1,11 @@
-../../TouchGFX/gui/include/gui/menudropdown_screen/MenuDropdownPresenter.hpp:28:13:MenuDropdownPresenter::~MenuDropdownPresenter()	1
+../../TouchGFX/gui/include/gui/model/ModelListener.hpp:18:18:virtual void ModelListener::updateValue(int)	1
+../../TouchGFX/gui/include/gui/model/ModelListener.hpp:23:18:virtual void ModelListener::current_Clock(int*)	1
+../../TouchGFX/gui/include/gui/model/ModelListener.hpp:28:18:virtual void ModelListener::current_Date_value(int*)	1
+../../TouchGFX/gui/include/gui/model/ModelListener.hpp:32:18:virtual void ModelListener::updated_Clock(int*)	1
+../../TouchGFX/gui/include/gui/model/ModelListener.hpp:36:18:virtual void ModelListener::current_Sensor_values(int*)	1
+../../TouchGFX/gui/include/gui/menudropdown_screen/MenuDropdownPresenter.hpp:31:10:MenuDropdownPresenter::~MenuDropdownPresenter()	1
 C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/menudropdown_screen/MenuDropdownPresenter.cpp:10:6:virtual void MenuDropdownPresenter::activate()	1
-../../TouchGFX/gui/include/gui/menudropdown_screen/MenuDropdownPresenter.hpp:28:13:virtual MenuDropdownPresenter::~MenuDropdownPresenter()	1
-../../TouchGFX/gui/include/gui/menudropdown_screen/MenuDropdownPresenter.hpp:28:13:virtual void* MenuDropdownPresenter::_ZThn4_N21MenuDropdownPresenterD1Ev()	1
+C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/menudropdown_screen/MenuDropdownPresenter.cpp:20:6:virtual void MenuDropdownPresenter::set_brightness_level(int)	1
+../../TouchGFX/gui/include/gui/menudropdown_screen/MenuDropdownPresenter.hpp:31:10:virtual MenuDropdownPresenter::~MenuDropdownPresenter()	1
+../../TouchGFX/gui/include/gui/menudropdown_screen/MenuDropdownPresenter.hpp:31:10:virtual void* MenuDropdownPresenter::_ZThn4_N21MenuDropdownPresenterD1Ev()	1
 C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/menudropdown_screen/MenuDropdownPresenter.cpp:4:1:MenuDropdownPresenter::MenuDropdownPresenter(MenuDropdownView&)	1

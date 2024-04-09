@@ -3,8 +3,9 @@
 ../../TouchGFX/gui/include/gui/model/ModelListener.hpp:28:18:virtual void ModelListener::current_Date_value(int*)	1
 ../../TouchGFX/gui/include/gui/model/ModelListener.hpp:32:18:virtual void ModelListener::updated_Clock(int*)	1
 ../../TouchGFX/gui/include/gui/model/ModelListener.hpp:36:18:virtual void ModelListener::current_Sensor_values(int*)	1
-../../TouchGFX/gui/include/gui/statistics_gas_sensor_screen/Statistics_Gas_sensorPresenter.hpp:28:13:Statistics_Gas_sensorPresenter::~Statistics_Gas_sensorPresenter()	1
+../../TouchGFX/gui/include/gui/statistics_gas_sensor_screen/Statistics_Gas_sensorPresenter.hpp:29:13:Statistics_Gas_sensorPresenter::~Statistics_Gas_sensorPresenter()	1
 C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/statistics_gas_sensor_screen/Statistics_Gas_sensorPresenter.cpp:10:6:virtual void Statistics_Gas_sensorPresenter::activate()	1
-../../TouchGFX/gui/include/gui/statistics_gas_sensor_screen/Statistics_Gas_sensorPresenter.hpp:28:13:virtual Statistics_Gas_sensorPresenter::~Statistics_Gas_sensorPresenter()	1
-../../TouchGFX/gui/include/gui/statistics_gas_sensor_screen/Statistics_Gas_sensorPresenter.hpp:28:13:virtual void* Statistics_Gas_sensorPresenter::_ZThn4_N30Statistics_Gas_sensorPresenterD1Ev()	1
+C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/statistics_gas_sensor_screen/Statistics_Gas_sensorPresenter.cpp:19:6:virtual void Statistics_Gas_sensorPresenter::set_brightness_level(int)	1
+../../TouchGFX/gui/include/gui/statistics_gas_sensor_screen/Statistics_Gas_sensorPresenter.hpp:29:13:virtual Statistics_Gas_sensorPresenter::~Statistics_Gas_sensorPresenter()	1
+../../TouchGFX/gui/include/gui/statistics_gas_sensor_screen/Statistics_Gas_sensorPresenter.hpp:29:13:virtual void* Statistics_Gas_sensorPresenter::_ZThn4_N30Statistics_Gas_sensorPresenterD1Ev()	1
 C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/statistics_gas_sensor_screen/Statistics_Gas_sensorPresenter.cpp:4:1:Statistics_Gas_sensorPresenter::Statistics_Gas_sensorPresenter(Statistics_Gas_sensorView&)	1

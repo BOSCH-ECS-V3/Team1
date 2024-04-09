@@ -7,7 +7,7 @@
         "Components": [
           {
             "Type": "Box",
-            "Name": "box1",
+            "Name": "Backround",
             "Width": 240,
             "Height": 320,
             "Color": {
@@ -41,7 +41,7 @@
           },
           {
             "Type": "TextArea",
-            "Name": "textArea1",
+            "Name": "Header_Text",
             "X": 27,
             "Y": 13,
             "Width": 160,
@@ -585,7 +585,7 @@
           },
           {
             "Type": "Box",
-            "Name": "box2",
+            "Name": "Header",
             "Width": 240,
             "Height": 52,
             "Color": {
@@ -597,7 +597,7 @@
           },
           {
             "Type": "Box",
-            "Name": "box2_1",
+            "Name": "Footer",
             "X": -1,
             "Y": 292,
             "Width": 241,
@@ -608,6 +608,13 @@
               "Blue": 255
             },
             "Alpha": 17
+          },
+          {
+            "Type": "Box",
+            "Name": "Screen_Brightness",
+            "Width": 240,
+            "Height": 320,
+            "Alpha": 0
           }
         ],
         "Interactions": [
@@ -620,7 +627,7 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "MenuDropdown_1"
+              "ActionComponent": "MenuDropdown"
             }
           },
           {
@@ -709,11 +716,11 @@
         ]
       },
       {
-        "Name": "MenuDropdown_1",
+        "Name": "MenuDropdown",
         "Components": [
           {
             "Type": "Box",
-            "Name": "box1",
+            "Name": "Backround",
             "Width": 240,
             "Height": 320,
             "Color": {
@@ -747,7 +754,7 @@
           },
           {
             "Type": "TextArea",
-            "Name": "textArea1",
+            "Name": "Header_Text",
             "X": 20,
             "Y": 15,
             "Width": 160,
@@ -763,7 +770,7 @@
           },
           {
             "Type": "ScrollList",
-            "Name": "scrollList1",
+            "Name": "Scroll_Elements",
             "Y": 51,
             "Width": 245,
             "Height": 295,
@@ -774,6 +781,13 @@
             "SwipeAcceleration": 1.0,
             "DragAcceleration": 1.0,
             "OverShootPercentage": 75
+          },
+          {
+            "Type": "Box",
+            "Name": "Screen_Brightness",
+            "Width": 240,
+            "Height": 320,
+            "Alpha": 0
           }
         ],
         "Interactions": [
@@ -796,7 +810,7 @@
         "Components": [
           {
             "Type": "Box",
-            "Name": "box1",
+            "Name": "Backround",
             "Width": 240,
             "Height": 320,
             "Color": {
@@ -807,7 +821,7 @@
           },
           {
             "Type": "TextArea",
-            "Name": "WeatherStation",
+            "Name": "Header_Text",
             "X": 20,
             "Y": 15,
             "Width": 160,
@@ -846,7 +860,7 @@
           },
           {
             "Type": "TextArea",
-            "Name": "textArea1",
+            "Name": "Text",
             "X": 24,
             "Y": 75,
             "Width": 184,
@@ -859,6 +873,13 @@
               "Blue": 255
             },
             "AutoSize": true
+          },
+          {
+            "Type": "Box",
+            "Name": "Screen_Brightness",
+            "Width": 240,
+            "Height": 320,
+            "Alpha": 0
           }
         ],
         "Interactions": [
@@ -871,7 +892,7 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "MenuDropdown_1"
+              "ActionComponent": "MenuDropdown"
             }
           }
         ]
@@ -881,7 +902,7 @@
         "Components": [
           {
             "Type": "Box",
-            "Name": "box1",
+            "Name": "Backround",
             "Width": 240,
             "Height": 320,
             "Color": {
@@ -892,7 +913,7 @@
           },
           {
             "Type": "TextArea",
-            "Name": "textArea1",
+            "Name": "Header_Text",
             "X": 20,
             "Y": 15,
             "Width": 160,
@@ -1071,6 +1092,13 @@
             "IconY": -7,
             "IconHeight": 50,
             "IconWidth": 50
+          },
+          {
+            "Type": "Box",
+            "Name": "Screen_Brightness",
+            "Width": 240,
+            "Height": 320,
+            "Alpha": 0
           }
         ],
         "Interactions": [
@@ -1083,7 +1111,7 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "MenuDropdown_1"
+              "ActionComponent": "MenuDropdown"
             }
           },
           {
@@ -1170,7 +1198,7 @@
         "Components": [
           {
             "Type": "Box",
-            "Name": "box1",
+            "Name": "Backround",
             "Width": 240,
             "Height": 320,
             "Color": {
@@ -1181,7 +1209,7 @@
           },
           {
             "Type": "TextArea",
-            "Name": "textArea1",
+            "Name": "Header_Text",
             "X": 20,
             "Y": 15,
             "Width": 160,
@@ -1473,6 +1501,13 @@
               "UseBuffer": true,
               "BufferSize": 10
             }
+          },
+          {
+            "Type": "Box",
+            "Name": "Screen_Brightness",
+            "Width": 240,
+            "Height": 320,
+            "Alpha": 0
           }
         ],
         "Interactions": [
@@ -1485,7 +1520,7 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "MenuDropdown_1"
+              "ActionComponent": "MenuDropdown"
             }
           },
           {
@@ -1573,7 +1608,7 @@
         "Components": [
           {
             "Type": "Box",
-            "Name": "backround",
+            "Name": "Backround",
             "Width": 240,
             "Height": 320,
             "Color": {
@@ -1735,6 +1770,13 @@
                 }
               }
             ]
+          },
+          {
+            "Type": "Box",
+            "Name": "Screen_Brightness",
+            "Width": 240,
+            "Height": 320,
+            "Alpha": 0
           }
         ],
         "Interactions": [
@@ -1747,7 +1789,7 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "MenuDropdown_1"
+              "ActionComponent": "MenuDropdown"
             }
           }
         ]
@@ -1920,6 +1962,13 @@
                 }
               }
             ]
+          },
+          {
+            "Type": "Box",
+            "Name": "Screen_Brightness",
+            "Width": 240,
+            "Height": 320,
+            "Alpha": 0
           }
         ],
         "Interactions": [
@@ -1932,7 +1981,7 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "MenuDropdown_1"
+              "ActionComponent": "MenuDropdown"
             }
           }
         ]
@@ -2105,6 +2154,13 @@
                 }
               }
             ]
+          },
+          {
+            "Type": "Box",
+            "Name": "Screen_Brightness",
+            "Width": 240,
+            "Height": 320,
+            "Alpha": 0
           }
         ],
         "Interactions": [
@@ -2117,7 +2173,7 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "MenuDropdown_1"
+              "ActionComponent": "MenuDropdown"
             }
           }
         ]
@@ -2290,6 +2346,13 @@
                 }
               }
             ]
+          },
+          {
+            "Type": "Box",
+            "Name": "Screen_Brightness",
+            "Width": 240,
+            "Height": 320,
+            "Alpha": 0
           }
         ],
         "Interactions": [
@@ -2302,7 +2365,7 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "MenuDropdown_1"
+              "ActionComponent": "MenuDropdown"
             }
           }
         ]
@@ -2475,6 +2538,13 @@
                 }
               }
             ]
+          },
+          {
+            "Type": "Box",
+            "Name": "Screen_Brightness",
+            "Width": 240,
+            "Height": 320,
+            "Alpha": 0
           }
         ],
         "Interactions": [
@@ -2487,7 +2557,7 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "MenuDropdown_1"
+              "ActionComponent": "MenuDropdown"
             }
           }
         ]
@@ -2660,6 +2730,13 @@
                 }
               }
             ]
+          },
+          {
+            "Type": "Box",
+            "Name": "Screen_Brightness",
+            "Width": 240,
+            "Height": 320,
+            "Alpha": 0
           }
         ],
         "Interactions": [
@@ -2672,7 +2749,7 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "MenuDropdown_1"
+              "ActionComponent": "MenuDropdown"
             }
           }
         ]

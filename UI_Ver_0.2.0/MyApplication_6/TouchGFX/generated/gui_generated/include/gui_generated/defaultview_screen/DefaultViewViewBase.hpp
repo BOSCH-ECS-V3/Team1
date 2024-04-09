@@ -43,9 +43,9 @@ protected:
      * Member Declarations
      */
     touchgfx::Box __background;
-    touchgfx::Box box1;
+    touchgfx::Box Backround;
     touchgfx::ButtonWithLabel Menu_Button;
-    touchgfx::TextArea textArea1;
+    touchgfx::TextArea Header_Text;
     touchgfx::SwipeContainer SwipeContainer;
     touchgfx::Container SwipeContainerHumidity;
     touchgfx::TextArea Humidity_Text;
@@ -84,8 +84,9 @@ protected:
     touchgfx::PainterRGB565 TempOutCirc_ValPainter;
     touchgfx::ButtonWithIcon Statistics_Button_TempOut;
     touchgfx::DigitalClock digitalClock1;
-    touchgfx::Box box2;
-    touchgfx::Box box2_1;
+    touchgfx::Box Header;
+    touchgfx::Box Footer;
+    touchgfx::Box Screen_Brightness;
 
     /*
      * Wildcard Buffers

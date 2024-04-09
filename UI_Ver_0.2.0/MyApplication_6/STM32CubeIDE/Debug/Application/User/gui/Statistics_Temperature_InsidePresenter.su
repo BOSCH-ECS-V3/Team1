@@ -5,6 +5,7 @@
 ../../TouchGFX/gui/include/gui/model/ModelListener.hpp:36:18:virtual void ModelListener::current_Sensor_values(int*)	0	static
 ../../TouchGFX/gui/include/gui/statistics_temperature_inside_screen/Statistics_Temperature_InsidePresenter.hpp:28:13:Statistics_Temperature_InsidePresenter::~Statistics_Temperature_InsidePresenter()	0	static
 C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/statistics_temperature_inside_screen/Statistics_Temperature_InsidePresenter.cpp:10:6:virtual void Statistics_Temperature_InsidePresenter::activate()	0	static
+C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/statistics_temperature_inside_screen/Statistics_Temperature_InsidePresenter.cpp:20:6:virtual void Statistics_Temperature_InsidePresenter::set_brightness_level(int)	0	static
 ../../TouchGFX/gui/include/gui/statistics_temperature_inside_screen/Statistics_Temperature_InsidePresenter.hpp:28:13:virtual Statistics_Temperature_InsidePresenter::~Statistics_Temperature_InsidePresenter()	8	static
 ../../TouchGFX/gui/include/gui/statistics_temperature_inside_screen/Statistics_Temperature_InsidePresenter.hpp:28:13:virtual void* Statistics_Temperature_InsidePresenter::_ZThn4_N38Statistics_Temperature_InsidePresenterD1Ev()	0	static
 C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/statistics_temperature_inside_screen/Statistics_Temperature_InsidePresenter.cpp:4:1:Statistics_Temperature_InsidePresenter::Statistics_Temperature_InsidePresenter(Statistics_Temperature_InsideView&)	8	static

@@ -16,3 +16,8 @@ void Statistics_Ambient_1Presenter::deactivate()
 {
 
 }
+
+void Statistics_Ambient_1Presenter::set_brightness_level(int brightness)
+{
+	view.set_brightness_level(brightness);
+}

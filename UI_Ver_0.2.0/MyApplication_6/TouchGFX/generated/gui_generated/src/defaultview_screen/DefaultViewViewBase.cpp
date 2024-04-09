@@ -16,9 +16,9 @@ DefaultViewViewBase::DefaultViewViewBase() :
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     add(__background);
 
-    box1.setPosition(0, 0, 240, 320);
-    box1.setColor(touchgfx::Color::getColorFromRGB(43, 43, 43));
-    add(box1);
+    Backround.setPosition(0, 0, 240, 320);
+    Backround.setColor(touchgfx::Color::getColorFromRGB(43, 43, 43));
+    add(Backround);
 
     Menu_Button.setXY(197, 7);
     Menu_Button.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_OUTLINE_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_MICRO_OUTLINE_PRESSED_ID));
@@ -28,11 +28,11 @@ DefaultViewViewBase::DefaultViewViewBase() :
     Menu_Button.setAction(buttonCallback);
     add(Menu_Button);
 
-    textArea1.setXY(27, 13);
-    textArea1.setColor(touchgfx::Color::getColorFromRGB(153, 153, 153));
-    textArea1.setLinespacing(0);
-    textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_6NB9));
-    add(textArea1);
+    Header_Text.setXY(27, 13);
+    Header_Text.setColor(touchgfx::Color::getColorFromRGB(153, 153, 153));
+    Header_Text.setLinespacing(0);
+    Header_Text.setTypedText(touchgfx::TypedText(T___SINGLEUSE_6NB9));
+    add(Header_Text);
 
     SwipeContainer.setXY(0, 31);
     SwipeContainer.setPageIndicatorBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_SWIPECONTAINER_SMALL_OFF_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_SWIPECONTAINER_SMALL_ON_NORMAL_ID));
@@ -40,7 +40,8 @@ DefaultViewViewBase::DefaultViewViewBase() :
     SwipeContainer.setSwipeCutoff(50);
     SwipeContainer.setEndSwipeElasticWidth(50);
 
-    SwipeContainerHumidity.setPosition(0, 0, 240, 261);
+    SwipeContainerHumidity.setWidth(240);
+    SwipeContainerHumidity.setHeight(261);
     Humidity_Text.setXY(76, 31);
     Humidity_Text.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
     Humidity_Text.setLinespacing(0);
@@ -117,7 +118,8 @@ DefaultViewViewBase::DefaultViewViewBase() :
 
     SwipeContainer.add(SwipeContainerCarbon);
 
-    SwipeContainerPressure_1.setPosition(0, 0, 240, 261);
+    SwipeContainerPressure_1.setWidth(240);
+    SwipeContainerPressure_1.setHeight(261);
     Presure_Text_1.setXY(44, 36);
     Presure_Text_1.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
     Presure_Text_1.setLinespacing(0);
@@ -150,14 +152,17 @@ DefaultViewViewBase::DefaultViewViewBase() :
     Statistics_Button_Presure.setXY(5, 201);
     Statistics_Button_Presure.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_TINY_FILL_ACTIVE_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_TINY_FILL_PRESSED_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_CONTENT_STACKED_BAR_CHART_50_50_E8F6FB_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_DONE_50_50_E8F6FB_SVG_ID));
     Statistics_Button_Presure.setIconXY(5, 5);
+    Statistics_Button_Presure.setAction(buttonCallback);
     SwipeContainerPressure_1.add(Statistics_Button_Presure);
 
     SwipeContainer.add(SwipeContainerPressure_1);
 
-    SwipeContainerAmbient_1.setPosition(0, 0, 240, 261);
+    SwipeContainerAmbient_1.setWidth(240);
+    SwipeContainerAmbient_1.setHeight(261);
     Statistics_Button_Ambient.setXY(5, 201);
     Statistics_Button_Ambient.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_TINY_FILL_ACTIVE_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_TINY_FILL_PRESSED_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_CONTENT_STACKED_BAR_CHART_50_50_E8F6FB_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_DONE_50_50_E8F6FB_SVG_ID));
     Statistics_Button_Ambient.setIconXY(5, 5);
+    Statistics_Button_Ambient.setAction(buttonCallback);
     SwipeContainerAmbient_1.add(Statistics_Button_Ambient);
 
     Ambient_Text.setXY(54, 23);
@@ -191,7 +196,8 @@ DefaultViewViewBase::DefaultViewViewBase() :
 
     SwipeContainer.add(SwipeContainerAmbient_1);
 
-    SwipeContainerTemperature_Inside.setPosition(0, 0, 240, 261);
+    SwipeContainerTemperature_Inside.setWidth(240);
+    SwipeContainerTemperature_Inside.setHeight(261);
     TempIn_Val.setXY(69, 76);
     TempIn_Val.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
     TempIn_Val.setLinespacing(0);
@@ -229,7 +235,8 @@ DefaultViewViewBase::DefaultViewViewBase() :
 
     SwipeContainer.add(SwipeContainerTemperature_Inside);
 
-    SwipeContainerTemperature_Outside.setPosition(0, 0, 240, 261);
+    SwipeContainerTemperature_Outside.setWidth(240);
+    SwipeContainerTemperature_Outside.setHeight(261);
     TempOut_Val.setXY(84, 83);
     TempOut_Val.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
     TempOut_Val.setLinespacing(0);
@@ -279,15 +286,20 @@ DefaultViewViewBase::DefaultViewViewBase() :
     digitalClock1.setVisible(false);
     add(digitalClock1);
 
-    box2.setPosition(0, 0, 240, 52);
-    box2.setColor(touchgfx::Color::getColorFromRGB(56, 89, 255));
-    box2.setAlpha(17);
-    add(box2);
+    Header.setPosition(0, 0, 240, 52);
+    Header.setColor(touchgfx::Color::getColorFromRGB(56, 89, 255));
+    Header.setAlpha(17);
+    add(Header);
 
-    box2_1.setPosition(-1, 292, 241, 32);
-    box2_1.setColor(touchgfx::Color::getColorFromRGB(56, 89, 255));
-    box2_1.setAlpha(17);
-    add(box2_1);
+    Footer.setPosition(-1, 292, 241, 32);
+    Footer.setColor(touchgfx::Color::getColorFromRGB(56, 89, 255));
+    Footer.setAlpha(17);
+    add(Footer);
+
+    Screen_Brightness.setPosition(0, 0, 240, 320);
+    Screen_Brightness.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    Screen_Brightness.setAlpha(0);
+    add(Screen_Brightness);
 }
 
 DefaultViewViewBase::~DefaultViewViewBase()
@@ -305,9 +317,9 @@ void DefaultViewViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& 
     if (&src == &Menu_Button)
     {
         //DropDownFunc
-        //When Menu_Button clicked change screen to MenuDropdown_1
-        //Go to MenuDropdown_1 with no screen transition
-        application().gotoMenuDropdown_1ScreenNoTransition();
+        //When Menu_Button clicked change screen to MenuDropdown
+        //Go to MenuDropdown with no screen transition
+        application().gotoMenuDropdownScreenNoTransition();
     }
     if (&src == &Statistics_Button_Ambient)
     {

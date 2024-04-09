@@ -86,9 +86,9 @@ Application/User/TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp \
- ../../TouchGFX/gui/include/gui/menudropdown_1_screen/MenuDropdown_1View.hpp \
- ../../TouchGFX/generated/gui_generated/include/gui_generated/menudropdown_1_screen/MenuDropdown_1ViewBase.hpp \
- ../../TouchGFX/gui/include/gui/menudropdown_1_screen/MenuDropdown_1Presenter.hpp \
+ ../../TouchGFX/gui/include/gui/menudropdown_screen/MenuDropdownView.hpp \
+ ../../TouchGFX/generated/gui_generated/include/gui_generated/menudropdown_screen/MenuDropdownViewBase.hpp \
+ ../../TouchGFX/gui/include/gui/menudropdown_screen/MenuDropdownPresenter.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollList.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp \
@@ -257,9 +257,9 @@ Application/User/TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp:
-../../TouchGFX/gui/include/gui/menudropdown_1_screen/MenuDropdown_1View.hpp:
-../../TouchGFX/generated/gui_generated/include/gui_generated/menudropdown_1_screen/MenuDropdown_1ViewBase.hpp:
-../../TouchGFX/gui/include/gui/menudropdown_1_screen/MenuDropdown_1Presenter.hpp:
+../../TouchGFX/gui/include/gui/menudropdown_screen/MenuDropdownView.hpp:
+../../TouchGFX/generated/gui_generated/include/gui_generated/menudropdown_screen/MenuDropdownViewBase.hpp:
+../../TouchGFX/gui/include/gui/menudropdown_screen/MenuDropdownPresenter.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollList.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp:

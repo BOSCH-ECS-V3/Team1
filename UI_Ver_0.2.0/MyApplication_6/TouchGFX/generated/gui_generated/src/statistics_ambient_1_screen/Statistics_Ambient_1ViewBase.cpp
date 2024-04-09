@@ -181,6 +181,11 @@ Statistics_Ambient_1ViewBase::Statistics_Ambient_1ViewBase() :
     Graphic_Ambient_Inside.addDataPoint(30.72865f);
     Graphic_Ambient_Inside.addDataPoint(47.4041f);
     add(Graphic_Ambient_Inside);
+
+    Screen_Brightness.setPosition(0, 0, 240, 320);
+    Screen_Brightness.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    Screen_Brightness.setAlpha(0);
+    add(Screen_Brightness);
 }
 
 Statistics_Ambient_1ViewBase::~Statistics_Ambient_1ViewBase()
@@ -198,8 +203,8 @@ void Statistics_Ambient_1ViewBase::buttonCallbackHandler(const touchgfx::Abstrac
     if (&src == &Menu_Button)
     {
         //MenuDropdown
-        //When Menu_Button clicked change screen to MenuDropdown_1
-        //Go to MenuDropdown_1 with no screen transition
-        application().gotoMenuDropdown_1ScreenNoTransition();
+        //When Menu_Button clicked change screen to MenuDropdown
+        //Go to MenuDropdown with no screen transition
+        application().gotoMenuDropdownScreenNoTransition();
     }
 }

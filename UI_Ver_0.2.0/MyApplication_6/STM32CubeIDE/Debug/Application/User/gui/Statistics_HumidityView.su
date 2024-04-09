@@ -6,3 +6,4 @@ C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/statistics_humidity_screen/
 ../../TouchGFX/gui/include/gui/statistics_humidity_screen/Statistics_HumidityView.hpp:11:13:virtual Statistics_HumidityView::~Statistics_HumidityView()	8	static
 C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/statistics_humidity_screen/Statistics_HumidityView.cpp:3:1:Statistics_HumidityView::Statistics_HumidityView()	8	static
 C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/statistics_humidity_screen/Statistics_HumidityView.cpp:8:6:virtual void Statistics_HumidityView::setupScreen()	0	static
+C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/statistics_humidity_screen/Statistics_HumidityView.cpp:17:6:virtual void Statistics_HumidityView::set_brightness_level(int)	0	static

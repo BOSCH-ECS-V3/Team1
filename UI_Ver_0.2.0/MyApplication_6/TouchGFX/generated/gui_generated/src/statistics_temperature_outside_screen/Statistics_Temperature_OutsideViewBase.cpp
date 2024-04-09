@@ -181,6 +181,11 @@ Statistics_Temperature_OutsideViewBase::Statistics_Temperature_OutsideViewBase()
     Graphic_Temperature_Outside.addDataPoint(30.72865f);
     Graphic_Temperature_Outside.addDataPoint(47.4041f);
     add(Graphic_Temperature_Outside);
+
+    Screen_Brightness.setPosition(0, 0, 240, 320);
+    Screen_Brightness.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    Screen_Brightness.setAlpha(0);
+    add(Screen_Brightness);
 }
 
 Statistics_Temperature_OutsideViewBase::~Statistics_Temperature_OutsideViewBase()
@@ -198,8 +203,8 @@ void Statistics_Temperature_OutsideViewBase::buttonCallbackHandler(const touchgf
     if (&src == &Menu_Button)
     {
         //MenuDropdown
-        //When Menu_Button clicked change screen to MenuDropdown_1
-        //Go to MenuDropdown_1 with no screen transition
-        application().gotoMenuDropdown_1ScreenNoTransition();
+        //When Menu_Button clicked change screen to MenuDropdown
+        //Go to MenuDropdown with no screen transition
+        application().gotoMenuDropdownScreenNoTransition();
     }
 }

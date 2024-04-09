@@ -21,7 +21,7 @@
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/HAL.hpp:268:17:static touchgfx::LCD& touchgfx::HAL::lcd()	0	static
 C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:37:1:FrontendApplicationBase::FrontendApplicationBase(Model&, FrontendHeap&)	24	static
 C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:55:6:void FrontendApplicationBase::gotoDefaultViewScreenNoTransition()	0	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:68:6:void FrontendApplicationBase::gotoMenuDropdown_1ScreenNoTransition()	0	static
+C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:68:6:void FrontendApplicationBase::gotoMenuDropdownScreenNoTransition()	0	static
 C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:81:6:void FrontendApplicationBase::gotoAboutScreenNoTransition()	0	static
 C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:94:6:void FrontendApplicationBase::gotoTime_SettingsScreenNoTransition()	0	static
 C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:107:6:void FrontendApplicationBase::gotoDate_SettingsScreenNoTransition()	0	static
@@ -41,5 +41,5 @@ C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/gui_generated/src/common/
 C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:113:6:void FrontendApplicationBase::gotoDate_SettingsScreenNoTransitionImpl()	40	static
 C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:100:6:void FrontendApplicationBase::gotoTime_SettingsScreenNoTransitionImpl()	40	static
 C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:87:6:void FrontendApplicationBase::gotoAboutScreenNoTransitionImpl()	40	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:74:6:void FrontendApplicationBase::gotoMenuDropdown_1ScreenNoTransitionImpl()	40	static
+C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:74:6:void FrontendApplicationBase::gotoMenuDropdownScreenNoTransitionImpl()	40	static
 C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:61:6:void FrontendApplicationBase::gotoDefaultViewScreenNoTransitionImpl()	40	static

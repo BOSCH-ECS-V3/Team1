@@ -14,3 +14,4 @@ C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/date_settings_screen/Date_S
 C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/date_settings_screen/Date_SettingsView.cpp:54:6:virtual void Date_SettingsView::Years_Val_Up()	8	static
 C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/date_settings_screen/Date_SettingsView.cpp:61:6:virtual void Date_SettingsView::Years_Val_Down()	8	static
 C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/date_settings_screen/Date_SettingsView.cpp:67:6:virtual void Date_SettingsView::Update_Date()	24	static
+C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/date_settings_screen/Date_SettingsView.cpp:94:6:virtual void Date_SettingsView::set_brightness_level(int)	0	static

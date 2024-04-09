@@ -23,8 +23,8 @@ public:
     // DefaultView
     void gotoDefaultViewScreenNoTransition();
 
-    // MenuDropdown_1
-    void gotoMenuDropdown_1ScreenNoTransition();
+    // MenuDropdown
+    void gotoMenuDropdownScreenNoTransition();
 
     // About
     void gotoAboutScreenNoTransition();
@@ -61,8 +61,8 @@ protected:
     // DefaultView
     void gotoDefaultViewScreenNoTransitionImpl();
 
-    // MenuDropdown_1
-    void gotoMenuDropdown_1ScreenNoTransitionImpl();
+    // MenuDropdown
+    void gotoMenuDropdownScreenNoTransitionImpl();
 
     // About
     void gotoAboutScreenNoTransitionImpl();

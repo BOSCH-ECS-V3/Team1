@@ -208,18 +208,6 @@
     <Filter Include="Source Files\generated\gui_generated\containers">
       <UniqueIdentifier>2EB593D7-8E58-23EC-276E-82618B0F4E1C</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\gui\menudropdown_1_screen">
-      <UniqueIdentifier>5993AA2A-A78F-D856-85F9-9056DA3C62BE</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\gui\menudropdown_1_screen">
-      <UniqueIdentifier>9E47FBF9-2361-300B-CDB2-52B845A56B03</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\menudropdown_1_screen">
-      <UniqueIdentifier>2B229261-9874-0DFA-C660-7813945AF5B1</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\menudropdown_1_screen">
-      <UniqueIdentifier>B710C6C4-D062-E0DB-0E39-76C058736D0E</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\gui\date_settings_screen">
       <UniqueIdentifier>51AC729D-DD28-A964-7999-8A17FADF26EC</UniqueIdentifier>
     </Filter>
@@ -316,6 +304,18 @@
     <Filter Include="Source Files\generated\gui_generated\statistics_temperature_inside_screen">
       <UniqueIdentifier>FE5B2C03-4F86-99CC-03EF-759FD15B870B</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\gui\menudropdown_screen">
+      <UniqueIdentifier>2E31DB87-8C06-BE50-8A63-74439ECB0B8F</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\menudropdown_screen">
+      <UniqueIdentifier>32BB3279-F6E9-75E6-A0D1-4B3428A526C5</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\menudropdown_screen">
+      <UniqueIdentifier>A42585A3-6204-2903-4AD2-A641D7EA6320</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\menudropdown_screen">
+      <UniqueIdentifier>4B70C3FF-C218-4AA9-A263-1FA0151265C4</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -365,15 +365,6 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\about_screen\AboutViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\about_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\menudropdown_1_screen\MenuDropdown_1Presenter.cpp">
-      <Filter>Source Files\gui\menudropdown_1_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\menudropdown_1_screen\MenuDropdown_1View.cpp">
-      <Filter>Source Files\gui\menudropdown_1_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\menudropdown_1_screen\MenuDropdown_1ViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\menudropdown_1_screen</Filter>
     </ClCompile>
     <ClCompile Include="..\..\gui\src\containers\SettingsDropDown.cpp">
       <Filter>Source Files\gui\containers</Filter>
@@ -452,6 +443,15 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\statistics_temperature_inside_screen\Statistics_Temperature_InsideViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\statistics_temperature_inside_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\menudropdown_screen\MenuDropdownPresenter.cpp">
+      <Filter>Source Files\gui\menudropdown_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\menudropdown_screen\MenuDropdownView.cpp">
+      <Filter>Source Files\gui\menudropdown_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\menudropdown_screen\MenuDropdownViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\menudropdown_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -913,15 +913,6 @@
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\about_screen\AboutViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\about_screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\menudropdown_1_screen\MenuDropdown_1Presenter.hpp">
-      <Filter>Header Files\gui\menudropdown_1_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\menudropdown_1_screen\MenuDropdown_1View.hpp">
-      <Filter>Header Files\gui\menudropdown_1_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\menudropdown_1_screen\MenuDropdown_1ViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\menudropdown_1_screen</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\containers\SettingsDropDown.hpp">
       <Filter>Header Files\gui\containers</Filter>
     </ClInclude>
@@ -999,6 +990,15 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\statistics_temperature_inside_screen\Statistics_Temperature_InsideViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\statistics_temperature_inside_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\menudropdown_screen\MenuDropdownPresenter.hpp">
+      <Filter>Header Files\gui\menudropdown_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\menudropdown_screen\MenuDropdownView.hpp">
+      <Filter>Header Files\gui\menudropdown_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\menudropdown_screen\MenuDropdownViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\menudropdown_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

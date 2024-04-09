@@ -42,6 +42,7 @@ protected:
     touchgfx::GraphWrapAndClear<100> Graphic_Presure_Inside;
     touchgfx::GraphElementLine Graphic_Presure_InsideLine1;
     touchgfx::PainterRGB565 Graphic_Presure_InsideLine1Painter;
+    touchgfx::Box Screen_Brightness;
 
 private:
 

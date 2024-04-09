@@ -27,10 +27,11 @@ protected:
      * Member Declarations
      */
     touchgfx::Box __background;
-    touchgfx::Box box1;
-    touchgfx::TextArea WeatherStation;
+    touchgfx::Box Backround;
+    touchgfx::TextArea Header_Text;
     touchgfx::ButtonWithLabel Menu_Button;
-    touchgfx::TextArea textArea1;
+    touchgfx::TextArea Text;
+    touchgfx::Box Screen_Brightness;
 
 private:
 
