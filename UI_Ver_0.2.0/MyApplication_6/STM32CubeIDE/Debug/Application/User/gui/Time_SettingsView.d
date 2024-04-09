@@ -1,5 +1,5 @@
 Application/User/gui/Time_SettingsView.o: \
- C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsView.cpp \
+ C:/Users/Acer/Desktop/Team1/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsView.cpp \
  ../../TouchGFX/gui/include/gui/time_settings_screen/Time_SettingsView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/time_settings_screen/Time_SettingsViewBase.hpp \
  ../../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \

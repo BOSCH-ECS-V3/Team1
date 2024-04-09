@@ -1,5 +1,5 @@
 Application/User/gui/Date_SettingsPresenter.o: \
- C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/date_settings_screen/Date_SettingsPresenter.cpp \
+ C:/Users/Acer/Desktop/Team1/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/date_settings_screen/Date_SettingsPresenter.cpp \
  ../../TouchGFX/gui/include/gui/date_settings_screen/Date_SettingsView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/date_settings_screen/Date_SettingsViewBase.hpp \
  ../../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \

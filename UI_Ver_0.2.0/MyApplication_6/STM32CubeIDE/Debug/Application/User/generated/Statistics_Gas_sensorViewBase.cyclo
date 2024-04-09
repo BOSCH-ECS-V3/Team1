@@ -10,7 +10,6 @@
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:501:18:virtual void touchgfx::Drawable::handleTickEvent()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:588:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:703:18:virtual void touchgfx::Drawable::setupDrawChain(const touchgfx::Rect&, touchgfx::Drawable**)	1
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:45:18:virtual void touchgfx::Widget::getLastChild(int16_t, int16_t, touchgfx::Drawable**)	3
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/Container.hpp:165:23:virtual touchgfx::Drawable* touchgfx::Container::getFirstChild()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:93:18:virtual void touchgfx::Screen::setupScreen()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	1
@@ -77,7 +76,7 @@
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp:118:18:virtual touchgfx::Rect touchgfx::CanvasWidget::getMinimalRect() const	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp:134:18:virtual touchgfx::Rect touchgfx::CanvasWidget::getSolidRect() const	1
 ../../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:touchgfx::View<Statistics_Gas_sensorPresenter>::~View()	1
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/gui_generated/src/statistics_gas_sensor_screen/Statistics_Gas_sensorViewBase.cpp:191:6:virtual void Statistics_Gas_sensorViewBase::setupScreen()	1
+C:/Users/Acer/Desktop/Team1/UI_Ver_0.2.0/MyApplication_6/TouchGFX/generated/gui_generated/src/statistics_gas_sensor_screen/Statistics_Gas_sensorViewBase.cpp:191:6:virtual void Statistics_Gas_sensorViewBase::setupScreen()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:touchgfx::Callback<Statistics_Gas_sensorViewBase, const touchgfx::AbstractButton&>::~Callback()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp:66:7:touchgfx::GraphWrapAndClear<100>::~GraphWrapAndClear()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:386:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = Statistics_Gas_sensorViewBase; T1 = const touchgfx::AbstractButton&]	2
@@ -86,13 +85,14 @@ C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/gui_generated/src/statist
 ../../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:virtual touchgfx::View<Statistics_Gas_sensorPresenter>::~View()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp:66:7:virtual touchgfx::GraphWrapAndClear<100>::~GraphWrapAndClear()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:virtual touchgfx::Callback<Statistics_Gas_sensorViewBase, const touchgfx::AbstractButton&>::~Callback()	1
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/gui_generated/src/statistics_gas_sensor_screen/Statistics_Gas_sensorViewBase.cpp:186:1:Statistics_Gas_sensorViewBase::~Statistics_Gas_sensorViewBase()	1
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/gui_generated/src/statistics_gas_sensor_screen/Statistics_Gas_sensorViewBase.cpp:186:1:virtual Statistics_Gas_sensorViewBase::~Statistics_Gas_sensorViewBase()	1
+C:/Users/Acer/Desktop/Team1/UI_Ver_0.2.0/MyApplication_6/TouchGFX/generated/gui_generated/src/statistics_gas_sensor_screen/Statistics_Gas_sensorViewBase.cpp:186:1:Statistics_Gas_sensorViewBase::~Statistics_Gas_sensorViewBase()	1
+C:/Users/Acer/Desktop/Team1/UI_Ver_0.2.0/MyApplication_6/TouchGFX/generated/gui_generated/src/statistics_gas_sensor_screen/Statistics_Gas_sensorViewBase.cpp:186:1:virtual Statistics_Gas_sensorViewBase::~Statistics_Gas_sensorViewBase()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:121:18:virtual void touchgfx::Drawable::invalidateContent() const	2
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1176:18:virtual void touchgfx::AbstractDataGraph::invalidateContent() const	2
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1591:17:virtual int touchgfx::DynamicDataGraph::indexToDataPointYScaled(int16_t) const	2
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1585:17:virtual int touchgfx::DynamicDataGraph::indexToDataPointXScaled(int16_t) const	2
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/gui_generated/src/statistics_gas_sensor_screen/Statistics_Gas_sensorViewBase.cpp:196:6:void Statistics_Gas_sensorViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	2
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:45:18:virtual void touchgfx::Widget::getLastChild(int16_t, int16_t, touchgfx::Drawable**)	3
+C:/Users/Acer/Desktop/Team1/UI_Ver_0.2.0/MyApplication_6/TouchGFX/generated/gui_generated/src/statistics_gas_sensor_screen/Statistics_Gas_sensorViewBase.cpp:196:6:void Statistics_Gas_sensorViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	2
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:343:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:233:10:void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:33:5:touchgfx::Box::Box()	1
@@ -102,4 +102,4 @@ C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/gui_generated/src/statist
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1282:25:virtual touchgfx::CWRUtil::Q5 touchgfx::AbstractDataGraph::valueToScreenYQ5(int) const	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:1270:25:virtual touchgfx::CWRUtil::Q5 touchgfx::AbstractDataGraph::valueToScreenXQ5(int) const	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp:41:5:touchgfx::AbstractPainterRGB565::AbstractPainterRGB565()	4
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/gui_generated/src/statistics_gas_sensor_screen/Statistics_Gas_sensorViewBase.cpp:10:1:Statistics_Gas_sensorViewBase::Statistics_Gas_sensorViewBase()	101
+C:/Users/Acer/Desktop/Team1/UI_Ver_0.2.0/MyApplication_6/TouchGFX/generated/gui_generated/src/statistics_gas_sensor_screen/Statistics_Gas_sensorViewBase.cpp:10:1:Statistics_Gas_sensorViewBase::Statistics_Gas_sensorViewBase()	101

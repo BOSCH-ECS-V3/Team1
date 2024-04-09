@@ -1,5 +1,5 @@
 Middlewares/FreeRTOS/event_groups.o: \
- C:/TouchGFXProjects/MyApplication_6/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c \
+ C:/Users/Acer/Desktop/Team1/UI_Ver_0.2.0/MyApplication_6/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
  ../../Core/Inc/FreeRTOSConfig.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \

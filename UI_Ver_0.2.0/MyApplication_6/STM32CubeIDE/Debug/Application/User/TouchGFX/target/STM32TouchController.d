@@ -1,5 +1,5 @@
 Application/User/TouchGFX/target/STM32TouchController.o: \
- C:/TouchGFXProjects/MyApplication_6/TouchGFX/target/STM32TouchController.cpp \
+ C:/Users/Acer/Desktop/Team1/UI_Ver_0.2.0/MyApplication_6/TouchGFX/target/STM32TouchController.cpp \
  ../../TouchGFX/target/STM32TouchController.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/platform/driver/touch/TouchController.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp \

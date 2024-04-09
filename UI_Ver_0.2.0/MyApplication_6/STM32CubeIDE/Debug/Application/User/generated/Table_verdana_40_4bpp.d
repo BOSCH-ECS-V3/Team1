@@ -1,5 +1,5 @@
 Application/User/generated/Table_verdana_40_4bpp.o: \
- C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/fonts/src/Table_verdana_40_4bpp.cpp \
+ C:/Users/Acer/Desktop/Team1/UI_Ver_0.2.0/MyApplication_6/TouchGFX/generated/fonts/src/Table_verdana_40_4bpp.cpp \
  ../../TouchGFX/generated/fonts/include/fonts/GeneratedFont.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/ConstFont.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Font.hpp \

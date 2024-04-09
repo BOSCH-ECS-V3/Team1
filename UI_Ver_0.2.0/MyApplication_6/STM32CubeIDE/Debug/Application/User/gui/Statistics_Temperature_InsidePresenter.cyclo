@@ -4,7 +4,7 @@
 ../../TouchGFX/gui/include/gui/model/ModelListener.hpp:32:18:virtual void ModelListener::updated_Clock(int*)	1
 ../../TouchGFX/gui/include/gui/model/ModelListener.hpp:36:18:virtual void ModelListener::current_Sensor_values(int*)	1
 ../../TouchGFX/gui/include/gui/statistics_temperature_inside_screen/Statistics_Temperature_InsidePresenter.hpp:28:13:Statistics_Temperature_InsidePresenter::~Statistics_Temperature_InsidePresenter()	1
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/statistics_temperature_inside_screen/Statistics_Temperature_InsidePresenter.cpp:10:6:virtual void Statistics_Temperature_InsidePresenter::activate()	1
+C:/Users/Acer/Desktop/Team1/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/statistics_temperature_inside_screen/Statistics_Temperature_InsidePresenter.cpp:10:6:virtual void Statistics_Temperature_InsidePresenter::activate()	1
 ../../TouchGFX/gui/include/gui/statistics_temperature_inside_screen/Statistics_Temperature_InsidePresenter.hpp:28:13:virtual Statistics_Temperature_InsidePresenter::~Statistics_Temperature_InsidePresenter()	1
 ../../TouchGFX/gui/include/gui/statistics_temperature_inside_screen/Statistics_Temperature_InsidePresenter.hpp:28:13:virtual void* Statistics_Temperature_InsidePresenter::_ZThn4_N38Statistics_Temperature_InsidePresenterD1Ev()	1
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/statistics_temperature_inside_screen/Statistics_Temperature_InsidePresenter.cpp:4:1:Statistics_Temperature_InsidePresenter::Statistics_Temperature_InsidePresenter(Statistics_Temperature_InsideView&)	1
+C:/Users/Acer/Desktop/Team1/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/statistics_temperature_inside_screen/Statistics_Temperature_InsidePresenter.cpp:4:1:Statistics_Temperature_InsidePresenter::Statistics_Temperature_InsidePresenter(Statistics_Temperature_InsideView&)	1

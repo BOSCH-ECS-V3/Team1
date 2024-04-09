@@ -3,9 +3,9 @@
 ../../TouchGFX/gui/include/gui/model/ModelListener.hpp:32:18:virtual void ModelListener::updated_Clock(int*)	0	static
 ../../TouchGFX/gui/include/gui/model/ModelListener.hpp:36:18:virtual void ModelListener::current_Sensor_values(int*)	0	static
 ../../TouchGFX/gui/include/gui/time_settings_screen/Time_SettingsPresenter.hpp:28:13:Time_SettingsPresenter::~Time_SettingsPresenter()	0	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsPresenter.cpp:10:6:virtual void Time_SettingsPresenter::activate()	0	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsPresenter.cpp:20:6:virtual void Time_SettingsPresenter::current_Clock(int*)	0	static
+C:/Users/Acer/Desktop/Team1/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsPresenter.cpp:10:6:virtual void Time_SettingsPresenter::activate()	0	static
+C:/Users/Acer/Desktop/Team1/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsPresenter.cpp:20:6:virtual void Time_SettingsPresenter::current_Clock(int*)	0	static
 ../../TouchGFX/gui/include/gui/time_settings_screen/Time_SettingsPresenter.hpp:28:13:virtual Time_SettingsPresenter::~Time_SettingsPresenter()	8	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsPresenter.cpp:24:6:virtual void Time_SettingsPresenter::update_Clock(int*)	0	static
+C:/Users/Acer/Desktop/Team1/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsPresenter.cpp:24:6:virtual void Time_SettingsPresenter::update_Clock(int*)	0	static
 ../../TouchGFX/gui/include/gui/time_settings_screen/Time_SettingsPresenter.hpp:28:13:virtual void* Time_SettingsPresenter::_ZThn4_N22Time_SettingsPresenterD1Ev()	0	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsPresenter.cpp:4:1:Time_SettingsPresenter::Time_SettingsPresenter(Time_SettingsView&)	8	static
+C:/Users/Acer/Desktop/Team1/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsPresenter.cpp:4:1:Time_SettingsPresenter::Time_SettingsPresenter(Time_SettingsView&)	0	static

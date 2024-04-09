@@ -1,5 +1,5 @@
 Application/User/gui/Statistics_Temperature_OutsideView.o: \
- C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/statistics_temperature_outside_screen/Statistics_Temperature_OutsideView.cpp \
+ C:/Users/Acer/Desktop/Team1/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/statistics_temperature_outside_screen/Statistics_Temperature_OutsideView.cpp \
  ../../TouchGFX/gui/include/gui/statistics_temperature_outside_screen/Statistics_Temperature_OutsideView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/statistics_temperature_outside_screen/Statistics_Temperature_OutsideViewBase.hpp \
  ../../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \

@@ -1,5 +1,5 @@
 Application/User/generated/SettingsDropDownBase.o: \
- C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/gui_generated/src/containers/SettingsDropDownBase.cpp \
+ C:/Users/Acer/Desktop/Team1/UI_Ver_0.2.0/MyApplication_6/TouchGFX/generated/gui_generated/src/containers/SettingsDropDownBase.cpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/containers/SettingsDropDownBase.hpp \
  ../../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp \

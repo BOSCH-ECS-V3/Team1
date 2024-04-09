@@ -1,5 +1,5 @@
 Application/User/gui/Statistics_Temperature_InsideView.o: \
- C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/statistics_temperature_inside_screen/Statistics_Temperature_InsideView.cpp \
+ C:/Users/Acer/Desktop/Team1/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/statistics_temperature_inside_screen/Statistics_Temperature_InsideView.cpp \
  ../../TouchGFX/gui/include/gui/statistics_temperature_inside_screen/Statistics_Temperature_InsideView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/statistics_temperature_inside_screen/Statistics_Temperature_InsideViewBase.hpp \
  ../../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \

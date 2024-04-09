@@ -1,16 +1,16 @@
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	0	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/date_settings_screen/Date_SettingsView.cpp:13:6:virtual void Date_SettingsView::tearDownScreen()	0	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/date_settings_screen/Date_SettingsView.cpp:87:6:virtual void Date_SettingsView::current_Date_value(int*)	0	static
+C:/Users/Acer/Desktop/Team1/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/date_settings_screen/Date_SettingsView.cpp:13:6:virtual void Date_SettingsView::tearDownScreen()	0	static
+C:/Users/Acer/Desktop/Team1/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/date_settings_screen/Date_SettingsView.cpp:87:6:virtual void Date_SettingsView::current_Date_value(int*)	0	static
 ../../TouchGFX/gui/include/gui/date_settings_screen/Date_SettingsView.hpp:11:13:Date_SettingsView::~Date_SettingsView()	8	static
 ../../TouchGFX/gui/include/gui/date_settings_screen/Date_SettingsView.hpp:11:13:virtual Date_SettingsView::~Date_SettingsView()	8	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/date_settings_screen/Date_SettingsView.cpp:3:1:Date_SettingsView::Date_SettingsView()	8	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/date_settings_screen/Date_SettingsView.cpp:8:6:virtual void Date_SettingsView::setupScreen()	0	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/date_settings_screen/Date_SettingsView.cpp:18:6:virtual void Date_SettingsView::handleTickEvent()	8	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/date_settings_screen/Date_SettingsView.cpp:29:6:virtual void Date_SettingsView::Days_Val_Up()	8	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/date_settings_screen/Date_SettingsView.cpp:35:6:virtual void Date_SettingsView::Days_Val_Down()	8	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/date_settings_screen/Date_SettingsView.cpp:41:6:virtual void Date_SettingsView::Months_Val_Up()	8	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/date_settings_screen/Date_SettingsView.cpp:48:6:virtual void Date_SettingsView::Months_Val_Down()	8	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/date_settings_screen/Date_SettingsView.cpp:54:6:virtual void Date_SettingsView::Years_Val_Up()	8	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/date_settings_screen/Date_SettingsView.cpp:61:6:virtual void Date_SettingsView::Years_Val_Down()	8	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/date_settings_screen/Date_SettingsView.cpp:67:6:virtual void Date_SettingsView::Update_Date()	24	static
+C:/Users/Acer/Desktop/Team1/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/date_settings_screen/Date_SettingsView.cpp:3:1:Date_SettingsView::Date_SettingsView()	8	static
+C:/Users/Acer/Desktop/Team1/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/date_settings_screen/Date_SettingsView.cpp:8:6:virtual void Date_SettingsView::setupScreen()	0	static
+C:/Users/Acer/Desktop/Team1/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/date_settings_screen/Date_SettingsView.cpp:18:6:virtual void Date_SettingsView::handleTickEvent()	16	static
+C:/Users/Acer/Desktop/Team1/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/date_settings_screen/Date_SettingsView.cpp:29:6:virtual void Date_SettingsView::Days_Val_Up()	8	static
+C:/Users/Acer/Desktop/Team1/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/date_settings_screen/Date_SettingsView.cpp:35:6:virtual void Date_SettingsView::Days_Val_Down()	8	static
+C:/Users/Acer/Desktop/Team1/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/date_settings_screen/Date_SettingsView.cpp:41:6:virtual void Date_SettingsView::Months_Val_Up()	8	static
+C:/Users/Acer/Desktop/Team1/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/date_settings_screen/Date_SettingsView.cpp:48:6:virtual void Date_SettingsView::Months_Val_Down()	8	static
+C:/Users/Acer/Desktop/Team1/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/date_settings_screen/Date_SettingsView.cpp:54:6:virtual void Date_SettingsView::Years_Val_Up()	8	static
+C:/Users/Acer/Desktop/Team1/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/date_settings_screen/Date_SettingsView.cpp:61:6:virtual void Date_SettingsView::Years_Val_Down()	8	static
+C:/Users/Acer/Desktop/Team1/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/date_settings_screen/Date_SettingsView.cpp:67:6:virtual void Date_SettingsView::Update_Date()	32	static

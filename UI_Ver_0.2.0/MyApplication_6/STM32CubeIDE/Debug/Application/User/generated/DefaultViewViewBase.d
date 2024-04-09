@@ -1,5 +1,5 @@
 Application/User/generated/DefaultViewViewBase.o: \
- C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/gui_generated/src/defaultview_screen/DefaultViewViewBase.cpp \
+ C:/Users/Acer/Desktop/Team1/UI_Ver_0.2.0/MyApplication_6/TouchGFX/generated/gui_generated/src/defaultview_screen/DefaultViewViewBase.cpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/defaultview_screen/DefaultViewViewBase.hpp \
  ../../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp \

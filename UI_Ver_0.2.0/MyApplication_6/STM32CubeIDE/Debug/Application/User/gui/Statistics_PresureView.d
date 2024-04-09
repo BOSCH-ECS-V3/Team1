@@ -1,5 +1,5 @@
 Application/User/gui/Statistics_PresureView.o: \
- C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/statistics_presure_screen/Statistics_PresureView.cpp \
+ C:/Users/Acer/Desktop/Team1/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/statistics_presure_screen/Statistics_PresureView.cpp \
  ../../TouchGFX/gui/include/gui/statistics_presure_screen/Statistics_PresureView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/statistics_presure_screen/Statistics_PresureViewBase.hpp \
  ../../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \

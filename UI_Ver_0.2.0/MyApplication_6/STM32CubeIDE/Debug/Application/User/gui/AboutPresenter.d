@@ -1,5 +1,5 @@
 Application/User/gui/AboutPresenter.o: \
- C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/about_screen/AboutPresenter.cpp \
+ C:/Users/Acer/Desktop/Team1/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/about_screen/AboutPresenter.cpp \
  ../../TouchGFX/gui/include/gui/about_screen/AboutView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/about_screen/AboutViewBase.hpp \
  ../../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \

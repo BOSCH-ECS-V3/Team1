@@ -1,5 +1,5 @@
 Application/User/generated/VectorFontRendererBuffers.o: \
- C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/fonts/src/VectorFontRendererBuffers.cpp \
+ C:/Users/Acer/Desktop/Team1/UI_Ver_0.2.0/MyApplication_6/TouchGFX/generated/fonts/src/VectorFontRendererBuffers.cpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/VectorFontRendererImpl.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Config.hpp \
