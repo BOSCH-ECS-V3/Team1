@@ -25,6 +25,9 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "Components/ili9341/ili9341.h"
+#include "temp_sens.h"
+#include "data_UI_def.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -76,29 +79,21 @@ SPI_HandleTypeDef hspi5;
 
 SDRAM_HandleTypeDef hsdram1;
 
-/* Definitions for defaultTask */
-osThreadId_t defaultTaskHandle;
-const osThreadAttr_t defaultTask_attributes = {
-  .name = "defaultTask",
-  .stack_size = 128 * 4,
-  .priority = (osPriority_t) osPriorityNormal,
-};
 /* Definitions for GUI_Task */
-osThreadId_t GUI_TaskHandle;
-const osThreadAttr_t GUI_Task_attributes = {
-  .name = "GUI_Task",
-  .stack_size = 8192 * 4,
-  .priority = (osPriority_t) osPriorityNormal,
-};
-
-
+TaskHandle_t GUI_TaskHandle;
 /* USER CODE BEGIN PV */
-osThreadId_t ADCTaskHandle;
-const osThreadAttr_t ADCTask_attributes = {
-  .name = "ADCTask",
-  .stack_size = 128 * 4,
-  .priority = (osPriority_t) osPriorityNormal,
-};
+TaskHandle_t GetSensData_TaskHandle;
+
+struct bme680_dev sensor_In;
+struct bme680_dev sensor_Out;
+struct bme680_field_data data_In;
+struct bme680_field_data data_Out;
+uint16_t meas_period_In;
+uint16_t meas_period_Out;
+
+SensData_t data_UI;
+
+
 
 /* USER CODE END PV */
 
@@ -112,9 +107,8 @@ static void MX_FMC_Init(void);
 static void MX_LTDC_Init(void);
 static void MX_DMA2D_Init(void);
 static void MX_ADC1_Init(void);
-void StartDefaultTask(void *argument);
 extern void TouchGFX_Task(void *argument);
-void ADCTask(void *argument);
+void GetSensDataTask(void *argument);
 
 /* USER CODE BEGIN PFP */
 static void BSP_SDRAM_Initialization_Sequence(SDRAM_HandleTypeDef *hsdram, FMC_SDRAM_CommandTypeDef *Command);
@@ -195,13 +189,17 @@ int main(void)
   MX_ADC1_Init();
   MX_TouchGFX_Init();
   /* Call PreOsInit function */
-  MX_TouchGFX_PreOSInit();
+  //MX_TouchGFX_PreOSInit();
   /* USER CODE BEGIN 2 */
 
+  xTaskCreate(TouchGFX_Task, "TouchGFX_Task", 8192, NULL, osPriorityNormal, &GUI_TaskHandle);
+  xTaskCreate(GetSensDataTask, "GetSensDataTask", 128, NULL, osPriorityNormal, &GetSensData_TaskHandle);
+
+
+  vTaskStartScheduler();
   /* USER CODE END 2 */
 
-  /* Init scheduler */
-  osKernelInitialize();
+
 
   /* USER CODE BEGIN RTOS_MUTEX */
   /* add mutexes, ... */
@@ -219,26 +217,6 @@ int main(void)
   /* add queues, ... */
   /* USER CODE END RTOS_QUEUES */
 
-  /* Create the thread(s) */
-  /* creation of defaultTask */
-  defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
-
-  /* creation of GUI_Task */
-  GUI_TaskHandle = osThreadNew(TouchGFX_Task, NULL, &GUI_Task_attributes);
-  ADCTaskHandle = osThreadNew(ADCTask, NULL, &ADCTask_attributes);
-
-  /* USER CODE BEGIN RTOS_THREADS */
-  /* add threads, ... */
-  /* USER CODE END RTOS_THREADS */
-
-  /* USER CODE BEGIN RTOS_EVENTS */
-  /* add events, ... */
-  /* USER CODE END RTOS_EVENTS */
-
-  /* Start scheduler */
-  osKernelStart();
-
-  /* We should never get here as control is now taken by the scheduler */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
@@ -998,35 +976,37 @@ void LCD_Delay(uint32_t Delay)
 
 /* USER CODE END 4 */
 
-/* USER CODE BEGIN Header_StartDefaultTask */
-/**
-  * @brief  Function implementing the defaultTask thread.
-  * @param  argument: Not used
-  * @retval None
-  */
-/* USER CODE END Header_StartDefaultTask */
-void StartDefaultTask(void *argument)
-{
-  /* USER CODE BEGIN 5 */
-  /* Infinite loop */
-  for(;;)
-  {
-    osDelay(100);
-  }
-  /* USER CODE END 5 */
-}
-
-void ADCTask(void *argument){
+void GetSensDataTask(void *argument){
 
 
 	for(;;){
 
-		HAL_ADC_Start(&hadc1);
+		/*HAL_ADC_Start(&hadc1);
 		HAL_ADC_PollForConversion(&hadc1, 100);
  		adcVal = HAL_ADC_GetValue(&hadc1);
-		HAL_ADC_Stop(&hadc1);
+		HAL_ADC_Stop(&hadc1);*/
+		if(SensorInit(&sensor_In, &meas_period_In) == BME680_OK){
 
-		osDelay(1000);
+			if(CollectSensorData(&sensor_In, &data_In) == BME680_OK){
+
+				data_UI.tempIN = data_In.temperature / 100.0f;
+				data_UI.humidity = data_In.humidity / 1000.0f;
+				data_UI.pressure = data_In.pressure / 100.0f;
+
+				if (sensor_In.power_mode == BME680_FORCED_MODE) {
+
+					bme680_set_sensor_mode(&sensor_In);
+				}
+
+			}else{
+
+				data_UI.tempIN = 201;
+			}
+
+		}else{
+			data_UI.tempIN = 202;
+		}
+
 	}
 }
 
