@@ -1,0 +1,3233 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "DefaultView",
+        "CanvasBufferSize": 3600,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "Backround",
+            "Width": 240,
+            "Height": 320,
+            "Color": {
+              "Red": 43,
+              "Green": 43,
+              "Blue": 43
+            }
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "Menu_Button",
+            "X": 197,
+            "Y": 7,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_normal.png",
+            "TextId": "__SingleUse_68EU",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_outline_normal.json"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 27,
+            "Y": 13,
+            "Width": 160,
+            "Height": 24,
+            "TextId": "__SingleUse_6NB9",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 153,
+              "Green": 153,
+              "Blue": 153
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "SwipeContainer",
+            "Name": "SwipeContainer",
+            "Y": 31,
+            "Width": 240,
+            "Height": 261,
+            "SwipeCutoff": 50,
+            "ShowPageIndicator": true,
+            "PageIndicatorX": 84,
+            "PageIndicatorY": 240,
+            "CenteredX": true,
+            "IndicatorImageNormal": "__generated\\alternate_theme_images_widgets_swipecontainer_small_off_normal.png",
+            "IndicatorImageHighlight": "__generated\\alternate_theme_images_widgets_swipecontainer_small_on_normal.png",
+            "EndSwipeElasticWidth": 50,
+            "SelectedPage": "SwipeContainerCarbon",
+            "Preset": "alternate_theme\\presets\\swipecontainer\\small_light.json",
+            "Components": [
+              {
+                "Type": "Container",
+                "Name": "SwipeContainerHumidity",
+                "Width": 240,
+                "Height": 261,
+                "Components": [
+                  {
+                    "Type": "TextArea",
+                    "Name": "Humidity_Text",
+                    "X": 76,
+                    "Y": 30,
+                    "Width": 89,
+                    "Height": 24,
+                    "TextId": "__SingleUse_SC46",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Green": 247,
+                      "Blue": 255
+                    },
+                    "AutoSize": true
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "Humidity_Val",
+                    "X": 81,
+                    "Y": 109,
+                    "Width": 163,
+                    "Height": 41,
+                    "TextId": "__SingleUse_ED8P",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Green": 247,
+                      "Blue": 255
+                    },
+                    "AutoSize": true,
+                    "Wildcard1": {
+                      "TextId": "__SingleUse_TRUT",
+                      "UseBuffer": true,
+                      "BufferSize": 10
+                    }
+                  },
+                  {
+                    "Type": "ButtonWithIcon",
+                    "Name": "Statistics_Button_Humidity",
+                    "X": 5,
+                    "Y": 201,
+                    "Width": 60,
+                    "Height": 60,
+                    "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_fill_pressed.png",
+                    "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_fill_active.png",
+                    "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+                    "IconReleased": "__generated\\icon_theme_images_content_stacked_bar_chart_50_50_E8F6FB.svg.png",
+                    "IconX": 5,
+                    "IconY": 5,
+                    "IconHeight": 50,
+                    "IconWidth": 50,
+                    "Preset": "alternate_theme\\presets\\button\\icon\\round\\tiny_fill_active.json"
+                  }
+                ]
+              },
+              {
+                "Type": "Container",
+                "Name": "SwipeContainerCarbon",
+                "Width": 240,
+                "Height": 261,
+                "Components": [
+                  {
+                    "Type": "TextArea",
+                    "Name": "Carbon_Text",
+                    "X": 32,
+                    "Y": 26,
+                    "Width": 176,
+                    "Height": 24,
+                    "TextId": "__SingleUse_XRTI",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Green": 247,
+                      "Blue": 255
+                    },
+                    "AutoSize": true
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "Carbon_Val",
+                    "X": 91,
+                    "Y": 64,
+                    "Width": 143,
+                    "Height": 24,
+                    "TextId": "__SingleUse_GP4Z",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Green": 247,
+                      "Blue": 255
+                    },
+                    "AutoSize": true,
+                    "Wildcard1": {
+                      "TextId": "__SingleUse_9KGC",
+                      "UseBuffer": true,
+                      "BufferSize": 20
+                    }
+                  },
+                  {
+                    "Type": "CircleProgress",
+                    "Name": "CarbonCirc_Val",
+                    "X": 65,
+                    "Y": 107,
+                    "Width": 110,
+                    "Height": 110,
+                    "Color": {
+                      "Green": 240,
+                      "Blue": 255
+                    },
+                    "CenterX": 55.0,
+                    "CenterY": 55.0,
+                    "Radius": 50.0,
+                    "LineWidth": 10.0,
+                    "StartAngle": -90.0,
+                    "EndAngle": 210.0,
+                    "CapPrecision": "Butt",
+                    "FileNameBackground": "__generated\\alternate_theme_images_widgets_circleprogress_backgrounds_small.png",
+                    "ProgressRangeMax": 100,
+                    "ProgressInitialValue": 60
+                  },
+                  {
+                    "Type": "ButtonWithIcon",
+                    "Name": "Statistics_Button_Carbon",
+                    "X": 5,
+                    "Y": 201,
+                    "Width": 60,
+                    "Height": 60,
+                    "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_fill_pressed.png",
+                    "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_fill_active.png",
+                    "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+                    "IconReleased": "__generated\\icon_theme_images_content_stacked_bar_chart_50_50_E8F6FB.svg.png",
+                    "IconX": 5,
+                    "IconY": 5,
+                    "IconHeight": 50,
+                    "IconWidth": 50,
+                    "Preset": "alternate_theme\\presets\\button\\icon\\round\\tiny_fill_active.json"
+                  }
+                ]
+              },
+              {
+                "Type": "Container",
+                "Name": "SwipeContainerPressure_1",
+                "Width": 240,
+                "Height": 261,
+                "Components": [
+                  {
+                    "Type": "TextArea",
+                    "Name": "Presure_Text",
+                    "X": 55,
+                    "Y": 30,
+                    "Width": 150,
+                    "Height": 24,
+                    "TextId": "__SingleUse_QJ73",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Green": 247,
+                      "Blue": 255
+                    },
+                    "AutoSize": true
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "Presure_Val",
+                    "X": 83,
+                    "Y": 109,
+                    "Width": 75,
+                    "Height": 41,
+                    "TextId": "__SingleUse_MJ6R",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Green": 247,
+                      "Blue": 255
+                    },
+                    "AutoSize": true,
+                    "Wildcard1": {
+                      "TextId": "__SingleUse_JVDX",
+                      "UseBuffer": true,
+                      "BufferSize": 10
+                    }
+                  },
+                  {
+                    "Type": "ButtonWithIcon",
+                    "Name": "Statistics_Button_Presure",
+                    "X": 5,
+                    "Y": 201,
+                    "Width": 60,
+                    "Height": 60,
+                    "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_fill_pressed.png",
+                    "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_fill_active.png",
+                    "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+                    "IconReleased": "__generated\\icon_theme_images_content_stacked_bar_chart_50_50_E8F6FB.svg.png",
+                    "IconX": 5,
+                    "IconY": 5,
+                    "IconHeight": 50,
+                    "IconWidth": 50,
+                    "Preset": "alternate_theme\\presets\\button\\icon\\round\\tiny_fill_active.json"
+                  }
+                ]
+              },
+              {
+                "Type": "Container",
+                "Name": "SwipeContainerAmbient_1",
+                "Width": 240,
+                "Height": 261,
+                "Components": [
+                  {
+                    "Type": "ButtonWithIcon",
+                    "Name": "Statistics_Button_Ambient",
+                    "X": 5,
+                    "Y": 201,
+                    "Width": 60,
+                    "Height": 60,
+                    "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_fill_pressed.png",
+                    "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_fill_active.png",
+                    "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+                    "IconReleased": "__generated\\icon_theme_images_content_stacked_bar_chart_50_50_E8F6FB.svg.png",
+                    "IconX": 5,
+                    "IconY": 5,
+                    "IconHeight": 50,
+                    "IconWidth": 50,
+                    "Preset": "alternate_theme\\presets\\button\\icon\\round\\tiny_fill_active.json"
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "Ambient_Text",
+                    "X": 55,
+                    "Y": 30,
+                    "Width": 133,
+                    "Height": 24,
+                    "TextId": "__SingleUse_VIA7",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Green": 247,
+                      "Blue": 255
+                    },
+                    "AutoSize": true
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "Ambient_Val",
+                    "X": 81,
+                    "Y": 109,
+                    "Width": 149,
+                    "Height": 41,
+                    "TextId": "__SingleUse_9KQX",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Green": 247,
+                      "Blue": 255
+                    },
+                    "AutoSize": true,
+                    "Wildcard1": {
+                      "TextId": "__SingleUse_VYLX",
+                      "UseBuffer": true,
+                      "BufferSize": 10
+                    }
+                  }
+                ]
+              },
+              {
+                "Type": "Container",
+                "Name": "SwipeContainerTemperature_Inside",
+                "Width": 240,
+                "Height": 261,
+                "Components": [
+                  {
+                    "Type": "TextArea",
+                    "Name": "TempIn_Val",
+                    "X": 81,
+                    "Y": 109,
+                    "Width": 134,
+                    "Height": 41,
+                    "TextId": "__SingleUse_BF3J",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Green": 247,
+                      "Blue": 255
+                    },
+                    "AutoSize": true,
+                    "Wildcard1": {
+                      "TextId": "__SingleUse_E5QY",
+                      "UseBuffer": true,
+                      "BufferSize": 10
+                    }
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "TempIn_Text",
+                    "X": 55,
+                    "Y": 30,
+                    "Width": 128,
+                    "Height": 48,
+                    "TextId": "__SingleUse_NIUA",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Green": 247,
+                      "Blue": 255
+                    },
+                    "AutoSize": true
+                  },
+                  {
+                    "Type": "ButtonWithIcon",
+                    "Name": "Statistics_Button_TempIn",
+                    "X": 5,
+                    "Y": 201,
+                    "Width": 60,
+                    "Height": 60,
+                    "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_fill_pressed.png",
+                    "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_fill_active.png",
+                    "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+                    "IconReleased": "__generated\\icon_theme_images_content_stacked_bar_chart_50_50_E8F6FB.svg.png",
+                    "IconX": 5,
+                    "IconY": 5,
+                    "IconHeight": 50,
+                    "IconWidth": 50,
+                    "Preset": "alternate_theme\\presets\\button\\icon\\round\\tiny_fill_active.json"
+                  }
+                ]
+              },
+              {
+                "Type": "Container",
+                "Name": "SwipeContainerTemperature_Outside",
+                "Width": 240,
+                "Height": 261,
+                "Components": [
+                  {
+                    "Type": "TextArea",
+                    "Name": "TempOut_Val",
+                    "X": 81,
+                    "Y": 109,
+                    "Width": 148,
+                    "Height": 41,
+                    "TextId": "__SingleUse_7E1H",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Green": 247,
+                      "Blue": 255
+                    },
+                    "AutoSize": true,
+                    "Wildcard1": {
+                      "TextId": "__SingleUse_IV5N",
+                      "UseBuffer": true,
+                      "BufferSize": 10
+                    }
+                  },
+                  {
+                    "Type": "TextArea",
+                    "Name": "TempOut_Text",
+                    "X": 55,
+                    "Y": 30,
+                    "Width": 128,
+                    "Height": 48,
+                    "TextId": "__SingleUse_ZFWW",
+                    "TextRotation": "0",
+                    "Color": {
+                      "Green": 247,
+                      "Blue": 255
+                    },
+                    "AutoSize": true
+                  },
+                  {
+                    "Type": "ButtonWithIcon",
+                    "Name": "Statistics_Button_TempOut",
+                    "X": 5,
+                    "Y": 201,
+                    "Width": 60,
+                    "Height": 60,
+                    "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_fill_pressed.png",
+                    "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_fill_active.png",
+                    "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+                    "IconReleased": "__generated\\icon_theme_images_content_stacked_bar_chart_50_50_E8F6FB.svg.png",
+                    "IconX": 5,
+                    "IconY": 5,
+                    "IconHeight": 50,
+                    "IconWidth": 50,
+                    "Preset": "alternate_theme\\presets\\button\\icon\\round\\tiny_fill_active.json"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "Type": "DigitalClock",
+            "Name": "digitalClock1",
+            "X": 9,
+            "Y": 292,
+            "Width": 98,
+            "Height": 28,
+            "Visible": false,
+            "TextColor": {
+              "Green": 234,
+              "Blue": 255
+            },
+            "TextId": "__SingleUse_UQLB",
+            "DisplaySeconds": true,
+            "DisplayLeadingZeroForHourIndicator": true,
+            "InitialHour": 10,
+            "InitialMinute": 10
+          },
+          {
+            "Type": "Box",
+            "Name": "Header",
+            "Width": 240,
+            "Height": 52,
+            "Color": {
+              "Red": 56,
+              "Green": 89,
+              "Blue": 255
+            },
+            "Alpha": 17
+          },
+          {
+            "Type": "Box",
+            "Name": "Footer",
+            "X": -1,
+            "Y": 292,
+            "Width": 241,
+            "Height": 32,
+            "Color": {
+              "Red": 56,
+              "Green": 89,
+              "Blue": 255
+            },
+            "Alpha": 17
+          },
+          {
+            "Type": "Container",
+            "Name": "Alert_cover",
+            "Width": 250,
+            "Height": 320,
+            "Visible": false,
+            "Components": [
+              {
+                "Type": "Box",
+                "Name": "Backround_1",
+                "Width": 240,
+                "Height": 320,
+                "Alpha": 150
+              },
+              {
+                "Type": "Box",
+                "Name": "Error_msg_backround",
+                "X": 14,
+                "Y": 164,
+                "Width": 215,
+                "Height": 63,
+                "Alpha": 150
+              },
+              {
+                "Type": "Image",
+                "Name": "Error",
+                "X": 84,
+                "Y": 70,
+                "Width": 70,
+                "Height": 70,
+                "RelativeFilename": "__generated\\icon_theme_images_alert_error_70_70_FF0000.svg.png"
+              },
+              {
+                "Type": "TextArea",
+                "Name": "Error_code",
+                "X": 47,
+                "Y": 40,
+                "Width": 170,
+                "Height": 24,
+                "TextId": "__SingleUse_HAUQ",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_MEFF",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "Snooze_button",
+                "X": 71,
+                "Y": 253,
+                "Width": 100,
+                "Height": 36,
+                "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_36_tiny_round_pressed.png",
+                "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_36_tiny_round_action.png",
+                "TextId": "__SingleUse_TTSL",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0",
+                "Preset": "alternate_theme\\presets\\button\\regular\\height_36\\tiny_round_action.json"
+              },
+              {
+                "Type": "TextArea",
+                "Name": "Error_text",
+                "X": 21,
+                "Y": 169,
+                "Width": 203,
+                "Height": 48,
+                "TextId": "__SingleUse_595W",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_VN7N",
+                  "UseBuffer": true,
+                  "BufferSize": 50
+                }
+              }
+            ]
+          },
+          {
+            "Type": "Box",
+            "Name": "Brightness_level",
+            "Y": 4,
+            "Width": 240,
+            "Height": 320,
+            "Alpha": 0
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "DropDownFunc",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Menu_Button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "MenuDropdown_1"
+            }
+          },
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 1
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "function1"
+            }
+          },
+          {
+            "InteractionName": "StatisticsNav_Ambient",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Statistics_Button_Ambient"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Statistics_Ambient_1"
+            }
+          },
+          {
+            "InteractionName": "StatisticsNav_Humidity",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Statistics_Button_Humidity"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Statistics_Humidity"
+            }
+          },
+          {
+            "InteractionName": "StatisticsNav_TempIn",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Statistics_Button_TempIn"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Statistics_Temperature_Inside"
+            }
+          },
+          {
+            "InteractionName": "StatisticsNav_presure",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Statistics_Button_Presure"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Statistics_Presure"
+            }
+          },
+          {
+            "InteractionName": "StatisticsNav_Carbon",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Statistics_Button_Carbon"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Statistics_Gas_sensor"
+            }
+          },
+          {
+            "InteractionName": "StatisticNav_TempOut",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Statistics_Button_TempOut"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Statistics_Temperature_Outside"
+            }
+          },
+          {
+            "InteractionName": "Alert_cover_hide",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Snooze_button"
+            },
+            "Action": {
+              "Type": "ActionHide",
+              "ActionComponent": "Alert_cover"
+            }
+          },
+          {
+            "InteractionName": "Snooze_btn_pressed",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Snooze_button"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "Snooze_btn_pressed"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "MenuDropdown_1",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 240,
+            "Height": 320,
+            "Color": {
+              "Red": 43,
+              "Green": 43,
+              "Blue": 43
+            }
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "Menu_Button",
+            "X": 197,
+            "Y": 7,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_normal.png",
+            "TextId": "__SingleUse_HN5H",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_outline_normal.json"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 20,
+            "Y": 15,
+            "Width": 160,
+            "Height": 24,
+            "TextId": "__SingleUse_MUN4",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 128,
+              "Green": 128,
+              "Blue": 128
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "ScrollList",
+            "Name": "scrollList1",
+            "Y": 51,
+            "Width": 245,
+            "Height": 295,
+            "ItemTemplateName": "SettingsDropDown",
+            "NumberofItems": 10,
+            "Easing": "Linear",
+            "EasingOption": "Out",
+            "SwipeAcceleration": 1.0,
+            "DragAcceleration": 1.0,
+            "OverShootPercentage": 75
+          },
+          {
+            "Type": "Box",
+            "Name": "Brightness_level",
+            "Width": 240,
+            "Height": 320,
+            "Alpha": 0
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Menu_button",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Menu_Button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "DefaultView"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "About",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 240,
+            "Height": 320,
+            "Color": {
+              "Red": 43,
+              "Green": 43,
+              "Blue": 43
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "WeatherStation",
+            "X": 20,
+            "Y": 15,
+            "Width": 160,
+            "Height": 24,
+            "TextId": "__SingleUse_0VIV",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 128,
+              "Green": 128,
+              "Blue": 128
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "Menu_Button",
+            "X": 197,
+            "Y": 7,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_normal.png",
+            "TextId": "__SingleUse_8Q8P",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_outline_normal.json"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 24,
+            "Y": 75,
+            "Width": 184,
+            "Height": 216,
+            "TextId": "__SingleUse_NJRH",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "Box",
+            "Name": "Brightness_level",
+            "Width": 240,
+            "Height": 320,
+            "Alpha": 0
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Menu_Button",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Menu_Button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "MenuDropdown_1"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Time_Settings",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 240,
+            "Height": 320,
+            "Color": {
+              "Red": 43,
+              "Green": 43,
+              "Blue": 43
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 20,
+            "Y": 15,
+            "Width": 160,
+            "Height": 24,
+            "TextId": "__SingleUse_IAKU",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 128,
+              "Green": 128,
+              "Blue": 128
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "Menu_Button",
+            "X": 197,
+            "Y": 7,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_normal.png",
+            "TextId": "__SingleUse_JSVE",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_outline_normal.json"
+          },
+          {
+            "Type": "DigitalClock",
+            "Name": "digitalClock1",
+            "X": 20,
+            "Y": 106,
+            "Width": 197,
+            "Height": 43,
+            "TextId": "__SingleUse_8O7C",
+            "DisplaySeconds": true,
+            "DisplayLeadingZeroForHourIndicator": true,
+            "InitialHour": 12,
+            "InitialMinute": 30
+          },
+          {
+            "Type": "DigitalClock",
+            "Name": "digitalClock_RealTime",
+            "X": 20,
+            "Y": 53,
+            "Width": 197,
+            "Height": 43,
+            "TextColor": {
+              "Red": 41,
+              "Green": 115,
+              "Blue": 120
+            },
+            "TextId": "__SingleUse_4AD3",
+            "DisplaySeconds": true,
+            "DisplayLeadingZeroForHourIndicator": true,
+            "InitialHour": 12,
+            "InitialMinute": 30
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "Submit_Clock",
+            "X": 65,
+            "Y": 261,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_rounded_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_rounded_disabled.png",
+            "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconX": 30,
+            "IconHeight": 50,
+            "IconWidth": 50,
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\tiny_rounded_disabled.json"
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "Hours_Val_Up",
+            "X": 29,
+            "Y": 160,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_active.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_disabled.png",
+            "IconPressed": "__generated\\icon_theme_images_hardware_keyboard_arrow_up_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_hardware_keyboard_arrow_up_50_50_E8F6FB.svg.png",
+            "IconX": -7,
+            "IconY": -7,
+            "IconHeight": 50,
+            "IconWidth": 50
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "Minutes_Val_Up",
+            "X": 107,
+            "Y": 160,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_active.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_disabled.png",
+            "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_hardware_keyboard_arrow_up_50_50_E8F6FB.svg.png",
+            "IconX": -7,
+            "IconY": -7,
+            "IconHeight": 50,
+            "IconWidth": 50
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "Hour_Val_Down",
+            "X": 29,
+            "Y": 210,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_active.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_disabled.png",
+            "IconPressed": "__generated\\icon_theme_images_hardware_keyboard_arrow_down_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_hardware_keyboard_arrow_down_50_50_E8F6FB.svg.png",
+            "IconX": -7,
+            "IconY": -7,
+            "IconHeight": 50,
+            "IconWidth": 50
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "Minutes_Val_Down",
+            "X": 107,
+            "Y": 210,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_active.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_disabled.png",
+            "IconPressed": "__generated\\icon_theme_images_hardware_keyboard_arrow_down_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_hardware_keyboard_arrow_down_50_50_E8F6FB.svg.png",
+            "IconX": -7,
+            "IconY": -7,
+            "IconHeight": 50,
+            "IconWidth": 50
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "Seconds_Val_Up",
+            "X": 175,
+            "Y": 160,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_active.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_disabled.png",
+            "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_hardware_keyboard_arrow_up_50_50_E8F6FB.svg.png",
+            "IconX": -7,
+            "IconY": -7,
+            "IconHeight": 50,
+            "IconWidth": 50
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "Seconds_Val_Down",
+            "X": 175,
+            "Y": 210,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_active.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_disabled.png",
+            "IconPressed": "__generated\\icon_theme_images_hardware_keyboard_arrow_down_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_hardware_keyboard_arrow_down_50_50_E8F6FB.svg.png",
+            "IconX": -7,
+            "IconY": -7,
+            "IconHeight": 50,
+            "IconWidth": 50
+          },
+          {
+            "Type": "Box",
+            "Name": "Brightness_level",
+            "Width": 240,
+            "Height": 320,
+            "Alpha": 0
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Menu_Button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "MenuDropdown_1"
+            }
+          },
+          {
+            "InteractionName": "Hours_Up",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Hours_Val_Up"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "Hours_Up"
+            }
+          },
+          {
+            "InteractionName": "Hours_Down",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Hour_Val_Down"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "Hours_Down"
+            }
+          },
+          {
+            "InteractionName": "Minutes_Up",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Minutes_Val_Up"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "Minutes_Up"
+            }
+          },
+          {
+            "InteractionName": "Minutes_Down",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Minutes_Val_Down"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "Minutes_Down"
+            }
+          },
+          {
+            "InteractionName": "Seconds_Up",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Seconds_Val_Up"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "Seconds_Up"
+            }
+          },
+          {
+            "InteractionName": "Seconds_Down",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Seconds_Val_Down"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "Seconds_Down"
+            }
+          },
+          {
+            "InteractionName": "Set_Current_Time",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Submit_Clock"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "Set_Current_Time"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Date_Settings",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 240,
+            "Height": 320,
+            "Color": {
+              "Red": 43,
+              "Green": 43,
+              "Blue": 43
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 20,
+            "Y": 15,
+            "Width": 160,
+            "Height": 24,
+            "TextId": "__SingleUse_DF27",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 128,
+              "Green": 128,
+              "Blue": 128
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "Menu_Button",
+            "X": 197,
+            "Y": 7,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_normal.png",
+            "TextId": "__SingleUse_LIZW",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_outline_normal.json"
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "Submit_Date",
+            "X": 65,
+            "Y": 260,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_rounded_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_rounded_disabled.png",
+            "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconX": 30,
+            "IconHeight": 50,
+            "IconWidth": 50,
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\tiny_rounded_disabled.json"
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "Day_Val_Up",
+            "X": 29,
+            "Y": 160,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_active.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_disabled.png",
+            "IconPressed": "__generated\\icon_theme_images_hardware_keyboard_arrow_up_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_hardware_keyboard_arrow_up_50_50_E8F6FB.svg.png",
+            "IconX": -7,
+            "IconY": -7,
+            "IconHeight": 50,
+            "IconWidth": 50
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "Month_Val_Up",
+            "X": 107,
+            "Y": 160,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_active.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_disabled.png",
+            "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_hardware_keyboard_arrow_up_50_50_E8F6FB.svg.png",
+            "IconX": -7,
+            "IconY": -7,
+            "IconHeight": 50,
+            "IconWidth": 50
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "Day_Val_Down",
+            "X": 29,
+            "Y": 210,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_active.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_disabled.png",
+            "IconPressed": "__generated\\icon_theme_images_hardware_keyboard_arrow_down_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_hardware_keyboard_arrow_down_50_50_E8F6FB.svg.png",
+            "IconX": -7,
+            "IconY": -7,
+            "IconHeight": 50,
+            "IconWidth": 50
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "Month_Val_Down",
+            "X": 107,
+            "Y": 210,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_active.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_disabled.png",
+            "IconPressed": "__generated\\icon_theme_images_hardware_keyboard_arrow_down_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_hardware_keyboard_arrow_down_50_50_E8F6FB.svg.png",
+            "IconX": -7,
+            "IconY": -7,
+            "IconHeight": 50,
+            "IconWidth": 50
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "Year_Val_Up",
+            "X": 175,
+            "Y": 160,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_active.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_disabled.png",
+            "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_hardware_keyboard_arrow_up_50_50_E8F6FB.svg.png",
+            "IconX": -7,
+            "IconY": -7,
+            "IconHeight": 50,
+            "IconWidth": 50
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "Year_Val_Down",
+            "X": 175,
+            "Y": 210,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_active.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_fill_disabled.png",
+            "IconPressed": "__generated\\icon_theme_images_hardware_keyboard_arrow_down_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_hardware_keyboard_arrow_down_50_50_E8F6FB.svg.png",
+            "IconX": -7,
+            "IconY": -7,
+            "IconHeight": 50,
+            "IconWidth": 50
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Hour_Text",
+            "X": 37,
+            "Y": 86,
+            "Width": 15,
+            "Height": 24,
+            "TextId": "__SingleUse_4FMU",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Days_Val",
+            "X": 29,
+            "Y": 126,
+            "Width": 47,
+            "Height": 24,
+            "TextId": "__SingleUse_XY79",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_26BI",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "current_Days_Val",
+            "X": 29,
+            "Y": 54,
+            "Width": 47,
+            "Height": 24,
+            "TextId": "__SingleUse_IAAU",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 41,
+              "Green": 115,
+              "Blue": 120
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_PM6O",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Months_Text",
+            "X": 112,
+            "Y": 86,
+            "Width": 17,
+            "Height": 24,
+            "TextId": "__SingleUse_NJNH",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Months_Val",
+            "X": 112,
+            "Y": 126,
+            "Width": 34,
+            "Height": 24,
+            "TextId": "__SingleUse_K18O",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_GAM9",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "current_Months_Val",
+            "X": 112,
+            "Y": 54,
+            "Width": 34,
+            "Height": 24,
+            "TextId": "__SingleUse_LUJQ",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 41,
+              "Green": 115,
+              "Blue": 120
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_YWJI",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "YearText",
+            "X": 186,
+            "Y": 86,
+            "Width": 12,
+            "Height": 24,
+            "TextId": "__SingleUse_3JAI",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Year_Val",
+            "X": 162,
+            "Y": 126,
+            "Width": 73,
+            "Height": 24,
+            "TextId": "__SingleUse_UP7D",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_55BJ",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "current_Year_Val",
+            "X": 162,
+            "Y": 54,
+            "Width": 73,
+            "Height": 24,
+            "TextId": "__SingleUse_7YMK",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 41,
+              "Green": 115,
+              "Blue": 120
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_ULJ6",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "Brightness_level",
+            "Width": 240,
+            "Height": 320,
+            "Alpha": 0
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Menu_Button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "MenuDropdown_1"
+            }
+          },
+          {
+            "InteractionName": "Days_Val_Up",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Day_Val_Up"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "Days_Val_Up"
+            }
+          },
+          {
+            "InteractionName": "Days_Val_Down",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Day_Val_Down"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "Days_Val_Down"
+            }
+          },
+          {
+            "InteractionName": "Months_Val_Up",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Month_Val_Up"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "Months_Val_Up"
+            }
+          },
+          {
+            "InteractionName": "Months_Val_Down",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Month_Val_Down"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "Months_Val_Down"
+            }
+          },
+          {
+            "InteractionName": "Years_Val_Up",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Year_Val_Up"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "Years_Val_Up"
+            }
+          },
+          {
+            "InteractionName": "Years_Val_Down",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Year_Val_Down"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "Years_Val_Down"
+            }
+          },
+          {
+            "InteractionName": "Update_Date",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Submit_Date"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "Update_Date"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Statistics_Temperature_Inside",
+        "CanvasBufferSize": 3600,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "backround",
+            "Width": 240,
+            "Height": 320,
+            "Color": {
+              "Red": 43,
+              "Green": 43,
+              "Blue": 43
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "Header_backround",
+            "Width": 240,
+            "Height": 52,
+            "Color": {
+              "Red": 56,
+              "Green": 89,
+              "Blue": 255
+            },
+            "Alpha": 17
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "Menu_Button",
+            "X": 197,
+            "Y": 7,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_normal.png",
+            "TextId": "__SingleUse_UUWM",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_outline_normal.json"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Header_Text",
+            "X": 27,
+            "Y": 13,
+            "Width": 160,
+            "Height": 24,
+            "TextId": "__SingleUse_26T7",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 153,
+              "Green": 153,
+              "Blue": 153
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Statistics_text",
+            "X": 22,
+            "Y": 63,
+            "Width": 196,
+            "Height": 18,
+            "TextId": "__SingleUse_0BZW",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 247,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Temperature_sensor_text",
+            "X": 16,
+            "Y": 105,
+            "Width": 214,
+            "Height": 18,
+            "TextId": "__SingleUse_YSM9",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 247,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Average_Day_val",
+            "X": 6,
+            "Y": 236,
+            "Width": 211,
+            "Height": 18,
+            "TextId": "__SingleUse_60QN",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 247,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Average_Week_val",
+            "X": 6,
+            "Y": 260,
+            "Width": 223,
+            "Height": 18,
+            "TextId": "__SingleUse_T8W1",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 247,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Average_Month_val",
+            "X": 6,
+            "Y": 284,
+            "Width": 234,
+            "Height": 18,
+            "TextId": "__SingleUse_7YEN",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 247,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "DynamicGraph",
+            "Name": "Graphic_Temperature_Inside",
+            "X": 23,
+            "Y": 137,
+            "Width": 200,
+            "Height": 76,
+            "DataSeed": 1240533661,
+            "NumberOfValues": 100,
+            "MaxY": 100.0,
+            "Precision": "1",
+            "LastIndex": 99,
+            "XAxisScale": 1.0,
+            "InsertRandomValues": true,
+            "GraphType": "GraphWrapClear",
+            "GraphDrawers": [
+              {
+                "Type": "LineDrawer",
+                "LineWidth": 2,
+                "FileNameImage": "",
+                "Color": {
+                  "Red": 20,
+                  "Green": 151,
+                  "Blue": 197
+                }
+              }
+            ]
+          },
+          {
+            "Type": "Box",
+            "Name": "Brightness_level",
+            "Width": 240,
+            "Height": 320,
+            "Alpha": 0
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "MenuDropdown",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Menu_Button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "MenuDropdown_1"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Statistics_Temperature_Outside",
+        "CanvasBufferSize": 3600,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "backround",
+            "Width": 240,
+            "Height": 320,
+            "Color": {
+              "Red": 43,
+              "Green": 43,
+              "Blue": 43
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "Header_backround",
+            "Width": 240,
+            "Height": 52,
+            "Color": {
+              "Red": 56,
+              "Green": 89,
+              "Blue": 255
+            },
+            "Alpha": 17
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "Menu_Button",
+            "X": 197,
+            "Y": 7,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_normal.png",
+            "TextId": "__SingleUse_PXJX",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_outline_normal.json"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Header_Text",
+            "X": 27,
+            "Y": 13,
+            "Width": 160,
+            "Height": 24,
+            "TextId": "__SingleUse_PIO1",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 153,
+              "Green": 153,
+              "Blue": 153
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Statistics_text",
+            "X": 22,
+            "Y": 63,
+            "Width": 196,
+            "Height": 18,
+            "TextId": "__SingleUse_WVE6",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 247,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Temperature_sensor_outside_text",
+            "X": 9,
+            "Y": 105,
+            "Width": 223,
+            "Height": 18,
+            "TextId": "__SingleUse_XZWT",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 247,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Average_Day_val",
+            "X": 6,
+            "Y": 236,
+            "Width": 211,
+            "Height": 18,
+            "TextId": "__SingleUse_9E53",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 247,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Average_Week_val",
+            "X": 6,
+            "Y": 260,
+            "Width": 223,
+            "Height": 18,
+            "TextId": "__SingleUse_GLAO",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 247,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Average_Month_val",
+            "X": 6,
+            "Y": 284,
+            "Width": 234,
+            "Height": 18,
+            "TextId": "__SingleUse_8J5E",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 247,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "DynamicGraph",
+            "Name": "Graphic_Temperature_Outside",
+            "X": 23,
+            "Y": 137,
+            "Width": 200,
+            "Height": 76,
+            "DataSeed": 1240533661,
+            "NumberOfValues": 100,
+            "MaxY": 100.0,
+            "Precision": "1",
+            "LastIndex": 99,
+            "XAxisScale": 1.0,
+            "InsertRandomValues": true,
+            "GraphType": "GraphWrapClear",
+            "GraphDrawers": [
+              {
+                "Type": "LineDrawer",
+                "LineWidth": 2,
+                "FileNameImage": "",
+                "Color": {
+                  "Red": 20,
+                  "Green": 151,
+                  "Blue": 197
+                }
+              }
+            ]
+          },
+          {
+            "Type": "Box",
+            "Name": "Brightness_level",
+            "Width": 240,
+            "Height": 320,
+            "Alpha": 0
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "MenuDropdown",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Menu_Button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "MenuDropdown_1"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Statistics_Humidity",
+        "CanvasBufferSize": 3600,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "backround",
+            "Width": 240,
+            "Height": 320,
+            "Color": {
+              "Red": 43,
+              "Green": 43,
+              "Blue": 43
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "Header_backround",
+            "Width": 240,
+            "Height": 52,
+            "Color": {
+              "Red": 56,
+              "Green": 89,
+              "Blue": 255
+            },
+            "Alpha": 17
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "Menu_Button",
+            "X": 197,
+            "Y": 7,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_normal.png",
+            "TextId": "__SingleUse_OL7Y",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_outline_normal.json"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Header_Text",
+            "X": 27,
+            "Y": 13,
+            "Width": 160,
+            "Height": 24,
+            "TextId": "__SingleUse_XEYY",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 153,
+              "Green": 153,
+              "Blue": 153
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Statistics_text",
+            "X": 22,
+            "Y": 63,
+            "Width": 196,
+            "Height": 18,
+            "TextId": "__SingleUse_4KX0",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 247,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Humidity_sensor_text",
+            "X": 45,
+            "Y": 104,
+            "Width": 123,
+            "Height": 18,
+            "TextId": "__SingleUse_DJOK",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 247,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Average_Day_val",
+            "X": 6,
+            "Y": 236,
+            "Width": 211,
+            "Height": 18,
+            "TextId": "__SingleUse_2IJD",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 247,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Average_Week_val",
+            "X": 6,
+            "Y": 260,
+            "Width": 223,
+            "Height": 18,
+            "TextId": "__SingleUse_GEGK",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 247,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Average_Month_val",
+            "X": 6,
+            "Y": 284,
+            "Width": 234,
+            "Height": 18,
+            "TextId": "__SingleUse_1BWB",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 247,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "DynamicGraph",
+            "Name": "Graphic_Humidity_Inside",
+            "X": 23,
+            "Y": 137,
+            "Width": 200,
+            "Height": 76,
+            "DataSeed": 1240533661,
+            "NumberOfValues": 100,
+            "MaxY": 100.0,
+            "Precision": "1",
+            "LastIndex": 99,
+            "XAxisScale": 1.0,
+            "InsertRandomValues": true,
+            "GraphType": "GraphWrapClear",
+            "GraphDrawers": [
+              {
+                "Type": "LineDrawer",
+                "LineWidth": 2,
+                "FileNameImage": "",
+                "Color": {
+                  "Red": 20,
+                  "Green": 151,
+                  "Blue": 197
+                }
+              }
+            ]
+          },
+          {
+            "Type": "Box",
+            "Name": "Brightness_level",
+            "Width": 240,
+            "Height": 320,
+            "Alpha": 0
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "MenuDropdown",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Menu_Button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "MenuDropdown_1"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Statistics_Presure",
+        "CanvasBufferSize": 3600,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "backround",
+            "Width": 240,
+            "Height": 320,
+            "Color": {
+              "Red": 43,
+              "Green": 43,
+              "Blue": 43
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "Header_backround",
+            "Width": 240,
+            "Height": 52,
+            "Color": {
+              "Red": 56,
+              "Green": 89,
+              "Blue": 255
+            },
+            "Alpha": 17
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "Menu_Button",
+            "X": 197,
+            "Y": 7,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_normal.png",
+            "TextId": "__SingleUse_Z0SG",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_outline_normal.json"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Header_Text",
+            "X": 27,
+            "Y": 13,
+            "Width": 160,
+            "Height": 24,
+            "TextId": "__SingleUse_NI4K",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 153,
+              "Green": 153,
+              "Blue": 153
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Statistics_text",
+            "X": 22,
+            "Y": 63,
+            "Width": 196,
+            "Height": 18,
+            "TextId": "__SingleUse_YQA7",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 247,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Presure_sensor_text",
+            "X": 45,
+            "Y": 104,
+            "Width": 112,
+            "Height": 18,
+            "TextId": "__SingleUse_DKR6",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 247,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Average_Day_val",
+            "X": 6,
+            "Y": 236,
+            "Width": 211,
+            "Height": 18,
+            "TextId": "__SingleUse_FE0W",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 247,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Average_Week_val",
+            "X": 6,
+            "Y": 260,
+            "Width": 223,
+            "Height": 18,
+            "TextId": "__SingleUse_TIAZ",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 247,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Average_Month_val",
+            "X": 6,
+            "Y": 284,
+            "Width": 234,
+            "Height": 18,
+            "TextId": "__SingleUse_PW53",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 247,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "DynamicGraph",
+            "Name": "Graphic_Presure_Inside",
+            "X": 23,
+            "Y": 137,
+            "Width": 200,
+            "Height": 76,
+            "DataSeed": 1240533661,
+            "NumberOfValues": 100,
+            "MaxY": 100.0,
+            "Precision": "1",
+            "LastIndex": 99,
+            "XAxisScale": 1.0,
+            "InsertRandomValues": true,
+            "GraphType": "GraphWrapClear",
+            "GraphDrawers": [
+              {
+                "Type": "LineDrawer",
+                "LineWidth": 2,
+                "FileNameImage": "",
+                "Color": {
+                  "Red": 20,
+                  "Green": 151,
+                  "Blue": 197
+                }
+              }
+            ]
+          },
+          {
+            "Type": "Box",
+            "Name": "Brightness_level",
+            "Width": 240,
+            "Height": 320,
+            "Alpha": 0
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "MenuDropdown",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Menu_Button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "MenuDropdown_1"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Statistics_Ambient_1",
+        "CanvasBufferSize": 3600,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "backround",
+            "Width": 240,
+            "Height": 320,
+            "Color": {
+              "Red": 43,
+              "Green": 43,
+              "Blue": 43
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "Header_backround",
+            "Width": 240,
+            "Height": 52,
+            "Color": {
+              "Red": 56,
+              "Green": 89,
+              "Blue": 255
+            },
+            "Alpha": 17
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "Menu_Button",
+            "X": 197,
+            "Y": 7,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_normal.png",
+            "TextId": "__SingleUse_IBFV",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_outline_normal.json"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Header_Text",
+            "X": 27,
+            "Y": 13,
+            "Width": 160,
+            "Height": 24,
+            "TextId": "__SingleUse_XG0O",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 153,
+              "Green": 153,
+              "Blue": 153
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Statistics_text",
+            "X": 22,
+            "Y": 63,
+            "Width": 196,
+            "Height": 18,
+            "TextId": "__SingleUse_BRAW",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 247,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Ambient_sensor_text",
+            "X": 58,
+            "Y": 104,
+            "Width": 118,
+            "Height": 18,
+            "TextId": "__SingleUse_VA8A",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 247,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Average_Day_val",
+            "X": 6,
+            "Y": 236,
+            "Width": 211,
+            "Height": 18,
+            "TextId": "__SingleUse_FR08",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 247,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Average_Week_val",
+            "X": 6,
+            "Y": 260,
+            "Width": 223,
+            "Height": 18,
+            "TextId": "__SingleUse_7QC5",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 247,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Average_Month_val",
+            "X": 6,
+            "Y": 284,
+            "Width": 234,
+            "Height": 18,
+            "TextId": "__SingleUse_B4VT",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 247,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "DynamicGraph",
+            "Name": "Graphic_Ambient_Inside",
+            "X": 23,
+            "Y": 137,
+            "Width": 200,
+            "Height": 76,
+            "DataSeed": 1240533661,
+            "NumberOfValues": 100,
+            "MaxY": 100.0,
+            "Precision": "1",
+            "LastIndex": 99,
+            "XAxisScale": 1.0,
+            "InsertRandomValues": true,
+            "GraphType": "GraphWrapClear",
+            "GraphDrawers": [
+              {
+                "Type": "LineDrawer",
+                "LineWidth": 2,
+                "FileNameImage": "",
+                "Color": {
+                  "Red": 20,
+                  "Green": 151,
+                  "Blue": 197
+                }
+              }
+            ]
+          },
+          {
+            "Type": "Box",
+            "Name": "Brightness_level",
+            "Width": 240,
+            "Height": 320,
+            "Alpha": 0
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "MenuDropdown",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Menu_Button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "MenuDropdown_1"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Statistics_Gas_sensor",
+        "CanvasBufferSize": 3600,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "backround",
+            "Width": 240,
+            "Height": 320,
+            "Color": {
+              "Red": 43,
+              "Green": 43,
+              "Blue": 43
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "Header_backround",
+            "Width": 240,
+            "Height": 52,
+            "Color": {
+              "Red": 56,
+              "Green": 89,
+              "Blue": 255
+            },
+            "Alpha": 17
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "Menu_Button",
+            "X": 197,
+            "Y": 7,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_normal.png",
+            "TextId": "__SingleUse_5RVK",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_outline_normal.json"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Header_Text",
+            "X": 27,
+            "Y": 13,
+            "Width": 160,
+            "Height": 24,
+            "TextId": "__SingleUse_WG68",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 153,
+              "Green": 153,
+              "Blue": 153
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Statistics_text",
+            "X": 22,
+            "Y": 63,
+            "Width": 196,
+            "Height": 18,
+            "TextId": "__SingleUse_EX06",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 247,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Gas_sensor_text",
+            "X": 58,
+            "Y": 104,
+            "Width": 84,
+            "Height": 18,
+            "TextId": "__SingleUse_AB8V",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 247,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Average_Day_val",
+            "X": 6,
+            "Y": 236,
+            "Width": 211,
+            "Height": 18,
+            "TextId": "__SingleUse_ENXP",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 247,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Average_Week_val",
+            "X": 6,
+            "Y": 260,
+            "Width": 223,
+            "Height": 18,
+            "TextId": "__SingleUse_ADPM",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 247,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Average_Month_val",
+            "X": 6,
+            "Y": 284,
+            "Width": 234,
+            "Height": 18,
+            "TextId": "__SingleUse_16WR",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 247,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "DynamicGraph",
+            "Name": "Graphic_Gas_sensor",
+            "X": 23,
+            "Y": 137,
+            "Width": 200,
+            "Height": 76,
+            "DataSeed": 1240533661,
+            "NumberOfValues": 100,
+            "MaxY": 100.0,
+            "Precision": "1",
+            "LastIndex": 99,
+            "XAxisScale": 1.0,
+            "InsertRandomValues": true,
+            "GraphType": "GraphWrapClear",
+            "GraphDrawers": [
+              {
+                "Type": "LineDrawer",
+                "LineWidth": 2,
+                "FileNameImage": "",
+                "Color": {
+                  "Red": 20,
+                  "Green": 151,
+                  "Blue": 197
+                }
+              }
+            ]
+          },
+          {
+            "Type": "Box",
+            "Name": "Brightness_level",
+            "Width": 240,
+            "Height": 320,
+            "Alpha": 0
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "MenuDropdown",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Menu_Button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "MenuDropdown_1"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Alarm_Settings",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "backround",
+            "Width": 240,
+            "Height": 320,
+            "Color": {
+              "Red": 43,
+              "Green": 43,
+              "Blue": 43
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "Footer",
+            "X": -1,
+            "Y": 292,
+            "Width": 241,
+            "Height": 32,
+            "Color": {
+              "Red": 56,
+              "Green": 89,
+              "Blue": 255
+            },
+            "Alpha": 17
+          },
+          {
+            "Type": "Box",
+            "Name": "Header_backround",
+            "Width": 240,
+            "Height": 52,
+            "Color": {
+              "Red": 56,
+              "Green": 89,
+              "Blue": 255
+            },
+            "Alpha": 17
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "Menu_Button",
+            "X": 197,
+            "Y": 7,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_normal.png",
+            "TextId": "__SingleUse_BMQY",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_outline_normal.json"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Header_Text",
+            "X": 27,
+            "Y": 13,
+            "Width": 160,
+            "Height": 24,
+            "TextId": "__SingleUse_XGA9",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 153,
+              "Green": 153,
+              "Blue": 153
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "System_Allarm_Text",
+            "X": 29,
+            "Y": 65,
+            "Width": 186,
+            "Height": 24,
+            "TextId": "__SingleUse_CAKJ",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 247,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Alarm_confirmation_text",
+            "X": 16,
+            "Y": 212,
+            "Width": 209,
+            "Height": 72,
+            "TextId": "__SingleUse_J7M8",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "Box",
+            "Name": "Brightness_level",
+            "X": -1,
+            "Width": 240,
+            "Height": 320,
+            "Alpha": 0
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "Permission_ON",
+            "X": 127,
+            "Y": 100,
+            "Width": 60,
+            "Height": 60,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_outline_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_outline_active.png",
+            "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconX": 5,
+            "IconY": 5,
+            "IconHeight": 50,
+            "IconWidth": 50,
+            "Preset": "alternate_theme\\presets\\button\\icon\\round\\tiny_outline_active.json"
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "Permission_OFF",
+            "X": 47,
+            "Y": 100,
+            "Width": 60,
+            "Height": 60,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_outline_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_outline_active.png",
+            "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_content_clear_50_50_E8F6FB.svg.png",
+            "IconX": 5,
+            "IconY": 5,
+            "IconHeight": 50,
+            "IconWidth": 50,
+            "Preset": "alternate_theme\\presets\\button\\icon\\round\\tiny_outline_active.json"
+          },
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "X": 67,
+            "Y": 178,
+            "Width": 90,
+            "Height": 25,
+            "Color": {
+              "Green": 247,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 97,
+            "Y": 179,
+            "Width": 41,
+            "Height": 24,
+            "TextId": "__SingleUse_X4VI",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_1307",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "MenuNav",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Menu_Button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "MenuDropdown_1"
+            }
+          },
+          {
+            "InteractionName": "btn_Permission_ON",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Permission_ON"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "btn_Permission_ON"
+            }
+          },
+          {
+            "InteractionName": "btn_Permission_OFF",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Permission_OFF"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "btn_Permission_OFF"
+            }
+          }
+        ]
+      }
+    ],
+    "CustomContainerDefinitions": [
+      {
+        "Name": "SettingsDropDown",
+        "X": -5,
+        "Width": 245,
+        "Height": 430,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "X": -3,
+            "Width": 248,
+            "Height": 434,
+            "Color": {
+              "Red": 43,
+              "Green": 43,
+              "Blue": 43
+            }
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "Home",
+            "X": 50,
+            "Y": 11,
+            "Width": 144,
+            "Height": 60,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_60_tiny_round_active.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_60_tiny_round_disabled.png",
+            "TextId": "__SingleUse_BWPU",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "Alarm",
+            "X": 50,
+            "Y": 93,
+            "Width": 144,
+            "Height": 60,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_60_tiny_round_active.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_60_tiny_round_disabled.png",
+            "TextId": "__SingleUse_YUNA",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "DateSettings",
+            "X": 49,
+            "Y": 266,
+            "Width": 144,
+            "Height": 60,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_60_tiny_round_active.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_60_tiny_round_disabled.png",
+            "TextId": "__SingleUse_86OG",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "TimeSettings",
+            "X": 49,
+            "Y": 185,
+            "Width": 144,
+            "Height": 60,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_60_tiny_round_active.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_60_tiny_round_disabled.png",
+            "TextId": "__SingleUse_FTBM",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "About",
+            "X": 49,
+            "Y": 353,
+            "Width": 144,
+            "Height": 60,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_60_tiny_round_active.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_60_tiny_round_disabled.png",
+            "TextId": "__SingleUse_OC5C",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "HomePageNav",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Home"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "DefaultView"
+            }
+          },
+          {
+            "InteractionName": "About",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "About"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "About"
+            }
+          },
+          {
+            "InteractionName": "ClockPageNav",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "TimeSettings"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Time_Settings"
+            }
+          },
+          {
+            "InteractionName": "DatePageNav",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "DateSettings"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Date_Settings"
+            }
+          },
+          {
+            "InteractionName": "AlarmPageNav",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Alarm"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Alarm_Settings"
+            }
+          }
+        ]
+      }
+    ],
+    "Name": "MyApplication_6",
+    "Resolution": {
+      "Width": 240,
+      "Height": 320
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "DefaultView",
+    "SelectedStartupLanguage": "GB",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 240,
+        "Height": 320
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommandOverride": "make -f ../gcc/Makefile -j8",
+    "FlashTargetCommandOverride": "make -f ../gcc/Makefile flash",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Portrait",
+    "Family": "STM32F4",
+    "SubFamily": "STM32F429/439",
+    "Toolchain": "STM32CubeIDE",
+    "Platform": "m4",
+    "ProjectFile": "../STM32F429I_DISCO_REV_E01.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [],
+    "AdditionalFeatures": [
+      "CWRVector",
+      "VectorFonts"
+    ]
+  },
+  "Version": "4.23.2",
+  "CreatedBy": "4.23.2"
+}
