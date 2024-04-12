@@ -1,5 +1,5 @@
 Application/User/generated/Statistics_Ambient_1ViewBase.o: \
- C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/gui_generated/src/statistics_ambient_1_screen/Statistics_Ambient_1ViewBase.cpp \
+ C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/generated/gui_generated/src/statistics_ambient_1_screen/Statistics_Ambient_1ViewBase.cpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/statistics_ambient_1_screen/Statistics_Ambient_1ViewBase.hpp \
  ../../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp \

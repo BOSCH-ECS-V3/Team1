@@ -23,7 +23,7 @@
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:touchgfx::Callback<MenuDropdown_1ViewBase, const touchgfx::AbstractButton&>::~Callback()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:218:8:touchgfx::Callback<MenuDropdown_1ViewBase, touchgfx::DrawableListItemsInterface*, short int, short int>::~Callback()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:79:7:touchgfx::DrawableListItems<SettingsDropDown, 2>::~DrawableListItems()	1
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/gui_generated/src/menudropdown_1_screen/MenuDropdown_1ViewBase.cpp:50:1:MenuDropdown_1ViewBase::~MenuDropdown_1ViewBase()	1
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/generated/gui_generated/src/menudropdown_1_screen/MenuDropdown_1ViewBase.cpp:55:1:MenuDropdown_1ViewBase::~MenuDropdown_1ViewBase()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:386:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = MenuDropdown_1ViewBase; T1 = const touchgfx::AbstractButton&]	2
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:396:18:bool touchgfx::Callback<dest_type, T1, void, void>::isValid() const [with dest_type = MenuDropdown_1ViewBase; T1 = const touchgfx::AbstractButton&]	3
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:250:18:void touchgfx::Callback<dest_type, T1, T2, T3>::execute(T1, T2, T3) [with dest_type = MenuDropdown_1ViewBase; T1 = touchgfx::DrawableListItemsInterface*; T2 = short int; T3 = short int]	2
@@ -33,14 +33,14 @@ C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/gui_generated/src/menudro
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:218:8:virtual touchgfx::Callback<MenuDropdown_1ViewBase, touchgfx::DrawableListItemsInterface*, short int, short int>::~Callback()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:virtual touchgfx::Callback<MenuDropdown_1ViewBase, const touchgfx::AbstractButton&>::~Callback()	1
 ../../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:virtual touchgfx::View<MenuDropdown_1Presenter>::~View()	1
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/gui_generated/src/menudropdown_1_screen/MenuDropdown_1ViewBase.cpp:50:1:virtual MenuDropdown_1ViewBase::~MenuDropdown_1ViewBase()	1
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/gui_generated/src/menudropdown_1_screen/MenuDropdown_1ViewBase.cpp:55:6:virtual void MenuDropdown_1ViewBase::setupScreen()	1
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/generated/gui_generated/src/menudropdown_1_screen/MenuDropdown_1ViewBase.cpp:55:1:virtual MenuDropdown_1ViewBase::~MenuDropdown_1ViewBase()	1
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/generated/gui_generated/src/menudropdown_1_screen/MenuDropdown_1ViewBase.cpp:60:6:virtual void MenuDropdown_1ViewBase::setupScreen()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:121:18:virtual void touchgfx::Drawable::invalidateContent() const	2
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:82:23:touchgfx::Drawable* touchgfx::DrawableListItems<TYPE, SIZE>::getDrawable(int16_t) [with TYPE = SettingsDropDown; int SIZE = 2]	1
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/gui_generated/src/menudropdown_1_screen/MenuDropdown_1ViewBase.cpp:64:6:void MenuDropdown_1ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	2
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/gui_generated/src/menudropdown_1_screen/MenuDropdown_1ViewBase.cpp:75:6:void MenuDropdown_1ViewBase::updateItemCallbackHandler(touchgfx::DrawableListItemsInterface*, int16_t, int16_t)	2
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/generated/gui_generated/src/menudropdown_1_screen/MenuDropdown_1ViewBase.cpp:69:6:void MenuDropdown_1ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	2
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/generated/gui_generated/src/menudropdown_1_screen/MenuDropdown_1ViewBase.cpp:80:6:void MenuDropdown_1ViewBase::updateItemCallbackHandler(touchgfx::DrawableListItemsInterface*, int16_t, int16_t)	2
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:343:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:233:10:void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:33:5:touchgfx::Box::Box()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:132:10:void touchgfx::ButtonWithLabel::updateTextPosition()	2
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/gui_generated/src/menudropdown_1_screen/MenuDropdown_1ViewBase.cpp:9:1:MenuDropdown_1ViewBase::MenuDropdown_1ViewBase()	1
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/generated/gui_generated/src/menudropdown_1_screen/MenuDropdown_1ViewBase.cpp:9:1:MenuDropdown_1ViewBase::MenuDropdown_1ViewBase()	1

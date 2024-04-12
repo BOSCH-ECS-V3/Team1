@@ -13,10 +13,11 @@
 #include <touchgfx/containers/SwipeContainer.hpp>
 #include <touchgfx/containers/Container.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
+#include <touchgfx/widgets/ButtonWithIcon.hpp>
 #include <touchgfx/containers/progress_indicators/CircleProgress.hpp>
 #include <touchgfx/widgets/canvas/PainterRGB565.hpp>
-#include <touchgfx/widgets/ButtonWithIcon.hpp>
 #include <touchgfx/containers/clock/DigitalClock.hpp>
+#include <touchgfx/widgets/Image.hpp>
 
 class DefaultViewViewBase : public touchgfx::View<DefaultViewPresenter>
 {
@@ -45,13 +46,11 @@ protected:
     touchgfx::Box __background;
     touchgfx::Box Backround;
     touchgfx::ButtonWithLabel Menu_Button;
-    touchgfx::TextArea Header_Text;
+    touchgfx::TextArea textArea1;
     touchgfx::SwipeContainer SwipeContainer;
     touchgfx::Container SwipeContainerHumidity;
     touchgfx::TextArea Humidity_Text;
     touchgfx::TextAreaWithOneWildcard Humidity_Val;
-    touchgfx::CircleProgress HumidityCirc_Val;
-    touchgfx::PainterRGB565 HumidityCirc_ValPainter;
     touchgfx::ButtonWithIcon Statistics_Button_Humidity;
     touchgfx::Container SwipeContainerCarbon;
     touchgfx::TextArea Carbon_Text;
@@ -60,40 +59,39 @@ protected:
     touchgfx::PainterRGB565 CarbonCirc_ValPainter;
     touchgfx::ButtonWithIcon Statistics_Button_Carbon;
     touchgfx::Container SwipeContainerPressure_1;
-    touchgfx::TextArea Presure_Text_1;
+    touchgfx::TextArea Presure_Text;
     touchgfx::TextAreaWithOneWildcard Presure_Val;
-    touchgfx::CircleProgress PresureCirc_Val;
-    touchgfx::PainterRGB565 PresureCirc_ValPainter;
     touchgfx::ButtonWithIcon Statistics_Button_Presure;
     touchgfx::Container SwipeContainerAmbient_1;
     touchgfx::ButtonWithIcon Statistics_Button_Ambient;
     touchgfx::TextArea Ambient_Text;
     touchgfx::TextAreaWithOneWildcard Ambient_Val;
-    touchgfx::CircleProgress AmbientCirc_Val;
-    touchgfx::PainterRGB565 AmbientCirc_ValPainter;
     touchgfx::Container SwipeContainerTemperature_Inside;
     touchgfx::TextAreaWithOneWildcard TempIn_Val;
     touchgfx::TextArea TempIn_Text;
-    touchgfx::CircleProgress TempInCirc_Val;
-    touchgfx::PainterRGB565 TempInCirc_ValPainter;
     touchgfx::ButtonWithIcon Statistics_Button_TempIn;
     touchgfx::Container SwipeContainerTemperature_Outside;
     touchgfx::TextAreaWithOneWildcard TempOut_Val;
     touchgfx::TextArea TempOut_Text;
-    touchgfx::CircleProgress TempOutCirc_Val;
-    touchgfx::PainterRGB565 TempOutCirc_ValPainter;
     touchgfx::ButtonWithIcon Statistics_Button_TempOut;
     touchgfx::DigitalClock digitalClock1;
     touchgfx::Box Header;
     touchgfx::Box Footer;
-    touchgfx::Box Screen_Brightness;
+    touchgfx::Container Alert_cover;
+    touchgfx::Box Backround_1;
+    touchgfx::Box Error_msg_backround;
+    touchgfx::Image Error;
+    touchgfx::TextAreaWithOneWildcard Error_code;
+    touchgfx::ButtonWithLabel Snooze_button;
+    touchgfx::TextAreaWithOneWildcard Error_text;
+    touchgfx::Box Brightness_level;
 
     /*
      * Wildcard Buffers
      */
     static const uint16_t HUMIDITY_VAL_SIZE = 10;
     touchgfx::Unicode::UnicodeChar Humidity_ValBuffer[HUMIDITY_VAL_SIZE];
-    static const uint16_t CARBON_VAL_SIZE = 2;
+    static const uint16_t CARBON_VAL_SIZE = 20;
     touchgfx::Unicode::UnicodeChar Carbon_ValBuffer[CARBON_VAL_SIZE];
     static const uint16_t PRESURE_VAL_SIZE = 10;
     touchgfx::Unicode::UnicodeChar Presure_ValBuffer[PRESURE_VAL_SIZE];
@@ -103,6 +101,8 @@ protected:
     touchgfx::Unicode::UnicodeChar TempIn_ValBuffer[TEMPIN_VAL_SIZE];
     static const uint16_t TEMPOUT_VAL_SIZE = 10;
     touchgfx::Unicode::UnicodeChar TempOut_ValBuffer[TEMPOUT_VAL_SIZE];
+    static const uint16_t ERROR_TEXT_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar Error_textBuffer[ERROR_TEXT_SIZE];
 
 private:
 

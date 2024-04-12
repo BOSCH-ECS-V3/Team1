@@ -1,5 +1,5 @@
 Application/User/generated/FrontendApplicationBase.o: \
- C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp \
+ C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/common/AbstractPartition.hpp \
@@ -63,6 +63,7 @@ Application/User/generated/FrontendApplicationBase.o: \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/CircleProgress.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
@@ -81,12 +82,11 @@ Application/User/generated/FrontendApplicationBase.o: \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD16DebugPrinter.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterColor.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp \
- ../../TouchGFX/gui/include/gui/menudropdown_screen/MenuDropdownView.hpp \
- ../../TouchGFX/generated/gui_generated/include/gui_generated/menudropdown_screen/MenuDropdownViewBase.hpp \
- ../../TouchGFX/gui/include/gui/menudropdown_screen/MenuDropdownPresenter.hpp \
+ ../../TouchGFX/gui/include/gui/menudropdown_1_screen/MenuDropdown_1View.hpp \
+ ../../TouchGFX/generated/gui_generated/include/gui_generated/menudropdown_1_screen/MenuDropdown_1ViewBase.hpp \
+ ../../TouchGFX/gui/include/gui/menudropdown_1_screen/MenuDropdown_1Presenter.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollList.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp \
@@ -122,6 +122,9 @@ Application/User/generated/FrontendApplicationBase.o: \
  ../../TouchGFX/gui/include/gui/statistics_gas_sensor_screen/Statistics_Gas_sensorView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/statistics_gas_sensor_screen/Statistics_Gas_sensorViewBase.hpp \
  ../../TouchGFX/gui/include/gui/statistics_gas_sensor_screen/Statistics_Gas_sensorPresenter.hpp \
+ ../../TouchGFX/gui/include/gui/alarm_settings_screen/Alarm_SettingsView.hpp \
+ ../../TouchGFX/generated/gui_generated/include/gui_generated/alarm_settings_screen/Alarm_SettingsViewBase.hpp \
+ ../../TouchGFX/gui/include/gui/alarm_settings_screen/Alarm_SettingsPresenter.hpp \
  ../../TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp
 ../../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp:
@@ -186,6 +189,7 @@ Application/User/generated/FrontendApplicationBase.o: \
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/CircleProgress.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
@@ -204,12 +208,11 @@ Application/User/generated/FrontendApplicationBase.o: \
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD16DebugPrinter.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterColor.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp:
-../../TouchGFX/gui/include/gui/menudropdown_screen/MenuDropdownView.hpp:
-../../TouchGFX/generated/gui_generated/include/gui_generated/menudropdown_screen/MenuDropdownViewBase.hpp:
-../../TouchGFX/gui/include/gui/menudropdown_screen/MenuDropdownPresenter.hpp:
+../../TouchGFX/gui/include/gui/menudropdown_1_screen/MenuDropdown_1View.hpp:
+../../TouchGFX/generated/gui_generated/include/gui_generated/menudropdown_1_screen/MenuDropdown_1ViewBase.hpp:
+../../TouchGFX/gui/include/gui/menudropdown_1_screen/MenuDropdown_1Presenter.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollList.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp:
@@ -245,4 +248,7 @@ Application/User/generated/FrontendApplicationBase.o: \
 ../../TouchGFX/gui/include/gui/statistics_gas_sensor_screen/Statistics_Gas_sensorView.hpp:
 ../../TouchGFX/generated/gui_generated/include/gui_generated/statistics_gas_sensor_screen/Statistics_Gas_sensorViewBase.hpp:
 ../../TouchGFX/gui/include/gui/statistics_gas_sensor_screen/Statistics_Gas_sensorPresenter.hpp:
+../../TouchGFX/gui/include/gui/alarm_settings_screen/Alarm_SettingsView.hpp:
+../../TouchGFX/generated/gui_generated/include/gui_generated/alarm_settings_screen/Alarm_SettingsViewBase.hpp:
+../../TouchGFX/gui/include/gui/alarm_settings_screen/Alarm_SettingsPresenter.hpp:
 ../../TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp:

@@ -23,8 +23,8 @@ public:
     // DefaultView
     void gotoDefaultViewScreenNoTransition();
 
-    // MenuDropdown
-    void gotoMenuDropdownScreenNoTransition();
+    // MenuDropdown_1
+    void gotoMenuDropdown_1ScreenNoTransition();
 
     // About
     void gotoAboutScreenNoTransition();
@@ -53,6 +53,9 @@ public:
     // Statistics_Gas_sensor
     void gotoStatistics_Gas_sensorScreenNoTransition();
 
+    // Alarm_Settings
+    void gotoAlarm_SettingsScreenNoTransition();
+
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
     FrontendHeap& frontendHeap;
@@ -61,8 +64,8 @@ protected:
     // DefaultView
     void gotoDefaultViewScreenNoTransitionImpl();
 
-    // MenuDropdown
-    void gotoMenuDropdownScreenNoTransitionImpl();
+    // MenuDropdown_1
+    void gotoMenuDropdown_1ScreenNoTransitionImpl();
 
     // About
     void gotoAboutScreenNoTransitionImpl();
@@ -90,6 +93,9 @@ protected:
 
     // Statistics_Gas_sensor
     void gotoStatistics_Gas_sensorScreenNoTransitionImpl();
+
+    // Alarm_Settings
+    void gotoAlarm_SettingsScreenNoTransitionImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

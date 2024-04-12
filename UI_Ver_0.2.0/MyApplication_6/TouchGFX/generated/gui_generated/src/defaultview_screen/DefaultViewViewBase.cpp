@@ -28,11 +28,11 @@ DefaultViewViewBase::DefaultViewViewBase() :
     Menu_Button.setAction(buttonCallback);
     add(Menu_Button);
 
-    Header_Text.setXY(27, 13);
-    Header_Text.setColor(touchgfx::Color::getColorFromRGB(153, 153, 153));
-    Header_Text.setLinespacing(0);
-    Header_Text.setTypedText(touchgfx::TypedText(T___SINGLEUSE_6NB9));
-    add(Header_Text);
+    textArea1.setXY(27, 13);
+    textArea1.setColor(touchgfx::Color::getColorFromRGB(153, 153, 153));
+    textArea1.setLinespacing(0);
+    textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_6NB9));
+    add(textArea1);
 
     SwipeContainer.setXY(0, 31);
     SwipeContainer.setPageIndicatorBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_SWIPECONTAINER_SMALL_OFF_NORMAL_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_SWIPECONTAINER_SMALL_ON_NORMAL_ID));
@@ -40,41 +40,25 @@ DefaultViewViewBase::DefaultViewViewBase() :
     SwipeContainer.setSwipeCutoff(50);
     SwipeContainer.setEndSwipeElasticWidth(50);
 
-    SwipeContainerHumidity.setWidth(240);
-    SwipeContainerHumidity.setHeight(261);
-    Humidity_Text.setXY(76, 31);
+    SwipeContainerHumidity.setPosition(0, 0, 240, 261);
+    Humidity_Text.setXY(76, 30);
     Humidity_Text.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
     Humidity_Text.setLinespacing(0);
-    Humidity_Text.setTypedText(touchgfx::TypedText(T___SINGLEUSE_OTTP));
+    Humidity_Text.setTypedText(touchgfx::TypedText(T___SINGLEUSE_SC46));
     SwipeContainerHumidity.add(Humidity_Text);
 
-    Humidity_Val.setXY(100, 65);
+    Humidity_Val.setXY(81, 109);
     Humidity_Val.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
     Humidity_Val.setLinespacing(0);
-    Unicode::snprintf(Humidity_ValBuffer, HUMIDITY_VAL_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_NWFU).getText());
+    Unicode::snprintf(Humidity_ValBuffer, HUMIDITY_VAL_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_TRUT).getText());
     Humidity_Val.setWildcard(Humidity_ValBuffer);
     Humidity_Val.resizeToCurrentText();
-    Humidity_Val.setTypedText(touchgfx::TypedText(T___SINGLEUSE_KIGC));
+    Humidity_Val.setTypedText(touchgfx::TypedText(T___SINGLEUSE_ED8P));
     SwipeContainerHumidity.add(Humidity_Val);
-
-    HumidityCirc_Val.setXY(65, 107);
-    HumidityCirc_Val.setProgressIndicatorPosition(0, 0, 110, 110);
-    HumidityCirc_Val.setRange(0, 100);
-    HumidityCirc_Val.setCenter(55, 55);
-    HumidityCirc_Val.setRadius(50);
-    HumidityCirc_Val.setLineWidth(10);
-    HumidityCirc_Val.setStartEndAngle(0, 360);
-    HumidityCirc_Val.setCapPrecision(180);
-    HumidityCirc_Val.setBackground(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_CIRCLEPROGRESS_BACKGROUNDS_SMALL_ID));
-    HumidityCirc_ValPainter.setColor(touchgfx::Color::getColorFromRGB(0, 240, 255));
-    HumidityCirc_Val.setPainter(HumidityCirc_ValPainter);
-    HumidityCirc_Val.setValue(60);
-    SwipeContainerHumidity.add(HumidityCirc_Val);
 
     Statistics_Button_Humidity.setXY(5, 201);
     Statistics_Button_Humidity.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_TINY_FILL_ACTIVE_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_TINY_FILL_PRESSED_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_CONTENT_STACKED_BAR_CHART_50_50_E8F6FB_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_DONE_50_50_E8F6FB_SVG_ID));
     Statistics_Button_Humidity.setIconXY(5, 5);
-    Statistics_Button_Humidity.setAction(buttonCallback);
     SwipeContainerHumidity.add(Statistics_Button_Humidity);
 
     SwipeContainer.add(SwipeContainerHumidity);
@@ -102,7 +86,7 @@ DefaultViewViewBase::DefaultViewViewBase() :
     CarbonCirc_Val.setCenter(55, 55);
     CarbonCirc_Val.setRadius(50);
     CarbonCirc_Val.setLineWidth(10);
-    CarbonCirc_Val.setStartEndAngle(0, 180);
+    CarbonCirc_Val.setStartEndAngle(-90, 210);
     CarbonCirc_Val.setCapPrecision(180);
     CarbonCirc_Val.setBackground(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_CIRCLEPROGRESS_BACKGROUNDS_SMALL_ID));
     CarbonCirc_ValPainter.setColor(touchgfx::Color::getColorFromRGB(0, 240, 255));
@@ -118,158 +102,94 @@ DefaultViewViewBase::DefaultViewViewBase() :
 
     SwipeContainer.add(SwipeContainerCarbon);
 
-    SwipeContainerPressure_1.setWidth(240);
-    SwipeContainerPressure_1.setHeight(261);
-    Presure_Text_1.setXY(44, 36);
-    Presure_Text_1.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
-    Presure_Text_1.setLinespacing(0);
-    Presure_Text_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_EXUE));
-    SwipeContainerPressure_1.add(Presure_Text_1);
+    SwipeContainerPressure_1.setPosition(0, 0, 240, 261);
+    Presure_Text.setXY(55, 30);
+    Presure_Text.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
+    Presure_Text.setLinespacing(0);
+    Presure_Text.setTypedText(touchgfx::TypedText(T___SINGLEUSE_QJ73));
+    SwipeContainerPressure_1.add(Presure_Text);
 
-    Presure_Val.setXY(91, 72);
+    Presure_Val.setXY(83, 109);
     Presure_Val.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
     Presure_Val.setLinespacing(0);
-    Unicode::snprintf(Presure_ValBuffer, PRESURE_VAL_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_QOBO).getText());
+    Unicode::snprintf(Presure_ValBuffer, PRESURE_VAL_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_JVDX).getText());
     Presure_Val.setWildcard(Presure_ValBuffer);
     Presure_Val.resizeToCurrentText();
-    Presure_Val.setTypedText(touchgfx::TypedText(T___SINGLEUSE_3F2U));
+    Presure_Val.setTypedText(touchgfx::TypedText(T___SINGLEUSE_MJ6R));
     SwipeContainerPressure_1.add(Presure_Val);
-
-    PresureCirc_Val.setXY(65, 107);
-    PresureCirc_Val.setProgressIndicatorPosition(0, 0, 110, 110);
-    PresureCirc_Val.setRange(0, 100);
-    PresureCirc_Val.setCenter(55, 55);
-    PresureCirc_Val.setRadius(50);
-    PresureCirc_Val.setLineWidth(10);
-    PresureCirc_Val.setStartEndAngle(0, 360);
-    PresureCirc_Val.setCapPrecision(180);
-    PresureCirc_Val.setBackground(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_CIRCLEPROGRESS_BACKGROUNDS_SMALL_ID));
-    PresureCirc_ValPainter.setColor(touchgfx::Color::getColorFromRGB(0, 240, 255));
-    PresureCirc_Val.setPainter(PresureCirc_ValPainter);
-    PresureCirc_Val.setValue(60);
-    SwipeContainerPressure_1.add(PresureCirc_Val);
 
     Statistics_Button_Presure.setXY(5, 201);
     Statistics_Button_Presure.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_TINY_FILL_ACTIVE_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_TINY_FILL_PRESSED_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_CONTENT_STACKED_BAR_CHART_50_50_E8F6FB_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_DONE_50_50_E8F6FB_SVG_ID));
     Statistics_Button_Presure.setIconXY(5, 5);
-    Statistics_Button_Presure.setAction(buttonCallback);
     SwipeContainerPressure_1.add(Statistics_Button_Presure);
 
     SwipeContainer.add(SwipeContainerPressure_1);
 
-    SwipeContainerAmbient_1.setWidth(240);
-    SwipeContainerAmbient_1.setHeight(261);
+    SwipeContainerAmbient_1.setPosition(0, 0, 240, 261);
     Statistics_Button_Ambient.setXY(5, 201);
     Statistics_Button_Ambient.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_TINY_FILL_ACTIVE_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_TINY_FILL_PRESSED_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_CONTENT_STACKED_BAR_CHART_50_50_E8F6FB_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_DONE_50_50_E8F6FB_SVG_ID));
     Statistics_Button_Ambient.setIconXY(5, 5);
-    Statistics_Button_Ambient.setAction(buttonCallback);
     SwipeContainerAmbient_1.add(Statistics_Button_Ambient);
 
-    Ambient_Text.setXY(54, 23);
+    Ambient_Text.setXY(55, 30);
     Ambient_Text.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
     Ambient_Text.setLinespacing(0);
-    Ambient_Text.setTypedText(touchgfx::TypedText(T___SINGLEUSE_EIUW));
+    Ambient_Text.setTypedText(touchgfx::TypedText(T___SINGLEUSE_VIA7));
     SwipeContainerAmbient_1.add(Ambient_Text);
 
-    Ambient_Val.setXY(100, 60);
+    Ambient_Val.setXY(81, 109);
     Ambient_Val.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
     Ambient_Val.setLinespacing(0);
-    Unicode::snprintf(Ambient_ValBuffer, AMBIENT_VAL_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_DUQV).getText());
+    Unicode::snprintf(Ambient_ValBuffer, AMBIENT_VAL_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_VYLX).getText());
     Ambient_Val.setWildcard(Ambient_ValBuffer);
     Ambient_Val.resizeToCurrentText();
-    Ambient_Val.setTypedText(touchgfx::TypedText(T___SINGLEUSE_85FW));
+    Ambient_Val.setTypedText(touchgfx::TypedText(T___SINGLEUSE_9KQX));
     SwipeContainerAmbient_1.add(Ambient_Val);
-
-    AmbientCirc_Val.setXY(65, 107);
-    AmbientCirc_Val.setProgressIndicatorPosition(0, 0, 110, 110);
-    AmbientCirc_Val.setRange(0, 100);
-    AmbientCirc_Val.setCenter(55, 55);
-    AmbientCirc_Val.setRadius(50);
-    AmbientCirc_Val.setLineWidth(10);
-    AmbientCirc_Val.setStartEndAngle(0, 360);
-    AmbientCirc_Val.setCapPrecision(180);
-    AmbientCirc_Val.setBackground(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_CIRCLEPROGRESS_BACKGROUNDS_SMALL_ID));
-    AmbientCirc_ValPainter.setColor(touchgfx::Color::getColorFromRGB(0, 240, 255));
-    AmbientCirc_Val.setPainter(AmbientCirc_ValPainter);
-    AmbientCirc_Val.setValue(60);
-    SwipeContainerAmbient_1.add(AmbientCirc_Val);
 
     SwipeContainer.add(SwipeContainerAmbient_1);
 
-    SwipeContainerTemperature_Inside.setWidth(240);
-    SwipeContainerTemperature_Inside.setHeight(261);
-    TempIn_Val.setXY(69, 76);
+    SwipeContainerTemperature_Inside.setPosition(0, 0, 240, 261);
+    TempIn_Val.setXY(81, 109);
     TempIn_Val.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
     TempIn_Val.setLinespacing(0);
-    Unicode::snprintf(TempIn_ValBuffer, TEMPIN_VAL_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_QYXK).getText());
+    Unicode::snprintf(TempIn_ValBuffer, TEMPIN_VAL_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_E5QY).getText());
     TempIn_Val.setWildcard(TempIn_ValBuffer);
     TempIn_Val.resizeToCurrentText();
-    TempIn_Val.setTypedText(touchgfx::TypedText(T___SINGLEUSE_62A2));
+    TempIn_Val.setTypedText(touchgfx::TypedText(T___SINGLEUSE_BF3J));
     SwipeContainerTemperature_Inside.add(TempIn_Val);
 
-    TempIn_Text.setXY(55, 28);
+    TempIn_Text.setXY(55, 30);
     TempIn_Text.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
     TempIn_Text.setLinespacing(0);
-    TempIn_Text.setTypedText(touchgfx::TypedText(T___SINGLEUSE_HDSV));
+    TempIn_Text.setTypedText(touchgfx::TypedText(T___SINGLEUSE_NIUA));
     SwipeContainerTemperature_Inside.add(TempIn_Text);
-
-    TempInCirc_Val.setXY(65, 107);
-    TempInCirc_Val.setProgressIndicatorPosition(0, 0, 110, 110);
-    TempInCirc_Val.setRange(0, 100);
-    TempInCirc_Val.setCenter(55, 55);
-    TempInCirc_Val.setRadius(50);
-    TempInCirc_Val.setLineWidth(10);
-    TempInCirc_Val.setStartEndAngle(0, 360);
-    TempInCirc_Val.setCapPrecision(180);
-    TempInCirc_Val.setBackground(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_CIRCLEPROGRESS_BACKGROUNDS_SMALL_ID));
-    TempInCirc_ValPainter.setColor(touchgfx::Color::getColorFromRGB(0, 240, 255));
-    TempInCirc_Val.setPainter(TempInCirc_ValPainter);
-    TempInCirc_Val.setValue(60);
-    SwipeContainerTemperature_Inside.add(TempInCirc_Val);
 
     Statistics_Button_TempIn.setXY(5, 201);
     Statistics_Button_TempIn.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_TINY_FILL_ACTIVE_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_TINY_FILL_PRESSED_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_CONTENT_STACKED_BAR_CHART_50_50_E8F6FB_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_DONE_50_50_E8F6FB_SVG_ID));
     Statistics_Button_TempIn.setIconXY(5, 5);
-    Statistics_Button_TempIn.setAction(buttonCallback);
     SwipeContainerTemperature_Inside.add(Statistics_Button_TempIn);
 
     SwipeContainer.add(SwipeContainerTemperature_Inside);
 
-    SwipeContainerTemperature_Outside.setWidth(240);
-    SwipeContainerTemperature_Outside.setHeight(261);
-    TempOut_Val.setXY(84, 83);
+    SwipeContainerTemperature_Outside.setPosition(0, 0, 240, 261);
+    TempOut_Val.setXY(81, 109);
     TempOut_Val.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
     TempOut_Val.setLinespacing(0);
-    Unicode::snprintf(TempOut_ValBuffer, TEMPOUT_VAL_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_WKOW).getText());
+    Unicode::snprintf(TempOut_ValBuffer, TEMPOUT_VAL_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_IV5N).getText());
     TempOut_Val.setWildcard(TempOut_ValBuffer);
     TempOut_Val.resizeToCurrentText();
-    TempOut_Val.setTypedText(touchgfx::TypedText(T___SINGLEUSE_0S8O));
+    TempOut_Val.setTypedText(touchgfx::TypedText(T___SINGLEUSE_7E1H));
     SwipeContainerTemperature_Outside.add(TempOut_Val);
 
-    TempOut_Text.setXY(55, 28);
+    TempOut_Text.setXY(55, 30);
     TempOut_Text.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
     TempOut_Text.setLinespacing(0);
-    TempOut_Text.setTypedText(touchgfx::TypedText(T___SINGLEUSE_RUSB));
+    TempOut_Text.setTypedText(touchgfx::TypedText(T___SINGLEUSE_ZFWW));
     SwipeContainerTemperature_Outside.add(TempOut_Text);
-
-    TempOutCirc_Val.setXY(65, 107);
-    TempOutCirc_Val.setProgressIndicatorPosition(0, 0, 110, 110);
-    TempOutCirc_Val.setRange(0, 100);
-    TempOutCirc_Val.setCenter(55, 55);
-    TempOutCirc_Val.setRadius(50);
-    TempOutCirc_Val.setLineWidth(10);
-    TempOutCirc_Val.setStartEndAngle(0, 360);
-    TempOutCirc_Val.setCapPrecision(180);
-    TempOutCirc_Val.setBackground(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_CIRCLEPROGRESS_BACKGROUNDS_SMALL_ID));
-    TempOutCirc_ValPainter.setColor(touchgfx::Color::getColorFromRGB(0, 240, 255));
-    TempOutCirc_Val.setPainter(TempOutCirc_ValPainter);
-    TempOutCirc_Val.setValue(60);
-    SwipeContainerTemperature_Outside.add(TempOutCirc_Val);
 
     Statistics_Button_TempOut.setXY(5, 201);
     Statistics_Button_TempOut.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_TINY_FILL_ACTIVE_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_TINY_FILL_PRESSED_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_CONTENT_STACKED_BAR_CHART_50_50_E8F6FB_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_DONE_50_50_E8F6FB_SVG_ID));
     Statistics_Button_TempOut.setIconXY(5, 5);
-    Statistics_Button_TempOut.setAction(buttonCallback);
     SwipeContainerTemperature_Outside.add(Statistics_Button_TempOut);
 
     SwipeContainer.add(SwipeContainerTemperature_Outside);
@@ -296,10 +216,53 @@ DefaultViewViewBase::DefaultViewViewBase() :
     Footer.setAlpha(17);
     add(Footer);
 
-    Screen_Brightness.setPosition(0, 0, 240, 320);
-    Screen_Brightness.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    Screen_Brightness.setAlpha(0);
-    add(Screen_Brightness);
+    Alert_cover.setPosition(0, 0, 250, 320);
+    Alert_cover.setVisible(false);
+    Backround_1.setPosition(0, 0, 240, 320);
+    Backround_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    Backround_1.setAlpha(150);
+    Alert_cover.add(Backround_1);
+
+    Error_msg_backround.setPosition(14, 180, 215, 47);
+    Error_msg_backround.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    Error_msg_backround.setAlpha(150);
+    Alert_cover.add(Error_msg_backround);
+
+    Error.setXY(84, 70);
+    Error.setBitmap(touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ALERT_ERROR_70_70_FF0000_SVG_ID));
+    Alert_cover.add(Error);
+
+    Error_code.setXY(47, 40);
+    Error_code.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
+    Error_code.setLinespacing(0);
+    Error_code.setWildcard(touchgfx::TypedText(T___SINGLEUSE_MEFF).getText());
+    Error_code.resizeToCurrentText();
+    Error_code.setTypedText(touchgfx::TypedText(T___SINGLEUSE_HAUQ));
+    Alert_cover.add(Error_code);
+
+    Snooze_button.setXY(71, 253);
+    Snooze_button.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_36_TINY_ROUND_ACTION_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_36_TINY_ROUND_PRESSED_ID));
+    Snooze_button.setLabelText(touchgfx::TypedText(T___SINGLEUSE_TTSL));
+    Snooze_button.setLabelColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    Snooze_button.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    Snooze_button.setAction(buttonCallback);
+    Alert_cover.add(Snooze_button);
+
+    Error_text.setXY(55, 191);
+    Error_text.setColor(touchgfx::Color::getColorFromRGB(255, 0, 0));
+    Error_text.setLinespacing(0);
+    Unicode::snprintf(Error_textBuffer, ERROR_TEXT_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_VN7N).getText());
+    Error_text.setWildcard(Error_textBuffer);
+    Error_text.resizeToCurrentText();
+    Error_text.setTypedText(touchgfx::TypedText(T___SINGLEUSE_595W));
+    Alert_cover.add(Error_text);
+
+    add(Alert_cover);
+
+    Brightness_level.setPosition(0, 0, 240, 320);
+    Brightness_level.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    Brightness_level.setAlpha(0);
+    add(Brightness_level);
 }
 
 DefaultViewViewBase::~DefaultViewViewBase()
@@ -317,9 +280,9 @@ void DefaultViewViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& 
     if (&src == &Menu_Button)
     {
         //DropDownFunc
-        //When Menu_Button clicked change screen to MenuDropdown
-        //Go to MenuDropdown with no screen transition
-        application().gotoMenuDropdownScreenNoTransition();
+        //When Menu_Button clicked change screen to MenuDropdown_1
+        //Go to MenuDropdown_1 with no screen transition
+        application().gotoMenuDropdown_1ScreenNoTransition();
     }
     if (&src == &Statistics_Button_Ambient)
     {
@@ -362,6 +325,14 @@ void DefaultViewViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& 
         //When Statistics_Button_TempOut clicked change screen to Statistics_Temperature_Outside
         //Go to Statistics_Temperature_Outside with no screen transition
         application().gotoStatistics_Temperature_OutsideScreenNoTransition();
+    }
+    if (&src == &Snooze_button)
+    {
+        //Alert_cover_hide
+        //When Snooze_button clicked hide Alert_cover
+        //Hide Alert_cover
+        Alert_cover.setVisible(false);
+        Alert_cover.invalidate();
     }
 }
 

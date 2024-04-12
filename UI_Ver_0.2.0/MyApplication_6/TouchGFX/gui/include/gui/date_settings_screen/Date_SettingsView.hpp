@@ -20,9 +20,7 @@ public:
     virtual void Years_Val_Down();
     virtual void Update_Date();
     virtual void current_Date_value(int current_Date_value[]);
-    virtual void set_brightness_level(int brightness);
     //virtual void current_Date(int Date_Values[]);
-
 
 
     int updated_Days = 15;

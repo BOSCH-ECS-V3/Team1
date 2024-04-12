@@ -1,17 +1,16 @@
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	0	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsView.cpp:11:6:virtual void Time_SettingsView::tearDownScreen()	0	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsView.cpp:16:6:virtual void Time_SettingsView::current_Clock(int*)	0	static
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsView.cpp:11:6:virtual void Time_SettingsView::tearDownScreen()	0	static
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsView.cpp:16:6:virtual void Time_SettingsView::current_Clock(int*)	0	static
 ../../TouchGFX/gui/include/gui/time_settings_screen/Time_SettingsView.hpp:11:13:Time_SettingsView::~Time_SettingsView()	8	static
 ../../TouchGFX/gui/include/gui/time_settings_screen/Time_SettingsView.hpp:11:13:virtual Time_SettingsView::~Time_SettingsView()	8	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsView.cpp:3:1:Time_SettingsView::Time_SettingsView()	8	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsView.cpp:7:6:virtual void Time_SettingsView::setupScreen()	0	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsView.cpp:27:6:virtual void Time_SettingsView::Set_Current_Time()	24	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsView.cpp:43:6:virtual void Time_SettingsView::handleTickEvent()	0	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsView.cpp:47:6:virtual void Time_SettingsView::Hours_Up()	16	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsView.cpp:55:6:virtual void Time_SettingsView::Hours_Down()	16	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsView.cpp:63:6:virtual void Time_SettingsView::Minutes_Up()	16	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsView.cpp:71:6:virtual void Time_SettingsView::Minutes_Down()	16	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsView.cpp:79:6:virtual void Time_SettingsView::Seconds_Up()	16	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsView.cpp:87:6:virtual void Time_SettingsView::Seconds_Down()	16	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsView.cpp:97:6:virtual void Time_SettingsView::set_brightness_level(int)	0	static
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsView.cpp:3:1:Time_SettingsView::Time_SettingsView()	8	static
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsView.cpp:7:6:virtual void Time_SettingsView::setupScreen()	0	static
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsView.cpp:27:6:virtual void Time_SettingsView::Set_Current_Time()	24	static
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsView.cpp:43:6:virtual void Time_SettingsView::handleTickEvent()	0	static
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsView.cpp:47:6:virtual void Time_SettingsView::Hours_Up()	16	static
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsView.cpp:55:6:virtual void Time_SettingsView::Hours_Down()	16	static
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsView.cpp:63:6:virtual void Time_SettingsView::Minutes_Up()	16	static
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsView.cpp:71:6:virtual void Time_SettingsView::Minutes_Down()	16	static
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsView.cpp:79:6:virtual void Time_SettingsView::Seconds_Up()	16	static
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsView.cpp:87:6:virtual void Time_SettingsView::Seconds_Down()	16	static

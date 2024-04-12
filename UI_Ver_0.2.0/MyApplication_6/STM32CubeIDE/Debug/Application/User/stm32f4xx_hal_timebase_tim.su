@@ -1,3 +1,3 @@
-C:/TouchGFXProjects/MyApplication_6/Core/Src/stm32f4xx_hal_timebase_tim.c:42:19:HAL_InitTick	48	static
-C:/TouchGFXProjects/MyApplication_6/Core/Src/stm32f4xx_hal_timebase_tim.c:121:6:HAL_SuspendTick	0	static
-C:/TouchGFXProjects/MyApplication_6/Core/Src/stm32f4xx_hal_timebase_tim.c:133:6:HAL_ResumeTick	0	static
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/Core/Src/stm32f4xx_hal_timebase_tim.c:42:19:HAL_InitTick	48	static
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/Core/Src/stm32f4xx_hal_timebase_tim.c:121:6:HAL_SuspendTick	0	static
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/Core/Src/stm32f4xx_hal_timebase_tim.c:133:6:HAL_ResumeTick	0	static

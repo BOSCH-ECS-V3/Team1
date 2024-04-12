@@ -30,7 +30,7 @@ protected:
      * Member Declarations
      */
     touchgfx::Box __background;
-    touchgfx::Box Backround;
+    touchgfx::Box backround;
     touchgfx::Box Header_backround;
     touchgfx::ButtonWithLabel Menu_Button;
     touchgfx::TextArea Header_Text;
@@ -42,7 +42,7 @@ protected:
     touchgfx::GraphWrapAndClear<100> Graphic_Temperature_Inside;
     touchgfx::GraphElementLine Graphic_Temperature_InsideLine1;
     touchgfx::PainterRGB565 Graphic_Temperature_InsideLine1Painter;
-    touchgfx::Box Screen_Brightness;
+    touchgfx::Box Brightness_level;
 
 private:
 

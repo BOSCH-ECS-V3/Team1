@@ -42,7 +42,7 @@ protected:
     touchgfx::GraphWrapAndClear<100> Graphic_Gas_sensor;
     touchgfx::GraphElementLine Graphic_Gas_sensorLine1;
     touchgfx::PainterRGB565 Graphic_Gas_sensorLine1Painter;
-    touchgfx::Box Screen_Brightness;
+    touchgfx::Box Brightness_level;
 
 private:
 

@@ -42,7 +42,7 @@ protected:
     touchgfx::GraphWrapAndClear<100> Graphic_Temperature_Outside;
     touchgfx::GraphElementLine Graphic_Temperature_OutsideLine1;
     touchgfx::PainterRGB565 Graphic_Temperature_OutsideLine1Painter;
-    touchgfx::Box Screen_Brightness;
+    touchgfx::Box Brightness_level;
 
 private:
 

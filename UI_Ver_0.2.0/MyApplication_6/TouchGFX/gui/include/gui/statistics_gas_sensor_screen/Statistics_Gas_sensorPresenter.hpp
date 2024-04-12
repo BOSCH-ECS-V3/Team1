@@ -24,7 +24,6 @@ public:
      * (ie. made inactive). Teardown functionality can be placed here.
      */
     virtual void deactivate();
-    virtual void set_brightness_level(int brightness);
 
     virtual ~Statistics_Gas_sensorPresenter() {}
 

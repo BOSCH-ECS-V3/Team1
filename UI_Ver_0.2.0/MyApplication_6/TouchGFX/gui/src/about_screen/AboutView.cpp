@@ -14,9 +14,3 @@ void AboutView::tearDownScreen()
 {
     AboutViewBase::tearDownScreen();
 }
-
-void AboutView::set_brightness_level(int brightness)
-{
-	Screen_Brightness.setAlpha(brightness);
-	Screen_Brightness.invalidate();
-}

@@ -42,7 +42,7 @@ protected:
     touchgfx::GraphWrapAndClear<100> Graphic_Ambient_Inside;
     touchgfx::GraphElementLine Graphic_Ambient_InsideLine1;
     touchgfx::PainterRGB565 Graphic_Ambient_InsideLine1Painter;
-    touchgfx::Box Screen_Brightness;
+    touchgfx::Box Brightness_level;
 
 private:
 

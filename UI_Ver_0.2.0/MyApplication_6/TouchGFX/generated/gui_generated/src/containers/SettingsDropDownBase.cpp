@@ -28,6 +28,7 @@ SettingsDropDownBase::SettingsDropDownBase() :
     Alarm.setLabelText(touchgfx::TypedText(T___SINGLEUSE_YUNA));
     Alarm.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     Alarm.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    Alarm.setAction(buttonCallback);
     add(Alarm);
 
     DateSettings.setXY(49, 266);
@@ -94,5 +95,12 @@ void SettingsDropDownBase::buttonCallbackHandler(const touchgfx::AbstractButton&
         //When DateSettings clicked change screen to Date_Settings
         //Go to Date_Settings with no screen transition
         application().gotoDate_SettingsScreenNoTransition();
+    }
+    if (&src == &Alarm)
+    {
+        //AlarmPageNav
+        //When Alarm clicked change screen to Alarm_Settings
+        //Go to Alarm_Settings with no screen transition
+        application().gotoAlarm_SettingsScreenNoTransition();
     }
 }

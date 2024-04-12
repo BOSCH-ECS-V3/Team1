@@ -1,4 +1,6 @@
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/model/Model.cpp:6:1:Model::Model()	16	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/model/Model.cpp:11:6:void Model::tick()	8	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/model/Model.cpp:99:6:void Model::update_Clock(int*)	0	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/model/Model.cpp:107:6:void Model::update_Date(int*)	0	static
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/model/Model.cpp:8:5:int Error_feedback(int*)	16	static
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/model/Model.cpp:187:1:Model::Model()	16	static
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/model/Model.cpp:192:6:void Model::tick()	16	static
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/model/Model.cpp:289:6:void Model::update_Clock(int*)	0	static
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/model/Model.cpp:296:6:void Model::update_Date(int*)	0	static
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/model/Model.cpp:303:6:void Model::SEND_Permission(int)	0	static

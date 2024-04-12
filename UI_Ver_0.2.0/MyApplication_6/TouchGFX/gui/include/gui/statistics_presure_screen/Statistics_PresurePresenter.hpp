@@ -25,8 +25,6 @@ public:
      */
     virtual void deactivate();
 
-    virtual void set_brightness_level(int brightness);
-
     virtual ~Statistics_PresurePresenter() {}
 
 private:

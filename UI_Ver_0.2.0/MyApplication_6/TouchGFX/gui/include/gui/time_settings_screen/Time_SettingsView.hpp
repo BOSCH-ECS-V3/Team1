@@ -21,7 +21,7 @@ public:
     virtual void handleTickEvent();
     virtual void Set_Current_Time();
     virtual void current_Clock(int Clock_Values[]); // This is functuon to update clock from model
-    virtual void set_brightness_level(int brightness);
+
 
 
     int update_Hours = 0;

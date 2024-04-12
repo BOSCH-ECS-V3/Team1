@@ -14,7 +14,7 @@ public:
     virtual void update_Clock(int Clock_Values[]);
     virtual void handleTickEvent();
     virtual void current_Sensor_values(int current_Sensor_values[5]);
-    virtual void set_brightness_level(int brightness);
+    virtual void SEND_Error_ID(int Error_ID);
 
 
     // Variables for storing sensor information
@@ -31,6 +31,10 @@ public:
     int analogHours ;
     int analogMinutes ;
     int analogSeconds ;
+
+    // Variables for Alert msg
+
+    int current_ERROR_ID;
 
 protected:
 };

@@ -94,12 +94,6 @@ void Time_SettingsView::Seconds_Down()
 
 }
 
-void Time_SettingsView::set_brightness_level(int brightness)
-{
-			Screen_Brightness.setAlpha(brightness);
-			Screen_Brightness.invalidate();
-}
-
 
 
 

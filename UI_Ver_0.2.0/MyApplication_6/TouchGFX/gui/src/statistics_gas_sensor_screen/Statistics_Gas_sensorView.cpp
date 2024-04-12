@@ -14,8 +14,3 @@ void Statistics_Gas_sensorView::tearDownScreen()
 {
     Statistics_Gas_sensorViewBase::tearDownScreen();
 }
-void Statistics_Gas_sensorView::set_brightness_level(int brightness)
-{
-	  Screen_Brightness.setAlpha(brightness);
-	  Screen_Brightness.invalidate();
-}

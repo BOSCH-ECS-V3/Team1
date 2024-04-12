@@ -37,11 +37,19 @@ public:
     {
     	// sending current sensor values to presenter Default page
     };
-    virtual void set_brightness_level(int brightness)
+    virtual void SEND_Permission(int Permission_STATE)
     {
-    	// sending brightness level to view pages
-    	// this function is same for every page of the screen !!
+    	// receive from view
+    };
+    virtual void RECEIVE_Permission(int Permission_STATE)
+    {
+    	// send to view
+    };
+    virtual void SEND_Error_ID(int Error_ID)
+    {
+    	// send Error_ID to the view -> Default page
     }
+
 protected:
     Model* model;
 };

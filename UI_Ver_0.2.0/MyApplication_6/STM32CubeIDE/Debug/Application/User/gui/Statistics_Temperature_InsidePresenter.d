@@ -1,5 +1,5 @@
 Application/User/gui/Statistics_Temperature_InsidePresenter.o: \
- C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/statistics_temperature_inside_screen/Statistics_Temperature_InsidePresenter.cpp \
+ C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/statistics_temperature_inside_screen/Statistics_Temperature_InsidePresenter.cpp \
  ../../TouchGFX/gui/include/gui/statistics_temperature_inside_screen/Statistics_Temperature_InsideView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/statistics_temperature_inside_screen/Statistics_Temperature_InsideViewBase.hpp \
  ../../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \

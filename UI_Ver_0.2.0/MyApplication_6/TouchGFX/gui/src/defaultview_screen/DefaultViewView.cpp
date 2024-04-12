@@ -32,6 +32,24 @@ void DefaultViewView::handleTickEvent()
 {
 	digitalClock1.setTime24Hour(analogHours, analogMinutes, analogSeconds);
 	digitalClock1.invalidate();
+
+    Carbon_Val.invalidate();
+    TempOut_Val.invalidate();
+    TempIn_Val.invalidate();
+    Humidity_Val.invalidate();
+    Presure_Val.invalidate();
+    Ambient_Val.invalidate();
+}
+
+void DefaultViewView::SEND_Error_ID(int Error_ID)
+{
+	current_ERROR_ID = Error_ID;
+	if(current_ERROR_ID == 303)
+	{
+		Alert_cover.setVisible(true);
+		Alert_cover.invalidate();
+	}
+
 }
 
 void DefaultViewView::current_Sensor_values(int current_Sensor_values[])
@@ -50,17 +68,15 @@ void DefaultViewView::current_Sensor_values(int current_Sensor_values[])
     // updating values to view
 
     Unicode::snprintf(TempOut_ValBuffer, TEMPOUT_VAL_SIZE, "%d", Temperature_Sensor_INSIDE_values);
+
     Unicode::snprintf(TempIn_ValBuffer, TEMPIN_VAL_SIZE, "%d", Temperature_Sensor_OUTSIDE_value);
+
     Unicode::snprintf(Humidity_ValBuffer, HUMIDITY_VAL_SIZE, "%d", Humidity_Sensor_value);
+
     Unicode::snprintf(Presure_ValBuffer, PRESURE_VAL_SIZE, "%d", Pressure_Sensor_value);
+
     Unicode::snprintf(Ambient_ValBuffer, AMBIENT_VAL_SIZE, "%d", Ambient_Light_Sensor_value);
-    Unicode::snprintf(Carbon_ValBuffer, CARBON_VAL_SIZE, "%d", Gas_Sensor_value );
+
+    Unicode::snprintf(Carbon_ValBuffer, CARBON_VAL_SIZE, "%d",  Gas_Sensor_value );
+
 };
-void DefaultViewView::set_brightness_level(int brightness)
-{
-	// Setting screen brightness level
-
-	Screen_Brightness.setAlpha(brightness);
-	Screen_Brightness.invalidate();
-
-}

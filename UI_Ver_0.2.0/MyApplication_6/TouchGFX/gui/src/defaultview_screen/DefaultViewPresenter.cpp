@@ -25,9 +25,8 @@ void DefaultViewPresenter::current_Sensor_values(int current_Sensor_values[5])
 {
 	view.current_Sensor_values(current_Sensor_values);
 };
-void DefaultViewPresenter::set_brightness_level(int brightness)
+void DefaultViewPresenter::SEND_Error_ID(int Error_ID)
 {
-	 // Passing screen brightness to view
-	view.set_brightness_level(brightness);
+	view.SEND_Error_ID(Error_ID);
 };
 

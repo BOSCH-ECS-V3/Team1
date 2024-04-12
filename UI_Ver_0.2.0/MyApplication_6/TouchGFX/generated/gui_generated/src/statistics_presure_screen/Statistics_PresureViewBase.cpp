@@ -182,10 +182,10 @@ Statistics_PresureViewBase::Statistics_PresureViewBase() :
     Graphic_Presure_Inside.addDataPoint(47.4041f);
     add(Graphic_Presure_Inside);
 
-    Screen_Brightness.setPosition(0, 0, 240, 320);
-    Screen_Brightness.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    Screen_Brightness.setAlpha(0);
-    add(Screen_Brightness);
+    Brightness_level.setPosition(0, 0, 240, 320);
+    Brightness_level.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    Brightness_level.setAlpha(0);
+    add(Brightness_level);
 }
 
 Statistics_PresureViewBase::~Statistics_PresureViewBase()
@@ -203,8 +203,8 @@ void Statistics_PresureViewBase::buttonCallbackHandler(const touchgfx::AbstractB
     if (&src == &Menu_Button)
     {
         //MenuDropdown
-        //When Menu_Button clicked change screen to MenuDropdown
-        //Go to MenuDropdown with no screen transition
-        application().gotoMenuDropdownScreenNoTransition();
+        //When Menu_Button clicked change screen to MenuDropdown_1
+        //Go to MenuDropdown_1 with no screen transition
+        application().gotoMenuDropdown_1ScreenNoTransition();
     }
 }

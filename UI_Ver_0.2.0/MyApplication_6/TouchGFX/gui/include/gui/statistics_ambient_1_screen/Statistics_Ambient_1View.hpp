@@ -11,8 +11,6 @@ public:
     virtual ~Statistics_Ambient_1View() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
-    virtual void set_brightness_level(int brightness);
-
 protected:
 };
 

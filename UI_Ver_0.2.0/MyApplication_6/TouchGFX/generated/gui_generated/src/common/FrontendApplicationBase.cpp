@@ -11,8 +11,8 @@
 #include <platform/driver/lcd/LCD16bpp.hpp>
 #include <gui/defaultview_screen/DefaultViewView.hpp>
 #include <gui/defaultview_screen/DefaultViewPresenter.hpp>
-#include <gui/menudropdown_screen/MenuDropdownView.hpp>
-#include <gui/menudropdown_screen/MenuDropdownPresenter.hpp>
+#include <gui/menudropdown_1_screen/MenuDropdown_1View.hpp>
+#include <gui/menudropdown_1_screen/MenuDropdown_1Presenter.hpp>
 #include <gui/about_screen/AboutView.hpp>
 #include <gui/about_screen/AboutPresenter.hpp>
 #include <gui/time_settings_screen/Time_SettingsView.hpp>
@@ -31,6 +31,8 @@
 #include <gui/statistics_ambient_1_screen/Statistics_Ambient_1Presenter.hpp>
 #include <gui/statistics_gas_sensor_screen/Statistics_Gas_sensorView.hpp>
 #include <gui/statistics_gas_sensor_screen/Statistics_Gas_sensorPresenter.hpp>
+#include <gui/alarm_settings_screen/Alarm_SettingsView.hpp>
+#include <gui/alarm_settings_screen/Alarm_SettingsPresenter.hpp>
 
 using namespace touchgfx;
 
@@ -63,17 +65,17 @@ void FrontendApplicationBase::gotoDefaultViewScreenNoTransitionImpl()
     touchgfx::makeTransition<DefaultViewView, DefaultViewPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
-// MenuDropdown
+// MenuDropdown_1
 
-void FrontendApplicationBase::gotoMenuDropdownScreenNoTransition()
+void FrontendApplicationBase::gotoMenuDropdown_1ScreenNoTransition()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoMenuDropdownScreenNoTransitionImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoMenuDropdown_1ScreenNoTransitionImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoMenuDropdownScreenNoTransitionImpl()
+void FrontendApplicationBase::gotoMenuDropdown_1ScreenNoTransitionImpl()
 {
-    touchgfx::makeTransition<MenuDropdownView, MenuDropdownPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<MenuDropdown_1View, MenuDropdown_1Presenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
 // About
@@ -191,4 +193,17 @@ void FrontendApplicationBase::gotoStatistics_Gas_sensorScreenNoTransition()
 void FrontendApplicationBase::gotoStatistics_Gas_sensorScreenNoTransitionImpl()
 {
     touchgfx::makeTransition<Statistics_Gas_sensorView, Statistics_Gas_sensorPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// Alarm_Settings
+
+void FrontendApplicationBase::gotoAlarm_SettingsScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoAlarm_SettingsScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoAlarm_SettingsScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<Alarm_SettingsView, Alarm_SettingsPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }

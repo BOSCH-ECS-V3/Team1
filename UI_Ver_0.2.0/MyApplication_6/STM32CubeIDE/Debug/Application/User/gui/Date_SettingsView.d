@@ -1,5 +1,5 @@
 Application/User/gui/Date_SettingsView.o: \
- C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/date_settings_screen/Date_SettingsView.cpp \
+ C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/date_settings_screen/Date_SettingsView.cpp \
  ../../TouchGFX/gui/include/gui/date_settings_screen/Date_SettingsView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/date_settings_screen/Date_SettingsViewBase.hpp \
  ../../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \

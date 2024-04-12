@@ -14,8 +14,8 @@
 
 #include <gui/defaultview_screen/DefaultViewView.hpp>
 #include <gui/defaultview_screen/DefaultViewPresenter.hpp>
-#include <gui/menudropdown_screen/MenuDropdownView.hpp>
-#include <gui/menudropdown_screen/MenuDropdownPresenter.hpp>
+#include <gui/menudropdown_1_screen/MenuDropdown_1View.hpp>
+#include <gui/menudropdown_1_screen/MenuDropdown_1Presenter.hpp>
 #include <gui/about_screen/AboutView.hpp>
 #include <gui/about_screen/AboutPresenter.hpp>
 #include <gui/time_settings_screen/Time_SettingsView.hpp>
@@ -34,6 +34,8 @@
 #include <gui/statistics_ambient_1_screen/Statistics_Ambient_1Presenter.hpp>
 #include <gui/statistics_gas_sensor_screen/Statistics_Gas_sensorView.hpp>
 #include <gui/statistics_gas_sensor_screen/Statistics_Gas_sensorPresenter.hpp>
+#include <gui/alarm_settings_screen/Alarm_SettingsView.hpp>
+#include <gui/alarm_settings_screen/Alarm_SettingsPresenter.hpp>
 
 
 /**
@@ -57,7 +59,7 @@ public:
      * @note All view types used in the application MUST be added to this list!
      */
     typedef touchgfx::meta::TypeList< DefaultViewView,
-            touchgfx::meta::TypeList< MenuDropdownView,
+            touchgfx::meta::TypeList< MenuDropdown_1View,
             touchgfx::meta::TypeList< AboutView,
             touchgfx::meta::TypeList< Time_SettingsView,
             touchgfx::meta::TypeList< Date_SettingsView,
@@ -67,7 +69,8 @@ public:
             touchgfx::meta::TypeList< Statistics_PresureView,
             touchgfx::meta::TypeList< Statistics_Ambient_1View,
             touchgfx::meta::TypeList< Statistics_Gas_sensorView,
-            touchgfx::meta::Nil > > > > > > > > > >
+            touchgfx::meta::TypeList< Alarm_SettingsView,
+            touchgfx::meta::Nil > > > > > > > > > > >
             > GeneratedViewTypes;
 
     /**
@@ -80,7 +83,7 @@ public:
      * @note All presenter types used in the application MUST be added to this list!
      */
     typedef touchgfx::meta::TypeList< DefaultViewPresenter,
-            touchgfx::meta::TypeList< MenuDropdownPresenter,
+            touchgfx::meta::TypeList< MenuDropdown_1Presenter,
             touchgfx::meta::TypeList< AboutPresenter,
             touchgfx::meta::TypeList< Time_SettingsPresenter,
             touchgfx::meta::TypeList< Date_SettingsPresenter,
@@ -90,7 +93,8 @@ public:
             touchgfx::meta::TypeList< Statistics_PresurePresenter,
             touchgfx::meta::TypeList< Statistics_Ambient_1Presenter,
             touchgfx::meta::TypeList< Statistics_Gas_sensorPresenter,
-            touchgfx::meta::Nil > > > > > > > > > >
+            touchgfx::meta::TypeList< Alarm_SettingsPresenter,
+            touchgfx::meta::Nil > > > > > > > > > > >
             > GeneratedPresenterTypes;
 
     /**

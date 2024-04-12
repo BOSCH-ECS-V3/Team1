@@ -6,56 +6,86 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
-      <Text Id="__SingleUse_UQLB" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">&lt;&gt;</Translation>
+      <Text Id="__SingleUse_1307" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">7</Translation>
       </Text>
-      <Text Id="__SingleUse_NWFU" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">-</Translation>
+      <Text Id="__SingleUse_X4VI" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;    </Translation>
+      </Text>
+      <Text Id="__SingleUse_J7M8" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">* If you turn this option OFF,&#10;you will not receive systems &#10;alerts while using our weather station.&#10;If you want to receive notification about&#10;your system, make sure this option&#10;is turned ON .</Translation>
+      </Text>
+      <Text Id="__SingleUse_CAKJ" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Alarm notifications</Translation>
+      </Text>
+      <Text Id="__SingleUse_BMQY" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_XGA9" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Weather station</Translation>
+      </Text>
+      <Text Id="__SingleUse_TTSL" Alignment="Center" TypographyId="Small">
+        <Translation Language="GB">SNOOZE</Translation>
+      </Text>
+      <Text Id="__SingleUse_VN7N" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">123</Translation>
+      </Text>
+      <Text Id="__SingleUse_595W" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_MEFF" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">000</Translation>
+      </Text>
+      <Text Id="__SingleUse_HAUQ" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Alert code :&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_TRUT" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">31</Translation>
+      </Text>
+      <Text Id="__SingleUse_ED8P" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">&lt;value&gt; %    </Translation>
+      </Text>
+      <Text Id="__SingleUse_SC46" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Humidity</Translation>
+      </Text>
+      <Text Id="__SingleUse_JVDX" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">960</Translation>
+      </Text>
+      <Text Id="__SingleUse_MJ6R" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_QJ73" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Presure sensor</Translation>
+      </Text>
+      <Text Id="__SingleUse_VYLX" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">70</Translation>
+      </Text>
+      <Text Id="__SingleUse_9KQX" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">&lt;value&gt; %   </Translation>
+      </Text>
+      <Text Id="__SingleUse_VIA7" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Ambient light</Translation>
+      </Text>
+      <Text Id="__SingleUse_E5QY" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">20</Translation>
+      </Text>
+      <Text Id="__SingleUse_BF3J" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">&lt;value&gt; C   </Translation>
+      </Text>
+      <Text Id="__SingleUse_NIUA" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Temperature&#10;Inside</Translation>
+      </Text>
+      <Text Id="__SingleUse_ZFWW" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Temperature&#10;Outside</Translation>
+      </Text>
+      <Text Id="__SingleUse_IV5N" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">20</Translation>
+      </Text>
+      <Text Id="__SingleUse_7E1H" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">&lt;value&gt; C    </Translation>
       </Text>
       <Text Id="__SingleUse_9KGC" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">-</Translation>
-      </Text>
-      <Text Id="__SingleUse_QOBO" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">-</Translation>
-      </Text>
-      <Text Id="__SingleUse_EXUE" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">Presure sensor</Translation>
-      </Text>
-      <Text Id="__SingleUse_3F2U" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">&lt;value&gt; n/m    </Translation>
-      </Text>
-      <Text Id="__SingleUse_DUQV" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">-</Translation>
-      </Text>
-      <Text Id="__SingleUse_EIUW" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">Ambient light</Translation>
-      </Text>
-      <Text Id="__SingleUse_85FW" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">&lt;value&gt; %   </Translation>
-      </Text>
-      <Text Id="__SingleUse_QYXK" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">-</Translation>
-      </Text>
-      <Text Id="__SingleUse_WKOW" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">-</Translation>
-      </Text>
-      <Text Id="__SingleUse_RUSB" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">Temperature&#10;Outside</Translation>
-      </Text>
-      <Text Id="__SingleUse_0S8O" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">&lt;value&gt; degrees   </Translation>
-      </Text>
-      <Text Id="__SingleUse_HDSV" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">Temperature&#10;Inside</Translation>
-      </Text>
-      <Text Id="__SingleUse_62A2" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB"> &lt;value&gt; degrees   </Translation>
-      </Text>
-      <Text Id="__SingleUse_KIGC" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">&lt;value&gt; %    </Translation>
-      </Text>
-      <Text Id="__SingleUse_OTTP" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">Humidity</Translation>
       </Text>
       <Text Id="__SingleUse_7YEN" Alignment="Left" TypographyId="Average_15">
         <Translation Language="GB">Average month value : (value)</Translation>
@@ -213,6 +243,9 @@
       <Text Id="__SingleUse_4AD3" Alignment="Left" TypographyId="Large">
         <Translation Language="GB">&lt;&gt;</Translation>
       </Text>
+      <Text Id="__SingleUse_UQLB" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">&lt;&gt;</Translation>
+      </Text>
       <Text Id="__SingleUse_8O7C" Alignment="Left" TypographyId="Large">
         <Translation Language="GB">&lt;&gt;</Translation>
       </Text>
@@ -280,7 +313,7 @@
         <Translation Language="GB">Carbon monoxide</Translation>
       </Text>
       <Text Id="__SingleUse_GP4Z" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">&lt;value&gt; ppm   </Translation>
+        <Translation Language="GB">&lt;value&gt; ppm            </Translation>
       </Text>
       <Text Id="__SingleUse_6NB9" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">Weather station</Translation>

@@ -1,9 +1,0 @@
-../../TouchGFX/gui/include/gui/model/ModelListener.hpp:18:18:virtual void ModelListener::updateValue(int)	0	static
-../../TouchGFX/gui/include/gui/model/ModelListener.hpp:23:18:virtual void ModelListener::current_Clock(int*)	0	static
-../../TouchGFX/gui/include/gui/model/ModelListener.hpp:28:18:virtual void ModelListener::current_Date_value(int*)	0	static
-../../TouchGFX/gui/include/gui/model/ModelListener.hpp:32:18:virtual void ModelListener::updated_Clock(int*)	0	static
-../../TouchGFX/gui/include/gui/statistics_temperature_screen/Statistics_TemperaturePresenter.hpp:28:13:Statistics_TemperaturePresenter::~Statistics_TemperaturePresenter()	0	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/statistics_temperature_screen/Statistics_TemperaturePresenter.cpp:10:6:virtual void Statistics_TemperaturePresenter::activate()	0	static
-../../TouchGFX/gui/include/gui/statistics_temperature_screen/Statistics_TemperaturePresenter.hpp:28:13:virtual Statistics_TemperaturePresenter::~Statistics_TemperaturePresenter()	8	static
-../../TouchGFX/gui/include/gui/statistics_temperature_screen/Statistics_TemperaturePresenter.hpp:28:13:virtual void* Statistics_TemperaturePresenter::_ZThn4_N31Statistics_TemperaturePresenterD1Ev()	0	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/statistics_temperature_screen/Statistics_TemperaturePresenter.cpp:4:1:Statistics_TemperaturePresenter::Statistics_TemperaturePresenter(Statistics_TemperatureView&)	8	static

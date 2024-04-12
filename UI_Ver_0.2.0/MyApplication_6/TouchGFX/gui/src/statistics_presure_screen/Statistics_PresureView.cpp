@@ -14,9 +14,3 @@ void Statistics_PresureView::tearDownScreen()
 {
     Statistics_PresureViewBase::tearDownScreen();
 }
-
-void Statistics_PresureView::set_brightness_level(int brightness)
-{
-	Screen_Brightness.setAlpha(brightness);
-	Screen_Brightness.invalidate();
-}

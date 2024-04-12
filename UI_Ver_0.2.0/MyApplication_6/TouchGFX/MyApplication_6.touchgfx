@@ -41,7 +41,7 @@
           },
           {
             "Type": "TextArea",
-            "Name": "Header_Text",
+            "Name": "textArea1",
             "X": 27,
             "Y": 13,
             "Width": 160,
@@ -82,10 +82,10 @@
                     "Type": "TextArea",
                     "Name": "Humidity_Text",
                     "X": 76,
-                    "Y": 31,
+                    "Y": 30,
                     "Width": 89,
                     "Height": 24,
-                    "TextId": "__SingleUse_OTTP",
+                    "TextId": "__SingleUse_SC46",
                     "TextRotation": "0",
                     "Color": {
                       "Green": 247,
@@ -96,11 +96,11 @@
                   {
                     "Type": "TextArea",
                     "Name": "Humidity_Val",
-                    "X": 100,
-                    "Y": 65,
-                    "Width": 66,
-                    "Height": 24,
-                    "TextId": "__SingleUse_KIGC",
+                    "X": 81,
+                    "Y": 109,
+                    "Width": 163,
+                    "Height": 41,
+                    "TextId": "__SingleUse_ED8P",
                     "TextRotation": "0",
                     "Color": {
                       "Green": 247,
@@ -108,32 +108,10 @@
                     },
                     "AutoSize": true,
                     "Wildcard1": {
-                      "TextId": "__SingleUse_NWFU",
+                      "TextId": "__SingleUse_TRUT",
                       "UseBuffer": true,
                       "BufferSize": 10
                     }
-                  },
-                  {
-                    "Type": "CircleProgress",
-                    "Name": "HumidityCirc_Val",
-                    "X": 65,
-                    "Y": 107,
-                    "Width": 110,
-                    "Height": 110,
-                    "Color": {
-                      "Green": 240,
-                      "Blue": 255
-                    },
-                    "CenterX": 55.0,
-                    "CenterY": 55.0,
-                    "Radius": 50.0,
-                    "LineWidth": 10.0,
-                    "EndAngle": 360.0,
-                    "CapPrecision": "Butt",
-                    "Preset": "alternate_theme\\presets\\circleprogress\\active_small.json",
-                    "FileNameBackground": "__generated\\alternate_theme_images_widgets_circleprogress_backgrounds_small.png",
-                    "ProgressRangeMax": 100,
-                    "ProgressInitialValue": 60
                   },
                   {
                     "Type": "ButtonWithIcon",
@@ -180,7 +158,7 @@
                     "Name": "Carbon_Val",
                     "X": 91,
                     "Y": 64,
-                    "Width": 80,
+                    "Width": 143,
                     "Height": 24,
                     "TextId": "__SingleUse_GP4Z",
                     "TextRotation": "0",
@@ -192,7 +170,7 @@
                     "Wildcard1": {
                       "TextId": "__SingleUse_9KGC",
                       "UseBuffer": true,
-                      "BufferSize": 2
+                      "BufferSize": 20
                     }
                   },
                   {
@@ -210,7 +188,8 @@
                     "CenterY": 55.0,
                     "Radius": 50.0,
                     "LineWidth": 10.0,
-                    "EndAngle": 180.0,
+                    "StartAngle": -90.0,
+                    "EndAngle": 210.0,
                     "CapPrecision": "Butt",
                     "FileNameBackground": "__generated\\alternate_theme_images_widgets_circleprogress_backgrounds_small.png",
                     "ProgressRangeMax": 100,
@@ -243,12 +222,12 @@
                 "Components": [
                   {
                     "Type": "TextArea",
-                    "Name": "Presure_Text_1",
-                    "X": 44,
-                    "Y": 36,
+                    "Name": "Presure_Text",
+                    "X": 55,
+                    "Y": 30,
                     "Width": 150,
                     "Height": 24,
-                    "TextId": "__SingleUse_EXUE",
+                    "TextId": "__SingleUse_QJ73",
                     "TextRotation": "0",
                     "Color": {
                       "Green": 247,
@@ -259,11 +238,11 @@
                   {
                     "Type": "TextArea",
                     "Name": "Presure_Val",
-                    "X": 91,
-                    "Y": 72,
-                    "Width": 85,
-                    "Height": 24,
-                    "TextId": "__SingleUse_3F2U",
+                    "X": 83,
+                    "Y": 109,
+                    "Width": 75,
+                    "Height": 41,
+                    "TextId": "__SingleUse_MJ6R",
                     "TextRotation": "0",
                     "Color": {
                       "Green": 247,
@@ -271,32 +250,10 @@
                     },
                     "AutoSize": true,
                     "Wildcard1": {
-                      "TextId": "__SingleUse_QOBO",
+                      "TextId": "__SingleUse_JVDX",
                       "UseBuffer": true,
                       "BufferSize": 10
                     }
-                  },
-                  {
-                    "Type": "CircleProgress",
-                    "Name": "PresureCirc_Val",
-                    "X": 65,
-                    "Y": 107,
-                    "Width": 110,
-                    "Height": 110,
-                    "Color": {
-                      "Green": 240,
-                      "Blue": 255
-                    },
-                    "CenterX": 55.0,
-                    "CenterY": 55.0,
-                    "Radius": 50.0,
-                    "LineWidth": 10.0,
-                    "EndAngle": 360.0,
-                    "CapPrecision": "Butt",
-                    "Preset": "alternate_theme\\presets\\circleprogress\\active_small.json",
-                    "FileNameBackground": "__generated\\alternate_theme_images_widgets_circleprogress_backgrounds_small.png",
-                    "ProgressRangeMax": 100,
-                    "ProgressInitialValue": 60
                   },
                   {
                     "Type": "ButtonWithIcon",
@@ -343,11 +300,11 @@
                   {
                     "Type": "TextArea",
                     "Name": "Ambient_Text",
-                    "X": 54,
-                    "Y": 23,
+                    "X": 55,
+                    "Y": 30,
                     "Width": 133,
                     "Height": 24,
-                    "TextId": "__SingleUse_EIUW",
+                    "TextId": "__SingleUse_VIA7",
                     "TextRotation": "0",
                     "Color": {
                       "Green": 247,
@@ -358,11 +315,11 @@
                   {
                     "Type": "TextArea",
                     "Name": "Ambient_Val",
-                    "X": 100,
-                    "Y": 60,
-                    "Width": 59,
-                    "Height": 24,
-                    "TextId": "__SingleUse_85FW",
+                    "X": 81,
+                    "Y": 109,
+                    "Width": 149,
+                    "Height": 41,
+                    "TextId": "__SingleUse_9KQX",
                     "TextRotation": "0",
                     "Color": {
                       "Green": 247,
@@ -370,32 +327,10 @@
                     },
                     "AutoSize": true,
                     "Wildcard1": {
-                      "TextId": "__SingleUse_DUQV",
+                      "TextId": "__SingleUse_VYLX",
                       "UseBuffer": true,
                       "BufferSize": 10
                     }
-                  },
-                  {
-                    "Type": "CircleProgress",
-                    "Name": "AmbientCirc_Val",
-                    "X": 65,
-                    "Y": 107,
-                    "Width": 110,
-                    "Height": 110,
-                    "Color": {
-                      "Green": 240,
-                      "Blue": 255
-                    },
-                    "CenterX": 55.0,
-                    "CenterY": 55.0,
-                    "Radius": 50.0,
-                    "LineWidth": 10.0,
-                    "EndAngle": 360.0,
-                    "CapPrecision": "Butt",
-                    "Preset": "alternate_theme\\presets\\circleprogress\\active_small.json",
-                    "FileNameBackground": "__generated\\alternate_theme_images_widgets_circleprogress_backgrounds_small.png",
-                    "ProgressRangeMax": 100,
-                    "ProgressInitialValue": 60
                   }
                 ]
               },
@@ -408,11 +343,11 @@
                   {
                     "Type": "TextArea",
                     "Name": "TempIn_Val",
-                    "X": 69,
-                    "Y": 76,
-                    "Width": 123,
-                    "Height": 24,
-                    "TextId": "__SingleUse_62A2",
+                    "X": 81,
+                    "Y": 109,
+                    "Width": 134,
+                    "Height": 41,
+                    "TextId": "__SingleUse_BF3J",
                     "TextRotation": "0",
                     "Color": {
                       "Green": 247,
@@ -420,7 +355,7 @@
                     },
                     "AutoSize": true,
                     "Wildcard1": {
-                      "TextId": "__SingleUse_QYXK",
+                      "TextId": "__SingleUse_E5QY",
                       "UseBuffer": true,
                       "BufferSize": 10
                     }
@@ -429,38 +364,16 @@
                     "Type": "TextArea",
                     "Name": "TempIn_Text",
                     "X": 55,
-                    "Y": 28,
+                    "Y": 30,
                     "Width": 128,
                     "Height": 48,
-                    "TextId": "__SingleUse_HDSV",
+                    "TextId": "__SingleUse_NIUA",
                     "TextRotation": "0",
                     "Color": {
                       "Green": 247,
                       "Blue": 255
                     },
                     "AutoSize": true
-                  },
-                  {
-                    "Type": "CircleProgress",
-                    "Name": "TempInCirc_Val",
-                    "X": 65,
-                    "Y": 107,
-                    "Width": 110,
-                    "Height": 110,
-                    "Color": {
-                      "Green": 240,
-                      "Blue": 255
-                    },
-                    "CenterX": 55.0,
-                    "CenterY": 55.0,
-                    "Radius": 50.0,
-                    "LineWidth": 10.0,
-                    "EndAngle": 360.0,
-                    "CapPrecision": "Butt",
-                    "Preset": "alternate_theme\\presets\\circleprogress\\active_small.json",
-                    "FileNameBackground": "__generated\\alternate_theme_images_widgets_circleprogress_backgrounds_small.png",
-                    "ProgressRangeMax": 100,
-                    "ProgressInitialValue": 60
                   },
                   {
                     "Type": "ButtonWithIcon",
@@ -490,11 +403,11 @@
                   {
                     "Type": "TextArea",
                     "Name": "TempOut_Val",
-                    "X": 84,
-                    "Y": 83,
-                    "Width": 116,
-                    "Height": 24,
-                    "TextId": "__SingleUse_0S8O",
+                    "X": 81,
+                    "Y": 109,
+                    "Width": 148,
+                    "Height": 41,
+                    "TextId": "__SingleUse_7E1H",
                     "TextRotation": "0",
                     "Color": {
                       "Green": 247,
@@ -502,7 +415,7 @@
                     },
                     "AutoSize": true,
                     "Wildcard1": {
-                      "TextId": "__SingleUse_WKOW",
+                      "TextId": "__SingleUse_IV5N",
                       "UseBuffer": true,
                       "BufferSize": 10
                     }
@@ -511,38 +424,16 @@
                     "Type": "TextArea",
                     "Name": "TempOut_Text",
                     "X": 55,
-                    "Y": 28,
+                    "Y": 30,
                     "Width": 128,
                     "Height": 48,
-                    "TextId": "__SingleUse_RUSB",
+                    "TextId": "__SingleUse_ZFWW",
                     "TextRotation": "0",
                     "Color": {
                       "Green": 247,
                       "Blue": 255
                     },
                     "AutoSize": true
-                  },
-                  {
-                    "Type": "CircleProgress",
-                    "Name": "TempOutCirc_Val",
-                    "X": 65,
-                    "Y": 107,
-                    "Width": 110,
-                    "Height": 110,
-                    "Color": {
-                      "Green": 240,
-                      "Blue": 255
-                    },
-                    "CenterX": 55.0,
-                    "CenterY": 55.0,
-                    "Radius": 50.0,
-                    "LineWidth": 10.0,
-                    "EndAngle": 360.0,
-                    "CapPrecision": "Butt",
-                    "Preset": "alternate_theme\\presets\\circleprogress\\active_small.json",
-                    "FileNameBackground": "__generated\\alternate_theme_images_widgets_circleprogress_backgrounds_small.png",
-                    "ProgressRangeMax": 100,
-                    "ProgressInitialValue": 60
                   },
                   {
                     "Type": "ButtonWithIcon",
@@ -610,8 +501,96 @@
             "Alpha": 17
           },
           {
+            "Type": "Container",
+            "Name": "Alert_cover",
+            "Width": 250,
+            "Height": 320,
+            "Visible": false,
+            "Components": [
+              {
+                "Type": "Box",
+                "Name": "Backround_1",
+                "Width": 240,
+                "Height": 320,
+                "Alpha": 150
+              },
+              {
+                "Type": "Box",
+                "Name": "Error_msg_backround",
+                "X": 14,
+                "Y": 180,
+                "Width": 215,
+                "Height": 47,
+                "Alpha": 150
+              },
+              {
+                "Type": "Image",
+                "Name": "Error",
+                "X": 84,
+                "Y": 70,
+                "Width": 70,
+                "Height": 70,
+                "RelativeFilename": "__generated\\icon_theme_images_alert_error_70_70_FF0000.svg.png"
+              },
+              {
+                "Type": "TextArea",
+                "Name": "Error_code",
+                "X": 47,
+                "Y": 40,
+                "Width": 156,
+                "Height": 24,
+                "TextId": "__SingleUse_HAUQ",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_MEFF"
+                }
+              },
+              {
+                "Type": "ButtonWithLabel",
+                "Name": "Snooze_button",
+                "X": 71,
+                "Y": 253,
+                "Width": 100,
+                "Height": 36,
+                "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_36_tiny_round_pressed.png",
+                "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_36_tiny_round_action.png",
+                "TextId": "__SingleUse_TTSL",
+                "PressedColor": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "TextRotation": "0",
+                "Preset": "alternate_theme\\presets\\button\\regular\\height_36\\tiny_round_action.json"
+              },
+              {
+                "Type": "TextArea",
+                "Name": "Error_text",
+                "X": 55,
+                "Y": 191,
+                "Width": 39,
+                "Height": 24,
+                "TextId": "__SingleUse_595W",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255
+                },
+                "AutoSize": true,
+                "Wildcard1": {
+                  "TextId": "__SingleUse_VN7N",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                }
+              }
+            ]
+          },
+          {
             "Type": "Box",
-            "Name": "Screen_Brightness",
+            "Name": "Brightness_level",
             "Width": 240,
             "Height": 320,
             "Alpha": 0
@@ -627,7 +606,7 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "MenuDropdown"
+              "ActionComponent": "MenuDropdown_1"
             }
           },
           {
@@ -712,15 +691,26 @@
               "ScreenTransitionType": "ScreenTransitionNone",
               "ActionComponent": "Statistics_Temperature_Outside"
             }
+          },
+          {
+            "InteractionName": "Alert_cover_hide",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Snooze_button"
+            },
+            "Action": {
+              "Type": "ActionHide",
+              "ActionComponent": "Alert_cover"
+            }
           }
         ]
       },
       {
-        "Name": "MenuDropdown",
+        "Name": "MenuDropdown_1",
         "Components": [
           {
             "Type": "Box",
-            "Name": "Backround",
+            "Name": "box1",
             "Width": 240,
             "Height": 320,
             "Color": {
@@ -754,7 +744,7 @@
           },
           {
             "Type": "TextArea",
-            "Name": "Header_Text",
+            "Name": "textArea1",
             "X": 20,
             "Y": 15,
             "Width": 160,
@@ -770,7 +760,7 @@
           },
           {
             "Type": "ScrollList",
-            "Name": "Scroll_Elements",
+            "Name": "scrollList1",
             "Y": 51,
             "Width": 245,
             "Height": 295,
@@ -784,7 +774,7 @@
           },
           {
             "Type": "Box",
-            "Name": "Screen_Brightness",
+            "Name": "Brightness_level",
             "Width": 240,
             "Height": 320,
             "Alpha": 0
@@ -810,7 +800,7 @@
         "Components": [
           {
             "Type": "Box",
-            "Name": "Backround",
+            "Name": "box1",
             "Width": 240,
             "Height": 320,
             "Color": {
@@ -821,7 +811,7 @@
           },
           {
             "Type": "TextArea",
-            "Name": "Header_Text",
+            "Name": "WeatherStation",
             "X": 20,
             "Y": 15,
             "Width": 160,
@@ -860,7 +850,7 @@
           },
           {
             "Type": "TextArea",
-            "Name": "Text",
+            "Name": "textArea1",
             "X": 24,
             "Y": 75,
             "Width": 184,
@@ -876,7 +866,7 @@
           },
           {
             "Type": "Box",
-            "Name": "Screen_Brightness",
+            "Name": "Brightness_level",
             "Width": 240,
             "Height": 320,
             "Alpha": 0
@@ -892,7 +882,7 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "MenuDropdown"
+              "ActionComponent": "MenuDropdown_1"
             }
           }
         ]
@@ -902,7 +892,7 @@
         "Components": [
           {
             "Type": "Box",
-            "Name": "Backround",
+            "Name": "box1",
             "Width": 240,
             "Height": 320,
             "Color": {
@@ -913,7 +903,7 @@
           },
           {
             "Type": "TextArea",
-            "Name": "Header_Text",
+            "Name": "textArea1",
             "X": 20,
             "Y": 15,
             "Width": 160,
@@ -1095,7 +1085,7 @@
           },
           {
             "Type": "Box",
-            "Name": "Screen_Brightness",
+            "Name": "Brightness_level",
             "Width": 240,
             "Height": 320,
             "Alpha": 0
@@ -1111,7 +1101,7 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "MenuDropdown"
+              "ActionComponent": "MenuDropdown_1"
             }
           },
           {
@@ -1198,7 +1188,7 @@
         "Components": [
           {
             "Type": "Box",
-            "Name": "Backround",
+            "Name": "box1",
             "Width": 240,
             "Height": 320,
             "Color": {
@@ -1209,7 +1199,7 @@
           },
           {
             "Type": "TextArea",
-            "Name": "Header_Text",
+            "Name": "textArea1",
             "X": 20,
             "Y": 15,
             "Width": 160,
@@ -1504,7 +1494,7 @@
           },
           {
             "Type": "Box",
-            "Name": "Screen_Brightness",
+            "Name": "Brightness_level",
             "Width": 240,
             "Height": 320,
             "Alpha": 0
@@ -1520,7 +1510,7 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "MenuDropdown"
+              "ActionComponent": "MenuDropdown_1"
             }
           },
           {
@@ -1608,7 +1598,7 @@
         "Components": [
           {
             "Type": "Box",
-            "Name": "Backround",
+            "Name": "backround",
             "Width": 240,
             "Height": 320,
             "Color": {
@@ -1773,7 +1763,7 @@
           },
           {
             "Type": "Box",
-            "Name": "Screen_Brightness",
+            "Name": "Brightness_level",
             "Width": 240,
             "Height": 320,
             "Alpha": 0
@@ -1789,7 +1779,7 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "MenuDropdown"
+              "ActionComponent": "MenuDropdown_1"
             }
           }
         ]
@@ -1965,7 +1955,7 @@
           },
           {
             "Type": "Box",
-            "Name": "Screen_Brightness",
+            "Name": "Brightness_level",
             "Width": 240,
             "Height": 320,
             "Alpha": 0
@@ -1981,7 +1971,7 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "MenuDropdown"
+              "ActionComponent": "MenuDropdown_1"
             }
           }
         ]
@@ -2157,7 +2147,7 @@
           },
           {
             "Type": "Box",
-            "Name": "Screen_Brightness",
+            "Name": "Brightness_level",
             "Width": 240,
             "Height": 320,
             "Alpha": 0
@@ -2173,7 +2163,7 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "MenuDropdown"
+              "ActionComponent": "MenuDropdown_1"
             }
           }
         ]
@@ -2349,7 +2339,7 @@
           },
           {
             "Type": "Box",
-            "Name": "Screen_Brightness",
+            "Name": "Brightness_level",
             "Width": 240,
             "Height": 320,
             "Alpha": 0
@@ -2365,7 +2355,7 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "MenuDropdown"
+              "ActionComponent": "MenuDropdown_1"
             }
           }
         ]
@@ -2541,7 +2531,7 @@
           },
           {
             "Type": "Box",
-            "Name": "Screen_Brightness",
+            "Name": "Brightness_level",
             "Width": 240,
             "Height": 320,
             "Alpha": 0
@@ -2557,7 +2547,7 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "MenuDropdown"
+              "ActionComponent": "MenuDropdown_1"
             }
           }
         ]
@@ -2733,7 +2723,7 @@
           },
           {
             "Type": "Box",
-            "Name": "Screen_Brightness",
+            "Name": "Brightness_level",
             "Width": 240,
             "Height": 320,
             "Alpha": 0
@@ -2749,7 +2739,225 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "MenuDropdown"
+              "ActionComponent": "MenuDropdown_1"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Alarm_Settings",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "backround",
+            "Width": 240,
+            "Height": 320,
+            "Color": {
+              "Red": 43,
+              "Green": 43,
+              "Blue": 43
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "Footer",
+            "X": -1,
+            "Y": 292,
+            "Width": 241,
+            "Height": 32,
+            "Color": {
+              "Red": 56,
+              "Green": 89,
+              "Blue": 255
+            },
+            "Alpha": 17
+          },
+          {
+            "Type": "Box",
+            "Name": "Header_backround",
+            "Width": 240,
+            "Height": 52,
+            "Color": {
+              "Red": 56,
+              "Green": 89,
+              "Blue": 255
+            },
+            "Alpha": 17
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "Menu_Button",
+            "X": 197,
+            "Y": 7,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_normal.png",
+            "TextId": "__SingleUse_BMQY",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_outline_normal.json"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Header_Text",
+            "X": 27,
+            "Y": 13,
+            "Width": 160,
+            "Height": 24,
+            "TextId": "__SingleUse_XGA9",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 153,
+              "Green": 153,
+              "Blue": 153
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "System_Allarm_Text",
+            "X": 29,
+            "Y": 65,
+            "Width": 186,
+            "Height": 24,
+            "TextId": "__SingleUse_CAKJ",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 247,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Alarm_confirmation_text",
+            "X": 16,
+            "Y": 212,
+            "Width": 209,
+            "Height": 72,
+            "TextId": "__SingleUse_J7M8",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "Box",
+            "Name": "Brightness_level",
+            "X": -1,
+            "Width": 240,
+            "Height": 320,
+            "Alpha": 0
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "Permission_ON",
+            "X": 127,
+            "Y": 100,
+            "Width": 60,
+            "Height": 60,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_outline_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_outline_active.png",
+            "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconX": 5,
+            "IconY": 5,
+            "IconHeight": 50,
+            "IconWidth": 50,
+            "Preset": "alternate_theme\\presets\\button\\icon\\round\\tiny_outline_active.json"
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "Permission_OFF",
+            "X": 47,
+            "Y": 100,
+            "Width": 60,
+            "Height": 60,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_outline_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_outline_active.png",
+            "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_content_clear_50_50_E8F6FB.svg.png",
+            "IconX": 5,
+            "IconY": 5,
+            "IconHeight": 50,
+            "IconWidth": 50,
+            "Preset": "alternate_theme\\presets\\button\\icon\\round\\tiny_outline_active.json"
+          },
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "X": 67,
+            "Y": 178,
+            "Width": 90,
+            "Height": 25,
+            "Color": {
+              "Green": 247,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 97,
+            "Y": 179,
+            "Width": 41,
+            "Height": 24,
+            "TextId": "__SingleUse_X4VI",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_1307",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "MenuNav",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Menu_Button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "MenuDropdown_1"
+            }
+          },
+          {
+            "InteractionName": "btn_Permission_ON",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Permission_ON"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "btn_Permission_ON"
+            }
+          },
+          {
+            "InteractionName": "btn_Permission_OFF",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Permission_OFF"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "btn_Permission_OFF"
             }
           }
         ]
@@ -2932,6 +3140,18 @@
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
               "ActionComponent": "Date_Settings"
+            }
+          },
+          {
+            "InteractionName": "AlarmPageNav",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Alarm"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Alarm_Settings"
             }
           }
         ]

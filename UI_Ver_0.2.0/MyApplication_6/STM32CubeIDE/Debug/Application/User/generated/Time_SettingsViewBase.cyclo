@@ -25,19 +25,19 @@
 ../../TouchGFX/generated/gui_generated/include/gui_generated/time_settings_screen/Time_SettingsViewBase.hpp:46:18:virtual void Time_SettingsViewBase::Seconds_Down()	1
 ../../TouchGFX/generated/gui_generated/include/gui_generated/time_settings_screen/Time_SettingsViewBase.hpp:50:18:virtual void Time_SettingsViewBase::Set_Current_Time()	1
 ../../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:touchgfx::View<Time_SettingsPresenter>::~View()	1
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/gui_generated/src/time_settings_screen/Time_SettingsViewBase.cpp:98:1:Time_SettingsViewBase::~Time_SettingsViewBase()	1
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/gui_generated/src/time_settings_screen/Time_SettingsViewBase.cpp:103:6:virtual void Time_SettingsViewBase::setupScreen()	1
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/generated/gui_generated/src/time_settings_screen/Time_SettingsViewBase.cpp:98:1:Time_SettingsViewBase::~Time_SettingsViewBase()	1
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/generated/gui_generated/src/time_settings_screen/Time_SettingsViewBase.cpp:103:6:virtual void Time_SettingsViewBase::setupScreen()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:touchgfx::Callback<Time_SettingsViewBase, const touchgfx::AbstractButton&>::~Callback()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:386:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = Time_SettingsViewBase; T1 = const touchgfx::AbstractButton&]	2
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:396:18:bool touchgfx::Callback<dest_type, T1, void, void>::isValid() const [with dest_type = Time_SettingsViewBase; T1 = const touchgfx::AbstractButton&]	3
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:65:13:virtual touchgfx::TypedText::~TypedText()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:virtual touchgfx::Callback<Time_SettingsViewBase, const touchgfx::AbstractButton&>::~Callback()	1
 ../../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:virtual touchgfx::View<Time_SettingsPresenter>::~View()	1
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/gui_generated/src/time_settings_screen/Time_SettingsViewBase.cpp:98:1:virtual Time_SettingsViewBase::~Time_SettingsViewBase()	1
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/gui_generated/src/time_settings_screen/Time_SettingsViewBase.cpp:108:6:void Time_SettingsViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	9
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/generated/gui_generated/src/time_settings_screen/Time_SettingsViewBase.cpp:98:1:virtual Time_SettingsViewBase::~Time_SettingsViewBase()	1
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/generated/gui_generated/src/time_settings_screen/Time_SettingsViewBase.cpp:108:6:void Time_SettingsViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	9
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:121:18:virtual void touchgfx::Drawable::invalidateContent() const	2
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:343:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:233:10:void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:33:5:touchgfx::Box::Box()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:132:10:void touchgfx::ButtonWithLabel::updateTextPosition()	2
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/gui_generated/src/time_settings_screen/Time_SettingsViewBase.cpp:9:1:Time_SettingsViewBase::Time_SettingsViewBase()	1
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/generated/gui_generated/src/time_settings_screen/Time_SettingsViewBase.cpp:9:1:Time_SettingsViewBase::Time_SettingsViewBase()	1

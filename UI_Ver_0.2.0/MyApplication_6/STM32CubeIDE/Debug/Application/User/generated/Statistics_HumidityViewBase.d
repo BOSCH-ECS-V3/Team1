@@ -1,5 +1,5 @@
 Application/User/generated/Statistics_HumidityViewBase.o: \
- C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/gui_generated/src/statistics_humidity_screen/Statistics_HumidityViewBase.cpp \
+ C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/generated/gui_generated/src/statistics_humidity_screen/Statistics_HumidityViewBase.cpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/statistics_humidity_screen/Statistics_HumidityViewBase.hpp \
  ../../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp \

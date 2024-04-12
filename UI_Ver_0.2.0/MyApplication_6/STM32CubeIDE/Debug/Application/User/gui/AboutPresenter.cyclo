@@ -3,9 +3,11 @@
 ../../TouchGFX/gui/include/gui/model/ModelListener.hpp:28:18:virtual void ModelListener::current_Date_value(int*)	1
 ../../TouchGFX/gui/include/gui/model/ModelListener.hpp:32:18:virtual void ModelListener::updated_Clock(int*)	1
 ../../TouchGFX/gui/include/gui/model/ModelListener.hpp:36:18:virtual void ModelListener::current_Sensor_values(int*)	1
-../../TouchGFX/gui/include/gui/about_screen/AboutPresenter.hpp:30:13:AboutPresenter::~AboutPresenter()	1
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/about_screen/AboutPresenter.cpp:10:6:virtual void AboutPresenter::activate()	1
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/about_screen/AboutPresenter.cpp:20:6:virtual void AboutPresenter::set_brightness_level(int)	1
-../../TouchGFX/gui/include/gui/about_screen/AboutPresenter.hpp:30:13:virtual AboutPresenter::~AboutPresenter()	1
-../../TouchGFX/gui/include/gui/about_screen/AboutPresenter.hpp:30:13:virtual void* AboutPresenter::_ZThn4_N14AboutPresenterD1Ev()	1
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/gui/src/about_screen/AboutPresenter.cpp:4:1:AboutPresenter::AboutPresenter(AboutView&)	1
+../../TouchGFX/gui/include/gui/model/ModelListener.hpp:40:18:virtual void ModelListener::SEND_Permission(int)	1
+../../TouchGFX/gui/include/gui/model/ModelListener.hpp:44:18:virtual void ModelListener::RECEIVE_Permission(int)	1
+../../TouchGFX/gui/include/gui/model/ModelListener.hpp:48:18:virtual void ModelListener::SEND_Error_ID(int)	1
+../../TouchGFX/gui/include/gui/about_screen/AboutPresenter.hpp:28:13:AboutPresenter::~AboutPresenter()	1
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/about_screen/AboutPresenter.cpp:10:6:virtual void AboutPresenter::activate()	1
+../../TouchGFX/gui/include/gui/about_screen/AboutPresenter.hpp:28:13:virtual AboutPresenter::~AboutPresenter()	1
+../../TouchGFX/gui/include/gui/about_screen/AboutPresenter.hpp:28:13:virtual void* AboutPresenter::_ZThn4_N14AboutPresenterD1Ev()	1
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/about_screen/AboutPresenter.cpp:4:1:AboutPresenter::AboutPresenter(AboutView&)	1

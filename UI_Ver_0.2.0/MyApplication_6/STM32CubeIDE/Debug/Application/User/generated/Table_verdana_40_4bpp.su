@@ -1,2 +1,2 @@
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/fonts/src/Table_verdana_40_4bpp.cpp:40:168:void __tcf_0()	0	static
-C:/TouchGFXProjects/MyApplication_6/TouchGFX/generated/fonts/src/Table_verdana_40_4bpp.cpp:38:26:touchgfx::GeneratedFont& getFont_verdana_40_4bpp()	72	static
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/generated/fonts/src/Table_verdana_40_4bpp.cpp:42:168:void __tcf_0()	0	static
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/generated/fonts/src/Table_verdana_40_4bpp.cpp:40:26:touchgfx::GeneratedFont& getFont_verdana_40_4bpp()	72	static

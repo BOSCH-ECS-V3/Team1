@@ -11,8 +11,6 @@ public:
     virtual ~AboutView() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
-    virtual void set_brightness_level(int brightness);
-
 protected:
 };
 
