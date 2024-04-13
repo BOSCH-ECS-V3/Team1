@@ -1,7 +1,0 @@
-../Application/User/temp_sens.c:67:8:user_i2c_read	2
-../Application/User/temp_sens.c:83:8:user_i2c_write	1
-../Application/User/temp_sens.c:100:6:user_delay_ms	1
-../Application/User/temp_sens.c:29:8:SensorConfig	2
-../Application/User/temp_sens.c:12:8:SensorInit	1
-../Application/User/temp_sens.c:52:6:SetMeasurementPeriod	1
-../Application/User/temp_sens.c:58:8:CollectSensorData	1

@@ -1,8 +1,0 @@
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	1
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	1
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	1
-C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/statistics_presure_screen/Statistics_PresureView.cpp:13:6:virtual void Statistics_PresureView::tearDownScreen()	1
-../../TouchGFX/gui/include/gui/statistics_presure_screen/Statistics_PresureView.hpp:11:13:Statistics_PresureView::~Statistics_PresureView()	1
-../../TouchGFX/gui/include/gui/statistics_presure_screen/Statistics_PresureView.hpp:11:13:virtual Statistics_PresureView::~Statistics_PresureView()	1
-C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/statistics_presure_screen/Statistics_PresureView.cpp:3:1:Statistics_PresureView::Statistics_PresureView()	1
-C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/statistics_presure_screen/Statistics_PresureView.cpp:8:6:virtual void Statistics_PresureView::setupScreen()	1

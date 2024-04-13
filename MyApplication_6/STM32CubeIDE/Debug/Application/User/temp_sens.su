@@ -1,7 +1,0 @@
-../Application/User/temp_sens.c:67:8:user_i2c_read	40	static
-../Application/User/temp_sens.c:83:8:user_i2c_write	64	static
-../Application/User/temp_sens.c:100:6:user_delay_ms	0	static
-../Application/User/temp_sens.c:29:8:SensorConfig	8	static
-../Application/User/temp_sens.c:12:8:SensorInit	16	static
-../Application/User/temp_sens.c:52:6:SetMeasurementPeriod	0	static
-../Application/User/temp_sens.c:58:8:CollectSensorData	0	static

@@ -16,6 +16,7 @@
  *
  ******************************************************************************
  */
+#define DISPLAY_MENU_COMMAND 0
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
@@ -27,6 +28,7 @@
 #include "Components/ili9341/ili9341.h"
 #include "temp_sens.h"
 #include "data_UI_def.h"
+#include "cli.h"
 
 /* USER CODE END Includes */
 
@@ -77,12 +79,18 @@ LTDC_HandleTypeDef hltdc;
 
 SPI_HandleTypeDef hspi5;
 
+UART_HandleTypeDef huart1;
+
 SDRAM_HandleTypeDef hsdram1;
 
+/* Definitions for defaultTask */
+
 /* Definitions for GUI_Task */
-TaskHandle_t GUI_TaskHandle;
+
 /* USER CODE BEGIN PV */
+TaskHandle_t GUI_TaskHandle;
 TaskHandle_t GetSensData_TaskHandle;
+TaskHandle_t CLI_TaskHandle;
 
 struct bme680_dev sensor_In;
 struct bme680_dev sensor_Out;
@@ -107,6 +115,8 @@ static void MX_FMC_Init(void);
 static void MX_LTDC_Init(void);
 static void MX_DMA2D_Init(void);
 static void MX_ADC1_Init(void);
+static void MX_USART1_UART_Init(void);
+void CLI_Task(void *argument);
 void GetSensDataTask(void *argument);
 extern void TouchGFX_Task(void *argument);
 
@@ -185,7 +195,10 @@ int main(void) {
 	MX_LTDC_Init();
 	MX_DMA2D_Init();
 	MX_ADC1_Init();
+	MX_USART1_UART_Init();
 	MX_TouchGFX_Init();
+	/* Call PreOsInit function */
+	MX_TouchGFX_PreOSInit();
 	/* USER CODE BEGIN 2 */
 	SensorInit(&sensor_In, &meas_period_In);
 
@@ -193,9 +206,44 @@ int main(void) {
 			&GUI_TaskHandle);
 	xTaskCreate(GetSensDataTask, "GetSensDataTask", 128, NULL, osPriorityNormal,
 			&GetSensData_TaskHandle);
+	xTaskCreate(CLI_Task, "Command Line Interface", 128, NULL, osPriorityNormal,
+			&CLI_TaskHandle);
 
 	vTaskStartScheduler();
 	/* USER CODE END 2 */
+
+	/* Init scheduler */
+
+	/* USER CODE BEGIN RTOS_MUTEX */
+	/* add mutexes, ... */
+	/* USER CODE END RTOS_MUTEX */
+
+	/* USER CODE BEGIN RTOS_SEMAPHORES */
+	/* add semaphores, ... */
+	/* USER CODE END RTOS_SEMAPHORES */
+
+	/* USER CODE BEGIN RTOS_TIMERS */
+	/* start timers, add new ones, ... */
+	/* USER CODE END RTOS_TIMERS */
+
+	/* USER CODE BEGIN RTOS_QUEUES */
+	/* add queues, ... */
+	/* USER CODE END RTOS_QUEUES */
+
+	/* Create the thread(s) */
+	/* creation of defaultTask */
+
+	/* USER CODE BEGIN RTOS_THREADS */
+	/* add threads, ... */
+	/* USER CODE END RTOS_THREADS */
+
+	/* USER CODE BEGIN RTOS_EVENTS */
+	/* add events, ... */
+	/* USER CODE END RTOS_EVENTS */
+
+	/* Start scheduler */
+
+	/* We should never get here as control is now taken by the scheduler */
 
 	/* Infinite loop */
 	/* USER CODE BEGIN WHILE */
@@ -286,21 +334,20 @@ static void MX_ADC1_Init(void) {
 
 	/** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
 	 */
-	//sConfig.Channel = ADC_CHANNEL_5;
-	//sConfig.Rank = 1;
-	//sConfig.SamplingTime = ADC_SAMPLETIME_3CYCLES;
-	//if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
-	//{
-	//Error_Handler();
-	//}
+	sConfig.Channel = ADC_CHANNEL_5;
+	sConfig.Rank = 1;
+	sConfig.SamplingTime = ADC_SAMPLETIME_3CYCLES;
+	if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK) {
+		Error_Handler();
+	}
+
 	/** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
 	 */
-	//sConfig.Channel = ADC_CHANNEL_7;
-	//sConfig.Rank = 2;
-	//if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
-	//{
-	//Error_Handler();
-	//}
+	sConfig.Channel = ADC_CHANNEL_7;
+	sConfig.Rank = 2;
+	if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK) {
+		Error_Handler();
+	}
 	/* USER CODE BEGIN ADC1_Init 2 */
 
 	/* USER CODE END ADC1_Init 2 */
@@ -510,6 +557,37 @@ static void MX_SPI5_Init(void) {
 
 }
 
+/**
+ * @brief USART1 Initialization Function
+ * @param None
+ * @retval None
+ */
+static void MX_USART1_UART_Init(void) {
+
+	/* USER CODE BEGIN USART1_Init 0 */
+
+	/* USER CODE END USART1_Init 0 */
+
+	/* USER CODE BEGIN USART1_Init 1 */
+
+	/* USER CODE END USART1_Init 1 */
+	huart1.Instance = USART1;
+	huart1.Init.BaudRate = 115200;
+	huart1.Init.WordLength = UART_WORDLENGTH_8B;
+	huart1.Init.StopBits = UART_STOPBITS_1;
+	huart1.Init.Parity = UART_PARITY_NONE;
+	huart1.Init.Mode = UART_MODE_TX_RX;
+	huart1.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+	huart1.Init.OverSampling = UART_OVERSAMPLING_16;
+	if (HAL_UART_Init(&huart1) != HAL_OK) {
+		Error_Handler();
+	}
+	/* USER CODE BEGIN USART1_Init 2 */
+
+	/* USER CODE END USART1_Init 2 */
+
+}
+
 /* FMC initialization function */
 static void MX_FMC_Init(void) {
 
@@ -581,7 +659,7 @@ static void MX_GPIO_Init(void) {
 
 	/*Configure GPIO pin Output Level */
 	HAL_GPIO_WritePin(GPIOE,
-	VSYNC_FREQ_Pin | RENDER_TIME_Pin | FRAME_RATE_Pin | MCU_ACTIVE_Pin,
+			VSYNC_FREQ_Pin | RENDER_TIME_Pin | FRAME_RATE_Pin | MCU_ACTIVE_Pin,
 			GPIO_PIN_RESET);
 
 	/*Configure GPIO pin Output Level */
@@ -921,7 +999,8 @@ void LCD_Delay(uint32_t Delay) {
 
 long map(long x, long in_min, long in_max, long out_min, long out_max) {
 
-	return (x - in_min) * (out_max - out_min + 1) / (in_max - in_min + 1) + out_min;
+	return (x - in_min) * (out_max - out_min + 1) / (in_max - in_min + 1)
+			+ out_min;
 }
 
 void SetAmbientLight() {
@@ -929,13 +1008,12 @@ void SetAmbientLight() {
 }
 
 void SetGasSensor() {
-	if(adcValues[1] < 160){
+	if (adcValues[1] < 160) {
 
 		adcValues[1] = 160;
 	}
 	data_UI.carbonMonoxide = map(adcValues[1], 160, 500, 20, 2000);
 }
-
 
 void GetBMEdata() {
 
@@ -986,7 +1064,6 @@ void ADC_Select_CH7(void) {
 
 void GetSensDataTask(void *argument) {
 
-
 	for (;;) {
 
 		ADC_Select_CH5();
@@ -1001,15 +1078,28 @@ void GetSensDataTask(void *argument) {
 		adcValues[1] = HAL_ADC_GetValue(&hadc1);
 		HAL_ADC_Stop(&hadc1);
 
-
-
 		SetAmbientLight();
 		GetBMEdata();
 		SetGasSensor();
 	}
 }
+void CLI_Task(void *argument) {
+
+	for (;;) {
+		vTaskDelay(5000);
+		(command[DISPLAY_MENU_COMMAND])(&huart1);
+	}
+}
 
 /* USER CODE END 4 */
+
+/* USER CODE BEGIN Header_StartDefaultTask */
+/**
+ * @brief  Function implementing the defaultTask thread.
+ * @param  argument: Not used
+ * @retval None
+ */
+/* USER CODE END Header_StartDefaultTask */
 
 /**
  * @brief  Period elapsed callback in non blocking mode

@@ -1,8 +1,0 @@
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	1
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	1
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	1
-C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/statistics_humidity_screen/Statistics_HumidityView.cpp:13:6:virtual void Statistics_HumidityView::tearDownScreen()	1
-../../TouchGFX/gui/include/gui/statistics_humidity_screen/Statistics_HumidityView.hpp:11:13:Statistics_HumidityView::~Statistics_HumidityView()	1
-../../TouchGFX/gui/include/gui/statistics_humidity_screen/Statistics_HumidityView.hpp:11:13:virtual Statistics_HumidityView::~Statistics_HumidityView()	1
-C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/statistics_humidity_screen/Statistics_HumidityView.cpp:3:1:Statistics_HumidityView::Statistics_HumidityView()	1
-C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/statistics_humidity_screen/Statistics_HumidityView.cpp:8:6:virtual void Statistics_HumidityView::setupScreen()	1
