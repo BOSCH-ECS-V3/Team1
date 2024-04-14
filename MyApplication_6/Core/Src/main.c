@@ -1103,11 +1103,12 @@ void CLI_Task(void *argument) {
 			clearMSG(msg);
 		} else {
 			if (msg[msgIDX] == '\r') {
+				lowerString(msg);
 				if (strncmp(msg, "help", msgIDX) == 0) {
 					(command[DISPLAY_MENU_COMMAND])(&huart1);
 					clearMSG(msg);
 				} else {
-					(command[ERR_MSG_NF])(&huart1);
+					CommandHandler(&data_UI, &huart1, msg);
 					clearMSG(msg);
 				}
 			} else {
