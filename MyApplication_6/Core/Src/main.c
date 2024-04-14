@@ -16,7 +16,7 @@
  *
  ******************************************************************************
  */
-#define DISPLAY_MENU_COMMAND 0
+//#define DISPLAY_MENU_COMMAND 0
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
@@ -659,7 +659,7 @@ static void MX_GPIO_Init(void) {
 
 	/*Configure GPIO pin Output Level */
 	HAL_GPIO_WritePin(GPIOE,
-			VSYNC_FREQ_Pin | RENDER_TIME_Pin | FRAME_RATE_Pin | MCU_ACTIVE_Pin,
+	VSYNC_FREQ_Pin | RENDER_TIME_Pin | FRAME_RATE_Pin | MCU_ACTIVE_Pin,
 			GPIO_PIN_RESET);
 
 	/*Configure GPIO pin Output Level */
@@ -1083,12 +1083,45 @@ void GetSensDataTask(void *argument) {
 		SetGasSensor();
 	}
 }
-void CLI_Task(void *argument) {
 
+char msg[30];
+short msgIDX = 0;
+
+void clearMSG(char *msg) {
+	msgIDX = 0;
+	memset(msg, '\0', strlen(msg));
+}
+
+void CLI_Task(void *argument) {
+	HAL_UART_Receive_IT(&huart1, (uint8_t*) &msg[msgIDX], 1);
 	for (;;) {
-		vTaskDelay(5000);
-		(command[DISPLAY_MENU_COMMAND])(&huart1);
+
+		xTaskNotifyWait(0, 1, NULL, portMAX_DELAY);
+
+		if (msgIDX >= 24) {
+			(command[ERR_MSG_LONG])(&huart1);
+			clearMSG(msg);
+		} else {
+			if (msg[msgIDX] == '\r') {
+				if (strncmp(msg, "help", msgIDX) == 0) {
+					(command[DISPLAY_MENU_COMMAND])(&huart1);
+					clearMSG(msg);
+				} else {
+					(command[ERR_MSG_NF])(&huart1);
+					clearMSG(msg);
+				}
+			} else {
+				msgIDX++;
+			}
+		}
+		HAL_UART_Receive_IT(&huart1, (uint8_t*) &msg[msgIDX], 1);
+
 	}
+}
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
+	xTaskNotifyFromISR(CLI_TaskHandle, 0, eNoAction, NULL);
+	HAL_UART_Transmit(&huart1, (uint8_t*) &msg[msgIDX], 1, 100);
 }
 
 /* USER CODE END 4 */
