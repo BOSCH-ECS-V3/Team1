@@ -10,9 +10,9 @@
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/ButtonWithLabel.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
-#include <touchgfx/widgets/graph/GraphWrapAndClear.hpp>
+#include <touchgfx/widgets/graph/Graph.hpp>
 #include <touchgfx/widgets/graph/GraphElements.hpp>
-#include <touchgfx/widgets/canvas/PainterRGB565.hpp>
+#include <touchgfx/widgets/graph/GraphLabels.hpp>
 
 class Statistics_Temperature_InsideViewBase : public touchgfx::View<Statistics_Temperature_InsidePresenter>
 {
@@ -20,6 +20,15 @@ public:
     Statistics_Temperature_InsideViewBase();
     virtual ~Statistics_Temperature_InsideViewBase();
     virtual void setupScreen();
+    virtual void handleTickEvent();
+
+    /*
+     * Virtual Action Handlers
+     */
+    virtual void UpdateData()
+    {
+        // Override and implement this function in Statistics_Temperature_Inside
+    }
 
 protected:
     FrontendApplication& application() {
@@ -39,18 +48,14 @@ protected:
     touchgfx::TextArea Average_Day_val;
     touchgfx::TextArea Average_Week_val;
     touchgfx::TextArea Average_Month_val;
-    touchgfx::GraphWrapAndClear<100> Graphic_Temperature_Inside;
-    touchgfx::GraphElementLine Graphic_Temperature_InsideLine1;
-    touchgfx::PainterRGB565 Graphic_Temperature_InsideLine1Painter;
     touchgfx::Box Brightness_level;
+    touchgfx::Graph<24> Graphic_Temperature_Inside;
+    touchgfx::GraphElementGridY Graphic_Temperature_InsideMajorYAxisGrid;
+    touchgfx::GraphLabelsX Graphic_Temperature_InsideMajorXAxisLabel;
+    touchgfx::GraphLabelsY Graphic_Temperature_InsideMajorYAxisLabel;
+    touchgfx::GraphElementHistogram Graphic_Temperature_InsideHistogram1;
 
 private:
-
-    /*
-     * Canvas Buffer Size
-     */
-    static const uint32_t CANVAS_BUFFER_SIZE = 3600;
-    uint8_t canvasBuffer[CANVAS_BUFFER_SIZE];
 
     /*
      * Callback Declarations

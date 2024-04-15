@@ -1,5 +1,5 @@
 Application/User/generated/FrontendApplicationBase.o: \
- C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp \
+ C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1-Command_Line_Interface/Team1-Command_Line_Interface/MyApplication_6/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/common/AbstractPartition.hpp \
@@ -104,12 +104,14 @@ Application/User/generated/FrontendApplicationBase.o: \
  ../../TouchGFX/gui/include/gui/statistics_temperature_inside_screen/Statistics_Temperature_InsideView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/statistics_temperature_inside_screen/Statistics_Temperature_InsideViewBase.hpp \
  ../../TouchGFX/gui/include/gui/statistics_temperature_inside_screen/Statistics_Temperature_InsidePresenter.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/Graph.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphElements.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphLabels.hpp \
  ../../TouchGFX/gui/include/gui/statistics_temperature_outside_screen/Statistics_Temperature_OutsideView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/statistics_temperature_outside_screen/Statistics_Temperature_OutsideViewBase.hpp \
  ../../TouchGFX/gui/include/gui/statistics_temperature_outside_screen/Statistics_Temperature_OutsidePresenter.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp \
  ../../TouchGFX/gui/include/gui/statistics_humidity_screen/Statistics_HumidityView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/statistics_humidity_screen/Statistics_HumidityViewBase.hpp \
  ../../TouchGFX/gui/include/gui/statistics_humidity_screen/Statistics_HumidityPresenter.hpp \
@@ -230,12 +232,14 @@ Application/User/generated/FrontendApplicationBase.o: \
 ../../TouchGFX/gui/include/gui/statistics_temperature_inside_screen/Statistics_Temperature_InsideView.hpp:
 ../../TouchGFX/generated/gui_generated/include/gui_generated/statistics_temperature_inside_screen/Statistics_Temperature_InsideViewBase.hpp:
 ../../TouchGFX/gui/include/gui/statistics_temperature_inside_screen/Statistics_Temperature_InsidePresenter.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/Graph.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphElements.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphLabels.hpp:
 ../../TouchGFX/gui/include/gui/statistics_temperature_outside_screen/Statistics_Temperature_OutsideView.hpp:
 ../../TouchGFX/generated/gui_generated/include/gui_generated/statistics_temperature_outside_screen/Statistics_Temperature_OutsideViewBase.hpp:
 ../../TouchGFX/gui/include/gui/statistics_temperature_outside_screen/Statistics_Temperature_OutsidePresenter.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp:
 ../../TouchGFX/gui/include/gui/statistics_humidity_screen/Statistics_HumidityView.hpp:
 ../../TouchGFX/generated/gui_generated/include/gui_generated/statistics_humidity_screen/Statistics_HumidityViewBase.hpp:
 ../../TouchGFX/gui/include/gui/statistics_humidity_screen/Statistics_HumidityPresenter.hpp:

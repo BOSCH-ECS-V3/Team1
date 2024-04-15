@@ -37,7 +37,11 @@ protected:
 	int DEFINE_SNOOZE_TIME = 1 ;
 	int SNOOZE_FLAG = 0 ;
 
+	int Statistics_Flag = 0 ;
+	int STATISTICS_Temperature_INSIDE[24]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+	int STATISTICS_Array_Index = 5;
 
+	int STATISCITS_INIT=1;
 
 };
 

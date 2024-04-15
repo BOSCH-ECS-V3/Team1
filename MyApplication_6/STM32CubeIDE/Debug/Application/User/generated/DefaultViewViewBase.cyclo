@@ -30,8 +30,8 @@
 ../../TouchGFX/generated/gui_generated/include/gui_generated/defaultview_screen/DefaultViewViewBase.hpp:33:18:virtual void DefaultViewViewBase::function1()	1
 ../../TouchGFX/generated/gui_generated/include/gui_generated/defaultview_screen/DefaultViewViewBase.hpp:37:18:virtual void DefaultViewViewBase::Snooze_btn_pressed()	1
 ../../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:touchgfx::View<DefaultViewPresenter>::~View()	1
-C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/generated/gui_generated/src/defaultview_screen/DefaultViewViewBase.cpp:273:6:virtual void DefaultViewViewBase::setupScreen()	1
-C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/generated/gui_generated/src/defaultview_screen/DefaultViewViewBase.cpp:344:6:virtual void DefaultViewViewBase::handleTickEvent()	1
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1-Command_Line_Interface/Team1-Command_Line_Interface/MyApplication_6/TouchGFX/generated/gui_generated/src/defaultview_screen/DefaultViewViewBase.cpp:284:6:virtual void DefaultViewViewBase::setupScreen()	1
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1-Command_Line_Interface/Team1-Command_Line_Interface/MyApplication_6/TouchGFX/generated/gui_generated/src/defaultview_screen/DefaultViewViewBase.cpp:355:6:virtual void DefaultViewViewBase::handleTickEvent()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:touchgfx::Callback<DefaultViewViewBase, const touchgfx::AbstractButton&>::~Callback()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:62:7:touchgfx::TextAreaWithOneWildcard::~TextAreaWithOneWildcard()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:386:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = DefaultViewViewBase; T1 = const touchgfx::AbstractButton&]	2
@@ -40,7 +40,7 @@ C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/T
 ../../Middlewares/ST/touchgfx/framework/include/mvp/View.hpp:36:7:virtual touchgfx::View<DefaultViewPresenter>::~View()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:62:7:virtual touchgfx::TextAreaWithOneWildcard::~TextAreaWithOneWildcard()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:357:8:virtual touchgfx::Callback<DefaultViewViewBase, const touchgfx::AbstractButton&>::~Callback()	1
-C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/generated/gui_generated/src/defaultview_screen/DefaultViewViewBase.cpp:278:6:void DefaultViewViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	9
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1-Command_Line_Interface/Team1-Command_Line_Interface/MyApplication_6/TouchGFX/generated/gui_generated/src/defaultview_screen/DefaultViewViewBase.cpp:289:6:void DefaultViewViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	9
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:121:18:virtual void touchgfx::Drawable::invalidateContent() const	2
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:43:18:virtual void touchgfx::TextAreaWithWildcardBase::invalidateContent() const	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:111:18:virtual void touchgfx::TextArea::setBaselineY(int16_t)	1
@@ -55,6 +55,6 @@ C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/T
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:49:36:virtual touchgfx::TextArea::BoundingArea touchgfx::TextAreaWithWildcardBase::calculateBoundingArea() const	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:65:5:touchgfx::TextAreaWithOneWildcard::TextAreaWithOneWildcard()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp:41:5:touchgfx::AbstractPainterRGB565::AbstractPainterRGB565()	4
-C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/generated/gui_generated/src/defaultview_screen/DefaultViewViewBase.cpp:10:1:DefaultViewViewBase::DefaultViewViewBase()	15
-C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/generated/gui_generated/src/defaultview_screen/DefaultViewViewBase.cpp:268:1:DefaultViewViewBase::~DefaultViewViewBase()	1
-C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/generated/gui_generated/src/defaultview_screen/DefaultViewViewBase.cpp:268:1:virtual DefaultViewViewBase::~DefaultViewViewBase()	1
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1-Command_Line_Interface/Team1-Command_Line_Interface/MyApplication_6/TouchGFX/generated/gui_generated/src/defaultview_screen/DefaultViewViewBase.cpp:10:1:DefaultViewViewBase::DefaultViewViewBase()	15
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1-Command_Line_Interface/Team1-Command_Line_Interface/MyApplication_6/TouchGFX/generated/gui_generated/src/defaultview_screen/DefaultViewViewBase.cpp:279:1:DefaultViewViewBase::~DefaultViewViewBase()	1
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1-Command_Line_Interface/Team1-Command_Line_Interface/MyApplication_6/TouchGFX/generated/gui_generated/src/defaultview_screen/DefaultViewViewBase.cpp:279:1:virtual DefaultViewViewBase::~DefaultViewViewBase()	1

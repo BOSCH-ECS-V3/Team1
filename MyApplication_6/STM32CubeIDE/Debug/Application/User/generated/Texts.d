@@ -1,5 +1,5 @@
 Application/User/generated/Texts.o: \
- C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/generated/texts/src/Texts.cpp \
+ C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1-Command_Line_Interface/Team1-Command_Line_Interface/MyApplication_6/TouchGFX/generated/texts/src/Texts.cpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/TextProvider.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Font.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Unicode.hpp \

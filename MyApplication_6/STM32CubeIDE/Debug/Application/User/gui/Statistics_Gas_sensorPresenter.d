@@ -1,5 +1,5 @@
 Application/User/gui/Statistics_Gas_sensorPresenter.o: \
- C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/statistics_gas_sensor_screen/Statistics_Gas_sensorPresenter.cpp \
+ C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1-Command_Line_Interface/Team1-Command_Line_Interface/MyApplication_6/TouchGFX/gui/src/statistics_gas_sensor_screen/Statistics_Gas_sensorPresenter.cpp \
  ../../TouchGFX/gui/include/gui/statistics_gas_sensor_screen/Statistics_Gas_sensorView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/statistics_gas_sensor_screen/Statistics_Gas_sensorViewBase.hpp \
  ../../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \

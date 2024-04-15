@@ -40,7 +40,8 @@ DefaultViewViewBase::DefaultViewViewBase() :
     SwipeContainer.setSwipeCutoff(50);
     SwipeContainer.setEndSwipeElasticWidth(50);
 
-    SwipeContainerHumidity.setPosition(0, 0, 240, 261);
+    SwipeContainerHumidity.setWidth(240);
+    SwipeContainerHumidity.setHeight(261);
     Humidity_Text.setXY(76, 30);
     Humidity_Text.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
     Humidity_Text.setLinespacing(0);
@@ -59,6 +60,7 @@ DefaultViewViewBase::DefaultViewViewBase() :
     Statistics_Button_Humidity.setXY(5, 201);
     Statistics_Button_Humidity.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_TINY_FILL_ACTIVE_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_TINY_FILL_PRESSED_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_CONTENT_STACKED_BAR_CHART_50_50_E8F6FB_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_DONE_50_50_E8F6FB_SVG_ID));
     Statistics_Button_Humidity.setIconXY(5, 5);
+    Statistics_Button_Humidity.setAction(buttonCallback);
     SwipeContainerHumidity.add(Statistics_Button_Humidity);
 
     SwipeContainer.add(SwipeContainerHumidity);
@@ -102,7 +104,8 @@ DefaultViewViewBase::DefaultViewViewBase() :
 
     SwipeContainer.add(SwipeContainerCarbon);
 
-    SwipeContainerPressure_1.setPosition(0, 0, 240, 261);
+    SwipeContainerPressure_1.setWidth(240);
+    SwipeContainerPressure_1.setHeight(261);
     Presure_Text.setXY(55, 30);
     Presure_Text.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
     Presure_Text.setLinespacing(0);
@@ -121,14 +124,17 @@ DefaultViewViewBase::DefaultViewViewBase() :
     Statistics_Button_Presure.setXY(5, 201);
     Statistics_Button_Presure.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_TINY_FILL_ACTIVE_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_TINY_FILL_PRESSED_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_CONTENT_STACKED_BAR_CHART_50_50_E8F6FB_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_DONE_50_50_E8F6FB_SVG_ID));
     Statistics_Button_Presure.setIconXY(5, 5);
+    Statistics_Button_Presure.setAction(buttonCallback);
     SwipeContainerPressure_1.add(Statistics_Button_Presure);
 
     SwipeContainer.add(SwipeContainerPressure_1);
 
-    SwipeContainerAmbient_1.setPosition(0, 0, 240, 261);
+    SwipeContainerAmbient_1.setWidth(240);
+    SwipeContainerAmbient_1.setHeight(261);
     Statistics_Button_Ambient.setXY(5, 201);
     Statistics_Button_Ambient.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_TINY_FILL_ACTIVE_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_TINY_FILL_PRESSED_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_CONTENT_STACKED_BAR_CHART_50_50_E8F6FB_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_DONE_50_50_E8F6FB_SVG_ID));
     Statistics_Button_Ambient.setIconXY(5, 5);
+    Statistics_Button_Ambient.setAction(buttonCallback);
     SwipeContainerAmbient_1.add(Statistics_Button_Ambient);
 
     Ambient_Text.setXY(55, 30);
@@ -148,7 +154,8 @@ DefaultViewViewBase::DefaultViewViewBase() :
 
     SwipeContainer.add(SwipeContainerAmbient_1);
 
-    SwipeContainerTemperature_Inside.setPosition(0, 0, 240, 261);
+    SwipeContainerTemperature_Inside.setWidth(240);
+    SwipeContainerTemperature_Inside.setHeight(261);
     TempIn_Val.setXY(81, 109);
     TempIn_Val.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
     TempIn_Val.setLinespacing(0);
@@ -167,11 +174,13 @@ DefaultViewViewBase::DefaultViewViewBase() :
     Statistics_Button_TempIn.setXY(5, 201);
     Statistics_Button_TempIn.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_TINY_FILL_ACTIVE_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_TINY_FILL_PRESSED_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_CONTENT_STACKED_BAR_CHART_50_50_E8F6FB_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_DONE_50_50_E8F6FB_SVG_ID));
     Statistics_Button_TempIn.setIconXY(5, 5);
+    Statistics_Button_TempIn.setAction(buttonCallback);
     SwipeContainerTemperature_Inside.add(Statistics_Button_TempIn);
 
     SwipeContainer.add(SwipeContainerTemperature_Inside);
 
-    SwipeContainerTemperature_Outside.setPosition(0, 0, 240, 261);
+    SwipeContainerTemperature_Outside.setWidth(240);
+    SwipeContainerTemperature_Outside.setHeight(261);
     TempOut_Val.setXY(81, 109);
     TempOut_Val.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
     TempOut_Val.setLinespacing(0);
@@ -190,6 +199,7 @@ DefaultViewViewBase::DefaultViewViewBase() :
     Statistics_Button_TempOut.setXY(5, 201);
     Statistics_Button_TempOut.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_TINY_FILL_ACTIVE_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_TINY_FILL_PRESSED_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_CONTENT_STACKED_BAR_CHART_50_50_E8F6FB_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_DONE_50_50_E8F6FB_SVG_ID));
     Statistics_Button_TempOut.setIconXY(5, 5);
+    Statistics_Button_TempOut.setAction(buttonCallback);
     SwipeContainerTemperature_Outside.add(Statistics_Button_TempOut);
 
     SwipeContainer.add(SwipeContainerTemperature_Outside);

@@ -1608,7 +1608,6 @@
       },
       {
         "Name": "Statistics_Temperature_Inside",
-        "CanvasBufferSize": 3600,
         "Components": [
           {
             "Type": "Box",
@@ -1691,7 +1690,7 @@
             "Type": "TextArea",
             "Name": "Temperature_sensor_text",
             "X": 16,
-            "Y": 105,
+            "Y": 89,
             "Width": 214,
             "Height": 18,
             "TextId": "__SingleUse_YSM9",
@@ -1706,7 +1705,7 @@
             "Type": "TextArea",
             "Name": "Average_Day_val",
             "X": 6,
-            "Y": 236,
+            "Y": 243,
             "Width": 211,
             "Height": 18,
             "TextId": "__SingleUse_60QN",
@@ -1721,7 +1720,7 @@
             "Type": "TextArea",
             "Name": "Average_Week_val",
             "X": 6,
-            "Y": 260,
+            "Y": 268,
             "Width": 223,
             "Height": 18,
             "TextId": "__SingleUse_T8W1",
@@ -1736,7 +1735,7 @@
             "Type": "TextArea",
             "Name": "Average_Month_val",
             "X": 6,
-            "Y": 284,
+            "Y": 293,
             "Width": 234,
             "Height": 18,
             "TextId": "__SingleUse_7YEN",
@@ -1748,39 +1747,80 @@
             "AutoSize": true
           },
           {
-            "Type": "DynamicGraph",
+            "Type": "Box",
+            "Name": "Brightness_level",
+            "X": 315,
+            "Y": 37,
+            "Width": 240,
+            "Height": 320,
+            "Alpha": 0
+          },
+          {
+            "Type": "StaticGraph",
             "Name": "Graphic_Temperature_Inside",
-            "X": 23,
-            "Y": 137,
-            "Width": 200,
-            "Height": 76,
-            "DataSeed": 1240533661,
-            "NumberOfValues": 100,
-            "MaxY": 100.0,
-            "Precision": "1",
-            "LastIndex": 99,
+            "X": 6,
+            "Y": 107,
+            "Width": 223,
+            "Height": 130,
+            "DataSeed": 1934773837,
+            "NumberOfValues": 24,
+            "MaxX": 24.0,
+            "PrecisionX": "1",
+            "MaxY": 40.0,
+            "PrecisionY": "1",
             "XAxisScale": 1.0,
-            "InsertRandomValues": true,
-            "GraphType": "GraphWrapClear",
+            "LabelSizeBottom": 14,
+            "LabelSizeLeft": 15,
+            "PaddingTop": 13,
+            "PaddingLeft": 7,
+            "PaddingRight": 9,
             "GraphDrawers": [
               {
-                "Type": "LineDrawer",
-                "LineWidth": 2,
-                "FileNameImage": "",
+                "Type": "HistogramDrawer",
+                "BarWidth": 4,
                 "Color": {
                   "Red": 20,
                   "Green": 151,
                   "Blue": 197
                 }
               }
-            ]
-          },
-          {
-            "Type": "Box",
-            "Name": "Brightness_level",
-            "Width": 240,
-            "Height": 320,
-            "Alpha": 0
+            ],
+            "YAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "Interval": 4.0,
+              "LineWidth": 1
+            },
+            "XAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 3.0,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "TextId": "__SingleUse_3RBP",
+              "TextRotation": "0",
+              "Position": "Bottom"
+            },
+            "YAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 10.0,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "TextId": "__SingleUse_EKCI",
+              "TextRotation": "0",
+              "Position": "Left"
+            }
           }
         ],
         "Interactions": [
@@ -1795,12 +1835,22 @@
               "ScreenTransitionType": "ScreenTransitionNone",
               "ActionComponent": "MenuDropdown_1"
             }
+          },
+          {
+            "InteractionName": "UpdateData",
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 1
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "UpdateData"
+            }
           }
         ]
       },
       {
         "Name": "Statistics_Temperature_Outside",
-        "CanvasBufferSize": 3600,
         "Components": [
           {
             "Type": "Box",
@@ -1943,29 +1993,88 @@
             "Type": "DynamicGraph",
             "Name": "Graphic_Temperature_Outside",
             "X": 23,
-            "Y": 137,
-            "Width": 200,
-            "Height": 76,
+            "Y": 129,
+            "Width": 194,
+            "Height": 101,
             "DataSeed": 1240533661,
-            "NumberOfValues": 100,
-            "MaxY": 100.0,
+            "NumberOfValues": 24,
+            "MaxY": 60.0,
             "Precision": "1",
-            "LastIndex": 99,
+            "LastIndex": 23,
             "XAxisScale": 1.0,
-            "InsertRandomValues": true,
             "GraphType": "GraphWrapClear",
             "GraphDrawers": [
               {
-                "Type": "LineDrawer",
-                "LineWidth": 2,
-                "FileNameImage": "",
+                "Type": "HistogramDrawer",
+                "BarWidth": 5,
                 "Color": {
                   "Red": 20,
                   "Green": 151,
                   "Blue": 197
                 }
               }
-            ]
+            ],
+            "YAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Green": 94,
+                "Blue": 125
+              },
+              "Interval": 6.0,
+              "LineWidth": 1
+            },
+            "XAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 4.0,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "TextId": "__SingleUse_GBD2",
+              "TextRotation": "0",
+              "Position": "Bottom"
+            },
+            "MinorXAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 2.0,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "TextId": "__SingleUse_IFD1",
+              "TextRotation": "0",
+              "Position": "Bottom"
+            },
+            "YAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 6.0,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "TextId": "__SingleUse_87HI",
+              "TextRotation": "0",
+              "Position": "Left"
+            },
+            "MinorYAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 3.0,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "TextId": "__SingleUse_NXRG",
+              "TextRotation": "0",
+              "Position": "Left"
+            }
           },
           {
             "Type": "Box",

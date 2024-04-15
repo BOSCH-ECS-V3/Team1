@@ -1,5 +1,5 @@
 Application/User/TouchGFX/target/generated/TouchGFXConfiguration.o: \
- C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/target/generated/TouchGFXConfiguration.cpp \
+ C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1-Command_Line_Interface/Team1-Command_Line_Interface/MyApplication_6/TouchGFX/target/generated/TouchGFXConfiguration.cpp \
  ../../TouchGFX/generated/texts/include/texts/TypedTextDatabase.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Font.hpp \
@@ -107,12 +107,14 @@ Application/User/TouchGFX/target/generated/TouchGFXConfiguration.o: \
  ../../TouchGFX/gui/include/gui/statistics_temperature_inside_screen/Statistics_Temperature_InsideView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/statistics_temperature_inside_screen/Statistics_Temperature_InsideViewBase.hpp \
  ../../TouchGFX/gui/include/gui/statistics_temperature_inside_screen/Statistics_Temperature_InsidePresenter.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/Graph.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphElements.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphLabels.hpp \
  ../../TouchGFX/gui/include/gui/statistics_temperature_outside_screen/Statistics_Temperature_OutsideView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/statistics_temperature_outside_screen/Statistics_Temperature_OutsideViewBase.hpp \
  ../../TouchGFX/gui/include/gui/statistics_temperature_outside_screen/Statistics_Temperature_OutsidePresenter.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp \
  ../../TouchGFX/gui/include/gui/statistics_humidity_screen/Statistics_HumidityView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/statistics_humidity_screen/Statistics_HumidityViewBase.hpp \
  ../../TouchGFX/gui/include/gui/statistics_humidity_screen/Statistics_HumidityPresenter.hpp \
@@ -173,7 +175,8 @@ Application/User/TouchGFX/target/generated/TouchGFXConfiguration.o: \
  ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
  ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
  ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
- ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
+ ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
+ ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 ../../TouchGFX/generated/texts/include/texts/TypedTextDatabase.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Font.hpp:
@@ -281,12 +284,14 @@ Application/User/TouchGFX/target/generated/TouchGFXConfiguration.o: \
 ../../TouchGFX/gui/include/gui/statistics_temperature_inside_screen/Statistics_Temperature_InsideView.hpp:
 ../../TouchGFX/generated/gui_generated/include/gui_generated/statistics_temperature_inside_screen/Statistics_Temperature_InsideViewBase.hpp:
 ../../TouchGFX/gui/include/gui/statistics_temperature_inside_screen/Statistics_Temperature_InsidePresenter.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/Graph.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphElements.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphLabels.hpp:
 ../../TouchGFX/gui/include/gui/statistics_temperature_outside_screen/Statistics_Temperature_OutsideView.hpp:
 ../../TouchGFX/generated/gui_generated/include/gui_generated/statistics_temperature_outside_screen/Statistics_Temperature_OutsideViewBase.hpp:
 ../../TouchGFX/gui/include/gui/statistics_temperature_outside_screen/Statistics_Temperature_OutsidePresenter.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp:
 ../../TouchGFX/gui/include/gui/statistics_humidity_screen/Statistics_HumidityView.hpp:
 ../../TouchGFX/generated/gui_generated/include/gui_generated/statistics_humidity_screen/Statistics_HumidityViewBase.hpp:
 ../../TouchGFX/gui/include/gui/statistics_humidity_screen/Statistics_HumidityPresenter.hpp:
@@ -348,3 +353,4 @@ Application/User/TouchGFX/target/generated/TouchGFXConfiguration.o: \
 ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h:
 ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:
 ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h:
+../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:

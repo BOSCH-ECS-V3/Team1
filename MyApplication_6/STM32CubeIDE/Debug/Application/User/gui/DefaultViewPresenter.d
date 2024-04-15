@@ -1,5 +1,5 @@
 Application/User/gui/DefaultViewPresenter.o: \
- C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/defaultview_screen/DefaultViewPresenter.cpp \
+ C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1-Command_Line_Interface/Team1-Command_Line_Interface/MyApplication_6/TouchGFX/gui/src/defaultview_screen/DefaultViewPresenter.cpp \
  ../../TouchGFX/gui/include/gui/defaultview_screen/DefaultViewView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/defaultview_screen/DefaultViewViewBase.hpp \
  ../../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \

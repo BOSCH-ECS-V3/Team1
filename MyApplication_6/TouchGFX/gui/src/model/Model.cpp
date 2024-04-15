@@ -198,15 +198,19 @@ void Model::tick()
 	{
 		if(++Clock_Values[2]>=60)
 		{
+			// ------------------------------ Snooze reset flag --------------------------------
 			if(++snoozeCounter == DEFINE_SNOOZE_TIME) // Snoze time counter
 			{
 				snoozeCounter = 0;
 				SNOOZE_FLAG = 0;
 			}
+			//----------------------------------------------------------------------------------
+
 			Clock_Values[2] = 0;
+			STATISTICS_Array_Index=Clock_Values[0]; // Array INDEX = Current HOur
 			if(++Clock_Values[1]>=60)
 			{
-
+				// every hour send statistics information to view
 				Clock_Values[1] = 0;
 				if(++Clock_Values[0]>=24)
 				{
@@ -263,7 +267,7 @@ void Model::tick()
 	// [5]->Gas sensor
 
 	current_Sensor_values[0] = data_UI.tempIN ;
-	current_Sensor_values[1] = data_UI.tempOUT ;
+	current_Sensor_values[1] = data_UI.tempIN ;
 	current_Sensor_values[2] = data_UI.humidity ;
 	current_Sensor_values[3] = data_UI.pressure ;
 	current_Sensor_values[4] = data_UI.ambientLight ;
@@ -284,11 +288,12 @@ void Model::tick()
 		modelListener->SEND_Error_ID(Error_ID);
 	}
 
-	// if Snooze option is not pressed and alerts are on
-	// modelListener->display_error(Error_msg);
 
-	// If Snooze option is pressed , set Alert_PERMISION = FALSE
-	// wait 2 min and then reset Alert_PERMISION = TRUE ;
+	STATISTICS_Array_Index = Clock_Values[0]; // array index = current hour of sending information from sensor to view
+	STATISTICS_Temperature_INSIDE[STATISTICS_Array_Index] = current_Sensor_values[0] ;
+	modelListener->SEND_STATISTICS_INFORMATION_TEMPERATURE_INSIDE(STATISTICS_Temperature_INSIDE,STATISTICS_Array_Index);
+
+
 
 }
 

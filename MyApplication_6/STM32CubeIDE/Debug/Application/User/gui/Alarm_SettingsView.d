@@ -1,5 +1,5 @@
 Application/User/gui/Alarm_SettingsView.o: \
- C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/gui/src/alarm_settings_screen/Alarm_SettingsView.cpp \
+ C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1-Command_Line_Interface/Team1-Command_Line_Interface/MyApplication_6/TouchGFX/gui/src/alarm_settings_screen/Alarm_SettingsView.cpp \
  ../../TouchGFX/gui/include/gui/alarm_settings_screen/Alarm_SettingsView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/alarm_settings_screen/Alarm_SettingsViewBase.hpp \
  ../../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \

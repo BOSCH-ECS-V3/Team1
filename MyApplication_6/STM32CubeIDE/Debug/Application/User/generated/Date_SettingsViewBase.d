@@ -1,5 +1,5 @@
 Application/User/generated/Date_SettingsViewBase.o: \
- C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/generated/gui_generated/src/date_settings_screen/Date_SettingsViewBase.cpp \
+ C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1-Command_Line_Interface/Team1-Command_Line_Interface/MyApplication_6/TouchGFX/generated/gui_generated/src/date_settings_screen/Date_SettingsViewBase.cpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/date_settings_screen/Date_SettingsViewBase.hpp \
  ../../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp \

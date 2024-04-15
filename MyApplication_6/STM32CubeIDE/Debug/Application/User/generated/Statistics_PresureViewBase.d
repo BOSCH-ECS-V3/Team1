@@ -1,5 +1,5 @@
 Application/User/generated/Statistics_PresureViewBase.o: \
- C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Stani_Team1_Project/Team1-stanislav/Team1-stanislav/UI_Ver_0.2.0/MyApplication_6/TouchGFX/generated/gui_generated/src/statistics_presure_screen/Statistics_PresureViewBase.cpp \
+ C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1-Command_Line_Interface/Team1-Command_Line_Interface/MyApplication_6/TouchGFX/generated/gui_generated/src/statistics_presure_screen/Statistics_PresureViewBase.cpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/statistics_presure_screen/Statistics_PresureViewBase.hpp \
  ../../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp \
