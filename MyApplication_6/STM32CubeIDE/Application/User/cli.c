@@ -1,5 +1,6 @@
 #include "cli.h"
 
+
 void (*command[])() =
 {
 	DisplayMenu, 		//0
