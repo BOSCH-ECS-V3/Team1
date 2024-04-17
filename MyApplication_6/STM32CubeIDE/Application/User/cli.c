@@ -1,6 +1,7 @@
 #include "cli.h"
 
 
+
 void (*command[])() =
 {
 	DisplayMenu, 		//0
@@ -110,4 +111,29 @@ void (*command[])() =
 			(command[ERR_MSG_NF])(huart1);
 			break;
 		}
+	}
+	void CLIHandler(SensData_t *SelectedSensor, UART_HandleTypeDef *huart1,
+			char *msg, short *msgIDX) {
+		if (*msgIDX >= 24) {
+			(command[ERR_MSG_LONG])(huart1);
+			clearMSG(msg, msgIDX);
+		} else {
+			if (msg[*msgIDX] == '\r') {
+				lowerString(msg);
+				if (strncmp(msg, "help", *msgIDX) == 0) {
+					(command[DISPLAY_MENU_COMMAND])(huart1);
+					clearMSG(msg, msgIDX);
+				} else {
+					if (*msgIDX > 1)
+						(command[ERR_MSG_NF])(huart1);
+					else {
+						CommandHandler(SelectedSensor, huart1, msg);
+						clearMSG(msg, msgIDX);
+					}
+				}
+			} else {
+				*msgIDX = *msgIDX + 1;
+			}
+		}
+		HAL_UART_Receive_IT(huart1, (uint8_t*) &msg[*msgIDX], 1);
 	}

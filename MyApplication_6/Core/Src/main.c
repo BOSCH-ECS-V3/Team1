@@ -32,6 +32,7 @@
 #include "clock.h"
 #include "cmsis_os.h"
 #include "app_touchgfx.h"
+#include "utilities.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -64,6 +65,9 @@ TaskHandle_t CLI_TaskHandle;
 uint32_t adcValues[2]; // [0] -> Channel 5, [1] -> Channel 7
 
 SensData_t data_UI;
+
+char msg[30];
+short msgIDX = 0;
 
 /* USER CODE END PV */
 
@@ -287,12 +291,6 @@ void LCD_Delay(uint32_t Delay) {
 	HAL_Delay(Delay);
 }
 
-long map(long x, long in_min, long in_max, long out_min, long out_max) {
-
-	return (x - in_min) * (out_max - out_min + 1) / (in_max - in_min + 1)
-			+ out_min;
-}
-
 void SetAmbientLight() {
 	data_UI.ambientLight = map(adcValues[0], 0, 4095, 0, 100);
 }
@@ -322,13 +320,6 @@ void GetSensDataTask(void *argument) {
 	}
 }
 
-char msg[30];
-short msgIDX = 0;
-
-void clearMSG(char *msg) {
-	msgIDX = 0;
-	memset(msg, '\0', strlen(msg));
-}
 
 void CLI_Task(void *argument) {
 	HAL_UART_Receive_IT(&huart1, (uint8_t*) &msg[msgIDX], 1);
@@ -336,31 +327,14 @@ void CLI_Task(void *argument) {
 
 		xTaskNotifyWait(0, 1, NULL, portMAX_DELAY);
 
-		if (msgIDX >= 24) {
-			(command[ERR_MSG_LONG])(&huart1);
-			clearMSG(msg);
-		} else {
-			if (msg[msgIDX] == '\r') {
-				lowerString(msg);
-				if (strncmp(msg, "help", msgIDX) == 0) {
-					(command[DISPLAY_MENU_COMMAND])(&huart1);
-					clearMSG(msg);
-				} else {
-					CommandHandler(&data_UI, &huart1, msg);
-					clearMSG(msg);
-				}
-			} else {
-				msgIDX++;
-			}
-		}
-		HAL_UART_Receive_IT(&huart1, (uint8_t*) &msg[msgIDX], 1);
+		CLIHandler(&data_UI, &huart1, msg, &msgIDX);
 
 	}
 }
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
 	xTaskNotifyFromISR(CLI_TaskHandle, 0, eNoAction, NULL);
-	HAL_UART_Transmit(&huart1, (uint8_t*) &msg[msgIDX], 1, 100);
+	HAL_UART_Transmit(&huart1, (uint8_t*)&msg[msgIDX], 1, 100);
 }
 
 /* USER CODE END 4 */
