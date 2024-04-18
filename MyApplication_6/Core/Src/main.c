@@ -32,13 +32,14 @@
 #include "clock.h"
 #include "cmsis_os.h"
 #include "app_touchgfx.h"
-#include "utilities.h"
+#include "semphr.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "temp_sens.h"
 #include "data_UI_def.h"
 #include "cli.h"
+#include "utilities.h"
 
 /* USER CODE END Includes */
 
@@ -61,6 +62,12 @@
 TaskHandle_t GUI_TaskHandle;
 TaskHandle_t GetSensData_TaskHandle;
 TaskHandle_t CLI_TaskHandle;
+
+BaseType_t GUI_TaskFlag;
+BaseType_t GetSensData_TaskFlag;
+BaseType_t CLI_TaskFlag;
+
+xSemaphoreHandle i2c_semaphore;
 
 uint32_t adcValues[2]; // [0] -> Channel 5, [1] -> Channel 7
 
@@ -95,7 +102,6 @@ uint16_t IOE_ReadMultiple(uint8_t Addr, uint8_t Reg, uint8_t *pBuffer,
 
 /* USER CODE END PFP */
 
-/* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
 /* USER CODE END 0 */
@@ -107,6 +113,8 @@ uint16_t IOE_ReadMultiple(uint8_t Addr, uint8_t Reg, uint8_t *pBuffer,
 int main(void) {
 
 	/* USER CODE BEGIN 1 */
+	i2c_semaphore = xSemaphoreCreateBinary();
+	xSemaphoreGive(i2c_semaphore); //After creation to be free
 
 	/* USER CODE END 1 */
 
@@ -122,10 +130,6 @@ int main(void) {
 	/* Configure the system clock */
 	SystemClock_Config();
 
-	/* USER CODE BEGIN SysInit */
-
-	/* USER CODE END SysInit */
-
 	/* Initialize all configured peripherals */
 	MX_GPIO_Init();
 	MX_CRC_Init();
@@ -140,15 +144,39 @@ int main(void) {
 	/* Call PreOsInit function */
 	MX_TouchGFX_PreOSInit();
 	/* USER CODE BEGIN 2 */
-	SensorInit(&sensor_In, &meas_period_In, SENS_IN_NUM);
 
-	xTaskCreate(TouchGFX_Task, "TouchGFX_Task", 8192, NULL, osPriorityNormal,
+	/* Init BME680*/
+
+	/*Task creation*/
+	GUI_TaskFlag = xTaskCreate(TouchGFX_Task, "TouchGFX_Task", 8192, NULL, osPriorityNormal,
 			&GUI_TaskHandle);
-	xTaskCreate(GetSensDataTask, "GetSensDataTask", 128, NULL, osPriorityNormal,
+
+	GetSensData_TaskFlag = xTaskCreate(GetSensDataTask, "GetSensDataTask", 128, NULL, osPriorityNormal,
 			&GetSensData_TaskHandle);
-	xTaskCreate(CLI_Task, "Command Line Interface", 128, NULL, osPriorityNormal,
+
+	CLI_TaskFlag = xTaskCreate(CLI_Task, "Command Line Interface", 128, NULL, osPriorityNormal,
 			&CLI_TaskHandle);
 
+
+	/*Check if task and semaphore creation is successful*/
+	if(GUI_TaskFlag != pdPASS){
+		vTaskDelete(GUI_TaskHandle);
+	}
+	if(GetSensData_TaskFlag != pdPASS){
+		vTaskDelete(GetSensData_TaskHandle);
+	}
+	if(CLI_TaskFlag != pdPASS){
+		vTaskDelete(CLI_TaskHandle);
+	}
+	if(i2c_semaphore == NULL){
+
+		/* Indicates semaphore creation failed*/
+		HAL_GPIO_WritePin(GPIOG, GPIO_PIN_14, GPIO_PIN_SET);
+	}
+
+
+
+	/*Start freeRTOS scheduler*/
 	vTaskStartScheduler();
 	/* USER CODE END 2 */
 
@@ -299,12 +327,17 @@ void SetGasSensor() {
 	if (adcValues[1] < 160) {
 
 		adcValues[1] = 160;
+	}else if(adcValues > 1000){
+		data_UI.carbonMonoxide = 601;
+	}else{
+		data_UI.carbonMonoxide = map(adcValues[1], 160, 500, 20, 2000);
 	}
-	data_UI.carbonMonoxide = map(adcValues[1], 160, 500, 20, 2000);
 }
 
 
 void GetSensDataTask(void *argument) {
+
+	SensorInit(&sensor_In, &meas_period_In, SENS_IN_NUM);
 
 	for (;;) {
 

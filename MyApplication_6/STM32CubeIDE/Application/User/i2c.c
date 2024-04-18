@@ -1,8 +1,13 @@
 #include "i2c.h"
+#include "cmsis_os.h"
+#include <semphr.h>
+
 
 I2C_HandleTypeDef hi2c3;
 
 uint32_t I2c3Timeout = I2C3_TIMEOUT_MAX; /*<! Value of Timeout when I2C communication fails */
+
+extern xSemaphoreHandle i2c_semaphore;
 
 void MX_I2C3_Init(void) {
 
@@ -47,14 +52,20 @@ void MX_I2C3_Init(void) {
 void I2C3_WriteData(uint8_t Addr, uint8_t Reg, uint8_t Value) {
 	HAL_StatusTypeDef status = HAL_OK;
 
-	status = HAL_I2C_Mem_Write(&hi2c3, Addr, (uint16_t) Reg,
-	I2C_MEMADD_SIZE_8BIT, &Value, 1, I2c3Timeout);
+	if(xSemaphoreTake(i2c_semaphore, (TickType_t) 50) == pdPASS){
 
-	/* Check the communication status */
-	if (status != HAL_OK) {
-		/* Re-Initialize the BUS */
-		//I2Cx_Error();
+		status = HAL_I2C_Mem_Write(&hi2c3, Addr, (uint16_t) Reg,
+				I2C_MEMADD_SIZE_8BIT, &Value, 1, I2c3Timeout);
+
+		/* Check the communication status */
+		if (status != HAL_OK) {
+			/* Re-Initialize the BUS */
+			//I2Cx_Error();
+		}
+
+		xSemaphoreGive(i2c_semaphore);
 	}
+
 }
 
 /**
@@ -67,14 +78,20 @@ uint8_t I2C3_ReadData(uint8_t Addr, uint8_t Reg) {
 	HAL_StatusTypeDef status = HAL_OK;
 	uint8_t value = 0;
 
-	status = HAL_I2C_Mem_Read(&hi2c3, Addr, Reg, I2C_MEMADD_SIZE_8BIT, &value,
-			1, I2c3Timeout);
+	if(xSemaphoreTake(i2c_semaphore, (TickType_t) 50) == pdPASS){
 
-	/* Check the communication status */
-	if (status != HAL_OK) {
-		/* Re-Initialize the BUS */
-		//I2Cx_Error();
+		status = HAL_I2C_Mem_Read(&hi2c3, Addr, Reg, I2C_MEMADD_SIZE_8BIT, &value,
+				1, I2c3Timeout);
+
+		/* Check the communication status */
+		if (status != HAL_OK) {
+			/* Re-Initialize the BUS */
+			//I2Cx_Error();
+		}
+
+		xSemaphoreGive(i2c_semaphore);
 	}
+
 	return value;
 }
 
@@ -90,8 +107,14 @@ uint8_t I2C3_ReadBuffer(uint8_t Addr, uint8_t Reg, uint8_t *pBuffer,
 		uint16_t Length) {
 	HAL_StatusTypeDef status = HAL_OK;
 
-	status = HAL_I2C_Mem_Read(&hi2c3, Addr, (uint16_t) Reg,
-	I2C_MEMADD_SIZE_8BIT, pBuffer, Length, I2c3Timeout);
+	if(xSemaphoreTake(i2c_semaphore, (TickType_t) 50) == pdPASS){
+		status = HAL_I2C_Mem_Read(&hi2c3, Addr, (uint16_t) Reg,
+				I2C_MEMADD_SIZE_8BIT, pBuffer, Length, I2c3Timeout);
+
+		xSemaphoreGive(i2c_semaphore);
+	}
+
+
 
 	/* Check the communication status */
 	if (status == HAL_OK) {

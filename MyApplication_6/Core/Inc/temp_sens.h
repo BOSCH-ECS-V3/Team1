@@ -1,6 +1,7 @@
 #ifndef __TEMP_SENS_H__
 #define __TEMP_SENS_H__
 
+#include "main.h"
 #include "bme680.h"
 
 #define BME680_ERR 200
@@ -16,11 +17,9 @@ extern uint16_t meas_period_Out;
 
 int8_t SensorInit(struct bme680_dev *sensor, uint16_t *meas_period, uint8_t sens_num);
 
-
 int8_t CollectSensorData(struct bme680_dev *sensor, struct bme680_field_data *data);
 
 int8_t user_i2c_read(uint8_t dev_id, uint8_t reg_addr, uint8_t *reg_data, uint16_t len);
-
 
 int8_t user_i2c_write(uint8_t dev_id, uint8_t reg_addr, uint8_t *reg_data, uint16_t len);
 

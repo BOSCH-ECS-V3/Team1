@@ -1,11 +1,13 @@
-
-#include "temp_sens.h"
 #include <string.h>
+#include "temp_sens.h"
 #include "stm32f4xx_hal.h"
 #include  "data_UI_def.h"
+#include "cmsis_os.h"
+#include <semphr.h>
 
 extern I2C_HandleTypeDef hi2c3;
 extern SensData_t data_UI;
+extern xSemaphoreHandle i2c_semaphore;
 
 struct bme680_dev sensor_In;
 struct bme680_dev sensor_Out;
@@ -62,18 +64,21 @@ int8_t CollectSensorData(struct bme680_dev *sensor, struct bme680_field_data *da
 
 int8_t user_i2c_read(uint8_t dev_id, uint8_t reg_addr, uint8_t *reg_data, uint16_t len){
 
-	int8_t result;
+	int8_t result = BME680_OK;
 
-	if(HAL_I2C_Master_Transmit(&hi2c3, (dev_id << 1), &reg_addr, 1, 50) != HAL_OK){
+	if(xSemaphoreTake(i2c_semaphore, (TickType_t) 50) == pdPASS){
+		if(HAL_I2C_Master_Transmit(&hi2c3, (dev_id << 1), &reg_addr, 1, 50) != HAL_OK){
 
-		result = -1;
-	}else if(HAL_I2C_Master_Receive (&hi2c3, (dev_id << 1) | 0x01, reg_data, len, 50) != HAL_OK){
+			result = -1;
+		}else if(HAL_I2C_Master_Receive (&hi2c3, (dev_id << 1) | 0x01, reg_data, len, 50) != HAL_OK){
 
-		result = -1;
-	}else{
+			result = -1;
+		}
 
-		result = BME680_OK;
+		xSemaphoreGive(i2c_semaphore);
 	}
+
+
 	return result;
 }
 
@@ -81,17 +86,22 @@ int8_t user_i2c_read(uint8_t dev_id, uint8_t reg_addr, uint8_t *reg_data, uint16
 int8_t user_i2c_write(uint8_t dev_id, uint8_t reg_addr, uint8_t *reg_data, uint16_t len){
 
 
-	int8_t result;
+	int8_t result = BME680_OK;
 	int8_t buf[len+1];
 
 	buf[0] = reg_addr;
 	memcpy(buf + 1, reg_data, len);
 
-	if (HAL_I2C_Master_Transmit(&hi2c3, (dev_id << 1), (uint8_t *) buf, len + 1, HAL_MAX_DELAY) != HAL_OK) {
-		result = -1;
-	} else {
-		result = BME680_OK;
+	if(xSemaphoreTake(i2c_semaphore, (TickType_t) 50) == pdPASS){
+
+		if (HAL_I2C_Master_Transmit(&hi2c3, (dev_id << 1), (uint8_t *) buf, len + 1, HAL_MAX_DELAY) != HAL_OK) {
+			result = -1;
+		}
+
+		xSemaphoreGive(i2c_semaphore);
 	}
+
+
 
 
 	return result;
