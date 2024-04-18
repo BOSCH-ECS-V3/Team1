@@ -1,8 +1,0 @@
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	1
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	1
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	1
-C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1_Repo_LAST/Team1-stanislav/MyApplication_6/TouchGFX/gui/src/statistics_temperature_outside_screen/Statistics_Temperature_OutsideView.cpp:13:6:virtual void Statistics_Temperature_OutsideView::tearDownScreen()	1
-../../TouchGFX/gui/include/gui/statistics_temperature_outside_screen/Statistics_Temperature_OutsideView.hpp:11:13:Statistics_Temperature_OutsideView::~Statistics_Temperature_OutsideView()	1
-../../TouchGFX/gui/include/gui/statistics_temperature_outside_screen/Statistics_Temperature_OutsideView.hpp:11:13:virtual Statistics_Temperature_OutsideView::~Statistics_Temperature_OutsideView()	1
-C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1_Repo_LAST/Team1-stanislav/MyApplication_6/TouchGFX/gui/src/statistics_temperature_outside_screen/Statistics_Temperature_OutsideView.cpp:3:1:Statistics_Temperature_OutsideView::Statistics_Temperature_OutsideView()	1
-C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1_Repo_LAST/Team1-stanislav/MyApplication_6/TouchGFX/gui/src/statistics_temperature_outside_screen/Statistics_Temperature_OutsideView.cpp:8:6:virtual void Statistics_Temperature_OutsideView::setupScreen()	1

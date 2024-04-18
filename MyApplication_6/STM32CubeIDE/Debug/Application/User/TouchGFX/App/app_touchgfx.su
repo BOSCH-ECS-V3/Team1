@@ -1,4 +1,0 @@
-C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1_Repo_LAST/Team1-stanislav/MyApplication_6/TouchGFX/App/app_touchgfx.c:60:6:MX_TouchGFX_PreOSInit	0	static
-C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1_Repo_LAST/Team1-stanislav/MyApplication_6/TouchGFX/App/app_touchgfx.c:67:6:MX_TouchGFX_Init	8	static
-C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1_Repo_LAST/Team1-stanislav/MyApplication_6/TouchGFX/App/app_touchgfx.c:77:6:MX_TouchGFX_Process	0	static
-C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1_Repo_LAST/Team1-stanislav/MyApplication_6/TouchGFX/App/app_touchgfx.c:86:6:TouchGFX_Task	0	static
