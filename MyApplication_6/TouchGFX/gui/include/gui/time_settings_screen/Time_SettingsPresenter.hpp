@@ -29,6 +29,7 @@ public:
 
     virtual void current_Clock(int Clock_Values[]);
     virtual void update_Clock(int Clock_Values[]);
+    virtual void set_screen_brightness(int brightness);
 private:
     Time_SettingsPresenter();
 

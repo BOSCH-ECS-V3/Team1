@@ -14,6 +14,7 @@ public:
     virtual void btn_Permission_OFF();
     virtual void btn_Permission_ON();
     virtual void RECEIVE_Permission(int Permission_ALERT_STATE);
+    virtual void set_screen_brightness(int brightness);
 
     int Permission_STATE ;
 

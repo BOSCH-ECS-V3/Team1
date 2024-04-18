@@ -16,3 +16,8 @@ void Statistics_PresurePresenter::deactivate()
 {
 
 }
+
+void Statistics_PresurePresenter::set_screen_brightness(int brightness)
+{
+	view.set_screen_brightness(brightness);
+}

@@ -24,3 +24,8 @@ void Alarm_SettingsPresenter::RECEIVE_Permission(int Permission_STATE)
 {
 	view.RECEIVE_Permission(Permission_STATE);
 }
+
+void Alarm_SettingsPresenter::set_screen_brightness(int brightness)
+{
+	view.set_screen_brightness(brightness);
+}

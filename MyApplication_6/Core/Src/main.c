@@ -71,9 +71,6 @@ xSemaphoreHandle i2c_semaphore;
 
 SensData_t data_UI;
 
-char msg[30];
-short msgIDX = 0;
-
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/

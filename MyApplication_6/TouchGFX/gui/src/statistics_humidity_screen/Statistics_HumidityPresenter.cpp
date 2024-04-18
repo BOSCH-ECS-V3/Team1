@@ -16,3 +16,8 @@ void Statistics_HumidityPresenter::deactivate()
 {
 
 }
+
+void Statistics_HumidityPresenter::set_screen_brightness(int brightness)
+{
+ view.set_screen_brightness(brightness);
+}

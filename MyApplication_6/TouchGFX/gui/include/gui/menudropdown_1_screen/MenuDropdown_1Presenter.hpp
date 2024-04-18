@@ -24,6 +24,7 @@ public:
      * (ie. made inactive). Teardown functionality can be placed here.
      */
     virtual void deactivate();
+    virtual void set_screen_brightness(int brightness);
 
     virtual ~MenuDropdown_1Presenter() {}
 

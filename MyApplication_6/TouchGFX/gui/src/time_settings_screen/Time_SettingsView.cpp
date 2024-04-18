@@ -93,6 +93,11 @@ void Time_SettingsView::Seconds_Down()
 	digitalClock1.invalidate();
 
 }
+void Time_SettingsView::set_screen_brightness(int brightness)
+{
+	 Brightness_level.setAlpha(brightness);
+			  Brightness_level.invalidate();
+}
 
 
 

@@ -14,3 +14,11 @@ void Statistics_Ambient_1View::tearDownScreen()
 {
     Statistics_Ambient_1ViewBase::tearDownScreen();
 }
+void Statistics_Ambient_1View::set_screen_brightness(int brightness)
+{
+	Brightness_level.setAlpha(brightness);
+	Brightness_level.invalidate();
+}
+
+
+

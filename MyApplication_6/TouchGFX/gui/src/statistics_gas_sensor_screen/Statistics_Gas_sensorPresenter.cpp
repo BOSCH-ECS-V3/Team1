@@ -16,3 +16,8 @@ void Statistics_Gas_sensorPresenter::deactivate()
 {
 
 }
+
+void Statistics_Gas_sensorPresenter::set_screen_brightness(int brightness)
+{
+	view.set_screen_brightness(brightness);
+}
