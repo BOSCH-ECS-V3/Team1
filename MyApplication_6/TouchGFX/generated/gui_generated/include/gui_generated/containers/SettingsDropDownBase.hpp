@@ -27,6 +27,7 @@ protected:
     touchgfx::Box box1;
     touchgfx::ButtonWithLabel Home;
     touchgfx::ButtonWithLabel Alarm;
+    touchgfx::ButtonWithLabel Statistics;
     touchgfx::ButtonWithLabel DateSettings;
     touchgfx::ButtonWithLabel TimeSettings;
     touchgfx::ButtonWithLabel About;

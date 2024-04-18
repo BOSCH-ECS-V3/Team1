@@ -48,11 +48,11 @@ protected:
     touchgfx::TextArea Header_Text;
     touchgfx::TextArea System_Allarm_Text;
     touchgfx::TextArea Alarm_confirmation_text;
-    touchgfx::Box Brightness_level;
     touchgfx::ButtonWithIcon Permission_ON;
     touchgfx::ButtonWithIcon Permission_OFF;
     touchgfx::Box box1;
     touchgfx::TextAreaWithOneWildcard textArea1;
+    touchgfx::Box Brightness_level;
 
     /*
      * Wildcard Buffers

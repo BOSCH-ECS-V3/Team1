@@ -69,8 +69,6 @@ BaseType_t CLI_TaskFlag;
 
 xSemaphoreHandle i2c_semaphore;
 
-uint32_t adcValues[2]; // [0] -> Channel 5, [1] -> Channel 7
-
 SensData_t data_UI;
 
 char msg[30];
@@ -319,37 +317,19 @@ void LCD_Delay(uint32_t Delay) {
 	HAL_Delay(Delay);
 }
 
-void SetAmbientLight() {
-	data_UI.ambientLight = map(adcValues[0], 0, 4095, 0, 100);
-}
-
-void SetGasSensor() {
-	if (adcValues[1] < 160) {
-
-		adcValues[1] = 160;
-	}else if(adcValues > 1000){
-		data_UI.carbonMonoxide = 601;
-	}else{
-		data_UI.carbonMonoxide = map(adcValues[1], 160, 500, 20, 2000);
-	}
-}
-
-
 void GetSensDataTask(void *argument) {
 
 	SensorInit(&sensor_In, &meas_period_In, SENS_IN_NUM);
 
 	for (;;) {
 
-		ADC_Select_CH5();
+		ADC_Select_CH5(); //get ADC value from PA5 <Ambient light>
 
-		ADC_Select_CH7();
-
-		SetAmbientLight();
+		ADC_Select_CH7(); //get ADC value from PA7 <Gas sensor>
 
 		GetBMEdata();
 
-		SetGasSensor();
+		osDelay(500);
 	}
 }
 

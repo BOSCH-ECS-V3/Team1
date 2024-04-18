@@ -42,7 +42,7 @@ MenuDropdown_1ViewBase::MenuDropdown_1ViewBase() :
     scrollList1.setPadding(0, 0);
     scrollList1.setSnapping(false);
     scrollList1.setOvershootPercentage(75);
-    scrollList1.setDrawableSize(430, 0);
+    scrollList1.setDrawableSize(500, 0);
     scrollList1.setDrawables(scrollList1ListItems, updateItemCallback);
     add(scrollList1);
 

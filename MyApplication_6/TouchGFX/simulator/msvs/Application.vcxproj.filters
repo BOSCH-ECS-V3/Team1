@@ -328,6 +328,18 @@
     <Filter Include="Header Files\generated\gui_generated\alarm_settings_screen">
       <UniqueIdentifier>20A0E33C-D2FB-8499-9962-9A9F39AA5F3D</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\gui\statistics_screen">
+      <UniqueIdentifier>A1881AEA-F715-DD21-0A26-AA7EF37F67A2</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\statistics_screen">
+      <UniqueIdentifier>8C0B5E49-CA2E-695A-5637-5A139F47D1DB</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\statistics_screen">
+      <UniqueIdentifier>A152BA78-33D7-6E68-3A8C-4CF8F10EE262</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\statistics_screen">
+      <UniqueIdentifier>C7BD3ADF-EA8D-D32E-71B1-E722B63A5D5A</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -473,6 +485,15 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\alarm_settings_screen\Alarm_SettingsViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\alarm_settings_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\statistics_screen\STATISTICSPresenter.cpp">
+      <Filter>Source Files\gui\statistics_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\statistics_screen\STATISTICSView.cpp">
+      <Filter>Source Files\gui\statistics_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\statistics_screen\STATISTICSViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\statistics_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -1029,6 +1050,15 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\alarm_settings_screen\Alarm_SettingsViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\alarm_settings_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\statistics_screen\STATISTICSPresenter.hpp">
+      <Filter>Header Files\gui\statistics_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\statistics_screen\STATISTICSView.hpp">
+      <Filter>Header Files\gui\statistics_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\statistics_screen\STATISTICSViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\statistics_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

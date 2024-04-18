@@ -50,6 +50,10 @@ public:
     	// send Error_ID to the view -> Default page
     }
 
+    virtual void set_screen_brightness(int brightness)
+    {
+    	// send Screen brightness to view -> Default page
+    }
 protected:
     Model* model;
 };

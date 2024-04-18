@@ -3,7 +3,6 @@
     "Screens": [
       {
         "Name": "DefaultView",
-        "CanvasBufferSize": 3600,
         "Components": [
           {
             "Type": "Box",
@@ -99,7 +98,7 @@
                     "X": 81,
                     "Y": 109,
                     "Width": 163,
-                    "Height": 41,
+                    "Height": 48,
                     "TextId": "__SingleUse_ED8P",
                     "TextRotation": "0",
                     "Color": {
@@ -112,23 +111,6 @@
                       "UseBuffer": true,
                       "BufferSize": 10
                     }
-                  },
-                  {
-                    "Type": "ButtonWithIcon",
-                    "Name": "Statistics_Button_Humidity",
-                    "X": 5,
-                    "Y": 201,
-                    "Width": 60,
-                    "Height": 60,
-                    "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_fill_pressed.png",
-                    "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_fill_active.png",
-                    "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
-                    "IconReleased": "__generated\\icon_theme_images_content_stacked_bar_chart_50_50_E8F6FB.svg.png",
-                    "IconX": 5,
-                    "IconY": 5,
-                    "IconHeight": 50,
-                    "IconWidth": 50,
-                    "Preset": "alternate_theme\\presets\\button\\icon\\round\\tiny_fill_active.json"
                   }
                 ]
               },
@@ -156,10 +138,10 @@
                   {
                     "Type": "TextArea",
                     "Name": "Carbon_Val",
-                    "X": 91,
-                    "Y": 64,
-                    "Width": 143,
-                    "Height": 24,
+                    "X": 42,
+                    "Y": 109,
+                    "Width": 346,
+                    "Height": 48,
                     "TextId": "__SingleUse_GP4Z",
                     "TextRotation": "0",
                     "Color": {
@@ -172,45 +154,6 @@
                       "UseBuffer": true,
                       "BufferSize": 20
                     }
-                  },
-                  {
-                    "Type": "CircleProgress",
-                    "Name": "CarbonCirc_Val",
-                    "X": 65,
-                    "Y": 107,
-                    "Width": 110,
-                    "Height": 110,
-                    "Color": {
-                      "Green": 240,
-                      "Blue": 255
-                    },
-                    "CenterX": 55.0,
-                    "CenterY": 55.0,
-                    "Radius": 50.0,
-                    "LineWidth": 10.0,
-                    "StartAngle": -90.0,
-                    "EndAngle": 210.0,
-                    "CapPrecision": "Butt",
-                    "FileNameBackground": "__generated\\alternate_theme_images_widgets_circleprogress_backgrounds_small.png",
-                    "ProgressRangeMax": 100,
-                    "ProgressInitialValue": 60
-                  },
-                  {
-                    "Type": "ButtonWithIcon",
-                    "Name": "Statistics_Button_Carbon",
-                    "X": 5,
-                    "Y": 201,
-                    "Width": 60,
-                    "Height": 60,
-                    "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_fill_pressed.png",
-                    "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_fill_active.png",
-                    "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
-                    "IconReleased": "__generated\\icon_theme_images_content_stacked_bar_chart_50_50_E8F6FB.svg.png",
-                    "IconX": 5,
-                    "IconY": 5,
-                    "IconHeight": 50,
-                    "IconWidth": 50,
-                    "Preset": "alternate_theme\\presets\\button\\icon\\round\\tiny_fill_active.json"
                   }
                 ]
               },
@@ -241,7 +184,7 @@
                     "X": 83,
                     "Y": 109,
                     "Width": 75,
-                    "Height": 41,
+                    "Height": 48,
                     "TextId": "__SingleUse_MJ6R",
                     "TextRotation": "0",
                     "Color": {
@@ -254,23 +197,6 @@
                       "UseBuffer": true,
                       "BufferSize": 10
                     }
-                  },
-                  {
-                    "Type": "ButtonWithIcon",
-                    "Name": "Statistics_Button_Presure",
-                    "X": 5,
-                    "Y": 201,
-                    "Width": 60,
-                    "Height": 60,
-                    "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_fill_pressed.png",
-                    "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_fill_active.png",
-                    "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
-                    "IconReleased": "__generated\\icon_theme_images_content_stacked_bar_chart_50_50_E8F6FB.svg.png",
-                    "IconX": 5,
-                    "IconY": 5,
-                    "IconHeight": 50,
-                    "IconWidth": 50,
-                    "Preset": "alternate_theme\\presets\\button\\icon\\round\\tiny_fill_active.json"
                   }
                 ]
               },
@@ -280,23 +206,6 @@
                 "Width": 240,
                 "Height": 261,
                 "Components": [
-                  {
-                    "Type": "ButtonWithIcon",
-                    "Name": "Statistics_Button_Ambient",
-                    "X": 5,
-                    "Y": 201,
-                    "Width": 60,
-                    "Height": 60,
-                    "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_fill_pressed.png",
-                    "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_fill_active.png",
-                    "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
-                    "IconReleased": "__generated\\icon_theme_images_content_stacked_bar_chart_50_50_E8F6FB.svg.png",
-                    "IconX": 5,
-                    "IconY": 5,
-                    "IconHeight": 50,
-                    "IconWidth": 50,
-                    "Preset": "alternate_theme\\presets\\button\\icon\\round\\tiny_fill_active.json"
-                  },
                   {
                     "Type": "TextArea",
                     "Name": "Ambient_Text",
@@ -318,7 +227,7 @@
                     "X": 81,
                     "Y": 109,
                     "Width": 149,
-                    "Height": 41,
+                    "Height": 48,
                     "TextId": "__SingleUse_9KQX",
                     "TextRotation": "0",
                     "Color": {
@@ -346,7 +255,7 @@
                     "X": 81,
                     "Y": 109,
                     "Width": 134,
-                    "Height": 41,
+                    "Height": 48,
                     "TextId": "__SingleUse_BF3J",
                     "TextRotation": "0",
                     "Color": {
@@ -374,23 +283,6 @@
                       "Blue": 255
                     },
                     "AutoSize": true
-                  },
-                  {
-                    "Type": "ButtonWithIcon",
-                    "Name": "Statistics_Button_TempIn",
-                    "X": 5,
-                    "Y": 201,
-                    "Width": 60,
-                    "Height": 60,
-                    "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_fill_pressed.png",
-                    "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_fill_active.png",
-                    "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
-                    "IconReleased": "__generated\\icon_theme_images_content_stacked_bar_chart_50_50_E8F6FB.svg.png",
-                    "IconX": 5,
-                    "IconY": 5,
-                    "IconHeight": 50,
-                    "IconWidth": 50,
-                    "Preset": "alternate_theme\\presets\\button\\icon\\round\\tiny_fill_active.json"
                   }
                 ]
               },
@@ -406,7 +298,7 @@
                     "X": 81,
                     "Y": 109,
                     "Width": 148,
-                    "Height": 41,
+                    "Height": 48,
                     "TextId": "__SingleUse_7E1H",
                     "TextRotation": "0",
                     "Color": {
@@ -434,23 +326,6 @@
                       "Blue": 255
                     },
                     "AutoSize": true
-                  },
-                  {
-                    "Type": "ButtonWithIcon",
-                    "Name": "Statistics_Button_TempOut",
-                    "X": 5,
-                    "Y": 201,
-                    "Width": 60,
-                    "Height": 60,
-                    "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_fill_pressed.png",
-                    "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_fill_active.png",
-                    "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
-                    "IconReleased": "__generated\\icon_theme_images_content_stacked_bar_chart_50_50_E8F6FB.svg.png",
-                    "IconX": 5,
-                    "IconY": 5,
-                    "IconHeight": 50,
-                    "IconWidth": 50,
-                    "Preset": "alternate_theme\\presets\\button\\icon\\round\\tiny_fill_active.json"
                   }
                 ]
               }
@@ -593,10 +468,11 @@
           {
             "Type": "Box",
             "Name": "Brightness_level",
-            "Y": 4,
-            "Width": 240,
-            "Height": 320,
-            "Alpha": 0
+            "X": -11,
+            "Y": -8,
+            "Width": 282,
+            "Height": 345,
+            "Alpha": 101
           }
         ],
         "Interactions": [
@@ -621,78 +497,6 @@
             "Action": {
               "Type": "ActionCustom",
               "FunctionName": "function1"
-            }
-          },
-          {
-            "InteractionName": "StatisticsNav_Ambient",
-            "Trigger": {
-              "Type": "TriggerClicked",
-              "TriggerComponent": "Statistics_Button_Ambient"
-            },
-            "Action": {
-              "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "Statistics_Ambient_1"
-            }
-          },
-          {
-            "InteractionName": "StatisticsNav_Humidity",
-            "Trigger": {
-              "Type": "TriggerClicked",
-              "TriggerComponent": "Statistics_Button_Humidity"
-            },
-            "Action": {
-              "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "Statistics_Humidity"
-            }
-          },
-          {
-            "InteractionName": "StatisticsNav_TempIn",
-            "Trigger": {
-              "Type": "TriggerClicked",
-              "TriggerComponent": "Statistics_Button_TempIn"
-            },
-            "Action": {
-              "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "Statistics_Temperature_Inside"
-            }
-          },
-          {
-            "InteractionName": "StatisticsNav_presure",
-            "Trigger": {
-              "Type": "TriggerClicked",
-              "TriggerComponent": "Statistics_Button_Presure"
-            },
-            "Action": {
-              "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "Statistics_Presure"
-            }
-          },
-          {
-            "InteractionName": "StatisticsNav_Carbon",
-            "Trigger": {
-              "Type": "TriggerClicked",
-              "TriggerComponent": "Statistics_Button_Carbon"
-            },
-            "Action": {
-              "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "Statistics_Gas_sensor"
-            }
-          },
-          {
-            "InteractionName": "StatisticNav_TempOut",
-            "Trigger": {
-              "Type": "TriggerClicked",
-              "TriggerComponent": "Statistics_Button_TempOut"
-            },
-            "Action": {
-              "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "Statistics_Temperature_Outside"
             }
           },
           {
@@ -1608,7 +1412,6 @@
       },
       {
         "Name": "Statistics_Temperature_Inside",
-        "CanvasBufferSize": 3600,
         "Components": [
           {
             "Type": "Box",
@@ -1674,24 +1477,9 @@
           },
           {
             "Type": "TextArea",
-            "Name": "Statistics_text",
-            "X": 22,
-            "Y": 63,
-            "Width": 196,
-            "Height": 18,
-            "TextId": "__SingleUse_0BZW",
-            "TextRotation": "0",
-            "Color": {
-              "Green": 247,
-              "Blue": 255
-            },
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
             "Name": "Temperature_sensor_text",
             "X": 16,
-            "Y": 105,
+            "Y": 67,
             "Width": 214,
             "Height": 18,
             "TextId": "__SingleUse_YSM9",
@@ -1748,32 +1536,71 @@
             "AutoSize": true
           },
           {
-            "Type": "DynamicGraph",
+            "Type": "StaticGraph",
             "Name": "Graphic_Temperature_Inside",
-            "X": 23,
-            "Y": 137,
-            "Width": 200,
-            "Height": 76,
-            "DataSeed": 1240533661,
-            "NumberOfValues": 100,
-            "MaxY": 100.0,
-            "Precision": "1",
-            "LastIndex": 99,
+            "X": -2,
+            "Y": 101,
+            "Width": 238,
+            "Height": 132,
+            "DataSeed": 1576120235,
+            "NumberOfValues": 24,
+            "MaxX": 24.0,
+            "PrecisionX": "1",
+            "MaxY": 45.0,
+            "PrecisionY": "1",
             "XAxisScale": 1.0,
-            "InsertRandomValues": true,
-            "GraphType": "GraphWrapClear",
+            "LabelSizeBottom": 16,
+            "LabelSizeLeft": 15,
+            "PaddingBottom": 2,
+            "PaddingLeft": 9,
+            "PaddingRight": 12,
             "GraphDrawers": [
               {
-                "Type": "LineDrawer",
-                "LineWidth": 2,
-                "FileNameImage": "",
+                "Type": "HistogramDrawer",
+                "BarWidth": 4,
                 "Color": {
                   "Red": 20,
                   "Green": 151,
                   "Blue": 197
                 }
               }
-            ]
+            ],
+            "YAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "Interval": 4.0,
+              "LineWidth": 1
+            },
+            "XAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 3.0,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "TextId": "__SingleUse_M8Z7",
+              "TextRotation": "0",
+              "Position": "Bottom"
+            },
+            "YAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 10.0,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "TextId": "__SingleUse_XT9W",
+              "TextRotation": "0",
+              "Position": "Left"
+            }
           },
           {
             "Type": "Box",
@@ -1793,14 +1620,13 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "MenuDropdown_1"
+              "ActionComponent": "STATISTICS"
             }
           }
         ]
       },
       {
         "Name": "Statistics_Temperature_Outside",
-        "CanvasBufferSize": 3600,
         "Components": [
           {
             "Type": "Box",
@@ -1866,24 +1692,9 @@
           },
           {
             "Type": "TextArea",
-            "Name": "Statistics_text",
-            "X": 22,
-            "Y": 63,
-            "Width": 196,
-            "Height": 18,
-            "TextId": "__SingleUse_WVE6",
-            "TextRotation": "0",
-            "Color": {
-              "Green": 247,
-              "Blue": 255
-            },
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
             "Name": "Temperature_sensor_outside_text",
             "X": 9,
-            "Y": 105,
+            "Y": 61,
             "Width": 223,
             "Height": 18,
             "TextId": "__SingleUse_XZWT",
@@ -1940,32 +1751,70 @@
             "AutoSize": true
           },
           {
-            "Type": "DynamicGraph",
+            "Type": "StaticGraph",
             "Name": "Graphic_Temperature_Outside",
-            "X": 23,
-            "Y": 137,
-            "Width": 200,
-            "Height": 76,
-            "DataSeed": 1240533661,
-            "NumberOfValues": 100,
-            "MaxY": 100.0,
-            "Precision": "1",
-            "LastIndex": 99,
+            "Y": 94,
+            "Width": 238,
+            "Height": 132,
+            "DataSeed": 1576120235,
+            "NumberOfValues": 24,
+            "MaxX": 24.0,
+            "PrecisionX": "1",
+            "MaxY": 45.0,
+            "PrecisionY": "1",
             "XAxisScale": 1.0,
-            "InsertRandomValues": true,
-            "GraphType": "GraphWrapClear",
+            "LabelSizeBottom": 16,
+            "LabelSizeLeft": 15,
+            "PaddingBottom": 2,
+            "PaddingLeft": 9,
+            "PaddingRight": 12,
             "GraphDrawers": [
               {
-                "Type": "LineDrawer",
-                "LineWidth": 2,
-                "FileNameImage": "",
+                "Type": "HistogramDrawer",
+                "BarWidth": 4,
                 "Color": {
                   "Red": 20,
                   "Green": 151,
                   "Blue": 197
                 }
               }
-            ]
+            ],
+            "YAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "Interval": 4.0,
+              "LineWidth": 1
+            },
+            "XAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 3.0,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "TextId": "__SingleUse_3GTH",
+              "TextRotation": "0",
+              "Position": "Bottom"
+            },
+            "YAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 10.0,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "TextId": "__SingleUse_O4FJ",
+              "TextRotation": "0",
+              "Position": "Left"
+            }
           },
           {
             "Type": "Box",
@@ -1985,14 +1834,13 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "MenuDropdown_1"
+              "ActionComponent": "STATISTICS"
             }
           }
         ]
       },
       {
         "Name": "Statistics_Humidity",
-        "CanvasBufferSize": 3600,
         "Components": [
           {
             "Type": "Box",
@@ -2058,24 +1906,9 @@
           },
           {
             "Type": "TextArea",
-            "Name": "Statistics_text",
-            "X": 22,
-            "Y": 63,
-            "Width": 196,
-            "Height": 18,
-            "TextId": "__SingleUse_4KX0",
-            "TextRotation": "0",
-            "Color": {
-              "Green": 247,
-              "Blue": 255
-            },
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
             "Name": "Humidity_sensor_text",
-            "X": 45,
-            "Y": 104,
+            "X": 46,
+            "Y": 63,
             "Width": 123,
             "Height": 18,
             "TextId": "__SingleUse_DJOK",
@@ -2132,32 +1965,72 @@
             "AutoSize": true
           },
           {
-            "Type": "DynamicGraph",
+            "Type": "StaticGraph",
             "Name": "Graphic_Humidity_Inside",
-            "X": 23,
-            "Y": 137,
-            "Width": 200,
-            "Height": 76,
-            "DataSeed": 1240533661,
-            "NumberOfValues": 100,
-            "MaxY": 100.0,
-            "Precision": "1",
-            "LastIndex": 99,
+            "X": -2,
+            "Y": 94,
+            "Width": 235,
+            "Height": 142,
+            "DataSeed": 1576120235,
+            "NumberOfValues": 24,
+            "MaxX": 24.0,
+            "PrecisionX": "1",
+            "MaxY": 70.0,
+            "MinY": 20.0,
+            "PrecisionY": "1",
             "XAxisScale": 1.0,
-            "InsertRandomValues": true,
-            "GraphType": "GraphWrapClear",
+            "LabelSizeBottom": 16,
+            "LabelSizeLeft": 15,
+            "PaddingBottom": -1,
+            "PaddingLeft": 9,
+            "PaddingRight": 12,
             "GraphDrawers": [
               {
-                "Type": "LineDrawer",
-                "LineWidth": 2,
-                "FileNameImage": "",
+                "Type": "HistogramDrawer",
+                "BarWidth": 4,
                 "Color": {
                   "Red": 20,
                   "Green": 151,
                   "Blue": 197
                 }
               }
-            ]
+            ],
+            "YAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "Interval": 4.0,
+              "LineWidth": 1
+            },
+            "XAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 2.0,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "TextId": "__SingleUse_ZVPC",
+              "TextRotation": "0",
+              "Position": "Bottom"
+            },
+            "YAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 30.0,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "TextId": "__SingleUse_73V5",
+              "TextRotation": "0",
+              "Position": "Left"
+            }
           },
           {
             "Type": "Box",
@@ -2177,14 +2050,13 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "MenuDropdown_1"
+              "ActionComponent": "STATISTICS"
             }
           }
         ]
       },
       {
         "Name": "Statistics_Presure",
-        "CanvasBufferSize": 3600,
         "Components": [
           {
             "Type": "Box",
@@ -2250,24 +2122,9 @@
           },
           {
             "Type": "TextArea",
-            "Name": "Statistics_text",
-            "X": 22,
-            "Y": 63,
-            "Width": 196,
-            "Height": 18,
-            "TextId": "__SingleUse_YQA7",
-            "TextRotation": "0",
-            "Color": {
-              "Green": 247,
-              "Blue": 255
-            },
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
             "Name": "Presure_sensor_text",
-            "X": 45,
-            "Y": 104,
+            "X": 55,
+            "Y": 60,
             "Width": 112,
             "Height": 18,
             "TextId": "__SingleUse_DKR6",
@@ -2324,32 +2181,71 @@
             "AutoSize": true
           },
           {
-            "Type": "DynamicGraph",
+            "Type": "StaticGraph",
             "Name": "Graphic_Presure_Inside",
-            "X": 23,
-            "Y": 137,
-            "Width": 200,
-            "Height": 76,
-            "DataSeed": 1240533661,
-            "NumberOfValues": 100,
-            "MaxY": 100.0,
-            "Precision": "1",
-            "LastIndex": 99,
+            "Y": 94,
+            "Width": 238,
+            "Height": 132,
+            "DataSeed": 1576120235,
+            "NumberOfValues": 24,
+            "MaxX": 24.0,
+            "PrecisionX": "1",
+            "MaxY": 1000.0,
+            "MinY": 930.0,
+            "PrecisionY": "1",
             "XAxisScale": 1.0,
-            "InsertRandomValues": true,
-            "GraphType": "GraphWrapClear",
+            "LabelSizeBottom": 16,
+            "LabelSizeLeft": 24,
+            "PaddingBottom": 5,
+            "PaddingLeft": 12,
+            "PaddingRight": 15,
             "GraphDrawers": [
               {
-                "Type": "LineDrawer",
-                "LineWidth": 2,
-                "FileNameImage": "",
+                "Type": "HistogramDrawer",
+                "BarWidth": 4,
                 "Color": {
                   "Red": 20,
                   "Green": 151,
                   "Blue": 197
                 }
               }
-            ]
+            ],
+            "YAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "Interval": 4.0,
+              "LineWidth": 1
+            },
+            "XAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 2.0,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "TextId": "__SingleUse_P0ZW",
+              "TextRotation": "0",
+              "Position": "Bottom"
+            },
+            "YAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 30.0,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "TextId": "__SingleUse_OMEA",
+              "TextRotation": "0",
+              "Position": "Left"
+            }
           },
           {
             "Type": "Box",
@@ -2369,14 +2265,13 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "MenuDropdown_1"
+              "ActionComponent": "STATISTICS"
             }
           }
         ]
       },
       {
         "Name": "Statistics_Ambient_1",
-        "CanvasBufferSize": 3600,
         "Components": [
           {
             "Type": "Box",
@@ -2442,24 +2337,9 @@
           },
           {
             "Type": "TextArea",
-            "Name": "Statistics_text",
-            "X": 22,
-            "Y": 63,
-            "Width": 196,
-            "Height": 18,
-            "TextId": "__SingleUse_BRAW",
-            "TextRotation": "0",
-            "Color": {
-              "Green": 247,
-              "Blue": 255
-            },
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
             "Name": "Ambient_sensor_text",
             "X": 58,
-            "Y": 104,
+            "Y": 59,
             "Width": 118,
             "Height": 18,
             "TextId": "__SingleUse_VA8A",
@@ -2516,32 +2396,71 @@
             "AutoSize": true
           },
           {
-            "Type": "DynamicGraph",
+            "Type": "StaticGraph",
             "Name": "Graphic_Ambient_Inside",
-            "X": 23,
-            "Y": 137,
-            "Width": 200,
-            "Height": 76,
-            "DataSeed": 1240533661,
-            "NumberOfValues": 100,
+            "X": -5,
+            "Y": 94,
+            "Width": 238,
+            "Height": 132,
+            "DataSeed": 1576120235,
+            "NumberOfValues": 24,
+            "MaxX": 24.0,
+            "PrecisionX": "1",
             "MaxY": 100.0,
-            "Precision": "1",
-            "LastIndex": 99,
+            "PrecisionY": "1",
             "XAxisScale": 1.0,
-            "InsertRandomValues": true,
-            "GraphType": "GraphWrapClear",
+            "LabelSizeBottom": 16,
+            "LabelSizeLeft": 24,
+            "PaddingBottom": 5,
+            "PaddingLeft": 12,
+            "PaddingRight": 15,
             "GraphDrawers": [
               {
-                "Type": "LineDrawer",
-                "LineWidth": 2,
-                "FileNameImage": "",
+                "Type": "HistogramDrawer",
+                "BarWidth": 4,
                 "Color": {
                   "Red": 20,
                   "Green": 151,
                   "Blue": 197
                 }
               }
-            ]
+            ],
+            "YAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "Interval": 4.0,
+              "LineWidth": 1
+            },
+            "XAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 2.0,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "TextId": "__SingleUse_IQ7F",
+              "TextRotation": "0",
+              "Position": "Bottom"
+            },
+            "YAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 30.0,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "TextId": "__SingleUse_ORLQ",
+              "TextRotation": "0",
+              "Position": "Left"
+            }
           },
           {
             "Type": "Box",
@@ -2561,14 +2480,13 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "MenuDropdown_1"
+              "ActionComponent": "STATISTICS"
             }
           }
         ]
       },
       {
         "Name": "Statistics_Gas_sensor",
-        "CanvasBufferSize": 3600,
         "Components": [
           {
             "Type": "Box",
@@ -2634,24 +2552,9 @@
           },
           {
             "Type": "TextArea",
-            "Name": "Statistics_text",
-            "X": 22,
-            "Y": 63,
-            "Width": 196,
-            "Height": 18,
-            "TextId": "__SingleUse_EX06",
-            "TextRotation": "0",
-            "Color": {
-              "Green": 247,
-              "Blue": 255
-            },
-            "AutoSize": true
-          },
-          {
-            "Type": "TextArea",
             "Name": "Gas_sensor_text",
-            "X": 58,
-            "Y": 104,
+            "X": 78,
+            "Y": 58,
             "Width": 84,
             "Height": 18,
             "TextId": "__SingleUse_AB8V",
@@ -2708,36 +2611,76 @@
             "AutoSize": true
           },
           {
-            "Type": "DynamicGraph",
+            "Type": "StaticGraph",
             "Name": "Graphic_Gas_sensor",
-            "X": 23,
-            "Y": 137,
-            "Width": 200,
-            "Height": 76,
-            "DataSeed": 1240533661,
-            "NumberOfValues": 100,
+            "X": -2,
+            "Y": 88,
+            "Width": 238,
+            "Height": 132,
+            "DataSeed": 1576120235,
+            "NumberOfValues": 24,
+            "MaxX": 24.0,
+            "PrecisionX": "1",
             "MaxY": 100.0,
-            "Precision": "1",
-            "LastIndex": 99,
+            "PrecisionY": "1",
             "XAxisScale": 1.0,
-            "InsertRandomValues": true,
-            "GraphType": "GraphWrapClear",
+            "LabelSizeBottom": 16,
+            "LabelSizeLeft": 24,
+            "PaddingBottom": 5,
+            "PaddingLeft": 12,
+            "PaddingRight": 15,
             "GraphDrawers": [
               {
-                "Type": "LineDrawer",
-                "LineWidth": 2,
-                "FileNameImage": "",
+                "Type": "HistogramDrawer",
+                "BarWidth": 4,
                 "Color": {
                   "Red": 20,
                   "Green": 151,
                   "Blue": 197
                 }
               }
-            ]
+            ],
+            "YAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "Interval": 4.0,
+              "LineWidth": 1
+            },
+            "XAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 2.0,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "TextId": "__SingleUse_XTFS",
+              "TextRotation": "0",
+              "Position": "Bottom"
+            },
+            "YAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 30.0,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "TextId": "__SingleUse_FLIJ",
+              "TextRotation": "0",
+              "Position": "Left"
+            }
           },
           {
             "Type": "Box",
             "Name": "Brightness_level",
+            "X": -2,
             "Width": 240,
             "Height": 320,
             "Alpha": 0
@@ -2753,7 +2696,7 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "MenuDropdown_1"
+              "ActionComponent": "STATISTICS"
             }
           }
         ]
@@ -2857,7 +2800,7 @@
             "Name": "Alarm_confirmation_text",
             "X": 16,
             "Y": 212,
-            "Width": 209,
+            "Width": 204,
             "Height": 72,
             "TextId": "__SingleUse_J7M8",
             "TextRotation": "0",
@@ -2867,14 +2810,6 @@
               "Blue": 255
             },
             "AutoSize": true
-          },
-          {
-            "Type": "Box",
-            "Name": "Brightness_level",
-            "X": -1,
-            "Width": 240,
-            "Height": 320,
-            "Alpha": 0
           },
           {
             "Type": "ButtonWithIcon",
@@ -2937,6 +2872,14 @@
               "UseBuffer": true,
               "BufferSize": 10
             }
+          },
+          {
+            "Type": "Box",
+            "Name": "Brightness_level",
+            "X": -1,
+            "Width": 240,
+            "Height": 320,
+            "Alpha": 0
           }
         ],
         "Interactions": [
@@ -2975,6 +2918,290 @@
             }
           }
         ]
+      },
+      {
+        "Name": "STATISTICS",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "backround",
+            "Width": 240,
+            "Height": 320,
+            "Color": {
+              "Red": 43,
+              "Green": 43,
+              "Blue": 43
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "Header_backround",
+            "Width": 240,
+            "Height": 52,
+            "Color": {
+              "Red": 56,
+              "Green": 89,
+              "Blue": 255
+            },
+            "Alpha": 17
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "Menu_Button",
+            "X": 197,
+            "Y": 7,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_micro_outline_normal.png",
+            "TextId": "__SingleUse_MAS3",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\icon\\round\\micro_outline_normal.json"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Header_Text",
+            "X": 27,
+            "Y": 13,
+            "Width": 160,
+            "Height": 24,
+            "TextId": "__SingleUse_UR0F",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 153,
+              "Green": 153,
+              "Blue": 153
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Header_Text_1",
+            "X": 38,
+            "Y": 73,
+            "Width": 159,
+            "Height": 24,
+            "TextId": "__SingleUse_PS0O",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 153,
+              "Green": 153,
+              "Blue": 153
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "Temperature_INSIDE",
+            "X": 7,
+            "Y": 124,
+            "Width": 100,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_36_tiny_round_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_36_tiny_round_active.png",
+            "TextId": "__SingleUse_QWXU",
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_36\\tiny_round_active.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "Temperature_OUTSIDE",
+            "X": 133,
+            "Y": 124,
+            "Width": 100,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_36_tiny_round_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_36_tiny_round_active.png",
+            "TextId": "__SingleUse_VBA8",
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_36\\tiny_round_active.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "Humidity",
+            "X": 7,
+            "Y": 178,
+            "Width": 100,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_36_tiny_round_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_36_tiny_round_active.png",
+            "TextId": "__SingleUse_EEN9",
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_36\\tiny_round_active.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "Ambient_light",
+            "X": 133,
+            "Y": 178,
+            "Width": 100,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_36_tiny_round_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_36_tiny_round_active.png",
+            "TextId": "__SingleUse_7VEN",
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_36\\tiny_round_active.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "Gas_sensor",
+            "X": 7,
+            "Y": 231,
+            "Width": 100,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_36_tiny_round_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_36_tiny_round_active.png",
+            "TextId": "__SingleUse_CONH",
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_36\\tiny_round_active.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "Pressure",
+            "X": 133,
+            "Y": 231,
+            "Width": 100,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_36_tiny_round_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_36_tiny_round_active.png",
+            "TextId": "__SingleUse_DLEG",
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_36\\tiny_round_active.json"
+          },
+          {
+            "Type": "Box",
+            "Name": "Brightness_level",
+            "Width": 240,
+            "Height": 320,
+            "Alpha": 0
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "MenuPageNav",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Menu_Button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "MenuDropdown_1"
+            }
+          },
+          {
+            "InteractionName": "TempINPageNav",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Temperature_INSIDE"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Statistics_Temperature_Inside"
+            }
+          },
+          {
+            "InteractionName": "TempOUTPageNav",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Temperature_OUTSIDE"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Statistics_Temperature_Outside"
+            }
+          },
+          {
+            "InteractionName": "HumidityPageNav",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Humidity"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Statistics_Humidity"
+            }
+          },
+          {
+            "InteractionName": "AmbientPageNav",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Ambient_light"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Statistics_Ambient_1"
+            }
+          },
+          {
+            "InteractionName": "GasPageNav",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Gas_sensor"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Statistics_Gas_sensor"
+            }
+          },
+          {
+            "InteractionName": "PressurePageNav",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Pressure"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Statistics_Presure"
+            }
+          }
+        ]
       }
     ],
     "CustomContainerDefinitions": [
@@ -2982,14 +3209,14 @@
         "Name": "SettingsDropDown",
         "X": -5,
         "Width": 245,
-        "Height": 430,
+        "Height": 500,
         "Components": [
           {
             "Type": "Box",
             "Name": "box1",
             "X": -3,
             "Width": 248,
-            "Height": 434,
+            "Height": 500,
             "Color": {
               "Red": 43,
               "Green": 43,
@@ -3042,9 +3269,31 @@
           },
           {
             "Type": "ButtonWithLabel",
+            "Name": "Statistics",
+            "X": 50,
+            "Y": 172,
+            "Width": 144,
+            "Height": 60,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_60_tiny_round_active.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_60_tiny_round_disabled.png",
+            "TextId": "__SingleUse_1Q4G",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
+          },
+          {
+            "Type": "ButtonWithLabel",
             "Name": "DateSettings",
             "X": 49,
-            "Y": 266,
+            "Y": 331,
             "Width": 144,
             "Height": 60,
             "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_60_tiny_round_active.png",
@@ -3066,7 +3315,7 @@
             "Type": "ButtonWithLabel",
             "Name": "TimeSettings",
             "X": 49,
-            "Y": 185,
+            "Y": 250,
             "Width": 144,
             "Height": 60,
             "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_60_tiny_round_active.png",
@@ -3088,7 +3337,7 @@
             "Type": "ButtonWithLabel",
             "Name": "About",
             "X": 49,
-            "Y": 353,
+            "Y": 418,
             "Width": 144,
             "Height": 60,
             "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_60_tiny_round_active.png",
@@ -3166,6 +3415,18 @@
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
               "ActionComponent": "Alarm_Settings"
+            }
+          },
+          {
+            "InteractionName": "StatisticsPageNav",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Statistics"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "STATISTICS"
             }
           }
         ]

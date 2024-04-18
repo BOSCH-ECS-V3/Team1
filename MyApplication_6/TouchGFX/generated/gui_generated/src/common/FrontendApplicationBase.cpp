@@ -33,6 +33,8 @@
 #include <gui/statistics_gas_sensor_screen/Statistics_Gas_sensorPresenter.hpp>
 #include <gui/alarm_settings_screen/Alarm_SettingsView.hpp>
 #include <gui/alarm_settings_screen/Alarm_SettingsPresenter.hpp>
+#include <gui/statistics_screen/STATISTICSView.hpp>
+#include <gui/statistics_screen/STATISTICSPresenter.hpp>
 
 using namespace touchgfx;
 
@@ -206,4 +208,17 @@ void FrontendApplicationBase::gotoAlarm_SettingsScreenNoTransition()
 void FrontendApplicationBase::gotoAlarm_SettingsScreenNoTransitionImpl()
 {
     touchgfx::makeTransition<Alarm_SettingsView, Alarm_SettingsPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// STATISTICS
+
+void FrontendApplicationBase::gotoSTATISTICSScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoSTATISTICSScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoSTATISTICSScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<STATISTICSView, STATISTICSPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }

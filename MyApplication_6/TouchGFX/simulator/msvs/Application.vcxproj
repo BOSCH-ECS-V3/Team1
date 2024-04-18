@@ -59,6 +59,9 @@
     <ClCompile Include="..\..\gui\src\alarm_settings_screen\Alarm_SettingsPresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\alarm_settings_screen\Alarm_SettingsView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\alarm_settings_screen\Alarm_SettingsViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\statistics_screen\STATISTICSPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\statistics_screen\STATISTICSView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\statistics_screen\STATISTICSViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xml"/>
@@ -247,6 +250,9 @@
     <ClInclude Include="..\..\gui\include\gui\alarm_settings_screen\Alarm_SettingsPresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\alarm_settings_screen\Alarm_SettingsView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\alarm_settings_screen\Alarm_SettingsViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\statistics_screen\STATISTICSPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\statistics_screen\STATISTICSView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\statistics_screen\STATISTICSViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

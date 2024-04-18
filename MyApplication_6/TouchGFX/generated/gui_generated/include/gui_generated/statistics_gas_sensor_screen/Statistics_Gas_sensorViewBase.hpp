@@ -10,9 +10,9 @@
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/ButtonWithLabel.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
-#include <touchgfx/widgets/graph/GraphWrapAndClear.hpp>
+#include <touchgfx/widgets/graph/Graph.hpp>
 #include <touchgfx/widgets/graph/GraphElements.hpp>
-#include <touchgfx/widgets/canvas/PainterRGB565.hpp>
+#include <touchgfx/widgets/graph/GraphLabels.hpp>
 
 class Statistics_Gas_sensorViewBase : public touchgfx::View<Statistics_Gas_sensorPresenter>
 {
@@ -34,23 +34,18 @@ protected:
     touchgfx::Box Header_backround;
     touchgfx::ButtonWithLabel Menu_Button;
     touchgfx::TextArea Header_Text;
-    touchgfx::TextArea Statistics_text;
     touchgfx::TextArea Gas_sensor_text;
     touchgfx::TextArea Average_Day_val;
     touchgfx::TextArea Average_Week_val;
     touchgfx::TextArea Average_Month_val;
-    touchgfx::GraphWrapAndClear<100> Graphic_Gas_sensor;
-    touchgfx::GraphElementLine Graphic_Gas_sensorLine1;
-    touchgfx::PainterRGB565 Graphic_Gas_sensorLine1Painter;
+    touchgfx::Graph<24> Graphic_Gas_sensor;
+    touchgfx::GraphElementGridY Graphic_Gas_sensorMajorYAxisGrid;
+    touchgfx::GraphLabelsX Graphic_Gas_sensorMajorXAxisLabel;
+    touchgfx::GraphLabelsY Graphic_Gas_sensorMajorYAxisLabel;
+    touchgfx::GraphElementHistogram Graphic_Gas_sensorHistogram1;
     touchgfx::Box Brightness_level;
 
 private:
-
-    /*
-     * Canvas Buffer Size
-     */
-    static const uint32_t CANVAS_BUFFER_SIZE = 3600;
-    uint8_t canvasBuffer[CANVAS_BUFFER_SIZE];
 
     /*
      * Callback Declarations
