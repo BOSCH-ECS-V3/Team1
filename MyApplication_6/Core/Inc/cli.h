@@ -3,6 +3,7 @@
 
 #include "stm32f4xx_hal.h"
 #include "data_UI_def.h"
+#include "utilities.h"
 #include <string.h>
 #include <stdio.h>
 #include <ctype.h>
@@ -36,10 +37,13 @@ void ErrMsgNF(UART_HandleTypeDef *);
 //UTILITY
 void lowerString(char*);
 void CommandHandler(SensData_t*,UART_HandleTypeDef*,char*);
+void CLIHandler(SensData_t*,UART_HandleTypeDef *,char*,short*);
 
 
 
 extern void (*command[])();
+
+
 
 
 

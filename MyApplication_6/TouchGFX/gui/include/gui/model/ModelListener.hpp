@@ -49,11 +49,11 @@ public:
     {
     	// send Error_ID to the view -> Default page
     }
-    virtual void SEND_STATISTICS_INFORMATION_TEMPERATURE_INSIDE(int STATISTICS_Temperature_INSIDE[], int STATISTICS_Array_Index)
-    {
-    	// Send Statistics information to statistics page TEMPERATURE INSIDE
-    }
 
+    virtual void set_screen_brightness(int brightness)
+    {
+    	// send Screen brightness to view -> Default page
+    }
 protected:
     Model* model;
 };

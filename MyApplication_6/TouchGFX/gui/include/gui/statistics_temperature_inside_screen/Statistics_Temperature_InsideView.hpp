@@ -11,12 +11,6 @@ public:
     virtual ~Statistics_Temperature_InsideView() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
-    virtual void SEND_STATISTICS_INFORMATION_TEMPERATURE_INSIDE(int STATISTICS_Temperature_INSIDE[], int STATISTICS_Array_Index);
-    virtual void   UpdateData();
-
-    int y_POINT_TEMPERATURE_IN = 0 ;
-    int temperatureIN_values[24];
-    int array_index = 0;
 protected:
 };
 

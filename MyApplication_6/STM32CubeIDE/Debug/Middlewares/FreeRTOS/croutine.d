@@ -1,5 +1,5 @@
 Middlewares/FreeRTOS/croutine.o: \
- C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1-Command_Line_Interface/Team1-Command_Line_Interface/MyApplication_6/Middlewares/Third_Party/FreeRTOS/Source/croutine.c \
+ C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1_Repo_LAST/Team1-stanislav/MyApplication_6/Middlewares/Third_Party/FreeRTOS/Source/croutine.c \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
  ../../Core/Inc/FreeRTOSConfig.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \

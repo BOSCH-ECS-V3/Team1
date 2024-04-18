@@ -10,7 +10,7 @@
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/ButtonWithLabel.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
-#include <touchgfx/widgets/graph/GraphWrapAndClear.hpp>
+#include <touchgfx/widgets/graph/Graph.hpp>
 #include <touchgfx/widgets/graph/GraphElements.hpp>
 #include <touchgfx/widgets/graph/GraphLabels.hpp>
 
@@ -34,15 +34,12 @@ protected:
     touchgfx::Box Header_backround;
     touchgfx::ButtonWithLabel Menu_Button;
     touchgfx::TextArea Header_Text;
-    touchgfx::TextArea Statistics_text;
     touchgfx::TextArea Temperature_sensor_outside_text;
     touchgfx::TextArea Average_Day_val;
     touchgfx::TextArea Average_Week_val;
     touchgfx::TextArea Average_Month_val;
-    touchgfx::GraphWrapAndClear<24> Graphic_Temperature_Outside;
+    touchgfx::Graph<24> Graphic_Temperature_Outside;
     touchgfx::GraphElementGridY Graphic_Temperature_OutsideMajorYAxisGrid;
-    touchgfx::GraphLabelsX Graphic_Temperature_OutsideMinorXAxisLabel;
-    touchgfx::GraphLabelsY Graphic_Temperature_OutsideMinorYAxisLabel;
     touchgfx::GraphLabelsX Graphic_Temperature_OutsideMajorXAxisLabel;
     touchgfx::GraphLabelsY Graphic_Temperature_OutsideMajorYAxisLabel;
     touchgfx::GraphElementHistogram Graphic_Temperature_OutsideHistogram1;

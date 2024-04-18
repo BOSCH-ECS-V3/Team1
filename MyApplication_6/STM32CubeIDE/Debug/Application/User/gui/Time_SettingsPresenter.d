@@ -1,5 +1,5 @@
 Application/User/gui/Time_SettingsPresenter.o: \
- C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1-Command_Line_Interface/Team1-Command_Line_Interface/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsPresenter.cpp \
+ C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1_Repo_LAST/Team1-stanislav/MyApplication_6/TouchGFX/gui/src/time_settings_screen/Time_SettingsPresenter.cpp \
  ../../TouchGFX/gui/include/gui/time_settings_screen/Time_SettingsView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/time_settings_screen/Time_SettingsViewBase.hpp \
  ../../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \

@@ -1,12 +1,12 @@
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	1
-C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1-Command_Line_Interface/Team1-Command_Line_Interface/MyApplication_6/TouchGFX/gui/src/alarm_settings_screen/Alarm_SettingsView.cpp:13:6:virtual void Alarm_SettingsView::tearDownScreen()	1
-C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1-Command_Line_Interface/Team1-Command_Line_Interface/MyApplication_6/TouchGFX/gui/src/alarm_settings_screen/Alarm_SettingsView.cpp:29:6:virtual void Alarm_SettingsView::btn_Permission_ON()	1
-C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1-Command_Line_Interface/Team1-Command_Line_Interface/MyApplication_6/TouchGFX/gui/src/alarm_settings_screen/Alarm_SettingsView.cpp:36:6:virtual void Alarm_SettingsView::btn_Permission_OFF()	1
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1_Repo_LAST/Team1-stanislav/MyApplication_6/TouchGFX/gui/src/alarm_settings_screen/Alarm_SettingsView.cpp:13:6:virtual void Alarm_SettingsView::tearDownScreen()	1
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1_Repo_LAST/Team1-stanislav/MyApplication_6/TouchGFX/gui/src/alarm_settings_screen/Alarm_SettingsView.cpp:29:6:virtual void Alarm_SettingsView::btn_Permission_ON()	1
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1_Repo_LAST/Team1-stanislav/MyApplication_6/TouchGFX/gui/src/alarm_settings_screen/Alarm_SettingsView.cpp:36:6:virtual void Alarm_SettingsView::btn_Permission_OFF()	1
 ../../TouchGFX/gui/include/gui/alarm_settings_screen/Alarm_SettingsView.hpp:11:13:Alarm_SettingsView::~Alarm_SettingsView()	1
 ../../TouchGFX/gui/include/gui/alarm_settings_screen/Alarm_SettingsView.hpp:11:13:virtual Alarm_SettingsView::~Alarm_SettingsView()	1
-C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1-Command_Line_Interface/Team1-Command_Line_Interface/MyApplication_6/TouchGFX/gui/src/alarm_settings_screen/Alarm_SettingsView.cpp:3:1:Alarm_SettingsView::Alarm_SettingsView()	1
-C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1-Command_Line_Interface/Team1-Command_Line_Interface/MyApplication_6/TouchGFX/gui/src/alarm_settings_screen/Alarm_SettingsView.cpp:42:6:void SEND_Permission(int)	1
-C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1-Command_Line_Interface/Team1-Command_Line_Interface/MyApplication_6/TouchGFX/gui/src/alarm_settings_screen/Alarm_SettingsView.cpp:8:6:virtual void Alarm_SettingsView::setupScreen()	1
-C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1-Command_Line_Interface/Team1-Command_Line_Interface/MyApplication_6/TouchGFX/gui/src/alarm_settings_screen/Alarm_SettingsView.cpp:18:6:virtual void Alarm_SettingsView::RECEIVE_Permission(int)	1
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1_Repo_LAST/Team1-stanislav/MyApplication_6/TouchGFX/gui/src/alarm_settings_screen/Alarm_SettingsView.cpp:3:1:Alarm_SettingsView::Alarm_SettingsView()	1
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1_Repo_LAST/Team1-stanislav/MyApplication_6/TouchGFX/gui/src/alarm_settings_screen/Alarm_SettingsView.cpp:42:6:void SEND_Permission(int)	1
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1_Repo_LAST/Team1-stanislav/MyApplication_6/TouchGFX/gui/src/alarm_settings_screen/Alarm_SettingsView.cpp:8:6:virtual void Alarm_SettingsView::setupScreen()	1
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1_Repo_LAST/Team1-stanislav/MyApplication_6/TouchGFX/gui/src/alarm_settings_screen/Alarm_SettingsView.cpp:18:6:virtual void Alarm_SettingsView::RECEIVE_Permission(int)	1

@@ -4,11 +4,11 @@
 ../../TouchGFX/gui/include/gui/model/ModelListener.hpp:32:18:virtual void ModelListener::updated_Clock(int*)	1
 ../../TouchGFX/gui/include/gui/model/ModelListener.hpp:36:18:virtual void ModelListener::current_Sensor_values(int*)	1
 ../../TouchGFX/gui/include/gui/model/ModelListener.hpp:48:18:virtual void ModelListener::SEND_Error_ID(int)	1
-../../TouchGFX/gui/include/gui/model/ModelListener.hpp:52:18:virtual void ModelListener::SEND_STATISTICS_INFORMATION_TEMPERATURE_INSIDE(int*, int)	1
+../../TouchGFX/gui/include/gui/model/ModelListener.hpp:53:18:virtual void ModelListener::set_screen_brightness(int)	1
 ../../TouchGFX/gui/include/gui/alarm_settings_screen/Alarm_SettingsPresenter.hpp:30:13:Alarm_SettingsPresenter::~Alarm_SettingsPresenter()	1
-C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1-Command_Line_Interface/Team1-Command_Line_Interface/MyApplication_6/TouchGFX/gui/src/alarm_settings_screen/Alarm_SettingsPresenter.cpp:10:6:virtual void Alarm_SettingsPresenter::activate()	1
-C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1-Command_Line_Interface/Team1-Command_Line_Interface/MyApplication_6/TouchGFX/gui/src/alarm_settings_screen/Alarm_SettingsPresenter.cpp:23:6:virtual void Alarm_SettingsPresenter::RECEIVE_Permission(int)	1
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1_Repo_LAST/Team1-stanislav/MyApplication_6/TouchGFX/gui/src/alarm_settings_screen/Alarm_SettingsPresenter.cpp:10:6:virtual void Alarm_SettingsPresenter::activate()	1
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1_Repo_LAST/Team1-stanislav/MyApplication_6/TouchGFX/gui/src/alarm_settings_screen/Alarm_SettingsPresenter.cpp:23:6:virtual void Alarm_SettingsPresenter::RECEIVE_Permission(int)	1
 ../../TouchGFX/gui/include/gui/alarm_settings_screen/Alarm_SettingsPresenter.hpp:30:13:virtual Alarm_SettingsPresenter::~Alarm_SettingsPresenter()	1
-C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1-Command_Line_Interface/Team1-Command_Line_Interface/MyApplication_6/TouchGFX/gui/src/alarm_settings_screen/Alarm_SettingsPresenter.cpp:19:6:virtual void Alarm_SettingsPresenter::SEND_Permission(int)	1
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1_Repo_LAST/Team1-stanislav/MyApplication_6/TouchGFX/gui/src/alarm_settings_screen/Alarm_SettingsPresenter.cpp:19:6:virtual void Alarm_SettingsPresenter::SEND_Permission(int)	1
 ../../TouchGFX/gui/include/gui/alarm_settings_screen/Alarm_SettingsPresenter.hpp:30:13:virtual void* Alarm_SettingsPresenter::_ZThn4_N23Alarm_SettingsPresenterD1Ev()	1
-C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1-Command_Line_Interface/Team1-Command_Line_Interface/MyApplication_6/TouchGFX/gui/src/alarm_settings_screen/Alarm_SettingsPresenter.cpp:4:1:Alarm_SettingsPresenter::Alarm_SettingsPresenter(Alarm_SettingsView&)	1
+C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1_Repo_LAST/Team1-stanislav/MyApplication_6/TouchGFX/gui/src/alarm_settings_screen/Alarm_SettingsPresenter.cpp:4:1:Alarm_SettingsPresenter::Alarm_SettingsPresenter(Alarm_SettingsView&)	1

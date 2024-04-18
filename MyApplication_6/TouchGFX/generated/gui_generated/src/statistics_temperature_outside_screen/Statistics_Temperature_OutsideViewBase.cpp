@@ -36,13 +36,7 @@ Statistics_Temperature_OutsideViewBase::Statistics_Temperature_OutsideViewBase()
     Header_Text.setTypedText(touchgfx::TypedText(T___SINGLEUSE_PIO1));
     add(Header_Text);
 
-    Statistics_text.setXY(22, 63);
-    Statistics_text.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
-    Statistics_text.setLinespacing(0);
-    Statistics_text.setTypedText(touchgfx::TypedText(T___SINGLEUSE_WVE6));
-    add(Statistics_text);
-
-    Temperature_sensor_outside_text.setXY(9, 105);
+    Temperature_sensor_outside_text.setXY(9, 61);
     Temperature_sensor_outside_text.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
     Temperature_sensor_outside_text.setLinespacing(0);
     Temperature_sensor_outside_text.setTypedText(touchgfx::TypedText(T___SINGLEUSE_XZWT));
@@ -66,45 +60,33 @@ Statistics_Temperature_OutsideViewBase::Statistics_Temperature_OutsideViewBase()
     Average_Month_val.setTypedText(touchgfx::TypedText(T___SINGLEUSE_8J5E));
     add(Average_Month_val);
 
-    Graphic_Temperature_Outside.setPosition(23, 129, 194, 101);
-    Graphic_Temperature_Outside.setScale(1);
-    Graphic_Temperature_Outside.setGraphAreaMargin(0, 0, 0, 0);
-    Graphic_Temperature_Outside.setGraphAreaPadding(0, 0, 0, 0);
-    Graphic_Temperature_Outside.setGraphRangeY(0, 60);
-    Graphic_Temperature_OutsideMajorYAxisGrid.setColor(touchgfx::Color::getColorFromRGB(0, 94, 125));
-    Graphic_Temperature_OutsideMajorYAxisGrid.setInterval(6);
+    Graphic_Temperature_Outside.setPosition(0, 94, 238, 132);
+    Graphic_Temperature_Outside.setScaleX(1);
+    Graphic_Temperature_Outside.setScaleY(1);
+    Graphic_Temperature_Outside.setGraphAreaMargin(0, 15, 0, 16);
+    Graphic_Temperature_Outside.setGraphAreaPadding(0, 9, 12, 2);
+    Graphic_Temperature_Outside.setGraphRangeX(0, 24);
+    Graphic_Temperature_Outside.setGraphRangeY(0, 45);
+    Graphic_Temperature_OutsideMajorYAxisGrid.setColor(touchgfx::Color::getColorFromRGB(20, 151, 197));
+    Graphic_Temperature_OutsideMajorYAxisGrid.setInterval(4);
     Graphic_Temperature_OutsideMajorYAxisGrid.setLineWidth(1);
     Graphic_Temperature_OutsideMajorYAxisGrid.setScale(1);
     Graphic_Temperature_Outside.addGraphElement(Graphic_Temperature_OutsideMajorYAxisGrid);
 
-    Graphic_Temperature_OutsideMinorXAxisLabel.setInterval(2);
-    Graphic_Temperature_OutsideMinorXAxisLabel.setLabelTypedText(touchgfx::TypedText(T___SINGLEUSE_IFD1));
-    Graphic_Temperature_OutsideMinorXAxisLabel.setColor(touchgfx::Color::getColorFromRGB(20, 151, 197));
-    Graphic_Temperature_OutsideMinorXAxisLabel.setScale(1);
-    Graphic_Temperature_OutsideMinorXAxisLabel.setMajorLabel(Graphic_Temperature_OutsideMajorXAxisLabel);
-    Graphic_Temperature_Outside.addBottomElement(Graphic_Temperature_OutsideMinorXAxisLabel);
-
-    Graphic_Temperature_OutsideMinorYAxisLabel.setInterval(3);
-    Graphic_Temperature_OutsideMinorYAxisLabel.setLabelTypedText(touchgfx::TypedText(T___SINGLEUSE_NXRG));
-    Graphic_Temperature_OutsideMinorYAxisLabel.setColor(touchgfx::Color::getColorFromRGB(20, 151, 197));
-    Graphic_Temperature_OutsideMinorYAxisLabel.setScale(1);
-    Graphic_Temperature_OutsideMinorYAxisLabel.setMajorLabel(Graphic_Temperature_OutsideMajorYAxisLabel);
-    Graphic_Temperature_Outside.addLeftElement(Graphic_Temperature_OutsideMinorYAxisLabel);
-
-    Graphic_Temperature_OutsideMajorXAxisLabel.setInterval(4);
-    Graphic_Temperature_OutsideMajorXAxisLabel.setLabelTypedText(touchgfx::TypedText(T___SINGLEUSE_GBD2));
+    Graphic_Temperature_OutsideMajorXAxisLabel.setInterval(3);
+    Graphic_Temperature_OutsideMajorXAxisLabel.setLabelTypedText(touchgfx::TypedText(T___SINGLEUSE_3GTH));
     Graphic_Temperature_OutsideMajorXAxisLabel.setColor(touchgfx::Color::getColorFromRGB(20, 151, 197));
     Graphic_Temperature_OutsideMajorXAxisLabel.setScale(1);
     Graphic_Temperature_Outside.addBottomElement(Graphic_Temperature_OutsideMajorXAxisLabel);
 
-    Graphic_Temperature_OutsideMajorYAxisLabel.setInterval(6);
-    Graphic_Temperature_OutsideMajorYAxisLabel.setLabelTypedText(touchgfx::TypedText(T___SINGLEUSE_87HI));
+    Graphic_Temperature_OutsideMajorYAxisLabel.setInterval(10);
+    Graphic_Temperature_OutsideMajorYAxisLabel.setLabelTypedText(touchgfx::TypedText(T___SINGLEUSE_O4FJ));
     Graphic_Temperature_OutsideMajorYAxisLabel.setColor(touchgfx::Color::getColorFromRGB(20, 151, 197));
     Graphic_Temperature_OutsideMajorYAxisLabel.setScale(1);
     Graphic_Temperature_Outside.addLeftElement(Graphic_Temperature_OutsideMajorYAxisLabel);
 
     Graphic_Temperature_OutsideHistogram1.setColor(touchgfx::Color::getColorFromRGB(20, 151, 197));
-    Graphic_Temperature_OutsideHistogram1.setBarWidth(5);
+    Graphic_Temperature_OutsideHistogram1.setBarWidth(4);
     Graphic_Temperature_OutsideHistogram1.setBaseline(0);
     Graphic_Temperature_Outside.addGraphElement(Graphic_Temperature_OutsideHistogram1);
 
@@ -132,8 +114,8 @@ void Statistics_Temperature_OutsideViewBase::buttonCallbackHandler(const touchgf
     if (&src == &Menu_Button)
     {
         //MenuDropdown
-        //When Menu_Button clicked change screen to MenuDropdown_1
-        //Go to MenuDropdown_1 with no screen transition
-        application().gotoMenuDropdown_1ScreenNoTransition();
+        //When Menu_Button clicked change screen to STATISTICS
+        //Go to STATISTICS with no screen transition
+        application().gotoSTATISTICSScreenNoTransition();
     }
 }

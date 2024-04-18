@@ -1,5 +1,5 @@
 Application/User/gui/SettingsDropDown.o: \
- C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1-Command_Line_Interface/Team1-Command_Line_Interface/MyApplication_6/TouchGFX/gui/src/containers/SettingsDropDown.cpp \
+ C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1_Repo_LAST/Team1-stanislav/MyApplication_6/TouchGFX/gui/src/containers/SettingsDropDown.cpp \
  ../../TouchGFX/gui/include/gui/containers/SettingsDropDown.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/containers/SettingsDropDownBase.hpp \
  ../../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \

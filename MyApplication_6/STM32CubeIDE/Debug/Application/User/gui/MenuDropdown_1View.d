@@ -1,5 +1,5 @@
 Application/User/gui/MenuDropdown_1View.o: \
- C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1-Command_Line_Interface/Team1-Command_Line_Interface/MyApplication_6/TouchGFX/gui/src/menudropdown_1_screen/MenuDropdown_1View.cpp \
+ C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1_Repo_LAST/Team1-stanislav/MyApplication_6/TouchGFX/gui/src/menudropdown_1_screen/MenuDropdown_1View.cpp \
  ../../TouchGFX/gui/include/gui/menudropdown_1_screen/MenuDropdown_1View.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/menudropdown_1_screen/MenuDropdown_1ViewBase.hpp \
  ../../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \

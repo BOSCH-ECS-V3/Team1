@@ -35,6 +35,9 @@ public:
 
     virtual void Snooze_system(int snooze_state);
 
+    virtual void set_screen_brightness(int brightness);
+
+
 private:
     DefaultViewPresenter();
 

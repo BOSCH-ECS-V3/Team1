@@ -20,15 +20,6 @@ public:
     Statistics_Temperature_InsideViewBase();
     virtual ~Statistics_Temperature_InsideViewBase();
     virtual void setupScreen();
-    virtual void handleTickEvent();
-
-    /*
-     * Virtual Action Handlers
-     */
-    virtual void UpdateData()
-    {
-        // Override and implement this function in Statistics_Temperature_Inside
-    }
 
 protected:
     FrontendApplication& application() {
@@ -43,17 +34,16 @@ protected:
     touchgfx::Box Header_backround;
     touchgfx::ButtonWithLabel Menu_Button;
     touchgfx::TextArea Header_Text;
-    touchgfx::TextArea Statistics_text;
     touchgfx::TextArea Temperature_sensor_text;
     touchgfx::TextArea Average_Day_val;
     touchgfx::TextArea Average_Week_val;
     touchgfx::TextArea Average_Month_val;
-    touchgfx::Box Brightness_level;
     touchgfx::Graph<24> Graphic_Temperature_Inside;
     touchgfx::GraphElementGridY Graphic_Temperature_InsideMajorYAxisGrid;
     touchgfx::GraphLabelsX Graphic_Temperature_InsideMajorXAxisLabel;
     touchgfx::GraphLabelsY Graphic_Temperature_InsideMajorYAxisLabel;
     touchgfx::GraphElementHistogram Graphic_Temperature_InsideHistogram1;
+    touchgfx::Box Brightness_level;
 
 private:
 

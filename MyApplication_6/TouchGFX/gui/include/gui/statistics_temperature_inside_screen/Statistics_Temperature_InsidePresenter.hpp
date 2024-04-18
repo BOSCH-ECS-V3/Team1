@@ -25,8 +25,6 @@ public:
      */
     virtual void deactivate();
 
-    virtual void SEND_STATISTICS_INFORMATION_TEMPERATURE_INSIDE(int STATISTICS_Temperature_INSIDE[], int STATISTICS_Array_Index);
-
     virtual ~Statistics_Temperature_InsidePresenter() {}
 
 private:

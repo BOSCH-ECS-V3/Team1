@@ -16,7 +16,3 @@ void Statistics_Temperature_InsidePresenter::deactivate()
 {
 
 }
-void Statistics_Temperature_InsidePresenter::SEND_STATISTICS_INFORMATION_TEMPERATURE_INSIDE(int STATISTICS_Temperature_INSIDE[], int STATISTICS_Array_Index)
-{
-	view.SEND_STATISTICS_INFORMATION_TEMPERATURE_INSIDE(STATISTICS_Temperature_INSIDE, STATISTICS_Array_Index);
-}

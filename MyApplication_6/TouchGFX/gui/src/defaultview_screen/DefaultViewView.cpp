@@ -156,6 +156,10 @@ void DefaultViewView::Snooze_btn_pressed()
 	snooze_state = 1 ;
 	presenter->Snooze_system(snooze_state);
 	snooze_state = 0 ;
+}
 
-
+void DefaultViewView::set_screen_brightness(int brightness)
+{
+	 Brightness_level.setAlpha(brightness);
+	 Brightness_level.invalidate();
 }

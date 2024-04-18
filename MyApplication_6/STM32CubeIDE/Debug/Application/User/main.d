@@ -1,5 +1,5 @@
 Application/User/main.o: \
- C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1-Command_Line_Interface/Team1-Command_Line_Interface/MyApplication_6/Core/Src/main.c \
+ C:/Users/al3xa/STM32CubeIDE/BochCareerCamp/Team1_Repo_LAST/Team1-stanislav/MyApplication_6/Core/Src/main.c \
  ../../Core/Inc/main.h \
  ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  ../../Core/Inc/stm32f4xx_hal_conf.h \
@@ -41,6 +41,12 @@ Application/User/main.o: \
  ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
  ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
  ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+ ../../Core/Inc/gpio.h ../../Core/Inc/main.h ../../Core/Inc/crc.h \
+ ../../Core/Inc/i2c.h ../../Core/Inc/spi.h ../../Core/Inc/ltdc.h \
+ ../../Drivers/BSP/Components/ili9341/ili9341.h \
+ ../../Drivers/BSP/Components/ili9341/../Common/lcd.h \
+ ../../Core/Inc/dma.h ../../Core/Inc/adc.h ../../Core/Inc/uart.h \
+ ../../Core/Inc/fmc.h ../../Core/Inc/clock.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
  ../../Core/Inc/FreeRTOSConfig.h \
@@ -53,11 +59,13 @@ Application/User/main.o: \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
  ../../TouchGFX/App/app_touchgfx.h \
- ../../Drivers/BSP/Components/ili9341/ili9341.h \
- ../../Drivers/BSP/Components/ili9341/../Common/lcd.h \
+ ../../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h \
+ ../../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h \
+ ../../Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
  ../../Core/Inc/temp_sens.h ../../Core/Inc/bme680.h \
  ../../Core/Inc/bme680_defs.h ../../Core/Inc/data_UI_def.h \
- ../../Core/Inc/cli.h ../../Core/Inc/data_UI_def.h
+ ../../Core/Inc/cli.h ../../Core/Inc/data_UI_def.h \
+ ../../Core/Inc/utilities.h ../../Core/Inc/utilities.h
 ../../Core/Inc/main.h:
 ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 ../../Core/Inc/stm32f4xx_hal_conf.h:
@@ -99,6 +107,19 @@ Application/User/main.o: \
 ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:
 ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h:
 ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:
+../../Core/Inc/gpio.h:
+../../Core/Inc/main.h:
+../../Core/Inc/crc.h:
+../../Core/Inc/i2c.h:
+../../Core/Inc/spi.h:
+../../Core/Inc/ltdc.h:
+../../Drivers/BSP/Components/ili9341/ili9341.h:
+../../Drivers/BSP/Components/ili9341/../Common/lcd.h:
+../../Core/Inc/dma.h:
+../../Core/Inc/adc.h:
+../../Core/Inc/uart.h:
+../../Core/Inc/fmc.h:
+../../Core/Inc/clock.h:
 ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h:
 ../../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
 ../../Core/Inc/FreeRTOSConfig.h:
@@ -111,11 +132,14 @@ Application/User/main.o: \
 ../../Middlewares/Third_Party/FreeRTOS/Source/include/list.h:
 ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h:
 ../../TouchGFX/App/app_touchgfx.h:
-../../Drivers/BSP/Components/ili9341/ili9341.h:
-../../Drivers/BSP/Components/ili9341/../Common/lcd.h:
+../../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h:
+../../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h:
+../../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:
 ../../Core/Inc/temp_sens.h:
 ../../Core/Inc/bme680.h:
 ../../Core/Inc/bme680_defs.h:
 ../../Core/Inc/data_UI_def.h:
 ../../Core/Inc/cli.h:
 ../../Core/Inc/data_UI_def.h:
+../../Core/Inc/utilities.h:
+../../Core/Inc/utilities.h:

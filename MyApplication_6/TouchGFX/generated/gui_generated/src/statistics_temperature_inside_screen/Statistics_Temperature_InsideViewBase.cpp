@@ -36,48 +36,37 @@ Statistics_Temperature_InsideViewBase::Statistics_Temperature_InsideViewBase() :
     Header_Text.setTypedText(touchgfx::TypedText(T___SINGLEUSE_26T7));
     add(Header_Text);
 
-    Statistics_text.setXY(22, 63);
-    Statistics_text.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
-    Statistics_text.setLinespacing(0);
-    Statistics_text.setTypedText(touchgfx::TypedText(T___SINGLEUSE_0BZW));
-    add(Statistics_text);
-
-    Temperature_sensor_text.setXY(16, 89);
+    Temperature_sensor_text.setXY(16, 67);
     Temperature_sensor_text.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
     Temperature_sensor_text.setLinespacing(0);
     Temperature_sensor_text.setTypedText(touchgfx::TypedText(T___SINGLEUSE_YSM9));
     add(Temperature_sensor_text);
 
-    Average_Day_val.setXY(6, 243);
+    Average_Day_val.setXY(6, 236);
     Average_Day_val.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
     Average_Day_val.setLinespacing(0);
     Average_Day_val.setTypedText(touchgfx::TypedText(T___SINGLEUSE_60QN));
     add(Average_Day_val);
 
-    Average_Week_val.setXY(6, 268);
+    Average_Week_val.setXY(6, 260);
     Average_Week_val.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
     Average_Week_val.setLinespacing(0);
     Average_Week_val.setTypedText(touchgfx::TypedText(T___SINGLEUSE_T8W1));
     add(Average_Week_val);
 
-    Average_Month_val.setXY(6, 293);
+    Average_Month_val.setXY(6, 284);
     Average_Month_val.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
     Average_Month_val.setLinespacing(0);
     Average_Month_val.setTypedText(touchgfx::TypedText(T___SINGLEUSE_7YEN));
     add(Average_Month_val);
 
-    Brightness_level.setPosition(315, 37, 240, 320);
-    Brightness_level.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    Brightness_level.setAlpha(0);
-    add(Brightness_level);
-
-    Graphic_Temperature_Inside.setPosition(6, 107, 223, 130);
+    Graphic_Temperature_Inside.setPosition(-2, 101, 238, 132);
     Graphic_Temperature_Inside.setScaleX(1);
     Graphic_Temperature_Inside.setScaleY(1);
-    Graphic_Temperature_Inside.setGraphAreaMargin(0, 15, 0, 14);
-    Graphic_Temperature_Inside.setGraphAreaPadding(13, 7, 9, 0);
+    Graphic_Temperature_Inside.setGraphAreaMargin(0, 15, 0, 16);
+    Graphic_Temperature_Inside.setGraphAreaPadding(0, 9, 12, 2);
     Graphic_Temperature_Inside.setGraphRangeX(0, 24);
-    Graphic_Temperature_Inside.setGraphRangeY(0, 40);
+    Graphic_Temperature_Inside.setGraphRangeY(0, 45);
     Graphic_Temperature_InsideMajorYAxisGrid.setColor(touchgfx::Color::getColorFromRGB(20, 151, 197));
     Graphic_Temperature_InsideMajorYAxisGrid.setInterval(4);
     Graphic_Temperature_InsideMajorYAxisGrid.setLineWidth(1);
@@ -85,13 +74,13 @@ Statistics_Temperature_InsideViewBase::Statistics_Temperature_InsideViewBase() :
     Graphic_Temperature_Inside.addGraphElement(Graphic_Temperature_InsideMajorYAxisGrid);
 
     Graphic_Temperature_InsideMajorXAxisLabel.setInterval(3);
-    Graphic_Temperature_InsideMajorXAxisLabel.setLabelTypedText(touchgfx::TypedText(T___SINGLEUSE_3RBP));
+    Graphic_Temperature_InsideMajorXAxisLabel.setLabelTypedText(touchgfx::TypedText(T___SINGLEUSE_M8Z7));
     Graphic_Temperature_InsideMajorXAxisLabel.setColor(touchgfx::Color::getColorFromRGB(20, 151, 197));
     Graphic_Temperature_InsideMajorXAxisLabel.setScale(1);
     Graphic_Temperature_Inside.addBottomElement(Graphic_Temperature_InsideMajorXAxisLabel);
 
     Graphic_Temperature_InsideMajorYAxisLabel.setInterval(10);
-    Graphic_Temperature_InsideMajorYAxisLabel.setLabelTypedText(touchgfx::TypedText(T___SINGLEUSE_EKCI));
+    Graphic_Temperature_InsideMajorYAxisLabel.setLabelTypedText(touchgfx::TypedText(T___SINGLEUSE_XT9W));
     Graphic_Temperature_InsideMajorYAxisLabel.setColor(touchgfx::Color::getColorFromRGB(20, 151, 197));
     Graphic_Temperature_InsideMajorYAxisLabel.setScale(1);
     Graphic_Temperature_Inside.addLeftElement(Graphic_Temperature_InsideMajorYAxisLabel);
@@ -103,6 +92,11 @@ Statistics_Temperature_InsideViewBase::Statistics_Temperature_InsideViewBase() :
 
 
     add(Graphic_Temperature_Inside);
+
+    Brightness_level.setPosition(0, 0, 240, 320);
+    Brightness_level.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    Brightness_level.setAlpha(0);
+    add(Brightness_level);
 }
 
 Statistics_Temperature_InsideViewBase::~Statistics_Temperature_InsideViewBase()
@@ -120,16 +114,8 @@ void Statistics_Temperature_InsideViewBase::buttonCallbackHandler(const touchgfx
     if (&src == &Menu_Button)
     {
         //MenuDropdown
-        //When Menu_Button clicked change screen to MenuDropdown_1
-        //Go to MenuDropdown_1 with no screen transition
-        application().gotoMenuDropdown_1ScreenNoTransition();
+        //When Menu_Button clicked change screen to STATISTICS
+        //Go to STATISTICS with no screen transition
+        application().gotoSTATISTICSScreenNoTransition();
     }
-}
-
-void Statistics_Temperature_InsideViewBase::handleTickEvent()
-{
-    //UpdateData
-    //When every N tick call virtual function
-    //Call UpdateData
-    UpdateData();
 }
