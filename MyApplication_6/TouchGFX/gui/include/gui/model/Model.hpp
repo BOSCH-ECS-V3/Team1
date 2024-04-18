@@ -18,6 +18,7 @@ public:
 	void update_Date(int updated_Date_Values[3]);
 	void SEND_Permission(int Permission_STATE);
 	void Snooze_system(int snooze_state);
+	void set_screen_brightness(int brightness);
 
 
 protected:
@@ -37,6 +38,7 @@ protected:
 	int DEFINE_SNOOZE_TIME = 1 ;
 	int SNOOZE_FLAG = 0 ;
 
+	int brightness = 255 ;
 
 
 };

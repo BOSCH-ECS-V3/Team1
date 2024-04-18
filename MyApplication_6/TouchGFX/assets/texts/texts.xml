@@ -6,8 +6,74 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_1Q4G" Alignment="Center" TypographyId="Typography_01">
+        <Translation Language="GB">Statistics</Translation>
+      </Text>
+      <Text Id="__SingleUse_PS0O" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Statistics charts</Translation>
+      </Text>
+      <Text Id="__SingleUse_CONH" Alignment="Center" TypographyId="Small">
+        <Translation Language="GB">Gas &#10;Sensor</Translation>
+      </Text>
+      <Text Id="__SingleUse_DLEG" Alignment="Center" TypographyId="Small">
+        <Translation Language="GB">Pressure &#10;Sensure</Translation>
+      </Text>
+      <Text Id="__SingleUse_EEN9" Alignment="Center" TypographyId="Small">
+        <Translation Language="GB">Humidity</Translation>
+      </Text>
+      <Text Id="__SingleUse_7VEN" Alignment="Center" TypographyId="Small">
+        <Translation Language="GB">Ambient &#10;Light</Translation>
+      </Text>
+      <Text Id="__SingleUse_VBA8" Alignment="Center" TypographyId="Small">
+        <Translation Language="GB">Temperature &#10;Outside</Translation>
+      </Text>
+      <Text Id="__SingleUse_QWXU" Alignment="Center" TypographyId="Small">
+        <Translation Language="GB">Temperature&#10; Inside</Translation>
+      </Text>
+      <Text Id="__SingleUse_MAS3" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_UR0F" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Weather station</Translation>
+      </Text>
+      <Text Id="__SingleUse_FLIJ" Alignment="Right" TypographyId="Small">
+        <Translation Language="GB">&lt;&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_XTFS" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">&lt;&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_ORLQ" Alignment="Right" TypographyId="Small">
+        <Translation Language="GB">&lt;&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_IQ7F" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">&lt;&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_OMEA" Alignment="Right" TypographyId="Small">
+        <Translation Language="GB">&lt;&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_P0ZW" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">&lt;&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_73V5" Alignment="Right" TypographyId="Small">
+        <Translation Language="GB">&lt;&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_ZVPC" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">&lt;&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_O4FJ" Alignment="Right" TypographyId="Small">
+        <Translation Language="GB">&lt;&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_3GTH" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">&lt;&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_M8Z7" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">&lt;&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_XT9W" Alignment="Right" TypographyId="Small">
+        <Translation Language="GB">&lt;&gt;</Translation>
+      </Text>
       <Text Id="__SingleUse_1307" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">7</Translation>
+        <Translation Language="GB">1</Translation>
       </Text>
       <Text Id="__SingleUse_X4VI" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">&lt;value&gt;    </Translation>
@@ -84,8 +150,8 @@
       <Text Id="__SingleUse_7E1H" Alignment="Left" TypographyId="Large">
         <Translation Language="GB">&lt;value&gt; C    </Translation>
       </Text>
-      <Text Id="__SingleUse_9KGC" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">-</Translation>
+      <Text Id="__SingleUse_9KGC" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">900</Translation>
       </Text>
       <Text Id="__SingleUse_7YEN" Alignment="Left" TypographyId="Average_15">
         <Translation Language="GB">Average month value : (value)</Translation>
@@ -98,9 +164,6 @@
       </Text>
       <Text Id="__SingleUse_YSM9" Alignment="Left" TypographyId="Average_15">
         <Translation Language="GB">Temperature sensor - Inside</Translation>
-      </Text>
-      <Text Id="__SingleUse_0BZW" Alignment="Left" TypographyId="Average_15">
-        <Translation Language="GB">Statistics through the day</Translation>
       </Text>
       <Text Id="__SingleUse_26T7" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">Weather station</Translation>
@@ -120,9 +183,6 @@
       <Text Id="__SingleUse_VA8A" Alignment="Left" TypographyId="Average_15">
         <Translation Language="GB">Ambient sensor</Translation>
       </Text>
-      <Text Id="__SingleUse_BRAW" Alignment="Left" TypographyId="Average_15">
-        <Translation Language="GB">Statistics through the day</Translation>
-      </Text>
       <Text Id="__SingleUse_XG0O" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">Weather station</Translation>
       </Text>
@@ -140,9 +200,6 @@
       </Text>
       <Text Id="__SingleUse_DKR6" Alignment="Left" TypographyId="Average_15">
         <Translation Language="GB">Presure sensor</Translation>
-      </Text>
-      <Text Id="__SingleUse_YQA7" Alignment="Left" TypographyId="Average_15">
-        <Translation Language="GB">Statistics through the day</Translation>
       </Text>
       <Text Id="__SingleUse_NI4K" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">Weather station</Translation>
@@ -162,9 +219,6 @@
       <Text Id="__SingleUse_DJOK" Alignment="Left" TypographyId="Average_15">
         <Translation Language="GB">Humidity sensor</Translation>
       </Text>
-      <Text Id="__SingleUse_4KX0" Alignment="Left" TypographyId="Average_15">
-        <Translation Language="GB">Statistics through the day</Translation>
-      </Text>
       <Text Id="__SingleUse_XEYY" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">Weather station</Translation>
       </Text>
@@ -183,9 +237,6 @@
       <Text Id="__SingleUse_XZWT" Alignment="Left" TypographyId="Average_15">
         <Translation Language="GB">Temperature sensor - outside</Translation>
       </Text>
-      <Text Id="__SingleUse_WVE6" Alignment="Left" TypographyId="Average_15">
-        <Translation Language="GB">Statistics through the day</Translation>
-      </Text>
       <Text Id="__SingleUse_PIO1" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">Weather station</Translation>
       </Text>
@@ -203,9 +254,6 @@
       </Text>
       <Text Id="__SingleUse_AB8V" Alignment="Left" TypographyId="Average_15">
         <Translation Language="GB">Gas sensor</Translation>
-      </Text>
-      <Text Id="__SingleUse_EX06" Alignment="Left" TypographyId="Average_15">
-        <Translation Language="GB">Statistics through the day</Translation>
       </Text>
       <Text Id="__SingleUse_5RVK" Alignment="Center" TypographyId="Large">
         <Translation Language="GB"></Translation>
@@ -312,7 +360,7 @@
       <Text Id="__SingleUse_XRTI" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">Carbon monoxide</Translation>
       </Text>
-      <Text Id="__SingleUse_GP4Z" Alignment="Left" TypographyId="Default">
+      <Text Id="__SingleUse_GP4Z" Alignment="Left" TypographyId="Large">
         <Translation Language="GB">&lt;value&gt; ppm            </Translation>
       </Text>
       <Text Id="__SingleUse_6NB9" Alignment="Left" TypographyId="Default">
@@ -326,7 +374,7 @@
   <Typographies>
     <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WidgetWildcardCharacters="0123456789 :APM" WildcardCharacterRanges="0x20-0x7e" />
     <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WidgetWildcardCharacters="0123456789 :APM" />
-    <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WidgetWildcardCharacters="-., 0123456789" />
     <Typography Id="Typography_00" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
     <Typography Id="Typography_01" Font="verdana.ttf" Size="15" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
     <Typography Id="Date_Days" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />

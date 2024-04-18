@@ -2,9 +2,11 @@
 #include <gui/model/ModelListener.hpp>
 #include <data_UI_def.h>
 
+
 extern "C"{
 extern SensData_t data_UI;
 }
+
 int Error_feedback(int current_Sensor_values[5])
 {
 	int Error_ID = 0 ;
@@ -252,10 +254,13 @@ void Model::tick()
 	}
 	// ----------------------------- Clock Update to View  END ---> ----------------------------
 
-	// Passing values to clock View
-	modelListener->current_Clock(Clock_Values);
 
-	//Passing values to date View
+	/*
+	 * We update current Clock & Date values view modelListener->Presenter->View
+	 * Clock_Values[] -> current clock values from the system
+	 * current_Date_values[] -> current date values from the system
+	 */
+	modelListener->current_Clock(Clock_Values);
 	modelListener->current_Date_value(current_Date_values);
 
 	//..Passing sensor values to Default page for presenting on screen
@@ -271,47 +276,144 @@ void Model::tick()
 
 	modelListener->current_Sensor_values(current_Sensor_values);
 
-	// sending information about permission_alert_state to view page of alert
+	/*
+	 * By default we set ALERT Permission to TRUE.
+	 * This means we will receive notification after starting the device
+	 */
 	modelListener->RECEIVE_Permission(Permission_ALERT_STATE);
 
-	// Checking for Errors
+	/*
+	 *  <Error_feedback> function return ID of ERROR. For more information about ID meaning, you can
+	 *  check inside Error_feedback()
+	 *
+	 *  We are checking for error and store it in Error_ID. If there is no errors , Error_feedback
+	 *  will give us value of 0, otherwise we will get ID number XXX from func.
+	 *
+	 *  We use Error_ID for passing it to view page;
+	 *
+	 */
 
 	Error_ID = Error_feedback(current_Sensor_values);
-
+	/*
+	 * If Permission_Alert_STATE = 0 , we will not receive alerts for strange sensor values until
+	 * we turn ON this option from the page "ALARM".
+	 *
+	 * Checking IF SNOOZE button is pressed, if button is pressed , notification and alerts will
+	 * stop be shown in view page for 1 minute ! After 1 minute , SNNOZE flag is going off and
+	 * alerts will start pop out again.
+	 *
+	 * If both states are TRUE we can send Error_ID to the view.
+	 */
 
 	if(Permission_ALERT_STATE == 1 && SNOOZE_FLAG == 0)
 	{
 		modelListener->SEND_Error_ID(Error_ID);
 	}
 
-	// if Snooze option is not pressed and alerts are on
-	// modelListener->display_error(Error_msg);
+	/*
+	 * Screen brightness
+	 */
+	if(current_Sensor_values[4] < 100 )
+	{
+		brightness = 0 ;
+		if(current_Sensor_values[4] < 80)
+		{
+			brightness = 25 ;
+			if(current_Sensor_values[4] < 60)
+			{
+				brightness = 50 ;
+				if(current_Sensor_values[4] < 40)
+				{
+					brightness = 75 ;
+					if(current_Sensor_values[4] < 20)
+					{
+						brightness = 100 ;
+					}
+				}
 
-	// If Snooze option is pressed , set Alert_PERMISION = FALSE
-	// wait 2 min and then reset Alert_PERMISION = TRUE ;
+			}
+		}
+	}
+	modelListener->set_screen_brightness(brightness);
 
 }
 
 void Model::update_Clock(int updated_Clock_Values[3])
 {
-	// Receive data from Clock View
+
+	/* Receive data from Clock View
+	 * Clock settings can be changed through "Time" page from the dropdown menu.
+	 * When user change Time manually , we receive this change from the view through Presenter.
+	 * Values which we receive are updated_Clock_Values[i], where :
+	 *
+	 * ->  updated_Clock_Values[0] - Hour
+	 * ->  updated_Clock_Values[1] - Minute
+	 * ->  updated_Clock_values[2] - Seconds
+	 *
+	 * In our program , for ticking current clock values we use
+	 * 	Clock_Values[i] where :
+	 * 	Clock_Values[0]= current Hour
+	 *	Clock_Values[1] = current Minutes
+	 *  Clock_Values[2] = current Seconds
+	 *
+	 *  When USER submit new Clock setting from UI , we get information from updated_Clock_Values and put
+	 *  it in Clock_Values[i]
+	 */
 	Clock_Values[0] = updated_Clock_Values[0]; // Hours
 	Clock_Values[1] = updated_Clock_Values[1]; // Minutes
 	Clock_Values[2] = updated_Clock_Values[2]; // Seconds
+
 }
 void Model::update_Date(int updated_Date_Values[3])
 {
-	// Receive data from Data View
+
+	/* Receive data from Data View
+	 * Date settings can be changed through "DATE" page from the dropdown menu.
+	 * When user change DATE manually , we receive this change from the view through Presenter.
+	 * Values which we receive are updated_Date_value[i]
+	 * ->  updated_Date_Values[0] - Day
+	 * ->  updated_Date_Values[1] - Month
+	 * ->  updated_Date_values[2] - Year
+	 *
+	 * In our program , for changing date based on clock setting , we use
+	 * current_Date_values[i] where :
+	 * 	current_Date_values[0] = current Days
+	 *	current_Date_values[1] = current Month
+	 *  current_Date_values[2] = current Year
+	 *
+	 *  When USER submit new DATE from UI , we get information from updated_Date_Values and put
+	 *  it in current_Date_values
+	 */
+
 	current_Date_values[0] = updated_Date_Values[0]; // Days
 	current_Date_values[1] = updated_Date_Values[1]; // Month
 	current_Date_values[2] = updated_Date_Values[2]; // Year
 }
 void Model::SEND_Permission(int Permission_STATE)
 {
+
+	/*
+	 * By default , permission for alerts in set to 1.
+	 * This means that we will get alerts
+	 * about strange sensor values. This setting can be changed through "ALARM" page from the
+	 * dropdown menu of UI.
+	 * If Permission_Alert_STATE = 0 , we will not receive alerts for strange sensor values until
+	 * we turn ON this option from the page "ALARM".
+	 */
 	Permission_ALERT_STATE = Permission_STATE;
+
 }
 void Model::Snooze_system(int snooze_state)
 {
+
+	/* Checking IF SNOOZE button is pressed, if button is pressed , notification and alerts will
+	 * stop be shown in view page for 1 minute ! After 1 minute , SNNOZE flag is going off and
+	 * alerts will start pop out again.
+	 * When snooze button is pressed - snooze flag = 1
+	 * When snooze button IS NOT pressed - snooze flag = 0
+	 */
+
 	SNOOZE_FLAG = snooze_state;
+
 }
 

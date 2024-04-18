@@ -56,6 +56,9 @@ public:
     // Alarm_Settings
     void gotoAlarm_SettingsScreenNoTransition();
 
+    // STATISTICS
+    void gotoSTATISTICSScreenNoTransition();
+
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
     FrontendHeap& frontendHeap;
@@ -96,6 +99,9 @@ protected:
 
     // Alarm_Settings
     void gotoAlarm_SettingsScreenNoTransitionImpl();
+
+    // STATISTICS
+    void gotoSTATISTICSScreenNoTransitionImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

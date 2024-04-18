@@ -53,11 +53,6 @@ Alarm_SettingsViewBase::Alarm_SettingsViewBase() :
     Alarm_confirmation_text.setTypedText(touchgfx::TypedText(T___SINGLEUSE_J7M8));
     add(Alarm_confirmation_text);
 
-    Brightness_level.setPosition(-1, 0, 240, 320);
-    Brightness_level.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    Brightness_level.setAlpha(0);
-    add(Brightness_level);
-
     Permission_ON.setXY(127, 100);
     Permission_ON.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_TINY_OUTLINE_ACTIVE_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_ICON_ROUND_TINY_OUTLINE_PRESSED_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_DONE_50_50_E8F6FB_SVG_ID), touchgfx::Bitmap(BITMAP_ICON_THEME_IMAGES_ACTION_DONE_50_50_E8F6FB_SVG_ID));
     Permission_ON.setIconXY(5, 5);
@@ -82,6 +77,11 @@ Alarm_SettingsViewBase::Alarm_SettingsViewBase() :
     textArea1.resizeToCurrentText();
     textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_X4VI));
     add(textArea1);
+
+    Brightness_level.setPosition(-1, 0, 240, 320);
+    Brightness_level.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    Brightness_level.setAlpha(0);
+    add(Brightness_level);
 }
 
 Alarm_SettingsViewBase::~Alarm_SettingsViewBase()

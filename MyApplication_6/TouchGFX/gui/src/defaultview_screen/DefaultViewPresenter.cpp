@@ -33,3 +33,8 @@ void DefaultViewPresenter::Snooze_system(int snooze_state)
 {
 	model->Snooze_system(snooze_state);
 }
+void DefaultViewPresenter::set_screen_brightness(int brightness)
+{
+	view.set_screen_brightness(brightness);
+}
+

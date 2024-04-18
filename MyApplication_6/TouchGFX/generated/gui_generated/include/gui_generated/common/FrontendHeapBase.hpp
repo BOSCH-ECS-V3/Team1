@@ -36,6 +36,8 @@
 #include <gui/statistics_gas_sensor_screen/Statistics_Gas_sensorPresenter.hpp>
 #include <gui/alarm_settings_screen/Alarm_SettingsView.hpp>
 #include <gui/alarm_settings_screen/Alarm_SettingsPresenter.hpp>
+#include <gui/statistics_screen/STATISTICSView.hpp>
+#include <gui/statistics_screen/STATISTICSPresenter.hpp>
 
 
 /**
@@ -70,7 +72,8 @@ public:
             touchgfx::meta::TypeList< Statistics_Ambient_1View,
             touchgfx::meta::TypeList< Statistics_Gas_sensorView,
             touchgfx::meta::TypeList< Alarm_SettingsView,
-            touchgfx::meta::Nil > > > > > > > > > > >
+            touchgfx::meta::TypeList< STATISTICSView,
+            touchgfx::meta::Nil > > > > > > > > > > > >
             > GeneratedViewTypes;
 
     /**
@@ -94,7 +97,8 @@ public:
             touchgfx::meta::TypeList< Statistics_Ambient_1Presenter,
             touchgfx::meta::TypeList< Statistics_Gas_sensorPresenter,
             touchgfx::meta::TypeList< Alarm_SettingsPresenter,
-            touchgfx::meta::Nil > > > > > > > > > > >
+            touchgfx::meta::TypeList< STATISTICSPresenter,
+            touchgfx::meta::Nil > > > > > > > > > > > >
             > GeneratedPresenterTypes;
 
     /**
