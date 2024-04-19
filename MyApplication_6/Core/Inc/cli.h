@@ -42,6 +42,8 @@ void CLIHandler(SensData_t*,UART_HandleTypeDef *,char*,short*);
 
 
 extern void (*command[])();
+extern char msg[30];
+extern short msgIDX;
 
 
 

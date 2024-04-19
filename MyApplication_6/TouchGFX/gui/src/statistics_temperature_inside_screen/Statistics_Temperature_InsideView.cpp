@@ -14,3 +14,8 @@ void Statistics_Temperature_InsideView::tearDownScreen()
 {
     Statistics_Temperature_InsideViewBase::tearDownScreen();
 }
+void Statistics_Temperature_InsideView::set_screen_brightness(int brightness)
+{
+	  Brightness_level.setAlpha(brightness);
+		  Brightness_level.invalidate();
+}

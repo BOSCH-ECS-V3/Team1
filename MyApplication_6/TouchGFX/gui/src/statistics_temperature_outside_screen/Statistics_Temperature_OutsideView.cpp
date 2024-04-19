@@ -14,3 +14,10 @@ void Statistics_Temperature_OutsideView::tearDownScreen()
 {
     Statistics_Temperature_OutsideViewBase::tearDownScreen();
 }
+
+void Statistics_Temperature_OutsideView::set_screen_brightness(int brightness)
+{
+	  Brightness_level.setAlpha(brightness);
+		  Brightness_level.invalidate();
+}
+

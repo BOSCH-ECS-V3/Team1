@@ -91,3 +91,8 @@ void Date_SettingsView::current_Date_value(int current_Date_value[])
 	current_Month = current_Date_value[1];
 	current_Days = current_Date_value[0];
 }
+void Date_SettingsView::set_screen_brightness(int brightness)
+{
+	  Brightness_level.setAlpha(brightness);
+	  Brightness_level.invalidate();
+}

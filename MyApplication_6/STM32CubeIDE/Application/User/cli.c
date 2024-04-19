@@ -1,5 +1,7 @@
 #include "cli.h"
 
+char msg[30];
+short msgIDX = 0;
 
 
 void (*command[])() =
@@ -55,23 +57,23 @@ void (*command[])() =
 	void GetTempIN(SensData_t *SelectedSensor,UART_HandleTypeDef *huart1) {
 		char msg[60];
 		sprintf(msg, "\n\r Temperature Inside: %dC\n\r",
-				SelectedSensor->tempIN);
+				(int)SelectedSensor->tempIN);
 		HAL_UART_Transmit(huart1, (uint8_t*) msg, strlen(msg), 1000);
 	}
 	void GetTempOUT(SensData_t *SelectedSensor,UART_HandleTypeDef *huart1) {
 		char msg[60];
-		sprintf(msg, "\n\r Temperature Outside: %dC\n\r",
-				SelectedSensor->tempOUT);
+		sprintf(msg, "\n\r Temperature Outside: %Cd\n\r",
+				(int)SelectedSensor->tempOUT);
 		HAL_UART_Transmit(huart1, (uint8_t*) msg, strlen(msg), 1000);
 	}
 	void GetHumidity(SensData_t *SelectedSensor,UART_HandleTypeDef *huart1) {
 		char msg[60];
-		sprintf(msg, "\n\r Humidity: %d\n\r", SelectedSensor->humidity);
+		sprintf(msg, "\n\r Humidity: %d%%\n\r", (int)SelectedSensor->humidity);
 		HAL_UART_Transmit(huart1, (uint8_t*) msg, strlen(msg), 1000);
 	}
 	void GetPressure(SensData_t *SelectedSensor,UART_HandleTypeDef *huart1) {
 		char msg[60];
-		sprintf(msg, "\n\r Pressure: %dPa\n\r", SelectedSensor->pressure);
+		sprintf(msg, "\n\r Pressure: %dhPa\n\r", SelectedSensor->pressure);
 		HAL_UART_Transmit(huart1, (uint8_t*) msg, strlen(msg), 1000);
 	}
 	void GetAmbientLight(SensData_t *SelectedSensor,UART_HandleTypeDef *huart1) {
@@ -124,8 +126,11 @@ void (*command[])() =
 					(command[DISPLAY_MENU_COMMAND])(huart1);
 					clearMSG(msg, msgIDX);
 				} else {
-					if (*msgIDX > 1)
+					if (*msgIDX > 1){
 						(command[ERR_MSG_NF])(huart1);
+						clearMSG(msg, msgIDX);
+					}
+
 					else {
 						CommandHandler(SelectedSensor, huart1, msg);
 						clearMSG(msg, msgIDX);

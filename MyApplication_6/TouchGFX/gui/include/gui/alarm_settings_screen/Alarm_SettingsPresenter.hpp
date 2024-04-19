@@ -26,7 +26,7 @@ public:
     virtual void deactivate();
     virtual void SEND_Permission(int Permission_STATE);
     virtual void RECEIVE_Permission(int Permission_ALERT_STATE);
-
+    virtual void set_screen_brightness(int brightness);
     virtual ~Alarm_SettingsPresenter() {}
 
 private:
