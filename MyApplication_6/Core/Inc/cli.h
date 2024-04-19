@@ -3,13 +3,15 @@
 
 #include "stm32f4xx_hal.h"
 #include "data_UI_def.h"
+#include "date_time_def.h"
 #include "utilities.h"
 #include <string.h>
 #include <stdio.h>
-#include <ctype.h>
 
 //COMMANDS
 #define DISPLAY_MENU_COMMAND 0
+#define DISPLAY_GET_DATETIME 11
+#define DISPLAY_SET_DATETIME 22
 //ERROR HANDLING
 #define ERR_MSG_LONG 1
 #define ERR_MSG_NF 2
@@ -20,33 +22,29 @@
 #define GET_PRESSURE_COMMAND 6
 #define GET_AMBIENT_LIGHT_COMMAND 7
 #define GET_CB_MONOXIDE_COMMAND 8
-
-
+#define GET_TIME_COMMAND 9
+#define GET_DATE_COMMAND 10
 
 //COMMANDS
 void DisplayMenu(UART_HandleTypeDef*);
-void GetTempIN(SensData_t*,UART_HandleTypeDef *);
-void GetTempOUT(SensData_t*,UART_HandleTypeDef *);
-void GetHumidity(SensData_t*,UART_HandleTypeDef *);
-void GetPressure(SensData_t*,UART_HandleTypeDef *);
-void GetAmbientLight(SensData_t*,UART_HandleTypeDef *);
-void GetTempCBMonoxide(SensData_t*,UART_HandleTypeDef *);
+void GetTempIN(SensData_t*, UART_HandleTypeDef*, char*);
+void GetTempOUT(SensData_t*, UART_HandleTypeDef*, char*);
+void GetHumidity(SensData_t*, UART_HandleTypeDef*, char*);
+void GetPressure(SensData_t*, UART_HandleTypeDef*, char*);
+void GetAmbientLight(SensData_t*, UART_HandleTypeDef*, char*);
+void GetTempCBMonoxide(SensData_t*, UART_HandleTypeDef*, char*);
+void GetTime(DateTime_t*);
+void GetDate(DateTime_t*);
 //ERRORS
-void ErrMsgLong(UART_HandleTypeDef *);
-void ErrMsgNF(UART_HandleTypeDef *);
+void ErrMsgLong(UART_HandleTypeDef*);
+void ErrMsgNF(UART_HandleTypeDef*);
 //UTILITY
-void lowerString(char*);
-void CommandHandler(SensData_t*,UART_HandleTypeDef*,char*);
-void CLIHandler(SensData_t*,UART_HandleTypeDef *,char*,short*);
-
-
+void CommandHandler(SensData_t*, UART_HandleTypeDef*, char*);
+void CLIHandler(SensData_t*, UART_HandleTypeDef*, char*, short*);
 
 extern void (*command[])();
 extern char msg[30];
 extern short msgIDX;
-
-
-
-
+extern char selectedMenu;
 
 #endif
