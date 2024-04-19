@@ -62,7 +62,7 @@ void (*command[])() =
 	}
 	void GetTempOUT(SensData_t *SelectedSensor,UART_HandleTypeDef *huart1) {
 		char msg[60];
-		sprintf(msg, "\n\r Temperature Outside: %dC\n\r",
+		sprintf(msg, "\n\r Temperature Outside: %Cd\n\r",
 				(int)SelectedSensor->tempOUT);
 		HAL_UART_Transmit(huart1, (uint8_t*) msg, strlen(msg), 1000);
 	}

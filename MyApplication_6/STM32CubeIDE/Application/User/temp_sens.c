@@ -31,7 +31,7 @@ int8_t SensorInit(struct bme680_dev *sensor, uint16_t *meas_period, uint8_t sens
 	sensor->delay_ms = user_delay_ms;
 	sensor->amb_temp = 25;
 
-	int8_t rslt = bme680_init(&sensor_In);
+	int8_t rslt = bme680_init(sensor);
 	uint8_t set_required_settings;
 
 	sensor->tph_sett.os_hum = BME680_OS_2X;
@@ -122,10 +122,27 @@ void GetBMEdata() {
 			bme680_set_sensor_mode(&sensor_In);
 		}
 
-	} else {
+	}else {
 
 		SensorInit(&sensor_In, &meas_period_In, SENS_IN_NUM);
 		data_UI.tempIN = 201;
+	}
+
+
+	if(CollectSensorData(&sensor_Out, &data_Out) == BME680_OK){
+
+		data_UI.tempOUT = data_Out.temperature / 100.0f;
+
+		if (sensor_Out.power_mode == BME680_FORCED_MODE) {
+
+			bme680_set_sensor_mode(&sensor_Out);
+		}
+
+	}else{
+
+		SensorInit(&sensor_Out, &meas_period_Out, SENS_OUT_NUM);
+		data_UI.tempOUT = 301;
+
 	}
 
 }

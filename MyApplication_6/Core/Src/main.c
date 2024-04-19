@@ -36,6 +36,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "Components/ili9341/ili9341.h"
 #include "temp_sens.h"
 #include "data_UI_def.h"
 #include "cli.h"
@@ -317,6 +318,7 @@ void LCD_Delay(uint32_t Delay) {
 void GetSensDataTask(void *argument) {
 
 	SensorInit(&sensor_In, &meas_period_In, SENS_IN_NUM);
+	SensorInit(&sensor_Out, &meas_period_Out, SENS_OUT_NUM);
 
 	for (;;) {
 
