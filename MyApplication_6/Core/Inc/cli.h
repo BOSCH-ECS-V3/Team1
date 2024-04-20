@@ -7,17 +7,18 @@
 #include "utilities.h"
 #include <string.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 //MENU
 #define DISPLAY_HELP_MENU 0
 #define DISPLAY_DATA_MENU 1
-#define DISPLAY_GET_DATETIME 2
-#define DISPLAY_SET_DATETIME 3
-#define DISPLAY_ALARMS_MENU 4
+#define DISPLAY_DATETIME 2
+#define DISPLAY_ALARMS_MENU 3
 
 //ERROR HANDLING
 #define ERR_MSG_LONG 0
 #define ERR_MSG_NF 1
+#define ERR_MSG_ICC 2
 //COMMAND
 #define GET_TEMP_IN_COMMAND 0
 #define GET_TEMP_OUT_COMMAND 1
@@ -25,40 +26,52 @@
 #define GET_PRESSURE_COMMAND 3
 #define GET_AMBIENT_LIGHT_COMMAND 4
 #define GET_CB_MONOXIDE_COMMAND 5
-#define GET_TIME_COMMAND 6
-#define GET_DATE_COMMAND 7
+#define GET_DATE_COMMAND 6
+#define GET_TIME_COMMAND 7
+#define SET_DATE_DAY 8
+#define SET_DATE_MONTH 9
+#define SET_DATE_YEAR 10
+#define SET_TIME_SECONDS 11
+#define SET_TIME_MINUTES 12
+#define SET_TIME_HOURS 13
 
-
-//COMMANDS
+//MENUS
 void DisplayHelpMenu(UART_HandleTypeDef*);
-void DisplayGetDateTime(UART_HandleTypeDef*);
-void DisplaySetDateTime(UART_HandleTypeDef*);
+void DisplayDateTime(UART_HandleTypeDef*);
 void DisplayAlarmsMenu(UART_HandleTypeDef*);
 void DisplayDataMenu(UART_HandleTypeDef*);
-void GetTempIN(SensData_t*, UART_HandleTypeDef*, char*);
-void GetTempOUT(SensData_t*, UART_HandleTypeDef*, char*);
-void GetHumidity(SensData_t*, UART_HandleTypeDef*, char*);
-void GetPressure(SensData_t*, UART_HandleTypeDef*, char*);
-void GetAmbientLight(SensData_t*, UART_HandleTypeDef*, char*);
-void GetTempCBMonoxide(SensData_t*, UART_HandleTypeDef*, char*);
-void GetTime(DateTime_t*);
-void GetDate(DateTime_t*);
+//COMMANDS
+void GetTempIN(SensData_t*, char*);
+void GetTempOUT(SensData_t*, char*);
+void GetHumidity(SensData_t*, char*);
+void GetPressure(SensData_t*, char*);
+void GetAmbientLight(SensData_t*, char*);
+void GetTempCBMonoxide(SensData_t*, char*);
+void GetTime(DateTime_t*,char*);
+void GetDate(DateTime_t*,char*);
+void SetDay(DateTime_t*,int,UART_HandleTypeDef*);
+void SetMonth(DateTime_t*,int,UART_HandleTypeDef*);
+void SetYear(DateTime_t*,int,UART_HandleTypeDef*);
+void SetSeconds(DateTime_t*,int,UART_HandleTypeDef*);
+void SetMinutes(DateTime_t*,int,UART_HandleTypeDef*);
+void SetHours(DateTime_t*,int,UART_HandleTypeDef*);
 //ERRORS
 void ErrMsgLong(UART_HandleTypeDef*);
 void ErrMsgNF(UART_HandleTypeDef*);
+void ErrMsgICC(UART_HandleTypeDef*);
 //COMMAND HANDLERS
-void CommandMenuHandler(SensData_t*, UART_HandleTypeDef*, char*);
-void CommandDataHandler(SensData_t*, UART_HandleTypeDef*, char*);
-void CommandGetDTHandler(SensData_t*, UART_HandleTypeDef*, char*);
-void CommandSetDTHandler(SensData_t*, UART_HandleTypeDef*, char*);
-void CommandAlarmHandler(SensData_t*, UART_HandleTypeDef*, char*);
+void CommandMenuHandler(DateTime_t*,SensData_t*, UART_HandleTypeDef*, char*);
+void CommandDataHandler(DateTime_t*,SensData_t*, UART_HandleTypeDef*, char*);
+void CommandDTHandler(DateTime_t*,SensData_t*, UART_HandleTypeDef*, char*);
+void CommandAlarmHandler(DateTime_t*,SensData_t*, UART_HandleTypeDef*, char*);
 //MAIN
-void CLIHandler(SensData_t*, UART_HandleTypeDef*, char*, short*);
+void CLIHandler(DateTime_t*,SensData_t*, UART_HandleTypeDef*, char*, short*);
 
 extern void (*command[])();
 extern void (*menu[])();
 extern void (*error[])();
 extern void (*handler[])();
+extern short changed;
 extern char msg[30];
 extern short msgIDX;
 extern short selectedMenu;
