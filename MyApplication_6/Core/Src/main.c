@@ -39,6 +39,7 @@
 #include "Components/ili9341/ili9341.h"
 #include "temp_sens.h"
 #include "data_UI_def.h"
+#include "date_time_def.h"
 #include "cli.h"
 #include "utilities.h"
 
@@ -360,6 +361,7 @@ void GetSensDataTask(void *argument) {
 void CLI_Task(void *argument) {
 
 	SensData_t data_UI;
+	//DateTime_t dataTime_UI;
 	HAL_UART_Receive_IT(&huart1, (uint8_t*) &msg[msgIDX], 1);
 	for (;;) {
 
