@@ -68,9 +68,11 @@ BaseType_t GUI_TaskFlag;
 BaseType_t GetSensData_TaskFlag;
 BaseType_t CLI_TaskFlag;
 
+xQueueHandle dataQueue;
+xQueueHandle cliQueue;
+
 xSemaphoreHandle i2c_semaphore;
 
-SensData_t data_UI;
 
 /* USER CODE END PV */
 
@@ -79,6 +81,7 @@ SensData_t data_UI;
 void CLI_Task(void *argument);
 void GetSensDataTask(void *argument);
 extern void TouchGFX_Task(void *argument);
+void setBrightness(uint8_t);
 
 /* Link function for LCD peripheral */
 void LCD_IO_Init(void);
@@ -153,6 +156,9 @@ int main(void) {
 	CLI_TaskFlag = xTaskCreate(CLI_Task, "Command Line Interface", 128, NULL, osPriorityNormal,
 			&CLI_TaskHandle);
 
+	dataQueue = xQueueCreate(1, sizeof(SensData_t));
+	cliQueue = xQueueCreate(1, sizeof(SensData_t));
+
 
 	/*Check if task and semaphore creation is successful*/
 	if(GUI_TaskFlag != pdPASS){
@@ -169,8 +175,15 @@ int main(void) {
 		/* Indicates semaphore creation failed*/
 		HAL_GPIO_WritePin(GPIOG, GPIO_PIN_14, GPIO_PIN_SET);
 	}
+	if(dataQueue == NULL){
+		HAL_GPIO_WritePin(GPIOG, GPIO_PIN_14, GPIO_PIN_SET);
+	}
+	if(cliQueue == NULL){
+			HAL_GPIO_WritePin(GPIOG, GPIO_PIN_14, GPIO_PIN_SET);
+	}
 
-
+	vQueueAddToRegistry(dataQueue, "DataQueue");
+	vQueueAddToRegistry(dataQueue, "CLIQueue");
 
 	/*Start freeRTOS scheduler*/
 	vTaskStartScheduler();
@@ -317,16 +330,27 @@ void LCD_Delay(uint32_t Delay) {
 
 void GetSensDataTask(void *argument) {
 
+	SensData_t data_UI;
 	SensorInit(&sensor_In, &meas_period_In, SENS_IN_NUM);
 	SensorInit(&sensor_Out, &meas_period_Out, SENS_OUT_NUM);
 
 	for (;;) {
 
-		ADC_Select_CH5(); //get ADC value from PA5 <Ambient light>
+		ADC_Select_CH5(&data_UI); //get ADC value from PA5 <Ambient light>
 
-		ADC_Select_CH7(); //get ADC value from PA7 <Gas sensor>
+		ADC_Select_CH7(&data_UI); //get ADC value from PA7 <Gas sensor>
 
-		GetBMEdata();
+		GetBMEdata(&data_UI);
+
+		if(uxQueueSpacesAvailable(dataQueue) == 1){
+
+			xQueueSend(dataQueue, &data_UI,0);
+		}
+
+		if(uxQueueSpacesAvailable(cliQueue) == 1){
+
+			xQueueSend(cliQueue, &data_UI,0);
+		}
 
 		osDelay(500);
 	}
@@ -334,8 +358,15 @@ void GetSensDataTask(void *argument) {
 
 
 void CLI_Task(void *argument) {
+
+	SensData_t data_UI;
 	HAL_UART_Receive_IT(&huart1, (uint8_t*) &msg[msgIDX], 1);
 	for (;;) {
+
+		if(uxQueueSpacesAvailable(cliQueue) == 0){
+
+			xQueueReceive(cliQueue, &data_UI, 0);
+		}
 
 		xTaskNotifyWait(0, 1, NULL, portMAX_DELAY);
 
@@ -348,7 +379,6 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
 	xTaskNotifyFromISR(CLI_TaskHandle, 0, eNoAction, NULL);
 	HAL_UART_Transmit(&huart1, (uint8_t*)&msg[msgIDX], 1, 100);
 }
-
 /* USER CODE END 4 */
 
 /* USER CODE BEGIN Header_StartDefaultTask */

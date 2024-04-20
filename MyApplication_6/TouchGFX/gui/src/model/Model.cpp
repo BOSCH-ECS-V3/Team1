@@ -1,10 +1,14 @@
 #include <gui/model/Model.hpp>
 #include <gui/model/ModelListener.hpp>
 #include <data_UI_def.h>
+#include "cmsis_os.h"
+#include "semphr.h"
 
 
 extern "C"{
-extern SensData_t data_UI;
+extern xQueueHandle dataQueue;
+SensData_t data_from_UI;
+
 }
 
 int Error_feedback(int current_Sensor_values[5])
@@ -194,6 +198,13 @@ Model::Model() : modelListener(0)
 void Model::tick()
 {
 
+	/* Get data from UI via Queue*/
+
+	if(uxQueueSpacesAvailable(dataQueue) == 0){
+
+		xQueueReceive(dataQueue, &data_from_UI, 0);
+	}
+
 	// ----------------------------- Clock Update to View ---> ----------------------------
 	tickCounter++;
 	if(tickCounter%60 == 0)
@@ -267,12 +278,12 @@ void Model::tick()
 	// [0]->TemperatureIn , [1]-> TemperatureOut , [2]-> Humidity , [3]-> Pressure ,[4]->Ambient light
 	// [5]->Gas sensor
 
-	current_Sensor_values[0] = data_UI.tempIN ;
-	current_Sensor_values[1] = data_UI.tempOUT ;
-	current_Sensor_values[2] = data_UI.humidity ;
-	current_Sensor_values[3] = data_UI.pressure ;
-	current_Sensor_values[4] = data_UI.ambientLight ;
-	current_Sensor_values[5] = data_UI.carbonMonoxide ;
+	current_Sensor_values[0] = data_from_UI.tempIN ;
+	current_Sensor_values[1] = data_from_UI.tempOUT ;
+	current_Sensor_values[2] = data_from_UI.humidity ;
+	current_Sensor_values[3] = data_from_UI.pressure ;
+	current_Sensor_values[4] = data_from_UI.ambientLight ;
+	current_Sensor_values[5] = data_from_UI.carbonMonoxide ;
 
 	modelListener->current_Sensor_values(current_Sensor_values);
 

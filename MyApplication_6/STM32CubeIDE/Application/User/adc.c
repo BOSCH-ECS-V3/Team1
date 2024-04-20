@@ -1,10 +1,8 @@
 #include "adc.h"
-#include "data_UI_def.h"
 #include "utilities.h"
 
 ADC_HandleTypeDef hadc1;
 
-extern SensData_t data_UI;
 
 void MX_ADC1_Init(void) {
 
@@ -37,7 +35,7 @@ void MX_ADC1_Init(void) {
 
 }
 
-void ADC_Select_CH5(void) {
+void ADC_Select_CH5(SensData_t *data) {
 
 	uint32_t adcVal_ch5;
 	ADC_ChannelConfTypeDef sConfig = { 0 };
@@ -57,17 +55,16 @@ void ADC_Select_CH5(void) {
 
 	if(adcVal_ch5 == AMBIENT_UNPLUGED){
 
-		data_UI.ambientLight = 0;
+		data->ambientLight = 0;
 	}else{
-		data_UI.ambientLight = map(adcVal_ch5, 0, 4095, 1, 100);
+		data->ambientLight = map(adcVal_ch5, 0, 4095, 1, 100);
 	}
-
 
 
 }
 
 
-void ADC_Select_CH7(void) {
+void ADC_Select_CH7(SensData_t *data) {
 
 	uint32_t adcVal_ch7;
 
@@ -92,10 +89,10 @@ void ADC_Select_CH7(void) {
 	}
 
 	if(adcVal_ch7 > GAS_UNPLUGED){
-		data_UI.carbonMonoxide = 601;
+		data->carbonMonoxide = 601;
 	}
 	else{
-		data_UI.carbonMonoxide = map(adcVal_ch7, 120, 500, 20, 1000);
+		data->carbonMonoxide = map(adcVal_ch7, 120, 500, 20, 1000);
 	}
 
 }
