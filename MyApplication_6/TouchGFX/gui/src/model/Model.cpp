@@ -3,6 +3,7 @@
 #include <data_UI_def.h>
 #include "cmsis_os.h"
 #include "semphr.h"
+#include "cli.h"
 
 
 extern "C"{
@@ -129,8 +130,29 @@ Model::Model() : modelListener(0)
 void Model::tick()
 {
 
-	/* Get data from UI via Queue*/
+	//get clock
+	dateTime.hours = Clock_Values[0];
+	dateTime.minutes = Clock_Values[1];
+	dateTime.seconds = Clock_Values[2];
 
+	//get date
+	dateTime.day = current_Date_values[0];
+	dateTime.month = current_Date_values[1];
+	dateTime.year = current_Date_values[2];
+
+	if (finished != 0) {
+//		// set clock
+//		Clock_Values[0] = dateTime.hours;
+//		Clock_Values[1] = dateTime.minutes;
+//		Clock_Values[2] = dateTime.seconds;
+//		modelListener->updated_Clock(Clock_Values);
+////		// set date
+////		current_Date_values[0] = dateTime.day;
+////		current_Date_values[1] = dateTime.month;
+////		current_Date_values[2] = dateTime.year;
+////		modelListener->updateValue(state)(current_Date_values);
+	}
+	/* Get data from UI via Queue*/
 	if(uxQueueSpacesAvailable(dataQueue) == 0){
 
 		xQueueReceive(dataQueue, &data_from_UI, 0);

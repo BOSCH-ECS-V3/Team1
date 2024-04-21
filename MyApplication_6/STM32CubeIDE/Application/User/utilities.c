@@ -8,7 +8,7 @@ long map(long x, long in_min, long in_max, long out_min, long out_max) {
 }
 void clearMSG(char *msg,short *msgIDX) {
 	*msgIDX = 0;
-	memset(msg, '\0', sizeof(msg));
+	memset(msg, '\0', strlen(msg));
 }
 void lowerString(char *stringToLower) {
 	for (int i = 0; i < strlen(stringToLower); i++) {

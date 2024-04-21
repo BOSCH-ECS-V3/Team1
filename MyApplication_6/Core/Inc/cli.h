@@ -65,7 +65,7 @@ void CommandDataHandler(DateTime_t*,SensData_t*, UART_HandleTypeDef*, char*);
 void CommandDTHandler(DateTime_t*,SensData_t*, UART_HandleTypeDef*, char*);
 void CommandAlarmHandler(DateTime_t*,SensData_t*, UART_HandleTypeDef*, char*);
 //MAIN
-void CLIHandler(DateTime_t*,SensData_t*, UART_HandleTypeDef*, char*, short*);
+void CLIHandler(SensData_t*, UART_HandleTypeDef*, char*, short*);
 
 extern void (*command[])();
 extern void (*menu[])();
@@ -75,5 +75,7 @@ extern short changed;
 extern char msg[30];
 extern short msgIDX;
 extern short selectedMenu;
+extern DateTime_t dateTime;
+extern short finished;
 
 #endif

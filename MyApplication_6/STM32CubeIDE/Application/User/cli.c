@@ -3,7 +3,9 @@
 char msg[30];
 short msgIDX = 0;
 short changed = 0;
+short finished = 0;
 short selectedMenu = DISPLAY_HELP_MENU;
+DateTime_t dateTime;
 //DO NOT FORMAT THIS FILE
 void (*menu[])()=
 {
@@ -168,11 +170,13 @@ void GetTempCBMonoxide(SensData_t *SelectedSensor, char *msg) {
 			SelectedSensor->carbonMonoxide);
 }
 void GetDate(DateTime_t *dateTime, char *msg) {
-	sprintf(msg, "\n\r Date:%d.%d.%d\n\r", (int) dateTime->day, dateTime->month,
+
+	sprintf(msg, "\n\r Date: %d.%d.%d\n\r",  dateTime->day, dateTime->month,
 			dateTime->year);
 }
 void GetTime(DateTime_t *dateTime, char *msg) {
-	sprintf(msg, "\n\r Time:%d:%d:%d\n\r", (int) dateTime->hours, dateTime->minutes,
+
+	sprintf(msg, "\n\r Time: %d:%d:%d\n\r", dateTime->hours, dateTime->minutes,
 			dateTime->seconds);
 }
 void SetDay(DateTime_t *dateTime, int Input, UART_HandleTypeDef *huart1)
@@ -359,7 +363,7 @@ void CommandAlarmHandler(DateTime_t *dateTime, SensData_t *SelectedSensor,
 	HAL_UART_Transmit(huart1, (uint8_t*) msg, strlen(msg), 1000);
 	clearMSG(msg, NULL);
 }
-void CLIHandler(DateTime_t *dateTime, SensData_t *SelectedSensor,
+void CLIHandler(SensData_t *SelectedSensor,
 		UART_HandleTypeDef *huart1, char *msg, short *msgIDX) {
 	if (*msgIDX >= MAX_ALLOWED_STRING) {
 		(error[ERR_MSG_LONG])(huart1);
@@ -370,11 +374,13 @@ void CLIHandler(DateTime_t *dateTime, SensData_t *SelectedSensor,
 		if(changed!=0)
 		{
 			int Input = atoi(msg);
-			(command[changed])(dateTime,Input,huart1);
+			(command[changed])(&dateTime,Input,huart1);
 			changed = 0;
+			finished = 0;
 			clearMSG(msg, msgIDX);
 		}
 		else{
+			finished = 1;
 			if (*msgIDX > 0 && strncmp(msg, "help", *msgIDX) == 0) {
 			(menu[selectedMenu])(huart1);
 			clearMSG(msg, msgIDX);
@@ -383,7 +389,7 @@ void CLIHandler(DateTime_t *dateTime, SensData_t *SelectedSensor,
 				(error[ERR_MSG_NF])(huart1);
 				clearMSG(msg, msgIDX);
 			} else {
-				(handler[selectedMenu])(dateTime, SelectedSensor, huart1, msg);
+				(handler[selectedMenu])(&dateTime, SelectedSensor, huart1, msg);
 				clearMSG(msg, msgIDX);
 			}
 		}

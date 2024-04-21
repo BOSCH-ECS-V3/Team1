@@ -361,13 +361,6 @@ void GetSensDataTask(void *argument) {
 void CLI_Task(void *argument) {
 
 	SensData_t data_UI;
-	DateTime_t dateTime_UI;
-	dateTime_UI.day = 4;
-	dateTime_UI.month = 3;
-	dateTime_UI.year = 2002;
-	dateTime_UI.seconds = 55;
-	dateTime_UI.minutes = 4;
-	dateTime_UI.hours = 13;
 
 	HAL_UART_Receive_IT(&huart1, (uint8_t*) &msg[msgIDX], 1);
 	for (;;) {
@@ -379,7 +372,7 @@ void CLI_Task(void *argument) {
 
 		xTaskNotifyWait(0, 1, NULL, portMAX_DELAY);
 
-		CLIHandler(&dateTime_UI,&data_UI, &huart1, msg, &msgIDX);
+		CLIHandler(&data_UI, &huart1, msg, &msgIDX);
 
 	}
 }
