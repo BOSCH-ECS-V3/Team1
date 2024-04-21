@@ -11,45 +11,13 @@ SensData_t data_from_UI;
 
 }
 
-int Error_feedback(int current_Sensor_values[5])
+int Error_feedback(SensData_t data)
 {
 	int Error_ID = 0 ;
 
 	//..Passing sensor values to Default page for presenting on screen
 	// [0]->TemperatureIn , [1]-> TemperatureOut , [2]-> Humidity , [3]-> Pressure ,[4]->Ambient light
 	// [5]->Gas sensor
-
-	int tempIN_val = current_Sensor_values[0]  ;
-	int tempOUT_val = current_Sensor_values[1] ;
-	int humidity_val = current_Sensor_values[2]  ;
-	int pressure_val = current_Sensor_values[3] ;
-	int ambientLight_val = current_Sensor_values[4] ;
-	int carbonMonoxide_val = current_Sensor_values[5] ;
-
-	// Define error values for TempIN sensor
-	int tempIN_MAX_VALUE = 300;
-	int tempIN_MIN_VALUE = -10;
-	int tempIN_DISCONNECTED_VALUE = 201 ;
-	// Define error values for TempOUT sensor
-	int tempOUT_MAX_VALUE = 300;
-	int tempOUT_MIN_VALUE = -10;
-	int tempOUT_DISCONNECTED_VALUE = 201 ;
-	// Define error values for Humidity sensor
-	int humidity_MAX_VALUE = 65;
-	int humidity_MIN_VALUE = 25;
-	int humidity_DISCONNECTED_VALUE = 201;
-	// Define error values for Pressure sensor
-	int pressure_MAX_VALUE = 1000 ;
-	int pressure_MIN_VALUE = 100;
-	int pressure_DISCONNECTED_VALUE = 2000;
-	// Define error values for Ambient light sensor
-	int ambientLight_MAX_VALUE = 100 ;
-	int ambientLight_MIN_VALUE = 0;
-	int ambientLight_DISCONNECTED_VALUE = 201 ;
-	// Define error values for carbonMonoxide sensor
-	int carbonMonoxide_MAX_VALUE = 50000;
-	int carbonMonoxide_MIN_VALUE = 1;
-	int carbonMonoxide_DISCONNECTED_VALUE = 0 ;
 
 	/*  Error List Code
 
@@ -95,93 +63,56 @@ int Error_feedback(int current_Sensor_values[5])
 
 	 */
 
-
-	// Errors Temperature Inside
-	/*
-	if(tempIN_val == tempIN_DISCONNECTED_VALUE)
-	{
-		Error_ID = 101 ;
-	}
-	if(tempIN_val < tempIN_MIN_VALUE )
-	{
-		Error_ID = 102 ;
-	}
-	if(tempIN_val > tempIN_MAX_VALUE )
-	{
-		Error_ID = 103 ;
-	}
-	 */
 	// Errors Temperature Outside
 
-	if(tempOUT_val == tempOUT_DISCONNECTED_VALUE)
+	if(data.tempIN == TEMP_IN_UNPLUGGED)
 	{
 		Error_ID = 201 ;
-	}
-	if(tempOUT_val < tempOUT_MIN_VALUE)
-	{
-		Error_ID = 202 ;
-	}
-	if(tempOUT_val > tempOUT_MAX_VALUE)
-	{
-		Error_ID = 203 ;
+
+	}else if(data.tempIN < TEMP_IN_MIN_VALUE){
+
+		Error_ID = 202;
+
+	}else if(data.tempIN > TEMP_IN_MAX_VALUE){
+
+		Error_ID = 203;
 	}
 
 	// Errors Humidity Sensor
 
-	if(humidity_val == humidity_DISCONNECTED_VALUE)
+	if(data.humidity == HUMIDITY_UNPLUGGED)
 	{
 		Error_ID = 301 ;
-	}
-	if(humidity_val < humidity_MIN_VALUE)
-	{
-		Error_ID = 302 ;
-	}
-	if(humidity_val > humidity_MAX_VALUE)
-	{
-		Error_ID = 303 ;
+
+	}else if(data.humidity < HUMIDITY_MIN_VALUE){
+
+		Error_ID = 302;
+
+	}else if(data.humidity > HUMIDITY_MAX_VALUE){
+
+		Error_ID = 303;
 	}
 
 	// Errors Pressure sensor
 
-	if(pressure_val == pressure_DISCONNECTED_VALUE)
+	if(data.pressure == PRESSURE_UNPLUGGED)
 	{
 		Error_ID = 401 ;
-	}
-	if(pressure_val < pressure_MIN_VALUE)
-	{
-		Error_ID = 402 ;
-	}
-	if(pressure_val > pressure_MAX_VALUE)
-	{
-		Error_ID = 403 ;
 	}
 
 	// Errors Ambient light sensor
 
-	if(ambientLight_val == ambientLight_DISCONNECTED_VALUE)
+	if(data.ambientLight == AMBIENT_UNPLUGGED)
 	{
 		Error_ID = 501 ;
-	}
-	if(ambientLight_val < ambientLight_MIN_VALUE)
-	{
-		Error_ID = 502 ;
-	}
-	if(ambientLight_val > ambientLight_MAX_VALUE)
-	{
-		Error_ID = 503 ;
 	}
 
 	// Errors Gas sensor
 
-	if(carbonMonoxide_val == carbonMonoxide_DISCONNECTED_VALUE)
+	if(data.carbonMonoxide == GAS_UNPLUGGED)
 	{
 		Error_ID = 601 ;
-	}
-	if(carbonMonoxide_val < carbonMonoxide_MIN_VALUE)
-	{
-		Error_ID = 602 ;
-	}
-	if(carbonMonoxide_val > carbonMonoxide_MAX_VALUE)
+	}else if(data.carbonMonoxide > GAS_DANGER_VALUES)
 	{
 		Error_ID = 603 ;
 	}
@@ -275,11 +206,11 @@ void Model::tick()
 	modelListener->current_Date_value(current_Date_values);
 
 	//..Passing sensor values to Default page for presenting on screen
-	// [0]->TemperatureIn , [1]-> TemperatureOut , [2]-> Humidity , [3]-> Pressure ,[4]->Ambient light
+	// [0]->TemperatureOut , [1]-> TemperatureIn , [2]-> Humidity , [3]-> Pressure ,[4]->Ambient light
 	// [5]->Gas sensor
 
-	current_Sensor_values[0] = data_from_UI.tempIN ;
-	current_Sensor_values[1] = data_from_UI.tempOUT ;
+	current_Sensor_values[0] = data_from_UI.tempOUT ;
+	current_Sensor_values[1] = data_from_UI.tempIN ;
 	current_Sensor_values[2] = data_from_UI.humidity ;
 	current_Sensor_values[3] = data_from_UI.pressure ;
 	current_Sensor_values[4] = data_from_UI.ambientLight ;
@@ -304,7 +235,7 @@ void Model::tick()
 	 *
 	 */
 
-	Error_ID = Error_feedback(current_Sensor_values);
+	Error_ID = Error_feedback(data_from_UI);
 	/*
 	 * If Permission_Alert_STATE = 0 , we will not receive alerts for strange sensor values until
 	 * we turn ON this option from the page "ALARM".

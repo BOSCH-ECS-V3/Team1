@@ -124,6 +124,8 @@ void GetBMEdata(SensData_t *data) {
 
 		SensorInit(&sensor_In, &meas_period_In, SENS_IN_NUM);
 		data->tempIN = 201;
+		data->humidity = 0;
+		data->pressure = 0;
 	}
 
 

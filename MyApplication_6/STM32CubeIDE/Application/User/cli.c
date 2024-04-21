@@ -7,42 +7,42 @@ short selectedMenu = DISPLAY_HELP_MENU;
 //DO NOT FORMAT THIS FILE
 void (*menu[])()=
 {
-DisplayHelpMenu,
-DisplayDataMenu,
-DisplayDateTime,
-DisplayAlarmsMenu
+		DisplayHelpMenu,
+		DisplayDataMenu,
+		DisplayDateTime,
+		DisplayAlarmsMenu
 };
 
 void (*command[])() =
 {
-GetTempIN,			//0
-GetTempOUT,			//1
-GetHumidity,		//2
-GetPressure,		//3
-GetAmbientLight,	//4
-GetTempCBMonoxide,	//5
-GetDate,			//6
-GetTime,			//7
-SetDay,				//8
-SetMonth,			//9
-SetYear,			//10
-SetSeconds,			//11
-SetMinutes,			//12
-SetHours			//13
+		GetTempIN,			//0
+		GetTempOUT,			//1
+		GetHumidity,		//2
+		GetPressure,		//3
+		GetAmbientLight,	//4
+		GetTempCBMonoxide,	//5
+		GetDate,			//6
+		GetTime,			//7
+		SetDay,				//8
+		SetMonth,			//9
+		SetYear,			//10
+		SetSeconds,			//11
+		SetMinutes,			//12
+		SetHours			//13
 };
 
 void (*error[])()=
 {
-ErrMsgLong,
-ErrMsgNF,
-ErrMsgICC
+		ErrMsgLong,
+		ErrMsgNF,
+		ErrMsgICC
 };
 void (*handler[])()=
 {
-CommandMenuHandler,
-CommandDataHandler,
-CommandDTHandler,
-CommandAlarmHandler
+		CommandMenuHandler,
+		CommandDataHandler,
+		CommandDTHandler,
+		CommandAlarmHandler
 };
 //WHY?!??!?!
 //WHY DOES IT FORMAT IT LIKE THIS??

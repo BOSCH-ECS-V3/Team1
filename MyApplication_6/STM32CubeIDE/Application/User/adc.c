@@ -53,7 +53,7 @@ void ADC_Select_CH5(SensData_t *data) {
 	adcVal_ch5 = HAL_ADC_GetValue(&hadc1);
 	HAL_ADC_Stop(&hadc1);
 
-	if(adcVal_ch5 == AMBIENT_UNPLUGED){
+	if(adcVal_ch5 == AMBIENT_UNPLUGGED){
 
 		data->ambientLight = 0;
 	}else{
@@ -88,7 +88,7 @@ void ADC_Select_CH7(SensData_t *data) {
 		adcVal_ch7 = GAS_ADC_BORDER;
 	}
 
-	if(adcVal_ch7 > GAS_UNPLUGED){
+	if(adcVal_ch7 > GAS_UNPLUGGED){
 		data->carbonMonoxide = 601;
 	}
 	else{
