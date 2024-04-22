@@ -26,4 +26,7 @@ void Date_SettingsPresenter::update_Date(int Date_Value[3])
 	// updating date values based on user adjustment in view
 	model->update_Date(Date_Value); // passing values to model
 }
-
+void Date_SettingsPresenter::set_screen_brightness(int brightness)
+{
+	view.set_screen_brightness(brightness);
+}

@@ -11,7 +11,13 @@ public:
     virtual ~Statistics_Temperature_InsideView() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
+    virtual void set_screen_brightness(int brightness);
+    virtual void STATISTICS_tempIN(int statistics_tempIN[24], int tempIN_index);
+
 protected:
+
+    int current_index = 0;
+    int tempIN_val[24];
 };
 
 #endif // STATISTICS_TEMPERATURE_INSIDEVIEW_HPP

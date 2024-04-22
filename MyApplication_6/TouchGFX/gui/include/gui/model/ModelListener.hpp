@@ -54,6 +54,32 @@ public:
     {
     	// send Screen brightness to view -> Default page
     }
+
+    virtual void STATISTICS_tempIN(int statistics_tempIN[24], int tempIN_index)
+    {
+    	// send statistics array and index to view page of tempIN
+    }
+    virtual void STATISTICS_tempOUT(int statistics_tempOUT[24], int statistics_index)
+    {
+    	// send statistics array and index  to view page of tempOUT
+    }
+    virtual void STATISTICS_humidity(int statistics_humidity[24], int statistics_index)
+    {
+    	// send statistics array and index to view page of Humidity statistics
+    }
+    virtual void STATISTICS_gas(int statistics_gas[24], int statistics_index)
+    {
+    	// send statistics array and index to view page of Gas
+    }
+    virtual void STATISTICS_pressure(int statistics_pressure[24] , int statistics_index)
+    {
+    	// send statistics array and index to view page of Pressure
+    }
+    virtual void STATISTICS_ambient(int statistics_ambient[24] , int statistics_index)
+    {
+    	// send statistics array and index to view page of Ambient
+    }
+
 protected:
     Model* model;
 };

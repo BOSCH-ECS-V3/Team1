@@ -1,8 +1,8 @@
 #include "adc.h"
+#include "utilities.h"
 
 ADC_HandleTypeDef hadc1;
 
-extern uint32_t adcValues[2];
 
 void MX_ADC1_Init(void) {
 
@@ -35,7 +35,9 @@ void MX_ADC1_Init(void) {
 
 }
 
-void ADC_Select_CH5(void) {
+void ADC_Select_CH5(SensData_t *data) {
+
+	uint32_t adcVal_ch5;
 	ADC_ChannelConfTypeDef sConfig = { 0 };
 	/** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
 	 */
@@ -48,11 +50,24 @@ void ADC_Select_CH5(void) {
 
 	HAL_ADC_Start(&hadc1);
 	HAL_ADC_PollForConversion(&hadc1, 1000);
-	adcValues[0] = HAL_ADC_GetValue(&hadc1);
+	adcVal_ch5 = HAL_ADC_GetValue(&hadc1);
 	HAL_ADC_Stop(&hadc1);
+
+	if(adcVal_ch5 == AMBIENT_UNPLUGGED){
+
+		data->ambientLight = 0;
+	}else{
+		data->ambientLight = map(adcVal_ch5, 0, 4095, 1, 100);
+	}
+
+
 }
 
-void ADC_Select_CH7(void) {
+
+void ADC_Select_CH7(SensData_t *data) {
+
+	uint32_t adcVal_ch7;
+
 	ADC_ChannelConfTypeDef sConfig = { 0 };
 	/** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
 	 */
@@ -65,6 +80,19 @@ void ADC_Select_CH7(void) {
 
 	HAL_ADC_Start(&hadc1);
 	HAL_ADC_PollForConversion(&hadc1, 1000);
-	adcValues[1] = HAL_ADC_GetValue(&hadc1);
+	adcVal_ch7 = HAL_ADC_GetValue(&hadc1);
 	HAL_ADC_Stop(&hadc1);
+
+	if (adcVal_ch7 < GAS_ADC_BORDER) {
+
+		adcVal_ch7 = GAS_ADC_BORDER;
+	}
+
+	if(adcVal_ch7 > GAS_UNPLUGGED){
+		data->carbonMonoxide = 601;
+	}
+	else{
+		data->carbonMonoxide = map(adcVal_ch7, 120, 500, 20, 1000);
+	}
+
 }

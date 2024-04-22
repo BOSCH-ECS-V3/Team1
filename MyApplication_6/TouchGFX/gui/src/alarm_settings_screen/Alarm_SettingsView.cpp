@@ -43,4 +43,9 @@ void SEND_Permission(int Permission_State)
 {
 
 }
+void Alarm_SettingsView::set_screen_brightness(int brightness)
+{
+	Brightness_level.setAlpha(brightness);
+	Brightness_level.invalidate();
+}
 

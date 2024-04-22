@@ -1,12 +1,10 @@
 #include <string.h>
 #include "temp_sens.h"
 #include "stm32f4xx_hal.h"
-#include  "data_UI_def.h"
 #include "cmsis_os.h"
 #include <semphr.h>
 
 extern I2C_HandleTypeDef hi2c3;
-extern SensData_t data_UI;
 extern xSemaphoreHandle i2c_semaphore;
 
 struct bme680_dev sensor_In;
@@ -31,7 +29,7 @@ int8_t SensorInit(struct bme680_dev *sensor, uint16_t *meas_period, uint8_t sens
 	sensor->delay_ms = user_delay_ms;
 	sensor->amb_temp = 25;
 
-	int8_t rslt = bme680_init(&sensor_In);
+	int8_t rslt = bme680_init(sensor);
 	uint8_t set_required_settings;
 
 	sensor->tph_sett.os_hum = BME680_OS_2X;
@@ -107,25 +105,44 @@ int8_t user_i2c_write(uint8_t dev_id, uint8_t reg_addr, uint8_t *reg_data, uint1
 	return result;
 }
 
-void GetBMEdata() {
+void GetBMEdata(SensData_t *data) {
 
 	user_delay_ms(meas_period_In);
 
 	if (CollectSensorData(&sensor_In, &data_In) == BME680_OK) {
 
-		data_UI.tempIN = data_In.temperature / 100.0f;
-		data_UI.humidity = data_In.humidity / 1000.0f;
-		data_UI.pressure = data_In.pressure / 100.0f;
+		data->tempIN = data_In.temperature / 100.0f;
+		data->humidity = data_In.humidity / 1000.0f;
+		data->pressure = data_In.pressure / 100.0f;
 
 		if (sensor_In.power_mode == BME680_FORCED_MODE) {
 
 			bme680_set_sensor_mode(&sensor_In);
 		}
 
-	} else {
+	}else {
 
 		SensorInit(&sensor_In, &meas_period_In, SENS_IN_NUM);
-		data_UI.tempIN = 201;
+		data->tempIN = 201;
+		data->humidity = 0;
+		data->pressure = 0;
+	}
+
+
+	if(CollectSensorData(&sensor_Out, &data_Out) == BME680_OK){
+
+		data->tempOUT = data_Out.temperature / 100.0f;
+
+		if (sensor_Out.power_mode == BME680_FORCED_MODE) {
+
+			bme680_set_sensor_mode(&sensor_Out);
+		}
+
+	}else{
+
+		SensorInit(&sensor_Out, &meas_period_Out, SENS_OUT_NUM);
+		data->tempOUT = 301;
+
 	}
 
 }

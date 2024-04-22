@@ -3,6 +3,7 @@
 
 #include "main.h"
 #include "bme680.h"
+#include  "data_UI_def.h"
 
 #define BME680_ERR 200
 #define SENS_IN_NUM 0
@@ -25,7 +26,7 @@ int8_t user_i2c_write(uint8_t dev_id, uint8_t reg_addr, uint8_t *reg_data, uint1
 
 void user_delay_ms(uint32_t period);
 
-void GetBMEdata();
+void GetBMEdata(SensData_t*);
 
 
 

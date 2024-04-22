@@ -16,3 +16,8 @@ void AboutPresenter::deactivate()
 {
 
 }
+
+void AboutPresenter::set_screen_brightness(int brightness)
+{
+	view.set_screen_brightness(brightness);
+}

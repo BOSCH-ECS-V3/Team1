@@ -11,7 +11,15 @@ public:
     virtual ~Statistics_Gas_sensorView() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
+    virtual void set_screen_brightness(int brightness);
+    virtual void STATISTICS_gas(int statistics_gas[24], int statistics_index);
+
+
 protected:
+
+    int gas_val[24];
+    int current_index = 0 ;
+
 };
 
 #endif // STATISTICS_GAS_SENSORVIEW_HPP

@@ -468,7 +468,7 @@
           {
             "Type": "Box",
             "Name": "Brightness_level",
-            "X": -11,
+            "X": -22,
             "Y": -8,
             "Width": 282,
             "Height": 345,

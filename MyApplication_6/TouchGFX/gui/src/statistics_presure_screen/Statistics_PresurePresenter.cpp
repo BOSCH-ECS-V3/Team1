@@ -16,3 +16,13 @@ void Statistics_PresurePresenter::deactivate()
 {
 
 }
+
+void Statistics_PresurePresenter::set_screen_brightness(int brightness)
+{
+	view.set_screen_brightness(brightness);
+}
+
+void Statistics_PresurePresenter::STATISTICS_pressure(int statistics_pressure[24] , int statistics_index)
+{
+	view.STATISTICS_pressure(statistics_pressure , statistics_index);
+}

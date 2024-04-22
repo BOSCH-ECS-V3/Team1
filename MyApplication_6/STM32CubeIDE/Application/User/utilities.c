@@ -10,3 +10,8 @@ void clearMSG(char *msg,short *msgIDX) {
 	*msgIDX = 0;
 	memset(msg, '\0', strlen(msg));
 }
+void lowerString(char *stringToLower) {
+	for (int i = 0; i < strlen(stringToLower); i++) {
+		stringToLower[i] = tolower(stringToLower[i]);
+	}
+}

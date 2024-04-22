@@ -40,6 +40,26 @@ protected:
 
 	int brightness = 255 ;
 
+	/*
+	 * Arrays to store information for statistics
+	 */
+
+	int statistics_tempIN[24] ;
+	int statistics_tempOUT[24];
+	int statistics_humidity[24];
+	int statistics_gas[24];
+	int statistics_ambient[24];
+	int statistics_pressure[24];
+
+	int statistics_index = 0 ;
+
+	typedef struct
+	{
+	    int average_day;
+	    int average_week;
+	    int average_month;
+	}Average_val;
+
 
 };
 

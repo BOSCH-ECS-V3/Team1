@@ -16,3 +16,13 @@ void Statistics_Temperature_OutsidePresenter::deactivate()
 {
 
 }
+
+void Statistics_Temperature_OutsidePresenter::set_screen_brightness(int brightness)
+{
+	view.set_screen_brightness(brightness);
+}
+
+void Statistics_Temperature_OutsidePresenter::STATISTICS_tempOUT(int statistics_tempOUT[24], int statistics_index)
+{
+	view.STATISTICS_tempOUT(statistics_tempOUT, statistics_index);
+}

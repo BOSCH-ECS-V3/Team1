@@ -24,6 +24,8 @@ public:
      * (ie. made inactive). Teardown functionality can be placed here.
      */
     virtual void deactivate();
+    virtual void set_screen_brightness(int brightness);
+    virtual void STATISTICS_ambient(int statistics_ambient[24] , int statistics_index);
 
     virtual ~Statistics_Ambient_1Presenter() {}
 

@@ -28,6 +28,7 @@ public:
     virtual ~Date_SettingsPresenter() {}
     virtual void current_Date_value(int current_Date_value[]);
     virtual void update_Date(int Date_Values[]); // func for passsing view values to model
+    virtual void set_screen_brightness(int brightness);
 
 private:
     Date_SettingsPresenter();

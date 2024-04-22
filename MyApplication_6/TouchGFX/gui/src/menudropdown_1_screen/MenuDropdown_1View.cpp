@@ -14,3 +14,8 @@ void MenuDropdown_1View::tearDownScreen()
 {
     MenuDropdown_1ViewBase::tearDownScreen();
 }
+void MenuDropdown_1View::set_screen_brightness(int brightness)
+{
+	  Brightness_level.setAlpha(brightness);
+	  Brightness_level.invalidate();
+}
