@@ -13,7 +13,7 @@ public:
     virtual void tearDownScreen();
     virtual void update_Clock(int Clock_Values[]);
     virtual void handleTickEvent();
-    virtual void current_Sensor_values(int current_Sensor_values[5]);
+    virtual void current_Sensor_values(int current_Sensor_values[5], int GAS_Preheat_FLAG);
     virtual void SEND_Error_ID(int Error_ID);
     virtual void Snooze_btn_pressed();
     virtual void set_screen_brightness(int brightness);

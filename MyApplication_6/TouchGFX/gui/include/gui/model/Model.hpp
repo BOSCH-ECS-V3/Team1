@@ -53,13 +53,8 @@ protected:
 
 	int statistics_index = 0 ;
 
-	typedef struct
-	{
-	    int average_day;
-	    int average_week;
-	    int average_month;
-	}Average_val;
-
+	int GAS_Preheat_time = 3 ;
+	int GAS_Preheat_FLAG = 0 ;
 
 };
 

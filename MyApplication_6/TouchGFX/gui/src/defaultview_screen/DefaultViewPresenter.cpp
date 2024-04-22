@@ -21,9 +21,9 @@ void DefaultViewPresenter::update_Clock(int Clock_Value[3])
 {
 	view.update_Clock(Clock_Value);
 }
-void DefaultViewPresenter::current_Sensor_values(int current_Sensor_values[5])
+void DefaultViewPresenter::current_Sensor_values(int current_Sensor_values[5], int GAS_Preheat_FLAG)
 {
-	view.current_Sensor_values(current_Sensor_values);
+	view.current_Sensor_values(current_Sensor_values, GAS_Preheat_FLAG);
 };
 void DefaultViewPresenter::SEND_Error_ID(int Error_ID)
 {

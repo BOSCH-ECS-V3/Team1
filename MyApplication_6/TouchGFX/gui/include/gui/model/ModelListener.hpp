@@ -33,7 +33,7 @@ public:
     {
     	// receiving Clock Setting from View->Clock page
     };
-    virtual void current_Sensor_values(int current_Sensor_values[5])
+    virtual void current_Sensor_values(int current_Sensor_values[5] , int GAS_Preheat_FLAG)
     {
     	// sending current sensor values to presenter Default page
     };

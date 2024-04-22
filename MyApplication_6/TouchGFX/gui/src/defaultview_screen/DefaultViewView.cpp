@@ -122,7 +122,7 @@ void DefaultViewView::SEND_Error_ID(int Error_ID)
 
 }
 
-void DefaultViewView::current_Sensor_values(int current_Sensor_values[])
+void DefaultViewView::current_Sensor_values(int current_Sensor_values[] , int GAS_Preheat_FLAG)
 {
 	// Receiving sensor values from model and store them in var
 	//..Passing sensor values to Default page for presenting on screen
@@ -133,7 +133,13 @@ void DefaultViewView::current_Sensor_values(int current_Sensor_values[])
 	Humidity_Sensor_value = current_Sensor_values[2];
 	Pressure_Sensor_value = current_Sensor_values[3];
 	Ambient_Light_Sensor_value = current_Sensor_values[4];
-	Gas_Sensor_value = current_Sensor_values[5] ;
+	if(GAS_Preheat_FLAG == 1)
+	{
+		Preheat_msg.setVisible(false);
+		Preheat_msg.invalidate();
+		Gas_Sensor_value = current_Sensor_values[5] ;
+	}
+
 
 	// updating values to view
 

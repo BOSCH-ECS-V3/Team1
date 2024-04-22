@@ -73,6 +73,19 @@ DefaultViewViewBase::DefaultViewViewBase() :
     Carbon_Val.setTypedText(touchgfx::TypedText(T___SINGLEUSE_GP4Z));
     SwipeContainerCarbon.add(Carbon_Val);
 
+    Preheat_msg.setPosition(0, 6, 250, 250);
+    Preheat_box.setPosition(20, 103, 202, 48);
+    Preheat_box.setColor(touchgfx::Color::getColorFromRGB(0, 59, 64));
+    Preheat_msg.add(Preheat_box);
+
+    Preheat_text.setXY(67, 115);
+    Preheat_text.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    Preheat_text.setLinespacing(0);
+    Preheat_text.setTypedText(touchgfx::TypedText(T___SINGLEUSE_FDI4));
+    Preheat_msg.add(Preheat_text);
+
+    SwipeContainerCarbon.add(Preheat_msg);
+
     SwipeContainer.add(SwipeContainerCarbon);
 
     SwipeContainerPressure_1.setWidth(240);
@@ -217,7 +230,7 @@ DefaultViewViewBase::DefaultViewViewBase() :
 
     add(Alert_cover);
 
-    Brightness_level.setPosition(-11, -8, 282, 345);
+    Brightness_level.setPosition(285, -63, 282, 345);
     Brightness_level.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     Brightness_level.setAlpha(101);
     add(Brightness_level);

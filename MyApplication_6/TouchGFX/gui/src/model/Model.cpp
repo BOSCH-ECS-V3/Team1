@@ -177,6 +177,11 @@ void Model::tick()
 				snoozeCounter = 0;
 				SNOOZE_FLAG = 0;
 			}
+			if(++GAS_Preheat_time >= 3)
+			{
+				GAS_Preheat_FLAG = 1 ;
+				GAS_Preheat_time = 3 ;
+			}
 			/*
 			 *  Add new value to the statistics char every MINUTE
 			 */
@@ -255,7 +260,7 @@ void Model::tick()
 	current_Sensor_values[4] = data_from_UI.ambientLight ;
 	current_Sensor_values[5] = data_from_UI.carbonMonoxide ;
 
-	modelListener->current_Sensor_values(current_Sensor_values);
+	modelListener->current_Sensor_values(current_Sensor_values , GAS_Preheat_FLAG);
 
 	/*
 	 * By default we set ALERT Permission to TRUE.
@@ -317,13 +322,15 @@ void Model::tick()
 	}
 	modelListener->set_screen_brightness(brightness);
 
-
 	/*
 	 * Send information about tempIN Statistics page
+	 *
+	 *
 	 */
 
 	statistics_tempIN[statistics_index] = data_from_UI.tempIN;
 	modelListener->STATISTICS_tempIN(statistics_tempIN, statistics_index);
+
 
 	/*
 	 * Send information about TempOut Statistics page

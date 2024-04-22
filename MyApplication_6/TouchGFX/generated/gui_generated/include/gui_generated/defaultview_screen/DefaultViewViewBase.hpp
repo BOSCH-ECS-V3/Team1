@@ -55,6 +55,9 @@ protected:
     touchgfx::Container SwipeContainerCarbon;
     touchgfx::TextArea Carbon_Text;
     touchgfx::TextAreaWithOneWildcard Carbon_Val;
+    touchgfx::Container Preheat_msg;
+    touchgfx::Box Preheat_box;
+    touchgfx::TextArea Preheat_text;
     touchgfx::Container SwipeContainerPressure_1;
     touchgfx::TextArea Presure_Text;
     touchgfx::TextAreaWithOneWildcard Presure_Val;
