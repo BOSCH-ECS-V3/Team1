@@ -142,32 +142,24 @@ Model::Model() : modelListener(0)
 void Model::tick()
 {
 
-/*
-	//get clock
-	dateTime.hours = Clock_Values[0];
-	dateTime.minutes = Clock_Values[1];
-	dateTime.seconds = Clock_Values[2];
 
-	//get date
-	dateTime.day = current_Date_values[0];
-	dateTime.month = current_Date_values[1];
-	dateTime.year = current_Date_values[2];
-
-	if (finished != 0) {
+	if(finished!=0)
+	{
 		// set clock
 		Clock_Values[0] = dateTime.hours;
 		Clock_Values[1] = dateTime.minutes;
 		Clock_Values[2] = dateTime.seconds;
-		modelListener->updated_Clock(Clock_Values);
+
 		// set date
 		current_Date_values[0] = dateTime.day;
 		current_Date_values[1] = dateTime.month;
 		current_Date_values[2] = dateTime.year;
 
-		modelListener->current_Clock(Clock_Values);
-		modelListener->current_Date_value(current_Date_values);
+		finished = 0 ;
 	}
-	 */
+
+
+
 	/* Get data from UI via Queue*/
 	if(uxQueueSpacesAvailable(dataQueue) == 0){
 
@@ -191,6 +183,15 @@ void Model::tick()
 			statistics_index = 0 ;
 		}
 
+		//get clock
+				dateTime.hours = Clock_Values[0];
+				dateTime.minutes = Clock_Values[1];
+				dateTime.seconds = Clock_Values[2];
+
+				//get date
+				dateTime.day = current_Date_values[0];
+				dateTime.month = current_Date_values[1];
+				dateTime.year = current_Date_values[2];
 
 		if(++Clock_Values[2]>=60) // If current SECONDS ARE MORE THAN 60 , Change MINUTE , reset SECONDS
 		{

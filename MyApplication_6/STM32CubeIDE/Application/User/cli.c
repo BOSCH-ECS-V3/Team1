@@ -376,11 +376,11 @@ void CLIHandler(SensData_t *SelectedSensor,
 			int Input = atoi(msg);
 			(command[changed])(&dateTime,Input,huart1);
 			changed = 0;
-			finished = 0;
+			finished = 1;
 			clearMSG(msg, msgIDX);
 		}
 		else{
-			finished = 1;
+
 			if (*msgIDX > 0 && strncmp(msg, "help", *msgIDX) == 0) {
 			(menu[selectedMenu])(huart1);
 			clearMSG(msg, msgIDX);
