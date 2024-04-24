@@ -35,9 +35,6 @@ protected:
     touchgfx::ButtonWithLabel Menu_Button;
     touchgfx::TextArea Header_Text;
     touchgfx::TextArea Gas_sensor_text;
-    touchgfx::TextArea Average_Day_val;
-    touchgfx::TextArea Average_Week_val;
-    touchgfx::TextArea Average_Month_val;
     touchgfx::Graph<24> Graphic_Gas_sensor;
     touchgfx::GraphElementGridY Graphic_Gas_sensorMajorYAxisGrid;
     touchgfx::GraphLabelsX Graphic_Gas_sensorMajorXAxisLabel;

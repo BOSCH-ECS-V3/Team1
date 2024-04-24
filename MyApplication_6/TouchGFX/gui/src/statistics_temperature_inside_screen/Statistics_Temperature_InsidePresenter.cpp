@@ -21,7 +21,7 @@ void Statistics_Temperature_InsidePresenter::set_screen_brightness(int brightnes
 	view.set_screen_brightness(brightness);
 }
 
-void Statistics_Temperature_InsidePresenter::STATISTICS_tempIN(int statistics_tempIN[24], int tempIN_index)
+void Statistics_Temperature_InsidePresenter::STATISTICS_tempIN(int statistics_tempIN[24], int tempIN_index , int average_day)
 {
-	view.STATISTICS_tempIN(statistics_tempIN, tempIN_index);
+	view.STATISTICS_tempIN(statistics_tempIN, tempIN_index , average_day);
 }

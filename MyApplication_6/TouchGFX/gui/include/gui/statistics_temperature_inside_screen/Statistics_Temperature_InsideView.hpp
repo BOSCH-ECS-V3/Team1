@@ -12,12 +12,13 @@ public:
     virtual void setupScreen();
     virtual void tearDownScreen();
     virtual void set_screen_brightness(int brightness);
-    virtual void STATISTICS_tempIN(int statistics_tempIN[24], int tempIN_index);
+    virtual void STATISTICS_tempIN(int statistics_tempIN[24], int tempIN_index , int avrDayTempIN_res );
 
 protected:
 
     int current_index = 0;
     int tempIN_val[24];
+    int average_day_val = 5 ;
 };
 
 #endif // STATISTICS_TEMPERATURE_INSIDEVIEW_HPP

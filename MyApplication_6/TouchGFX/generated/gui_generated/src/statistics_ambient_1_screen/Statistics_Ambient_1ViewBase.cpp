@@ -42,25 +42,7 @@ Statistics_Ambient_1ViewBase::Statistics_Ambient_1ViewBase() :
     Ambient_sensor_text.setTypedText(touchgfx::TypedText(T___SINGLEUSE_VA8A));
     add(Ambient_sensor_text);
 
-    Average_Day_val.setXY(6, 236);
-    Average_Day_val.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
-    Average_Day_val.setLinespacing(0);
-    Average_Day_val.setTypedText(touchgfx::TypedText(T___SINGLEUSE_FR08));
-    add(Average_Day_val);
-
-    Average_Week_val.setXY(6, 260);
-    Average_Week_val.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
-    Average_Week_val.setLinespacing(0);
-    Average_Week_val.setTypedText(touchgfx::TypedText(T___SINGLEUSE_7QC5));
-    add(Average_Week_val);
-
-    Average_Month_val.setXY(6, 284);
-    Average_Month_val.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
-    Average_Month_val.setLinespacing(0);
-    Average_Month_val.setTypedText(touchgfx::TypedText(T___SINGLEUSE_B4VT));
-    add(Average_Month_val);
-
-    Graphic_Ambient_Inside.setPosition(-5, 94, 238, 132);
+    Graphic_Ambient_Inside.setPosition(-5, 94, 238, 215);
     Graphic_Ambient_Inside.setScaleX(1);
     Graphic_Ambient_Inside.setScaleY(1);
     Graphic_Ambient_Inside.setGraphAreaMargin(0, 24, 0, 16);

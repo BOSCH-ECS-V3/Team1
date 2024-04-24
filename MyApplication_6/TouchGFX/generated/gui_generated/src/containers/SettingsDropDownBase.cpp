@@ -10,8 +10,8 @@ SettingsDropDownBase::SettingsDropDownBase() :
     buttonCallback(this, &SettingsDropDownBase::buttonCallbackHandler)
 {
     setWidth(245);
-    setHeight(500);
-    box1.setPosition(-3, 0, 248, 500);
+    setHeight(550);
+    box1.setPosition(-3, 0, 248, 550);
     box1.setColor(touchgfx::Color::getColorFromRGB(43, 43, 43));
     add(box1);
 
@@ -39,7 +39,7 @@ SettingsDropDownBase::SettingsDropDownBase() :
     Statistics.setAction(buttonCallback);
     add(Statistics);
 
-    DateSettings.setXY(49, 331);
+    DateSettings.setXY(49, 401);
     DateSettings.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_60_TINY_ROUND_DISABLED_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_60_TINY_ROUND_ACTIVE_ID));
     DateSettings.setLabelText(touchgfx::TypedText(T___SINGLEUSE_86OG));
     DateSettings.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
@@ -47,7 +47,7 @@ SettingsDropDownBase::SettingsDropDownBase() :
     DateSettings.setAction(buttonCallback);
     add(DateSettings);
 
-    TimeSettings.setXY(49, 250);
+    TimeSettings.setXY(49, 320);
     TimeSettings.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_60_TINY_ROUND_DISABLED_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_60_TINY_ROUND_ACTIVE_ID));
     TimeSettings.setLabelText(touchgfx::TypedText(T___SINGLEUSE_FTBM));
     TimeSettings.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
@@ -55,7 +55,15 @@ SettingsDropDownBase::SettingsDropDownBase() :
     TimeSettings.setAction(buttonCallback);
     add(TimeSettings);
 
-    About.setXY(49, 418);
+    Averages.setXY(49, 245);
+    Averages.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_60_TINY_ROUND_DISABLED_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_60_TINY_ROUND_ACTIVE_ID));
+    Averages.setLabelText(touchgfx::TypedText(T___SINGLEUSE_9M67));
+    Averages.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    Averages.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    Averages.setAction(buttonCallback);
+    add(Averages);
+
+    About.setXY(49, 488);
     About.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_60_TINY_ROUND_DISABLED_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_60_TINY_ROUND_ACTIVE_ID));
     About.setLabelText(touchgfx::TypedText(T___SINGLEUSE_OC5C));
     About.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
@@ -117,5 +125,12 @@ void SettingsDropDownBase::buttonCallbackHandler(const touchgfx::AbstractButton&
         //When Statistics clicked change screen to STATISTICS
         //Go to STATISTICS with no screen transition
         application().gotoSTATISTICSScreenNoTransition();
+    }
+    if (&src == &Averages)
+    {
+        //AveragePageNav
+        //When Averages clicked change screen to AVERAGES
+        //Go to AVERAGES with no screen transition
+        application().gotoAVERAGESScreenNoTransition();
     }
 }

@@ -42,25 +42,7 @@ Statistics_Gas_sensorViewBase::Statistics_Gas_sensorViewBase() :
     Gas_sensor_text.setTypedText(touchgfx::TypedText(T___SINGLEUSE_AB8V));
     add(Gas_sensor_text);
 
-    Average_Day_val.setXY(6, 236);
-    Average_Day_val.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
-    Average_Day_val.setLinespacing(0);
-    Average_Day_val.setTypedText(touchgfx::TypedText(T___SINGLEUSE_ENXP));
-    add(Average_Day_val);
-
-    Average_Week_val.setXY(6, 260);
-    Average_Week_val.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
-    Average_Week_val.setLinespacing(0);
-    Average_Week_val.setTypedText(touchgfx::TypedText(T___SINGLEUSE_ADPM));
-    add(Average_Week_val);
-
-    Average_Month_val.setXY(6, 284);
-    Average_Month_val.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
-    Average_Month_val.setLinespacing(0);
-    Average_Month_val.setTypedText(touchgfx::TypedText(T___SINGLEUSE_16WR));
-    add(Average_Month_val);
-
-    Graphic_Gas_sensor.setPosition(-2, 88, 238, 132);
+    Graphic_Gas_sensor.setPosition(-2, 88, 235, 221);
     Graphic_Gas_sensor.setScaleX(1);
     Graphic_Gas_sensor.setScaleY(1);
     Graphic_Gas_sensor.setGraphAreaMargin(0, 24, 0, 16);
@@ -93,7 +75,7 @@ Statistics_Gas_sensorViewBase::Statistics_Gas_sensorViewBase() :
 
     add(Graphic_Gas_sensor);
 
-    Brightness_level.setPosition(-2, 0, 240, 320);
+    Brightness_level.setPosition(0, 0, 240, 320);
     Brightness_level.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     Brightness_level.setAlpha(0);
     add(Brightness_level);

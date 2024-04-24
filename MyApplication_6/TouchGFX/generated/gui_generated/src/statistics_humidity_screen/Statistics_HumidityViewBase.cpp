@@ -42,25 +42,7 @@ Statistics_HumidityViewBase::Statistics_HumidityViewBase() :
     Humidity_sensor_text.setTypedText(touchgfx::TypedText(T___SINGLEUSE_DJOK));
     add(Humidity_sensor_text);
 
-    Average_Day_val.setXY(6, 236);
-    Average_Day_val.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
-    Average_Day_val.setLinespacing(0);
-    Average_Day_val.setTypedText(touchgfx::TypedText(T___SINGLEUSE_2IJD));
-    add(Average_Day_val);
-
-    Average_Week_val.setXY(6, 260);
-    Average_Week_val.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
-    Average_Week_val.setLinespacing(0);
-    Average_Week_val.setTypedText(touchgfx::TypedText(T___SINGLEUSE_GEGK));
-    add(Average_Week_val);
-
-    Average_Month_val.setXY(6, 284);
-    Average_Month_val.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
-    Average_Month_val.setLinespacing(0);
-    Average_Month_val.setTypedText(touchgfx::TypedText(T___SINGLEUSE_1BWB));
-    add(Average_Month_val);
-
-    Graphic_Humidity_Inside.setPosition(-2, 94, 235, 142);
+    Graphic_Humidity_Inside.setPosition(-2, 94, 235, 214);
     Graphic_Humidity_Inside.setScaleX(1);
     Graphic_Humidity_Inside.setScaleY(1);
     Graphic_Humidity_Inside.setGraphAreaMargin(0, 15, 0, 16);

@@ -56,6 +56,64 @@ protected:
 	int GAS_Preheat_time = 3 ;
 	int GAS_Preheat_FLAG = 0 ;
 
+	/*
+	 * Average vars for tempIN
+	 */
+	int TempIN_avr[3] ={0,0,0};
+	int avrDayTempIN_res = 0 ; // result for storying average val of the day
+	int avrWeekTempIN_res = 0 ; // result for storying average val of the day
+	int avrMonthTempIN_res = 0 ; // result for storying average val of the day
+
+	/*
+	 * Average vars for tempOUT
+	 */
+	int TempOUT_avr[3] ={0,0,0};
+	int avrDayTempOUT_res = 0 ; // result for storying average val of the day
+	int avrWeekTempOUT_res = 0 ; // result for storying average val of the day
+	int avrMonthTempOUT_res = 0 ; // result for storying average val of the day
+
+
+	/*
+	 * Average vars for Humidity
+	 */
+	int Humidity_avr[3] ={0,0,0};
+	int avrDayHumidity_res = 0 ; // result for storying average val of the day
+	int avrWeekHumidity_res = 0 ; // result for storying average val of the day
+	int avrMonthHumidity_res = 0 ; // result for storying average val of the day
+
+	/*
+	 * Average vars for Pressure
+	 */
+
+	int Pressure_avr[3] ={0,0,0};
+	int avrDayPressure_res = 0 ; // result for storying average val of the day
+	int avrWeekPressure_res = 0 ; // result for storying average val of the day
+	int avrMonthPressure_res = 0 ; // result for storying average val of the day
+
+	/*
+	 * Average vars for Gas
+	 */
+
+	int Gas_avr[3] ={0,0,0};
+	int avrDayGas_res = 0 ; // result for storying average val of the day
+	int avrWeekGas_res = 0 ; // result for storying average val of the day
+	int avrMonthGas_res = 0 ; // result for storying average val of the day
+
+	/*
+	 * Average vars for Gas
+	 */
+
+	int Ambient_avr[3] ={0,0,0};
+	int avrDayAmbient_res = 0 ; // result for storying average val of the day
+	int avrWeekAmbient_res = 0 ; // result for storying average val of the day
+	int avrMonthAmbient_res = 0 ; // result for storying average val of the day
+
+	int hourCounter = 0 ; // counter for every hour which passes
+	int dayCounter = 0 ; // counter for every day which passes
+	int weekCounter = 0 ; // counter for every week which passes
+
+
+
 };
 
 #endif // MODEL_HPP

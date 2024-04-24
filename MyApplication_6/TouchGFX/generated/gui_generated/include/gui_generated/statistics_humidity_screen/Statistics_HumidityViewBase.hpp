@@ -35,9 +35,6 @@ protected:
     touchgfx::ButtonWithLabel Menu_Button;
     touchgfx::TextArea Header_Text;
     touchgfx::TextArea Humidity_sensor_text;
-    touchgfx::TextArea Average_Day_val;
-    touchgfx::TextArea Average_Week_val;
-    touchgfx::TextArea Average_Month_val;
     touchgfx::Graph<24> Graphic_Humidity_Inside;
     touchgfx::GraphElementGridY Graphic_Humidity_InsideMajorYAxisGrid;
     touchgfx::GraphLabelsX Graphic_Humidity_InsideMajorXAxisLabel;

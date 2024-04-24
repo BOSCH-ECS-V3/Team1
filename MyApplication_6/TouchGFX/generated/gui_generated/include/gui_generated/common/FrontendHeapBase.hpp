@@ -36,8 +36,22 @@
 #include <gui/statistics_gas_sensor_screen/Statistics_Gas_sensorPresenter.hpp>
 #include <gui/alarm_settings_screen/Alarm_SettingsView.hpp>
 #include <gui/alarm_settings_screen/Alarm_SettingsPresenter.hpp>
+#include <gui/averages_screen/AVERAGESView.hpp>
+#include <gui/averages_screen/AVERAGESPresenter.hpp>
 #include <gui/statistics_screen/STATISTICSView.hpp>
 #include <gui/statistics_screen/STATISTICSPresenter.hpp>
+#include <gui/average_ambientlight_screen/Average_AmbientLightView.hpp>
+#include <gui/average_ambientlight_screen/Average_AmbientLightPresenter.hpp>
+#include <gui/average_gas_screen/Average_GasView.hpp>
+#include <gui/average_gas_screen/Average_GasPresenter.hpp>
+#include <gui/average_pressure_screen/Average_PressureView.hpp>
+#include <gui/average_pressure_screen/Average_PressurePresenter.hpp>
+#include <gui/average_humidity_screen/Average_HumidityView.hpp>
+#include <gui/average_humidity_screen/Average_HumidityPresenter.hpp>
+#include <gui/average_tempout_screen/Average_TempOUTView.hpp>
+#include <gui/average_tempout_screen/Average_TempOUTPresenter.hpp>
+#include <gui/average_tempin_screen/Average_TempINView.hpp>
+#include <gui/average_tempin_screen/Average_TempINPresenter.hpp>
 
 
 /**
@@ -72,8 +86,15 @@ public:
             touchgfx::meta::TypeList< Statistics_Ambient_1View,
             touchgfx::meta::TypeList< Statistics_Gas_sensorView,
             touchgfx::meta::TypeList< Alarm_SettingsView,
+            touchgfx::meta::TypeList< AVERAGESView,
             touchgfx::meta::TypeList< STATISTICSView,
-            touchgfx::meta::Nil > > > > > > > > > > > >
+            touchgfx::meta::TypeList< Average_AmbientLightView,
+            touchgfx::meta::TypeList< Average_GasView,
+            touchgfx::meta::TypeList< Average_PressureView,
+            touchgfx::meta::TypeList< Average_HumidityView,
+            touchgfx::meta::TypeList< Average_TempOUTView,
+            touchgfx::meta::TypeList< Average_TempINView,
+            touchgfx::meta::Nil > > > > > > > > > > > > > > > > > > >
             > GeneratedViewTypes;
 
     /**
@@ -97,8 +118,15 @@ public:
             touchgfx::meta::TypeList< Statistics_Ambient_1Presenter,
             touchgfx::meta::TypeList< Statistics_Gas_sensorPresenter,
             touchgfx::meta::TypeList< Alarm_SettingsPresenter,
+            touchgfx::meta::TypeList< AVERAGESPresenter,
             touchgfx::meta::TypeList< STATISTICSPresenter,
-            touchgfx::meta::Nil > > > > > > > > > > > >
+            touchgfx::meta::TypeList< Average_AmbientLightPresenter,
+            touchgfx::meta::TypeList< Average_GasPresenter,
+            touchgfx::meta::TypeList< Average_PressurePresenter,
+            touchgfx::meta::TypeList< Average_HumidityPresenter,
+            touchgfx::meta::TypeList< Average_TempOUTPresenter,
+            touchgfx::meta::TypeList< Average_TempINPresenter,
+            touchgfx::meta::Nil > > > > > > > > > > > > > > > > > > >
             > GeneratedPresenterTypes;
 
     /**

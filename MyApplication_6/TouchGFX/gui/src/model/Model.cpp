@@ -5,6 +5,18 @@
 #include "semphr.h"
 #include "cli.h"
 
+#define January 1
+#define February 2
+#define March 3
+#define April 4
+#define May 5
+#define June 6
+#define July 7
+#define August 8
+#define September 9
+#define October 10
+#define November 11
+#define December 12
 
 extern "C"{
 extern xQueueHandle dataQueue;
@@ -12,7 +24,7 @@ SensData_t data_from_UI;
 
 }
 
-int Error_feedback(SensData_t data)
+int Error_feedback(SensData_t data , int GAS_Preheat_FLAG)
 {
 	int Error_ID = 0 ;
 
@@ -113,7 +125,7 @@ int Error_feedback(SensData_t data)
 	if(data.carbonMonoxide == GAS_UNPLUGGED)
 	{
 		Error_ID = 601 ;
-	}else if(data.carbonMonoxide > GAS_DANGER_VALUES)
+	}else if((GAS_Preheat_FLAG==1) && (data.carbonMonoxide > GAS_DANGER_VALUES))
 	{
 		Error_ID = 603 ;
 	}
@@ -130,7 +142,7 @@ Model::Model() : modelListener(0)
 void Model::tick()
 {
 
-	/*
+/*
 	//get clock
 	dateTime.hours = Clock_Values[0];
 	dateTime.minutes = Clock_Values[1];
@@ -142,18 +154,20 @@ void Model::tick()
 	dateTime.year = current_Date_values[2];
 
 	if (finished != 0) {
-//		// set clock
-//		Clock_Values[0] = dateTime.hours;
-//		Clock_Values[1] = dateTime.minutes;
-//		Clock_Values[2] = dateTime.seconds;
-//		modelListener->updated_Clock(Clock_Values);
-////		// set date
-////		current_Date_values[0] = dateTime.day;
-////		current_Date_values[1] = dateTime.month;
-////		current_Date_values[2] = dateTime.year;
-////		modelListener->updateValue(state)(current_Date_values);
+		// set clock
+		Clock_Values[0] = dateTime.hours;
+		Clock_Values[1] = dateTime.minutes;
+		Clock_Values[2] = dateTime.seconds;
+		modelListener->updated_Clock(Clock_Values);
+		// set date
+		current_Date_values[0] = dateTime.day;
+		current_Date_values[1] = dateTime.month;
+		current_Date_values[2] = dateTime.year;
+
+		modelListener->current_Clock(Clock_Values);
+		modelListener->current_Date_value(current_Date_values);
 	}
-	*/
+	 */
 	/* Get data from UI via Queue*/
 	if(uxQueueSpacesAvailable(dataQueue) == 0){
 
@@ -165,44 +179,83 @@ void Model::tick()
 	/*
 	 * Update char every minute. Need to change to Clock_Values[0] to update every hour
 	 */
-	statistics_index=Clock_Values[1];
+	statistics_index=Clock_Values[0];
 
 	tickCounter++;
 	if(tickCounter%60 == 0)
 	{
-		if(++Clock_Values[2]>=60)
+		//  counter ++
+
+		if(statistics_index > 24)
 		{
+			statistics_index = 0 ;
+		}
+
+
+		if(++Clock_Values[2]>=60) // If current SECONDS ARE MORE THAN 60 , Change MINUTE , reset SECONDS
+		{
+			/*
+			 *  Code below is executed every MINUTE
+			 */
 			if(++snoozeCounter == DEFINE_SNOOZE_TIME) // Snoze time counter
 			{
 				snoozeCounter = 0;
 				SNOOZE_FLAG = 0;
 			}
+
 			if(++GAS_Preheat_time >= 3)
 			{
 				GAS_Preheat_FLAG = 1 ;
 				GAS_Preheat_time = 3 ;
 			}
 			/*
-			 *  Add new value to the statistics char every MINUTE
+			 *  Add new value to the statistics char every MINUTE , need to change to HOUR
 			 */
 
-			if(statistics_index == 24)
-			{
-				statistics_index = 0 ;
-			}
+
+			// ----------------------- Average day / week / month TEST algorithm --------------------
+
+
+
 
 			Clock_Values[2] = 0;
-			if(++Clock_Values[1]>=60)
+			/*
+			 *  Code above is executed every MINUTE
+			 */
+			if(++Clock_Values[1]>=60) // If current MINUTES ARE MORE THAN 60 , Change hour , reset minutes
 			{
+				/*
+				 *  Code below is executed every HOUR
+				 */
+				hourCounter++;
+
+				TempIN_avr[0] = TempIN_avr[0] + data_from_UI.tempIN;
+				TempOUT_avr[0] = TempOUT_avr[0] + data_from_UI.tempOUT;
+				Humidity_avr[0] = Humidity_avr[0] + data_from_UI.humidity;
+				Pressure_avr[0] = Pressure_avr[0] + data_from_UI.pressure;
+				Ambient_avr[0] = Ambient_avr[0] + data_from_UI.ambientLight;
+				/*
+				 *  Add new value to the statistics char every HOUR, need to change to HOUR
+				 *  Place code below !!
+				 */
+
 
 				Clock_Values[1] = 0;
-				if(++Clock_Values[0]>=24)
+				/*
+				 *  Code above is executed every HOUR
+				 */
+				if(++Clock_Values[0]>=24) // If current HOURS ARE MORE THAN 24 , Change day , reset hours
 				{
 					Clock_Values[0] = 0;
-					if(current_Date_values[1] ==  1 || current_Date_values[1] ==  3 ||
-							current_Date_values[1] ==  5 || current_Date_values[1] ==  7 ||
-							current_Date_values[1] ==  8 || current_Date_values[1] ==  10 ||
-							current_Date_values[1] ==  12)
+
+					/*
+					 * Code below is used to update current_Date_values based on clock parameters
+					 * if the day experince , change date
+					 */
+					if(current_Date_values[1] ==  January || current_Date_values[1] ==  March ||
+							current_Date_values[1] ==  May || current_Date_values[1] ==  July ||
+							current_Date_values[1] ==  August || current_Date_values[1] ==  October ||
+							current_Date_values[1] ==  December)
 					{
 						if(++current_Date_values[0]>=31)
 						{
@@ -210,8 +263,8 @@ void Model::tick()
 							current_Date_values[1]++;
 						}
 					}
-					if(current_Date_values[1] ==  4 || current_Date_values[1] == 6 ||
-							current_Date_values[1] ==  9 || current_Date_values[1] ==  11)
+					if(current_Date_values[1] ==  April || current_Date_values[1] == June ||
+							current_Date_values[1] ==  September || current_Date_values[1] ==  November)
 					{
 						if(++current_Date_values[0]>=30)
 						{
@@ -219,7 +272,7 @@ void Model::tick()
 							current_Date_values[1]++;
 						}
 					}
-					if(current_Date_values[1] ==  2)
+					if(current_Date_values[1] ==  February)
 					{
 						if(++current_Date_values[0]>=28)
 						{
@@ -227,6 +280,10 @@ void Model::tick()
 							current_Date_values[1]++;
 						}
 					}
+
+					/*
+					 * Date changed end here
+					 */
 
 				}
 			}
@@ -279,7 +336,7 @@ void Model::tick()
 	 *
 	 */
 
-	Error_ID = Error_feedback(data_from_UI);
+	Error_ID = Error_feedback(data_from_UI , GAS_Preheat_FLAG);
 	/*
 	 * If Permission_Alert_STATE = 0 , we will not receive alerts for strange sensor values until
 	 * we turn ON this option from the page "ALARM".
@@ -328,10 +385,91 @@ void Model::tick()
 	 *
 	 */
 
+
+	if(hourCounter == 24)
+	{
+		avrDayTempIN_res = TempIN_avr[0] / 24 ; // Temp IN
+		avrDayTempOUT_res = TempOUT_avr[0] / 24 ; // Temp OUT
+		avrDayHumidity_res = Humidity_avr[0] / 24 ; // Humidity
+		avrDayPressure_res = Pressure_avr[0] / 24; // Pressure
+	    avrDayGas_res = Gas_avr[0] / 24 ;
+	    avrDayAmbient_res = Ambient_avr[0] / 24;
+
+		// reset hours
+		hourCounter = 0;
+		TempIN_avr[0] = 0; // Temp IN
+		TempOUT_avr[0] = 0; // Temp OUT
+		Humidity_avr[0] = 0;
+		Pressure_avr[0] = 0;
+		Gas_avr[0] = 0;
+		Ambient_avr[0] = 0;
+
+		dayCounter++;
+		TempIN_avr[1] = TempIN_avr[1] + avrDayTempIN_res;
+		TempOUT_avr[1] = TempOUT_avr[1] + avrDayTempOUT_res;
+		Humidity_avr[1] = Humidity_avr[1] + avrDayHumidity_res;
+		Pressure_avr[1] = Pressure_avr[1] + avrDayPressure_res;
+		Ambient_avr[1] = Ambient_avr[1] + avrDayAmbient_res;
+		Gas_avr[1] = Gas_avr[1] + avrDayGas_res;
+
+
+
+		if(dayCounter==7)
+		{
+			dayCounter = 0;
+			avrWeekTempIN_res = TempIN_avr[1] / 7 ;
+			avrWeekTempOUT_res = TempOUT_avr[1] / 7 ;
+			avrWeekHumidity_res = Humidity_avr[1] / 7 ;
+			avrWeekPressure_res = Pressure_avr[1] / 7;
+			avrWeekGas_res = Gas_avr[1] / 7 ;
+			avrWeekAmbient_res = Ambient_avr[1] / 7;
+
+			TempIN_avr[1] = 0;
+			TempOUT_avr[1] = 0;
+			Humidity_avr[1] = 0;
+			Pressure_avr[1] = 0;
+			Gas_avr[1] = 0 ;
+			Ambient_avr[1] = 0;
+
+			weekCounter++;
+
+			TempIN_avr[2] = TempIN_avr[2] + avrWeekTempIN_res;
+			TempOUT_avr[2] = TempOUT_avr[2] + avrWeekTempOUT_res;
+			Humidity_avr[2] = Humidity_avr[2] + avrWeekHumidity_res;
+			Pressure_avr[2] = Pressure_avr[2] + avrWeekHumidity_res;
+			Gas_avr[2] = Gas_avr[2] + avrWeekGas_res;
+			Ambient_avr[2] = Ambient_avr[2] + avrWeekAmbient_res;
+
+			if(weekCounter==4)
+			{
+				weekCounter = 0 ;
+				avrMonthTempIN_res = TempIN_avr[2] / 4 ;
+				avrMonthTempOUT_res = TempOUT_avr[2] / 4 ;
+				avrMonthHumidity_res = Humidity_avr[2] / 4 ;
+				avrMonthPressure_res = Pressure_avr[2] / 4;
+				avrMonthGas_res = Gas_avr[2] / 4 ;
+				avrMonthAmbient_res = Ambient_avr[2] / 4;
+
+				TempIN_avr[2] = 0;
+				TempOUT_avr[2] = 0;
+				Humidity_avr[2] = 0;
+				Pressure_avr[2] = 0;
+				Gas_avr[2] = 0;
+				Ambient_avr[2] = 0;
+			}
+		}
+
+	}
+
 	statistics_tempIN[statistics_index] = data_from_UI.tempIN;
-	modelListener->STATISTICS_tempIN(statistics_tempIN, statistics_index);
+	modelListener->STATISTICS_tempIN(statistics_tempIN, statistics_index , 7 );
 
-
+	modelListener->send_average_TempIN(avrDayTempIN_res , avrWeekTempIN_res , avrMonthTempIN_res);
+	modelListener->send_average_TempOUT(avrDayTempOUT_res , avrWeekTempOUT_res , avrMonthTempOUT_res);
+	modelListener->send_average_Humidity(avrDayHumidity_res , avrWeekHumidity_res , avrMonthHumidity_res);
+	modelListener->send_average_Pressure(avrDayPressure_res , avrWeekPressure_res , avrMonthPressure_res);
+	modelListener->send_average_Gas(avrDayGas_res , avrWeekGas_res , avrMonthGas_res);
+	modelListener->send_average_Ambient(avrDayAmbient_res , avrWeekAmbient_res , avrMonthAmbient_res);
 	/*
 	 * Send information about TempOut Statistics page
 	 */

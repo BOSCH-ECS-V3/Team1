@@ -30,6 +30,7 @@ protected:
     touchgfx::ButtonWithLabel Statistics;
     touchgfx::ButtonWithLabel DateSettings;
     touchgfx::ButtonWithLabel TimeSettings;
+    touchgfx::ButtonWithLabel Averages;
     touchgfx::ButtonWithLabel About;
 
 private:

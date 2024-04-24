@@ -330,6 +330,76 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/alarm_settings_screen/Alarm_SettingsView.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/gui/Average_AmbientLightPresenter.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/average_ambientlight_screen/Average_AmbientLightPresenter.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/Average_AmbientLightView.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/average_ambientlight_screen/Average_AmbientLightView.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/Average_GasPresenter.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/average_gas_screen/Average_GasPresenter.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/Average_GasView.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/average_gas_screen/Average_GasView.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/Average_HumidityPresenter.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/average_humidity_screen/Average_HumidityPresenter.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/Average_HumidityView.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/average_humidity_screen/Average_HumidityView.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/Average_PressurePresenter.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/average_pressure_screen/Average_PressurePresenter.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/Average_PressureView.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/average_pressure_screen/Average_PressureView.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/Average_TempINPresenter.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/average_tempin_screen/Average_TempINPresenter.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/Average_TempINView.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/average_tempin_screen/Average_TempINView.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/Average_TempOUTPresenter.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/average_tempout_screen/Average_TempOUTPresenter.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/Average_TempOUTView.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/average_tempout_screen/Average_TempOUTView.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/AVERAGESPresenter.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/averages_screen/AVERAGESPresenter.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/AVERAGESView.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/averages_screen/AVERAGESView.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/gui/FrontendApplication.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/common/FrontendApplication.cpp</locationURI>
@@ -553,6 +623,41 @@
 			<name>Application/User/generated/Alarm_SettingsViewBase.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/alarm_settings_screen/Alarm_SettingsViewBase.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Average_AmbientLightViewBase.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/average_ambientlight_screen/Average_AmbientLightViewBase.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Average_GasViewBase.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/average_gas_screen/Average_GasViewBase.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Average_HumidityViewBase.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/average_humidity_screen/Average_HumidityViewBase.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Average_PressureViewBase.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/average_pressure_screen/Average_PressureViewBase.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Average_TempINViewBase.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/average_tempin_screen/Average_TempINViewBase.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Average_TempOUTViewBase.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/average_tempout_screen/Average_TempOUTViewBase.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/AVERAGESViewBase.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/averages_screen/AVERAGESViewBase.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/FrontendApplicationBase.cpp</name>

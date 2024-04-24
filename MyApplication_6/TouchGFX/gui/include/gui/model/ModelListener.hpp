@@ -55,7 +55,7 @@ public:
     	// send Screen brightness to view -> Default page
     }
 
-    virtual void STATISTICS_tempIN(int statistics_tempIN[24], int tempIN_index)
+    virtual void STATISTICS_tempIN(int statistics_tempIN[24], int tempIN_index , int average_day)
     {
     	// send statistics array and index to view page of tempIN
     }
@@ -78,6 +78,30 @@ public:
     virtual void STATISTICS_ambient(int statistics_ambient[24] , int statistics_index)
     {
     	// send statistics array and index to view page of Ambient
+    }
+    virtual void send_average_TempIN(int average_day , int average_week , int average_month)
+    {
+
+    }
+    virtual void send_average_TempOUT(int avrDayTempOUT_res , int avrWeekTempOUT_res , int avrMonthTempOUT_res)
+    {
+
+    }
+    virtual void send_average_Humidity(int avrDayHumidity_res , int avrWeekHumidity_res , int avrMonthHumidity_res)
+    {
+
+    }
+    virtual void send_average_Pressure(int avrDayPressure_res , int avrWeekPressure_res , int avrMonthPressure_res)
+    {
+
+    }
+    virtual void send_average_Gas(int avrDayGas_res , int avrWeekGas_res , int avrMonthGas_res)
+    {
+
+    }
+    virtual void send_average_Ambient(int avrDayAmbient_res , int avrWeekAmbient_res , int avrMonthAmbient_res)
+    {
+
     }
 
 protected:

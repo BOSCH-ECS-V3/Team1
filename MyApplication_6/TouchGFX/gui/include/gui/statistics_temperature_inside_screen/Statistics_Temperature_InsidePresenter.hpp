@@ -25,7 +25,7 @@ public:
      */
     virtual void deactivate();
     virtual void set_screen_brightness(int brightness);
-    virtual void STATISTICS_tempIN(int statistics_tempIN[24], int tempIN_index);
+    virtual void STATISTICS_tempIN(int statistics_tempIN[24], int tempIN_index , int average_day);
 
     virtual ~Statistics_Temperature_InsidePresenter() {}
 

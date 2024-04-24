@@ -42,25 +42,7 @@ Statistics_PresureViewBase::Statistics_PresureViewBase() :
     Presure_sensor_text.setTypedText(touchgfx::TypedText(T___SINGLEUSE_DKR6));
     add(Presure_sensor_text);
 
-    Average_Day_val.setXY(6, 236);
-    Average_Day_val.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
-    Average_Day_val.setLinespacing(0);
-    Average_Day_val.setTypedText(touchgfx::TypedText(T___SINGLEUSE_FE0W));
-    add(Average_Day_val);
-
-    Average_Week_val.setXY(6, 260);
-    Average_Week_val.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
-    Average_Week_val.setLinespacing(0);
-    Average_Week_val.setTypedText(touchgfx::TypedText(T___SINGLEUSE_TIAZ));
-    add(Average_Week_val);
-
-    Average_Month_val.setXY(6, 284);
-    Average_Month_val.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
-    Average_Month_val.setLinespacing(0);
-    Average_Month_val.setTypedText(touchgfx::TypedText(T___SINGLEUSE_PW53));
-    add(Average_Month_val);
-
-    Graphic_Presure_Inside.setPosition(0, 94, 238, 132);
+    Graphic_Presure_Inside.setPosition(0, 90, 240, 214);
     Graphic_Presure_Inside.setScaleX(1);
     Graphic_Presure_Inside.setScaleY(1);
     Graphic_Presure_Inside.setGraphAreaMargin(0, 24, 0, 16);

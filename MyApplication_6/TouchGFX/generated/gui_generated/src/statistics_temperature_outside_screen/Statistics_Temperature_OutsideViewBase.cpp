@@ -42,25 +42,7 @@ Statistics_Temperature_OutsideViewBase::Statistics_Temperature_OutsideViewBase()
     Temperature_sensor_outside_text.setTypedText(touchgfx::TypedText(T___SINGLEUSE_XZWT));
     add(Temperature_sensor_outside_text);
 
-    Average_Day_val.setXY(6, 236);
-    Average_Day_val.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
-    Average_Day_val.setLinespacing(0);
-    Average_Day_val.setTypedText(touchgfx::TypedText(T___SINGLEUSE_9E53));
-    add(Average_Day_val);
-
-    Average_Week_val.setXY(6, 260);
-    Average_Week_val.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
-    Average_Week_val.setLinespacing(0);
-    Average_Week_val.setTypedText(touchgfx::TypedText(T___SINGLEUSE_GLAO));
-    add(Average_Week_val);
-
-    Average_Month_val.setXY(6, 284);
-    Average_Month_val.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
-    Average_Month_val.setLinespacing(0);
-    Average_Month_val.setTypedText(touchgfx::TypedText(T___SINGLEUSE_8J5E));
-    add(Average_Month_val);
-
-    Graphic_Temperature_Outside.setPosition(0, 94, 238, 132);
+    Graphic_Temperature_Outside.setPosition(0, 103, 240, 180);
     Graphic_Temperature_Outside.setScaleX(1);
     Graphic_Temperature_Outside.setScaleY(1);
     Graphic_Temperature_Outside.setGraphAreaMargin(0, 15, 0, 16);

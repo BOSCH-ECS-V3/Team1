@@ -35,9 +35,6 @@ protected:
     touchgfx::ButtonWithLabel Menu_Button;
     touchgfx::TextArea Header_Text;
     touchgfx::TextArea Temperature_sensor_text;
-    touchgfx::TextArea Average_Day_val;
-    touchgfx::TextArea Average_Week_val;
-    touchgfx::TextArea Average_Month_val;
     touchgfx::Graph<24> Graphic_Temperature_Inside;
     touchgfx::GraphElementGridY Graphic_Temperature_InsideMajorYAxisGrid;
     touchgfx::GraphLabelsX Graphic_Temperature_InsideMajorXAxisLabel;

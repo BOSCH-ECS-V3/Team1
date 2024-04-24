@@ -56,8 +56,29 @@ public:
     // Alarm_Settings
     void gotoAlarm_SettingsScreenNoTransition();
 
+    // AVERAGES
+    void gotoAVERAGESScreenNoTransition();
+
     // STATISTICS
     void gotoSTATISTICSScreenNoTransition();
+
+    // Average_AmbientLight
+    void gotoAverage_AmbientLightScreenNoTransition();
+
+    // Average_Gas
+    void gotoAverage_GasScreenNoTransition();
+
+    // Average_Pressure
+    void gotoAverage_PressureScreenNoTransition();
+
+    // Average_Humidity
+    void gotoAverage_HumidityScreenNoTransition();
+
+    // Average_TempOUT
+    void gotoAverage_TempOUTScreenNoTransition();
+
+    // Average_TempIN
+    void gotoAverage_TempINScreenNoTransition();
 
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
@@ -100,8 +121,29 @@ protected:
     // Alarm_Settings
     void gotoAlarm_SettingsScreenNoTransitionImpl();
 
+    // AVERAGES
+    void gotoAVERAGESScreenNoTransitionImpl();
+
     // STATISTICS
     void gotoSTATISTICSScreenNoTransitionImpl();
+
+    // Average_AmbientLight
+    void gotoAverage_AmbientLightScreenNoTransitionImpl();
+
+    // Average_Gas
+    void gotoAverage_GasScreenNoTransitionImpl();
+
+    // Average_Pressure
+    void gotoAverage_PressureScreenNoTransitionImpl();
+
+    // Average_Humidity
+    void gotoAverage_HumidityScreenNoTransitionImpl();
+
+    // Average_TempOUT
+    void gotoAverage_TempOUTScreenNoTransitionImpl();
+
+    // Average_TempIN
+    void gotoAverage_TempINScreenNoTransitionImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

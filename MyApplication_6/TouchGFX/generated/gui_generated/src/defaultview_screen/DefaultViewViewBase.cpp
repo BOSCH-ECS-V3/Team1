@@ -230,7 +230,7 @@ DefaultViewViewBase::DefaultViewViewBase() :
 
     add(Alert_cover);
 
-    Brightness_level.setPosition(285, -63, 282, 345);
+    Brightness_level.setPosition(-20, -12, 282, 345);
     Brightness_level.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     Brightness_level.setAlpha(101);
     add(Brightness_level);

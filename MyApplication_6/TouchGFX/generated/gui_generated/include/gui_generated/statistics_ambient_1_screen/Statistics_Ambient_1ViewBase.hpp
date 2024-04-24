@@ -35,9 +35,6 @@ protected:
     touchgfx::ButtonWithLabel Menu_Button;
     touchgfx::TextArea Header_Text;
     touchgfx::TextArea Ambient_sensor_text;
-    touchgfx::TextArea Average_Day_val;
-    touchgfx::TextArea Average_Week_val;
-    touchgfx::TextArea Average_Month_val;
     touchgfx::Graph<24> Graphic_Ambient_Inside;
     touchgfx::GraphElementGridY Graphic_Ambient_InsideMajorYAxisGrid;
     touchgfx::GraphLabelsX Graphic_Ambient_InsideMajorXAxisLabel;

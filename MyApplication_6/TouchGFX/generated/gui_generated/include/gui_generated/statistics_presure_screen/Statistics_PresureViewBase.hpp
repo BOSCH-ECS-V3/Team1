@@ -35,9 +35,6 @@ protected:
     touchgfx::ButtonWithLabel Menu_Button;
     touchgfx::TextArea Header_Text;
     touchgfx::TextArea Presure_sensor_text;
-    touchgfx::TextArea Average_Day_val;
-    touchgfx::TextArea Average_Week_val;
-    touchgfx::TextArea Average_Month_val;
     touchgfx::Graph<24> Graphic_Presure_Inside;
     touchgfx::GraphElementGridY Graphic_Presure_InsideMajorYAxisGrid;
     touchgfx::GraphLabelsX Graphic_Presure_InsideMajorXAxisLabel;

@@ -33,8 +33,22 @@
 #include <gui/statistics_gas_sensor_screen/Statistics_Gas_sensorPresenter.hpp>
 #include <gui/alarm_settings_screen/Alarm_SettingsView.hpp>
 #include <gui/alarm_settings_screen/Alarm_SettingsPresenter.hpp>
+#include <gui/averages_screen/AVERAGESView.hpp>
+#include <gui/averages_screen/AVERAGESPresenter.hpp>
 #include <gui/statistics_screen/STATISTICSView.hpp>
 #include <gui/statistics_screen/STATISTICSPresenter.hpp>
+#include <gui/average_ambientlight_screen/Average_AmbientLightView.hpp>
+#include <gui/average_ambientlight_screen/Average_AmbientLightPresenter.hpp>
+#include <gui/average_gas_screen/Average_GasView.hpp>
+#include <gui/average_gas_screen/Average_GasPresenter.hpp>
+#include <gui/average_pressure_screen/Average_PressureView.hpp>
+#include <gui/average_pressure_screen/Average_PressurePresenter.hpp>
+#include <gui/average_humidity_screen/Average_HumidityView.hpp>
+#include <gui/average_humidity_screen/Average_HumidityPresenter.hpp>
+#include <gui/average_tempout_screen/Average_TempOUTView.hpp>
+#include <gui/average_tempout_screen/Average_TempOUTPresenter.hpp>
+#include <gui/average_tempin_screen/Average_TempINView.hpp>
+#include <gui/average_tempin_screen/Average_TempINPresenter.hpp>
 
 using namespace touchgfx;
 
@@ -210,6 +224,19 @@ void FrontendApplicationBase::gotoAlarm_SettingsScreenNoTransitionImpl()
     touchgfx::makeTransition<Alarm_SettingsView, Alarm_SettingsPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
+// AVERAGES
+
+void FrontendApplicationBase::gotoAVERAGESScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoAVERAGESScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoAVERAGESScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<AVERAGESView, AVERAGESPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
 // STATISTICS
 
 void FrontendApplicationBase::gotoSTATISTICSScreenNoTransition()
@@ -221,4 +248,82 @@ void FrontendApplicationBase::gotoSTATISTICSScreenNoTransition()
 void FrontendApplicationBase::gotoSTATISTICSScreenNoTransitionImpl()
 {
     touchgfx::makeTransition<STATISTICSView, STATISTICSPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// Average_AmbientLight
+
+void FrontendApplicationBase::gotoAverage_AmbientLightScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoAverage_AmbientLightScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoAverage_AmbientLightScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<Average_AmbientLightView, Average_AmbientLightPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// Average_Gas
+
+void FrontendApplicationBase::gotoAverage_GasScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoAverage_GasScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoAverage_GasScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<Average_GasView, Average_GasPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// Average_Pressure
+
+void FrontendApplicationBase::gotoAverage_PressureScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoAverage_PressureScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoAverage_PressureScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<Average_PressureView, Average_PressurePresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// Average_Humidity
+
+void FrontendApplicationBase::gotoAverage_HumidityScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoAverage_HumidityScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoAverage_HumidityScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<Average_HumidityView, Average_HumidityPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// Average_TempOUT
+
+void FrontendApplicationBase::gotoAverage_TempOUTScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoAverage_TempOUTScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoAverage_TempOUTScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<Average_TempOUTView, Average_TempOUTPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// Average_TempIN
+
+void FrontendApplicationBase::gotoAverage_TempINScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoAverage_TempINScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoAverage_TempINScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<Average_TempINView, Average_TempINPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }

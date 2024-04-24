@@ -62,6 +62,27 @@
     <ClCompile Include="..\..\gui\src\statistics_screen\STATISTICSPresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\statistics_screen\STATISTICSView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\statistics_screen\STATISTICSViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\average_tempin_screen\Average_TempINPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\average_tempin_screen\Average_TempINView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\average_tempin_screen\Average_TempINViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\average_ambientlight_screen\Average_AmbientLightPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\average_ambientlight_screen\Average_AmbientLightView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\average_ambientlight_screen\Average_AmbientLightViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\average_gas_screen\Average_GasPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\average_gas_screen\Average_GasView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\average_gas_screen\Average_GasViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\average_humidity_screen\Average_HumidityPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\average_humidity_screen\Average_HumidityView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\average_humidity_screen\Average_HumidityViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\average_pressure_screen\Average_PressurePresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\average_pressure_screen\Average_PressureView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\average_pressure_screen\Average_PressureViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\average_tempout_screen\Average_TempOUTPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\average_tempout_screen\Average_TempOUTView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\average_tempout_screen\Average_TempOUTViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\averages_screen\AVERAGESPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\averages_screen\AVERAGESView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\averages_screen\AVERAGESViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xml"/>
@@ -253,6 +274,27 @@
     <ClInclude Include="..\..\gui\include\gui\statistics_screen\STATISTICSPresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\statistics_screen\STATISTICSView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\statistics_screen\STATISTICSViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\average_tempin_screen\Average_TempINPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\average_tempin_screen\Average_TempINView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\average_tempin_screen\Average_TempINViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\average_ambientlight_screen\Average_AmbientLightPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\average_ambientlight_screen\Average_AmbientLightView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\average_ambientlight_screen\Average_AmbientLightViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\average_gas_screen\Average_GasPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\average_gas_screen\Average_GasView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\average_gas_screen\Average_GasViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\average_humidity_screen\Average_HumidityPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\average_humidity_screen\Average_HumidityView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\average_humidity_screen\Average_HumidityViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\average_pressure_screen\Average_PressurePresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\average_pressure_screen\Average_PressureView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\average_pressure_screen\Average_PressureViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\average_tempout_screen\Average_TempOUTPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\average_tempout_screen\Average_TempOUTView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\average_tempout_screen\Average_TempOUTViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\averages_screen\AVERAGESPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\averages_screen\AVERAGESView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\averages_screen\AVERAGESViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

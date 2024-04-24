@@ -340,6 +340,90 @@
     <Filter Include="Header Files\generated\gui_generated\statistics_screen">
       <UniqueIdentifier>C7BD3ADF-EA8D-D32E-71B1-E722B63A5D5A</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\gui\average_tempin_screen">
+      <UniqueIdentifier>E73802E5-5A12-950C-5043-C22666BB3114</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\average_tempin_screen">
+      <UniqueIdentifier>36CF0EA5-1CC6-12C5-422D-F71FC5E7ADB5</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\average_tempin_screen">
+      <UniqueIdentifier>BAC63821-A703-2E73-DBBE-95B73F925E47</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\average_tempin_screen">
+      <UniqueIdentifier>CB2FC959-C32D-A282-3584-F2AA20E91092</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\average_humidity_screen">
+      <UniqueIdentifier>C82C7B81-0A8D-443F-5834-701D34656618</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\average_humidity_screen">
+      <UniqueIdentifier>895C2A94-C5FE-31B5-7693-C4A97FDE3597</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\average_gas_screen">
+      <UniqueIdentifier>13CBD7F3-8885-E3A0-275F-BCD07BD4376C</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\average_gas_screen">
+      <UniqueIdentifier>2F96A128-F543-1057-2C8A-878724404D35</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\average_pressure_screen">
+      <UniqueIdentifier>CA317A78-9758-505B-2A8A-ECBCBFEC7795</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\average_pressure_screen">
+      <UniqueIdentifier>240CAFEE-89A1-D9BF-E622-91B45F9820CD</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\average_ambientlight_screen">
+      <UniqueIdentifier>45F3E386-1810-CC5A-D607-1DA38BFB8AA4</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\average_ambientlight_screen">
+      <UniqueIdentifier>49FC63F9-AFE5-2F47-2D73-6F1966EA759F</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\averages_screen">
+      <UniqueIdentifier>5F7282F4-C905-59F3-44AA-242B3B5A6F85</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\averages_screen">
+      <UniqueIdentifier>FF0C645B-6A10-C85E-7DFB-8D113B6277C1</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\average_tempout_screen">
+      <UniqueIdentifier>889C0597-F902-8299-5966-D33DB722EDD8</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\average_tempout_screen">
+      <UniqueIdentifier>2F96CC44-5239-5F25-9BF8-0EDA8D6121F2</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\average_ambientlight_screen">
+      <UniqueIdentifier>CBD7B46B-B6EA-23F5-D32F-F684E27BF0DD</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\average_ambientlight_screen">
+      <UniqueIdentifier>2F605046-39C8-AB3C-6C20-26EEEDCB7219</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\average_gas_screen">
+      <UniqueIdentifier>A8E30CB0-B9C6-78E1-12FC-75FDA0756528</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\average_gas_screen">
+      <UniqueIdentifier>DAEEEE14-FD7B-7014-400B-E67795AED714</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\average_humidity_screen">
+      <UniqueIdentifier>9C096DB7-A1A2-24A2-B514-AE95C7EF526D</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\average_humidity_screen">
+      <UniqueIdentifier>0EAD8ADC-6BD4-D284-B46F-B2DF747EBD0D</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\average_pressure_screen">
+      <UniqueIdentifier>7E24148F-AD68-5E0A-3C76-51D6D49669B3</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\average_pressure_screen">
+      <UniqueIdentifier>7471F7D2-0AB1-DD67-DE40-8DDB4A916C9E</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\averages_screen">
+      <UniqueIdentifier>B62E6189-6D2D-A466-65FF-A9B270DDC8CC</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\averages_screen">
+      <UniqueIdentifier>94DA8795-5F85-6A06-86F3-BE5BAAD60CEC</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\average_tempout_screen">
+      <UniqueIdentifier>C3A8D7AB-9C95-2BE2-D294-410A5CD06C10</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\average_tempout_screen">
+      <UniqueIdentifier>2820E056-69C9-7831-C1F5-10453EB70E58</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -494,6 +578,69 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\statistics_screen\STATISTICSViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\statistics_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\average_tempin_screen\Average_TempINPresenter.cpp">
+      <Filter>Source Files\gui\average_tempin_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\average_tempin_screen\Average_TempINView.cpp">
+      <Filter>Source Files\gui\average_tempin_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\average_tempin_screen\Average_TempINViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\average_tempin_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\average_ambientlight_screen\Average_AmbientLightPresenter.cpp">
+      <Filter>Source Files\gui\average_ambientlight_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\average_ambientlight_screen\Average_AmbientLightView.cpp">
+      <Filter>Source Files\gui\average_ambientlight_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\average_ambientlight_screen\Average_AmbientLightViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\average_ambientlight_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\average_gas_screen\Average_GasPresenter.cpp">
+      <Filter>Source Files\gui\average_gas_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\average_gas_screen\Average_GasView.cpp">
+      <Filter>Source Files\gui\average_gas_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\average_gas_screen\Average_GasViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\average_gas_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\average_humidity_screen\Average_HumidityPresenter.cpp">
+      <Filter>Source Files\gui\average_humidity_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\average_humidity_screen\Average_HumidityView.cpp">
+      <Filter>Source Files\gui\average_humidity_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\average_humidity_screen\Average_HumidityViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\average_humidity_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\average_pressure_screen\Average_PressurePresenter.cpp">
+      <Filter>Source Files\gui\average_pressure_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\average_pressure_screen\Average_PressureView.cpp">
+      <Filter>Source Files\gui\average_pressure_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\average_pressure_screen\Average_PressureViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\average_pressure_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\average_tempout_screen\Average_TempOUTPresenter.cpp">
+      <Filter>Source Files\gui\average_tempout_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\average_tempout_screen\Average_TempOUTView.cpp">
+      <Filter>Source Files\gui\average_tempout_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\average_tempout_screen\Average_TempOUTViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\average_tempout_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\averages_screen\AVERAGESPresenter.cpp">
+      <Filter>Source Files\gui\averages_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\averages_screen\AVERAGESView.cpp">
+      <Filter>Source Files\gui\averages_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\averages_screen\AVERAGESViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\averages_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -1059,6 +1206,69 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\statistics_screen\STATISTICSViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\statistics_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\average_tempin_screen\Average_TempINPresenter.hpp">
+      <Filter>Header Files\gui\average_tempin_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\average_tempin_screen\Average_TempINView.hpp">
+      <Filter>Header Files\gui\average_tempin_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\average_tempin_screen\Average_TempINViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\average_tempin_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\average_ambientlight_screen\Average_AmbientLightPresenter.hpp">
+      <Filter>Header Files\gui\average_ambientlight_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\average_ambientlight_screen\Average_AmbientLightView.hpp">
+      <Filter>Header Files\gui\average_ambientlight_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\average_ambientlight_screen\Average_AmbientLightViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\average_ambientlight_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\average_gas_screen\Average_GasPresenter.hpp">
+      <Filter>Header Files\gui\average_gas_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\average_gas_screen\Average_GasView.hpp">
+      <Filter>Header Files\gui\average_gas_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\average_gas_screen\Average_GasViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\average_gas_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\average_humidity_screen\Average_HumidityPresenter.hpp">
+      <Filter>Header Files\gui\average_humidity_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\average_humidity_screen\Average_HumidityView.hpp">
+      <Filter>Header Files\gui\average_humidity_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\average_humidity_screen\Average_HumidityViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\average_humidity_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\average_pressure_screen\Average_PressurePresenter.hpp">
+      <Filter>Header Files\gui\average_pressure_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\average_pressure_screen\Average_PressureView.hpp">
+      <Filter>Header Files\gui\average_pressure_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\average_pressure_screen\Average_PressureViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\average_pressure_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\average_tempout_screen\Average_TempOUTPresenter.hpp">
+      <Filter>Header Files\gui\average_tempout_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\average_tempout_screen\Average_TempOUTView.hpp">
+      <Filter>Header Files\gui\average_tempout_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\average_tempout_screen\Average_TempOUTViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\average_tempout_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\averages_screen\AVERAGESPresenter.hpp">
+      <Filter>Header Files\gui\averages_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\averages_screen\AVERAGESView.hpp">
+      <Filter>Header Files\gui\averages_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\averages_screen\AVERAGESViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\averages_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
