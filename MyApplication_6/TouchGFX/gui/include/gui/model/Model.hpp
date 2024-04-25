@@ -17,7 +17,7 @@ public:
 	void update_Clock(int Clock_Valued[3]);
 	void update_Date(int updated_Date_Values[3]);
 	void SEND_Permission(int Permission_STATE);
-	void Snooze_system(int snooze_state);
+	void Snooze_system(int snooze_state , int flag_TempIN , int flag_Gas , int flag_TempOUT , int flag_Humidity, int flag_Pressure ,int  flag_ambient);
 	void set_screen_brightness(int brightness);
 
 
@@ -37,6 +37,13 @@ protected:
 	int snoozeCounter = 0;
 	int DEFINE_SNOOZE_TIME = 1 ;
 	int SNOOZE_FLAG = 0 ;
+	int SNOOZE_FLAG_GAS = 0;
+	int SNOOZE_FLAG_TEMPIN = 0 ;
+	int SNOOZE_FLAG_TEMPOUT = 0 ;
+	int SNOOZE_FLAG_HUMIDITY = 0 ;
+	int SNOOZE_FLAG_AMBIENT = 0 ;
+	int SNOOZE_FLAG_PRESSURE = 0 ;
+
 
 	int brightness = 255 ;
 

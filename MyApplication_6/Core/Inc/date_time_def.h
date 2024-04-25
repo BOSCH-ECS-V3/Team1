@@ -8,6 +8,7 @@ typedef struct {
 	int day;
 	int month;
 	int year;
+	int Alarm;
 }DateTime_t;
 
 #endif //__DATE_TIME_DEF_H__

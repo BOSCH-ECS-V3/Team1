@@ -33,7 +33,7 @@ SensData_t data_from_UI;
  * Sensors measurements. This ERROR_ID is send to DefaultViewView.cpp -> UI
  */
 
-int Error_feedback(SensData_t data , int GAS_Preheat_FLAG)
+int Error_feedback(SensData_t data , int GAS_Preheat_FLAG , int SNOOZE_FLAG_TEMPIN , int SNOOZE_FLAG_GAS , int SNOOZE_FLAG_TEMPOUT , int SNOOZE_FLAG_HUMIDITY, int SNOOZE_FLAG_PRESSURE , int SNOOZE_FLAG_AMBIENT)
 {
 	int Error_ID = 0 ;
 
@@ -77,71 +77,93 @@ int Error_feedback(SensData_t data , int GAS_Preheat_FLAG)
 	 */
 
 	// Errors Temperature Inside
-
-	if(data.tempIN == TEMP_IN_UNPLUGGED)
+	if(SNOOZE_FLAG_TEMPIN != 1)
 	{
-		Error_ID = 101 ;
+		if(data.tempIN == TEMP_IN_UNPLUGGED)
+		{
+			Error_ID = 101 ;
 
-	}else if(data.tempIN < TEMP_IN_MIN_VALUE){
+		}else if(data.tempIN < TEMP_IN_MIN_VALUE){
 
-		Error_ID = 102;
+			Error_ID = 102;
 
-	}else if(data.tempIN > TEMP_IN_MAX_VALUE){
+		}else if(data.tempIN > TEMP_IN_MAX_VALUE){
 
-		Error_ID = 103;
+			Error_ID = 103;
+		}
 	}
+
 	// Error Template Outside
-	if(data.tempOUT == TEMP_OUT_UNPLUGGED)
+	if(SNOOZE_FLAG_TEMPOUT != 1)
 	{
-		Error_ID = 201 ;
+		if(data.tempOUT == TEMP_OUT_UNPLUGGED)
+			{
+				Error_ID = 201 ;
 
-	}else if(data.tempOUT < TEMP_OUT_MIN_VALUE){
+			}else if(data.tempOUT < TEMP_OUT_MIN_VALUE){
 
-		Error_ID = 202;
+				Error_ID = 202;
 
-	}else if(data.tempOUT > TEMP_OUT_MAX_VALUE){
+			}else if(data.tempOUT > TEMP_OUT_MAX_VALUE){
 
-		Error_ID = 203;
+				Error_ID = 203;
+			}
 	}
+
 
 	// Errors Humidity Sensor
-
-	if(data.humidity == HUMIDITY_UNPLUGGED)
+	if(SNOOZE_FLAG_HUMIDITY != 1)
 	{
-		Error_ID = 301 ;
+		if(data.humidity == HUMIDITY_UNPLUGGED)
+		{
+			Error_ID = 301 ;
 
-	}else if(data.humidity < HUMIDITY_MIN_VALUE){
+		}else if(data.humidity < HUMIDITY_MIN_VALUE){
 
-		Error_ID = 302;
+			Error_ID = 302;
 
-	}else if(data.humidity > HUMIDITY_MAX_VALUE){
+		}else if(data.humidity > HUMIDITY_MAX_VALUE){
 
-		Error_ID = 303;
+			Error_ID = 303;
+		}
 	}
+
 
 	// Errors Pressure sensor
 
-	if(data.pressure == PRESSURE_UNPLUGGED)
+	if(SNOOZE_FLAG_PRESSURE != 1)
 	{
-		Error_ID = 401 ;
+		if(data.pressure == PRESSURE_UNPLUGGED)
+			{
+				Error_ID = 401 ;
+			}
 	}
+
 
 	// Errors Ambient light sensor
 
-	if(data.ambientLight == AMBIENT_UNPLUGGED)
+	if(SNOOZE_FLAG_AMBIENT != 1)
 	{
-		Error_ID = 501 ;
+		if(data.ambientLight == AMBIENT_UNPLUGGED)
+		{
+			Error_ID = 501 ;
+		}
 	}
+
 
 	// Errors Gas sensor
 
-	if(data.carbonMonoxide == GAS_UNPLUGGED)
+	if(SNOOZE_FLAG_GAS != 1)
 	{
-		Error_ID = 601 ;
-	}else if((GAS_Preheat_FLAG==1) && (data.carbonMonoxide > GAS_DANGER_VALUES))
-	{
-		Error_ID = 603 ;
+		if(data.carbonMonoxide == GAS_UNPLUGGED)
+		{
+			Error_ID = 601 ;
+		}else if((GAS_Preheat_FLAG==1) && (data.carbonMonoxide > GAS_DANGER_VALUES))
+		{
+			Error_ID = 603 ;
+		}
 	}
+
 
 
 	return Error_ID ;
@@ -222,6 +244,13 @@ void Model::tick()
 			{
 				snoozeCounter = 0;
 				SNOOZE_FLAG = 0;
+				SNOOZE_FLAG_TEMPIN = 0 ;
+				SNOOZE_FLAG_TEMPOUT = 0;
+				SNOOZE_FLAG_HUMIDITY = 0;
+				SNOOZE_FLAG_PRESSURE = 0;
+				SNOOZE_FLAG_AMBIENT = 0 ;
+				SNOOZE_FLAG_GAS = 0 ;
+
 			}
 
 			/*
@@ -345,7 +374,7 @@ void Model::tick()
 	 *
 	 */
 
-	Error_ID = Error_feedback(data_from_UI , GAS_Preheat_FLAG);
+	Error_ID = Error_feedback(data_from_UI , GAS_Preheat_FLAG , SNOOZE_FLAG_TEMPIN , SNOOZE_FLAG_GAS , SNOOZE_FLAG_TEMPOUT , SNOOZE_FLAG_HUMIDITY, SNOOZE_FLAG_PRESSURE , SNOOZE_FLAG_AMBIENT);
 	/*
 	 * If Permission_Alert_STATE = 0 , we will not receive alerts for strange sensor values until
 	 * we turn ON this option from the page "ALARM".
@@ -357,9 +386,9 @@ void Model::tick()
 	 * If both states are TRUE we can send Error_ID to the view.
 	 */
 
-	if(Permission_ALERT_STATE == 1 && SNOOZE_FLAG == 0)
+	if(Permission_ALERT_STATE == 1)
 	{
-		modelListener->SEND_Error_ID(Error_ID);
+		modelListener->SEND_Error_ID(Error_ID , SNOOZE_FLAG_TEMPIN , SNOOZE_FLAG_GAS , SNOOZE_FLAG_TEMPOUT , SNOOZE_FLAG_HUMIDITY, SNOOZE_FLAG_PRESSURE , SNOOZE_FLAG_AMBIENT);
 	}
 
 	/*
@@ -588,7 +617,7 @@ void Model::SEND_Permission(int Permission_STATE)
 	Permission_ALERT_STATE = Permission_STATE;
 
 }
-void Model::Snooze_system(int snooze_state)
+void Model::Snooze_system(int snooze_state, int flag_TempIN , int flag_Gas , int flag_TempOUT , int flag_Humidity, int flag_Pressure , int flag_Ambient)
 {
 
 	/* Checking IF SNOOZE button is pressed, if button is pressed , notification and alerts will
@@ -599,6 +628,12 @@ void Model::Snooze_system(int snooze_state)
 	 */
 
 	SNOOZE_FLAG = snooze_state;
+	SNOOZE_FLAG_TEMPIN = flag_TempIN;
+	SNOOZE_FLAG_GAS = flag_Gas;
+	SNOOZE_FLAG_TEMPOUT = flag_TempOUT;
+	SNOOZE_FLAG_HUMIDITY = flag_Humidity;
+	SNOOZE_FLAG_AMBIENT = flag_Ambient;
+	SNOOZE_FLAG_PRESSURE = flag_Pressure;
 
 }
 

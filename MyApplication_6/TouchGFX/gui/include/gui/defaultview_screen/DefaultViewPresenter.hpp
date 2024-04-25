@@ -29,11 +29,11 @@ public:
 
     virtual void update_Clock(int Clock_Values[]);
 
-    virtual void current_Sensor_values(int current_Sensor_values[], int GAS_Preheat_FLAG);
+    virtual void current_Sensor_values(int current_Sensor_values[], int GAS_Preheat_FLAG );
 
-    virtual void SEND_Error_ID(int Error_ID);
+    virtual void SEND_Error_ID(int Error_ID, int SNOOZE_FLAG_TEMPIN ,int SNOOZE_FLAG_GAS , int SNOOZE_FLAG_TEMPOUT , int SNOOZE_FLAG_HUMIDITY, int SNOOZE_FLAG_PRESSURE , int SNOOZE_FLAG_AMBIENT);
 
-    virtual void Snooze_system(int snooze_state);
+    virtual void Snooze_system(int snooze_state, int flag_TempIN , int flag_Gas , int flag_TempOUT , int flag_Humidity, int flag_Pressure , int flag_Ambient);
 
     virtual void set_screen_brightness(int brightness);
 

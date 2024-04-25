@@ -45,7 +45,7 @@ public:
     {
     	// send to view
     };
-    virtual void SEND_Error_ID(int Error_ID)
+    virtual void SEND_Error_ID(int Error_ID , int SNOOZE_FLAG_TEMPIN , int SNOOZE_FLAG_GAS , int SNOOZE_FLAG_TEMPOUT , int SNOOZE_FLAG_HUMIDITY, int SNOOZE_FLAG_PRESSURE ,int  SNOOZE_FLAG_AMBIENT)
     {
     	// send Error_ID to the view -> Default page
     }
