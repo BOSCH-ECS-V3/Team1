@@ -240,7 +240,8 @@ void Model::tick()
 			/*
 			 *  Code below is executed every MINUTE
 			 */
-			if(++snoozeCounter == DEFINE_SNOOZE_TIME) // Snozoe time counter
+			snoozeCounter++;
+			if(snoozeCounter == DEFINE_SNOOZE_TIME) // Snozoe time counter
 			{
 				snoozeCounter = 0;
 				SNOOZE_FLAG = 0;
@@ -328,11 +329,12 @@ void Model::tick()
 	}
 
 	// Returning months to 1 , after 12
-	if(current_Date_values[1] >= 13)
+/*	if(current_Date_values[1] >= 13)
 	{
 		current_Date_values[1] = 1 ;
 		current_Date_values[2]++;
 	}
+	*/
 	// ----------------------------- Clock Update to View  END ---> ----------------------------
 
 

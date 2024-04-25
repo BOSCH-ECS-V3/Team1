@@ -230,6 +230,11 @@ void DefaultViewView::Snooze_btn_pressed()
 
 	presenter->Snooze_system(snooze_state , flag_TempIN , flag_Gas , flag_TempOUT , flag_Humidity, flag_Pressure , flag_ambient);
 	snooze_state = 0 ;
+	flag_TempIN = 0 ;
+	flag_TempOUT = 0 ;
+	flag_Humidity = 0;
+	flag_Pressure = 0;
+	flag_ambient = 0 ;
 }
 
 void DefaultViewView::set_screen_brightness(int brightness)
