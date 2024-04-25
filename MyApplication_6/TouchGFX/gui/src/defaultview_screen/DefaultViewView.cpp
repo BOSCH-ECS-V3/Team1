@@ -39,12 +39,22 @@ void DefaultViewView::handleTickEvent()
 	Humidity_Val.invalidate();
 	Presure_Val.invalidate();
 	Ambient_Val.invalidate();
+
+
 }
 
 void DefaultViewView::SEND_Error_ID(int Error_ID , int SNOOZE_FLAG_TEMPIN , int SNOOZE_FLAG_GAS , int SNOOZE_FLAG_TEMPOUT , int SNOOZE_FLAG_HUMIDITY, int SNOOZE_FLAG_PRESSURE , int SNOOZE_FLAG_AMBIENT)
 {
 	current_ERROR_ID = Error_ID ;
-
+/*
+ * Reset current flags of the sensors
+ */
+	flag_TempIN = SNOOZE_FLAG_TEMPIN ;
+	flag_Gas = SNOOZE_FLAG_GAS;
+	flag_TempOUT = SNOOZE_FLAG_TEMPOUT ;
+	flag_Humidity = SNOOZE_FLAG_HUMIDITY ;
+	flag_Pressure = SNOOZE_FLAG_PRESSURE ;
+	flag_ambient = SNOOZE_FLAG_AMBIENT ;
 
 	if(current_ERROR_ID != 0) // If there is error , update UI
 	{
@@ -53,6 +63,7 @@ void DefaultViewView::SEND_Error_ID(int Error_ID , int SNOOZE_FLAG_TEMPIN , int 
 
 		if(SNOOZE_FLAG_TEMPIN == 0)
 		{
+			Alert_cover.setVisible(true);
 			switch(current_ERROR_ID) {
 			//------------------------TempIN-----------------------------------
 			case 101:
@@ -70,6 +81,7 @@ void DefaultViewView::SEND_Error_ID(int Error_ID , int SNOOZE_FLAG_TEMPIN , int 
 
 		if(SNOOZE_FLAG_TEMPOUT == 0)
 		{
+			Alert_cover.setVisible(true);
 			switch(current_ERROR_ID)
 					{
 					case 201:
@@ -88,6 +100,7 @@ void DefaultViewView::SEND_Error_ID(int Error_ID , int SNOOZE_FLAG_TEMPIN , int 
 		//------------------------Humidity-----------------------------------
 		if(SNOOZE_FLAG_HUMIDITY == 0)
 		{
+			Alert_cover.setVisible(true);
 			switch(current_ERROR_ID)
 					{
 					case 301:
@@ -105,6 +118,7 @@ void DefaultViewView::SEND_Error_ID(int Error_ID , int SNOOZE_FLAG_TEMPIN , int 
 		//--------------------------Pressure---------------------------------
 		if(SNOOZE_FLAG_PRESSURE == 0)
 		{
+			Alert_cover.setVisible(true);
 			switch(current_ERROR_ID)
 					{
 					case 401:
@@ -123,6 +137,7 @@ void DefaultViewView::SEND_Error_ID(int Error_ID , int SNOOZE_FLAG_TEMPIN , int 
 		//------------------------Ambient-----------------------------------
 		if(SNOOZE_FLAG_AMBIENT == 0)
 		{
+			Alert_cover.setVisible(true);
 			switch(current_ERROR_ID)
 			{
 			case 501:
@@ -141,6 +156,7 @@ void DefaultViewView::SEND_Error_ID(int Error_ID , int SNOOZE_FLAG_TEMPIN , int 
 		//--------------------------Gas---------------------------------
 		if(SNOOZE_FLAG_GAS == 0)
 		{
+			Alert_cover.setVisible(true);
 			switch(current_ERROR_ID)
 			{
 			case 601:
@@ -200,41 +216,43 @@ void DefaultViewView::current_Sensor_values(int current_Sensor_values[] , int GA
 
 void DefaultViewView::Snooze_btn_pressed()
 {
-	snooze_state = 1 ;
+	//snooze_state = 1 ;
 
 	if(current_ERROR_ID == 101 || current_ERROR_ID == 102 || current_ERROR_ID == 103)
 	{
 		flag_TempIN = 1;
 	}
-	if(current_ERROR_ID == 601 || current_ERROR_ID == 602 || current_ERROR_ID == 603)
+	else if(current_ERROR_ID == 601 || current_ERROR_ID == 602 || current_ERROR_ID == 603)
 	{
 		flag_Gas = 1;
 	}
-	if(current_ERROR_ID == 201 || current_ERROR_ID == 202 || current_ERROR_ID == 203)
+	else if(current_ERROR_ID == 201 || current_ERROR_ID == 202 || current_ERROR_ID == 203)
 	{
 		flag_TempOUT = 1;
 	}
-	if(current_ERROR_ID == 301 || current_ERROR_ID == 302 || current_ERROR_ID == 303)
+	else if(current_ERROR_ID == 301 || current_ERROR_ID == 302 || current_ERROR_ID == 303)
 	{
 		flag_Humidity = 1;
 	}
-	if(current_ERROR_ID == 401 || current_ERROR_ID == 402 || current_ERROR_ID == 403)
+	else if(current_ERROR_ID == 401 || current_ERROR_ID == 402 || current_ERROR_ID == 403)
 	{
 		flag_Pressure = 1;
 	}
-	if(current_ERROR_ID == 501 || current_ERROR_ID == 502 || current_ERROR_ID == 503)
+	else if(current_ERROR_ID == 501 || current_ERROR_ID == 502 || current_ERROR_ID == 503)
 	{
 		flag_ambient = 1;
 	}
 
 
 	presenter->Snooze_system(snooze_state , flag_TempIN , flag_Gas , flag_TempOUT , flag_Humidity, flag_Pressure , flag_ambient);
+	/*
 	snooze_state = 0 ;
 	flag_TempIN = 0 ;
 	flag_TempOUT = 0 ;
 	flag_Humidity = 0;
 	flag_Pressure = 0;
 	flag_ambient = 0 ;
+	*/
 }
 
 void DefaultViewView::set_screen_brightness(int brightness)

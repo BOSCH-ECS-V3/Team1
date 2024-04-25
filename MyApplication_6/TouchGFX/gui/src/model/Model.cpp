@@ -240,6 +240,7 @@ void Model::tick()
 			/*
 			 *  Code below is executed every MINUTE
 			 */
+
 			snoozeCounter++;
 			if(snoozeCounter == DEFINE_SNOOZE_TIME) // Snozoe time counter
 			{
