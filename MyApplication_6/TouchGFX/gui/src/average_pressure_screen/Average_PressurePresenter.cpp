@@ -19,5 +19,8 @@ void Average_PressurePresenter::deactivate()
 
 void Average_PressurePresenter::send_average_Pressure(int avrDayPressure_res , int avrWeekPressure_res , int avrMonthPressure_res)
 {
+	/*
+	 * This function is used for sending average day/week/month values to the VIEW page.
+	 */
 	view.send_average_Pressure(avrDayPressure_res , avrWeekPressure_res , avrMonthPressure_res);
 }

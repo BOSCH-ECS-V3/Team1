@@ -17,6 +17,9 @@ void Average_GasView::tearDownScreen()
 
 void Average_GasView::send_average_Gas(int avrDayGas_res ,int avrWeekGas_res ,int avrMonthGas_res)
 {
+	/*
+	 * Update average values to the screen
+	 */
 	 Unicode::snprintf(Average_day_valBuffer, AVERAGE_DAY_VAL_SIZE, "%d", avrDayGas_res);
 	 Unicode::snprintf(Average_week_valBuffer, AVERAGE_WEEK_VAL_SIZE, "%d", avrWeekGas_res);
 	 Unicode::snprintf(Average_month_valBuffer, AVERAGE_WEEK_VAL_SIZE, "%d", avrMonthGas_res);

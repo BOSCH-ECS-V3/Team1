@@ -23,6 +23,9 @@ void Statistics_Temperature_OutsideView::set_screen_brightness(int brightness)
 
 void Statistics_Temperature_OutsideView::STATISTICS_tempOUT(int statistics_tempOUT[24], int statistics_index)
 {
+	/*
+	 * Update statistics char
+	 */
 	current_index = statistics_index ;
 
 	for(int i = 0 ; i < current_index ; i++)

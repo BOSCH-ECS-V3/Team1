@@ -5,6 +5,9 @@
 #include "semphr.h"
 #include "cli.h"
 
+/*
+ * Define Every month value , used for Date algorithm
+ */
 #define January 1
 #define February 2
 #define March 3
@@ -24,6 +27,12 @@ SensData_t data_from_UI;
 
 }
 
+
+/*
+ * Error Function feedback is used to give back ERROR_ID, which is selected based on
+ * Sensors measurements. This ERROR_ID is send to DefaultViewView.cpp -> UI
+ */
+
 int Error_feedback(SensData_t data , int GAS_Preheat_FLAG)
 {
 	int Error_ID = 0 ;
@@ -33,10 +42,6 @@ int Error_feedback(SensData_t data , int GAS_Preheat_FLAG)
 	// [5]->Gas sensor
 
 	/*  Error List Code
-
- 	ID with 9xx - > General Errors
-
- 	General Error -
 
  	ID with 1xx - > tempIN sensor
 
@@ -59,34 +64,42 @@ int Error_feedback(SensData_t data , int GAS_Preheat_FLAG)
 	ID with 4xx - > Pressure sensor
 
 	Pressure Sensor Disconnected ------------> 401
-	Pressure Sensor Below 100  ---> 402
-	Pressure Sensor More than 900 ---> 403
 
 	ID with 5xx - > Ambient Light sensor
 
 	Ambient Light Sensor Disconnected ------------> 501
-	Ambient Light Sensor Below 100     ---> 502
-	Ambient Light Sensor More than 900 ---> 503
 
 	ID with 6xx - > Gas sensor
 
 	Gas Sensor Disconnected   ------------> 601
-	Gas Light Sensor Below 100ppm      ---> 602
 	Gas Light Sensor More than 2000ppm ---> 603
 
 	 */
 
-	// Errors Temperature Outside
+	// Errors Temperature Inside
 
 	if(data.tempIN == TEMP_IN_UNPLUGGED)
 	{
-		Error_ID = 201 ;
+		Error_ID = 101 ;
 
 	}else if(data.tempIN < TEMP_IN_MIN_VALUE){
 
-		Error_ID = 202;
+		Error_ID = 102;
 
 	}else if(data.tempIN > TEMP_IN_MAX_VALUE){
+
+		Error_ID = 103;
+	}
+	// Error Template Outside
+	if(data.tempOUT == TEMP_OUT_UNPLUGGED)
+	{
+		Error_ID = 201 ;
+
+	}else if(data.tempOUT < TEMP_OUT_MIN_VALUE){
+
+		Error_ID = 202;
+
+	}else if(data.tempOUT > TEMP_OUT_MAX_VALUE){
 
 		Error_ID = 203;
 	}
@@ -142,6 +155,9 @@ Model::Model() : modelListener(0)
 void Model::tick()
 {
 
+	/*
+	 * Read clock and date values from the Command line interface structure
+	 */
 
 	if(finished!=0)
 	{
@@ -169,7 +185,7 @@ void Model::tick()
 	// ----------------------------- Clock Update to View ---> ----------------------------
 
 	/*
-	 * Update char every minute. Need to change to Clock_Values[0] to update every hour
+	 * Statistics index is used to indicate where in statistic char to put new value.
 	 */
 	statistics_index=Clock_Values[0];
 
@@ -183,50 +199,53 @@ void Model::tick()
 			statistics_index = 0 ;
 		}
 
-		//get clock
-				dateTime.hours = Clock_Values[0];
-				dateTime.minutes = Clock_Values[1];
-				dateTime.seconds = Clock_Values[2];
+		/*
+		 * Send Clock_Values to dateTime Structure (CLI)
+		 */
 
-				//get date
-				dateTime.day = current_Date_values[0];
-				dateTime.month = current_Date_values[1];
-				dateTime.year = current_Date_values[2];
+		//get clock
+		dateTime.hours = Clock_Values[0];
+		dateTime.minutes = Clock_Values[1];
+		dateTime.seconds = Clock_Values[2];
+
+		//get date
+		dateTime.day = current_Date_values[0];
+		dateTime.month = current_Date_values[1];
+		dateTime.year = current_Date_values[2];
 
 		if(++Clock_Values[2]>=60) // If current SECONDS ARE MORE THAN 60 , Change MINUTE , reset SECONDS
 		{
 			/*
 			 *  Code below is executed every MINUTE
 			 */
-			if(++snoozeCounter == DEFINE_SNOOZE_TIME) // Snoze time counter
+			if(++snoozeCounter == DEFINE_SNOOZE_TIME) // Snozoe time counter
 			{
 				snoozeCounter = 0;
 				SNOOZE_FLAG = 0;
 			}
 
+			/*
+			 * GAS_Preheat_FLAG is used for showing PREHEAT msg for GAS sensor, when we boot our module
+			 * for first time
+			 */
 			if(++GAS_Preheat_time >= 3)
 			{
 				GAS_Preheat_FLAG = 1 ;
 				GAS_Preheat_time = 3 ;
 			}
-			/*
-			 *  Add new value to the statistics char every MINUTE , need to change to HOUR
-			 */
-
-
-			// ----------------------- Average day / week / month TEST algorithm --------------------
-
-
-
 
 			Clock_Values[2] = 0;
-			/*
-			 *  Code above is executed every MINUTE
-			 */
 			if(++Clock_Values[1]>=60) // If current MINUTES ARE MORE THAN 60 , Change hour , reset minutes
 			{
 				/*
 				 *  Code below is executed every HOUR
+				 */
+				/*
+				 * hourCounter is used for average calculations.
+				 * When hourCounter = 24 , we calculate average sensor values for past 24 hours
+				 * and increase dayCounter. When dayCounter is = 7 , we calculate average
+				 * week value for past 7 days , and increase weekCounter. When weekCounter = 4
+				 * we calculate average month value for every sensor.
 				 */
 				hourCounter++;
 
@@ -235,16 +254,9 @@ void Model::tick()
 				Humidity_avr[0] = Humidity_avr[0] + data_from_UI.humidity;
 				Pressure_avr[0] = Pressure_avr[0] + data_from_UI.pressure;
 				Ambient_avr[0] = Ambient_avr[0] + data_from_UI.ambientLight;
-				/*
-				 *  Add new value to the statistics char every HOUR, need to change to HOUR
-				 *  Place code below !!
-				 */
-
 
 				Clock_Values[1] = 0;
-				/*
-				 *  Code above is executed every HOUR
-				 */
+
 				if(++Clock_Values[0]>=24) // If current HOURS ARE MORE THAN 24 , Change day , reset hours
 				{
 					Clock_Values[0] = 0;
@@ -281,15 +293,11 @@ void Model::tick()
 							current_Date_values[1]++;
 						}
 					}
-
-					/*
-					 * Date changed end here
-					 */
-
 				}
 			}
 		}
 	}
+
 	// Returning months to 1 , after 12
 	if(current_Date_values[1] >= 13)
 	{
@@ -355,7 +363,7 @@ void Model::tick()
 	}
 
 	/*
-	 * Screen brightness
+	 * Calculate screen brightness based on Ambient Light Sensor.
 	 */
 	if(current_Sensor_values[4] < 100 )
 	{
@@ -380,12 +388,15 @@ void Model::tick()
 	}
 	modelListener->set_screen_brightness(brightness);
 
-	/*
-	 * Send information about tempIN Statistics page
-	 *
-	 *
-	 */
 
+
+	/*
+	 * hourCounter is used for average calculations.
+	 * When hourCounter = 24 , we calculate average sensor values for past 24 hours
+	 * and increase dayCounter. When dayCounter is = 7 , we calculate average
+	 * week value for past 7 days , and increase weekCounter. When weekCounter = 4
+	 * we calculate average month value for every sensor.
+	 */
 
 	if(hourCounter == 24)
 	{
@@ -393,8 +404,8 @@ void Model::tick()
 		avrDayTempOUT_res = TempOUT_avr[0] / 24 ; // Temp OUT
 		avrDayHumidity_res = Humidity_avr[0] / 24 ; // Humidity
 		avrDayPressure_res = Pressure_avr[0] / 24; // Pressure
-	    avrDayGas_res = Gas_avr[0] / 24 ;
-	    avrDayAmbient_res = Ambient_avr[0] / 24;
+		avrDayGas_res = Gas_avr[0] / 24 ;
+		avrDayAmbient_res = Ambient_avr[0] / 24;
 
 		// reset hours
 		hourCounter = 0;
@@ -462,15 +473,22 @@ void Model::tick()
 
 	}
 
-	statistics_tempIN[statistics_index] = data_from_UI.tempIN;
-	modelListener->STATISTICS_tempIN(statistics_tempIN, statistics_index , 7 );
 
+	/*
+	 * Send information about average values to presenters
+	 */
 	modelListener->send_average_TempIN(avrDayTempIN_res , avrWeekTempIN_res , avrMonthTempIN_res);
 	modelListener->send_average_TempOUT(avrDayTempOUT_res , avrWeekTempOUT_res , avrMonthTempOUT_res);
 	modelListener->send_average_Humidity(avrDayHumidity_res , avrWeekHumidity_res , avrMonthHumidity_res);
 	modelListener->send_average_Pressure(avrDayPressure_res , avrWeekPressure_res , avrMonthPressure_res);
 	modelListener->send_average_Gas(avrDayGas_res , avrWeekGas_res , avrMonthGas_res);
 	modelListener->send_average_Ambient(avrDayAmbient_res , avrWeekAmbient_res , avrMonthAmbient_res);
+
+	/*
+	 * Send information about TempIN Statistics page
+	 */
+	statistics_tempIN[statistics_index] = data_from_UI.tempIN;
+	modelListener->STATISTICS_tempIN(statistics_tempIN, statistics_index , 7 );
 	/*
 	 * Send information about TempOut Statistics page
 	 */

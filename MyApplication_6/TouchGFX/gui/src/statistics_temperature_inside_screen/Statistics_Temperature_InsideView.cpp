@@ -23,6 +23,10 @@ void Statistics_Temperature_InsideView::set_screen_brightness(int brightness)
 }
 void Statistics_Temperature_InsideView::STATISTICS_tempIN(int statistics_tempIN[24], int tempIN_index , int average_day)
 {
+
+	/*
+	 * Update char information
+	 */
 	// Add new data point to view
 	current_index = tempIN_index ;
 

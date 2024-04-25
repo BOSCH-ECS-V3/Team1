@@ -28,5 +28,8 @@ void Date_SettingsPresenter::update_Date(int Date_Value[3])
 }
 void Date_SettingsPresenter::set_screen_brightness(int brightness)
 {
+	/*
+	 * Set screen brightness
+	 */
 	view.set_screen_brightness(brightness);
 }

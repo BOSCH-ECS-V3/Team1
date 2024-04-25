@@ -17,6 +17,9 @@ void Average_TempOUTView::tearDownScreen()
 
 void Average_TempOUTView::send_average_TempOUT(int avrDayTempOUT_res , int avrWeekTempOUT_res , int avrMonthTempOUT_res)
 {
+	/*
+	 * Update average values to the screen
+	 */
 	 Unicode::snprintf(Average_day_valBuffer, AVERAGE_DAY_VAL_SIZE, "%d", avrDayTempOUT_res);
 	 Unicode::snprintf(Average_week_valBuffer, AVERAGE_WEEK_VAL_SIZE, "%d", avrWeekTempOUT_res);
 	 Unicode::snprintf(Average_month_valBuffer, AVERAGE_WEEK_VAL_SIZE, "%d", avrMonthTempOUT_res);

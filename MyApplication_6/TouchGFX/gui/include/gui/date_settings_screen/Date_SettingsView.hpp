@@ -1,5 +1,17 @@
 #ifndef DATE_SETTINGSVIEW_HPP
 #define DATE_SETTINGSVIEW_HPP
+#define January 1
+#define February 2
+#define March 3
+#define April 4
+#define May 5
+#define June 6
+#define July 7
+#define August 8
+#define September 9
+#define October 10
+#define November 11
+#define December 12
 
 #include <gui_generated/date_settings_screen/Date_SettingsViewBase.hpp>
 #include <gui/date_settings_screen/Date_SettingsPresenter.hpp>

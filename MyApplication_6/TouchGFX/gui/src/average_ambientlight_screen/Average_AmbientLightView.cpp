@@ -17,6 +17,9 @@ void Average_AmbientLightView::tearDownScreen()
 
 void Average_AmbientLightView::send_average_Ambient(int avrDayAmbient_res , int avrWeekAmbient_res , int avrMonthAmbient_res)
 {
+	/*
+	 * Update average values
+	 */
 	 Unicode::snprintf(Average_day_valBuffer, AVERAGE_DAY_VAL_SIZE, "%d", avrDayAmbient_res);
 	 Unicode::snprintf(Average_week_valBuffer, AVERAGE_WEEK_VAL_SIZE, "%d", avrWeekAmbient_res);
 	 Unicode::snprintf(Average_month_valBuffer, AVERAGE_WEEK_VAL_SIZE, "%d", avrMonthAmbient_res);

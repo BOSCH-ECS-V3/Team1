@@ -17,6 +17,9 @@ void AboutView::tearDownScreen()
 
 void AboutView::set_screen_brightness(int brightness)
 {
+	/*
+	 * Set brightness level
+	 */
 	 Brightness_level.setAlpha(brightness);
 	 Brightness_level.invalidate();
 }

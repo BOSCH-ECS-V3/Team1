@@ -17,6 +17,9 @@ void Average_HumidityView::tearDownScreen()
 
 void Average_HumidityView::send_average_Humidity(int avrDayHumidity_res , int avrWeekHumidity_res , int avrMonthHumidity_res)
 {
+	/*
+	 * Update average values to the screen
+	 */
 		 Unicode::snprintf(Average_day_valBuffer, AVERAGE_DAY_VAL_SIZE, "%d", avrDayHumidity_res);
 		 Unicode::snprintf(Average_week_valBuffer, AVERAGE_WEEK_VAL_SIZE, "%d", avrWeekHumidity_res);
 		 Unicode::snprintf(Average_month_valBuffer, AVERAGE_WEEK_VAL_SIZE, "%d", avrMonthHumidity_res);

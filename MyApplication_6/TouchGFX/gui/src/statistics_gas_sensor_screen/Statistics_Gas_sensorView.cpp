@@ -23,6 +23,9 @@ void Statistics_Gas_sensorView::set_screen_brightness(int brightness)
 
 void Statistics_Gas_sensorView::STATISTICS_gas(int statistics_gas[24], int statistics_index)
 {
+	/*
+	 * Update Gas sensor char
+	 */
 	current_index = statistics_index ;
 	for(int i = 0 ; i < current_index ; i++)
 	{

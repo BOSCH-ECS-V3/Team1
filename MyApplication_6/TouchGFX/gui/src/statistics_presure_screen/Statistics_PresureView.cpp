@@ -24,6 +24,9 @@ void Statistics_PresureView::set_screen_brightness(int brightness)
 void Statistics_PresureView::STATISTICS_pressure(int statistics_pressure[24] , int statistics_index)
 {
 
+	/*
+	 * Change statistics char
+	 */
 	current_index = statistics_index;
 
 	for(int i = 0 ; i < current_index ; i++)

@@ -17,12 +17,18 @@ void Statistics_HumidityView::tearDownScreen()
 
 void Statistics_HumidityView::set_screen_brightness(int brightness)
 {
+	/*
+	 * Set brightness level of the screen
+	 */
 	Brightness_level.setAlpha(brightness);
 	Brightness_level.invalidate();
 }
 
 void Statistics_HumidityView::STATISTICS_humidity(int statistics_humidity[24], int statistics_index)
 {
+	/*
+	 * Update humidity char
+	 */
 	current_index = statistics_index ;
 
 	for(int i = 0 ; i < current_index ; i++)
