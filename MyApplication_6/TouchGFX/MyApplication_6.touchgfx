@@ -218,9 +218,9 @@
                   {
                     "Type": "TextArea",
                     "Name": "Presure_Val",
-                    "X": 83,
-                    "Y": 109,
-                    "Width": 75,
+                    "X": 47,
+                    "Y": 106,
+                    "Width": 161,
                     "Height": 48,
                     "TextId": "__SingleUse_MJ6R",
                     "TextRotation": "0",

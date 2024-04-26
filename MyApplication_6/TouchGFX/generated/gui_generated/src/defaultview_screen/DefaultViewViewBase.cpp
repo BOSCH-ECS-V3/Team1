@@ -96,7 +96,7 @@ DefaultViewViewBase::DefaultViewViewBase() :
     Presure_Text.setTypedText(touchgfx::TypedText(T___SINGLEUSE_QJ73));
     SwipeContainerPressure_1.add(Presure_Text);
 
-    Presure_Val.setXY(83, 109);
+    Presure_Val.setXY(47, 106);
     Presure_Val.setColor(touchgfx::Color::getColorFromRGB(0, 247, 255));
     Presure_Val.setLinespacing(0);
     Unicode::snprintf(Presure_ValBuffer, PRESURE_VAL_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_JVDX).getText());
