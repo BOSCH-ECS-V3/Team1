@@ -34,6 +34,14 @@
 #define SET_TIME_SECONDS 11
 #define SET_TIME_MINUTES 12
 #define SET_TIME_HOURS 13
+#define ALARM_TEMP_OUT_UN 14
+#define ALARM_TEMP_IN_UN  15
+#define ALARM_GAS_UN 	16
+#define ALARM_PRESSURE_UN  17
+#define ALARM_HUMIDITY_UN 	18
+#define ALARM_AMBIENT_UN 	19
+#define ALARM_GAS_HIGH	20
+#define ALARM_TEMP_HIGH	21
 
 //MENUS
 void DisplayHelpMenu(UART_HandleTypeDef*);
@@ -55,7 +63,15 @@ void SetYear(DateTime_t*,int,UART_HandleTypeDef*);
 void SetSeconds(DateTime_t*,int,UART_HandleTypeDef*);
 void SetMinutes(DateTime_t*,int,UART_HandleTypeDef*);
 void SetHours(DateTime_t*,int,UART_HandleTypeDef*);
-void SetAlert(DateTime_t*);
+void AlertTempOutUnpl(DateTime_t*);
+void AlertTempInUnpl(DateTime_t*);
+void AlertGasUnpl(DateTime_t*);
+void AlertPressureUnpl(DateTime_t*);
+void AlertHumidityUnpl(DateTime_t*);
+void AlertAmbientUnpl(DateTime_t*);
+void AlertGasHigh(DateTime_t*);
+void AlertTempHigh(DateTime_t*);
+
 //ERRORS
 void ErrMsgLong(UART_HandleTypeDef*);
 void ErrMsgNF(UART_HandleTypeDef*);
@@ -78,5 +94,6 @@ extern short msgIDX;
 extern short selectedMenu;
 extern DateTime_t dateTime;
 extern short finished;
+extern int Input;
 
 #endif

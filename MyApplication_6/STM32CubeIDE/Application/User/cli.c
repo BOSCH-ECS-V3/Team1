@@ -4,6 +4,7 @@ char msg[30];
 short msgIDX = 0;
 short changed = 0;
 short finished = 0;
+int Input = 0;
 short selectedMenu = DISPLAY_HELP_MENU;
 DateTime_t dateTime;
 //DO NOT FORMAT THIS FILE
@@ -17,21 +18,26 @@ void (*menu[])()=
 
 void (*command[])() =
 {
-		GetTempIN,			//0
-		GetTempOUT,			//1
-		GetHumidity,		//2
-		GetPressure,		//3
-		GetAmbientLight,	//4
-		GetTempCBMonoxide,	//5
-		GetDate,			//6
-		GetTime,			//7
-		SetDay,				//8
-		SetMonth,			//9
-		SetYear,			//10
-		SetSeconds,			//11
-		SetMinutes,			//12
-		SetHours,			//13
-		SetAlert
+		GetTempIN,				//0
+		GetTempOUT,				//1
+		GetHumidity,			//2
+		GetPressure,			//3
+		GetAmbientLight,		//4
+		GetTempCBMonoxide,		//5
+		GetDate,				//6
+		GetTime,				//7
+		SetDay,					//8
+		SetMonth,				//9
+		SetYear,				//10
+		SetSeconds,				//11
+		SetMinutes,				//12
+		SetHours,				//13
+		AlertTempOutUnpl,		//14
+		AlertTempInUnpl,		//15
+		AlertGasUnpl,			//16
+		AlertPressureUnpl,		//17
+		AlertHumidityUnpl,		//18
+		AlertAmbientUnpl		//19
 };
 
 void (*error[])()=
@@ -88,20 +94,19 @@ void DisplayDateTime(UART_HandleTypeDef *huart1) {
 }
 void DisplayAlarmsMenu(UART_HandleTypeDef *huart1) {
 	char msg[55];
-	sprintf(msg, "\n\rALARMS MENU\n\r"
-			"TO STOP ALARM TYPE ALARM NUMBER AGAIN\n\r");
+	sprintf(msg, "\n\rALARMS MENU\n\r");
 	HAL_UART_Transmit(huart1, (uint8_t*) msg, strlen(msg), 1000);
-	sprintf(msg, "1. Alarm1\n\r");
+	sprintf(msg, "1. Trigger TempOut Unplugged\n\r");
 	HAL_UART_Transmit(huart1, (uint8_t*) msg, strlen(msg), 1000);
-	sprintf(msg, "2. Alarm2\n\r");
+	sprintf(msg, "2. Trigger TempIn Unplugged\n\r");
 	HAL_UART_Transmit(huart1, (uint8_t*) msg, strlen(msg), 1000);
-	sprintf(msg, "3. Alarm3\n\r");
+	sprintf(msg, "3. Trigger Gas Unplugged\n\r");
 	HAL_UART_Transmit(huart1, (uint8_t*) msg, strlen(msg), 1000);
-	sprintf(msg, "4. Alarm4\n\r");
+	sprintf(msg, "4. Trigger Pressure Unplugged\n\r");
 	HAL_UART_Transmit(huart1, (uint8_t*) msg, strlen(msg), 1000);
-	sprintf(msg, "5. Alarm5\n\r");
+	sprintf(msg, "5. Trigger Humidity Unplugged\n\r");
 	HAL_UART_Transmit(huart1, (uint8_t*) msg, strlen(msg), 1000);
-	sprintf(msg, "6. Alarm6\n\r");
+	sprintf(msg, "6. Trigger Ambient Unplugged\n\r");
 	HAL_UART_Transmit(huart1, (uint8_t*) msg, strlen(msg), 1000);
 	sprintf(msg, "7. Back\n\r");
 	HAL_UART_Transmit(huart1, (uint8_t*) msg, strlen(msg), 1000);
@@ -228,8 +233,36 @@ void SetHours(DateTime_t *dateTime, int Input, UART_HandleTypeDef *huart1)
 	}
 	else dateTime->hours = Input;
 }
-void SetAlert(DateTime_t *dateTime){
+void AlertTempOutUnpl(DateTime_t *dateTime){
+	dateTime->Alarm = TEMP_OUT_UNPLUGGED;
+}
+void AlertTempInUnpl(DateTime_t *dateTime){
 	dateTime->Alarm = TEMP_IN_UNPLUGGED;
+}
+void AlertGasUnpl(DateTime_t *dateTime){
+	//GAS UNPLUGGED IS 1000
+	//ERROR CODE IS 601
+	dateTime->Alarm = 601;
+}
+void AlertPressureUnpl(DateTime_t *dateTime)
+{
+	dateTime->Alarm = PRESSURE_UNPLUGGED;
+}
+void AlertHumidityUnpl(DateTime_t *dateTime)
+{
+	dateTime->Alarm = HUMIDITY_UNPLUGGED;
+}
+void AlertAmbientUnpl(DateTime_t *dateTime)
+{
+	dateTime->Alarm = AMBIENT_UNPLUGGED;
+}
+void AlertGasHigh(DateTime_t *dateTime)
+{
+	dateTime->Alarm = GAS_DANGER_VALUES;
+}
+void AlertTempHigh(DateTime_t *dateTime)
+{
+	dateTime->Alarm = TEMP_OUT_MAX_VALUE;
 }
 //COMMAND HANDLERS FOR DIFFERENT MENUS
 void CommandDataHandler(DateTime_t *dateTime, SensData_t *SelectedSensor,
@@ -355,8 +388,40 @@ void CommandAlarmHandler(DateTime_t *dateTime, SensData_t *SelectedSensor,
 
 	switch (msgRec[0]) {
 	case '1':
-		(command[14])(dateTime);
-		finished = 1;
+		(command[ALARM_TEMP_OUT_UN])(dateTime);
+		sprintf(msg, "\n\r");
+		HAL_UART_Transmit(huart1, (uint8_t*) msg, strlen(msg), 1000);
+		clearMSG(msg, NULL);
+		break;
+	case '2':
+		(command[ALARM_TEMP_IN_UN])(dateTime);
+		sprintf(msg, "\n\r");
+		HAL_UART_Transmit(huart1, (uint8_t*) msg, strlen(msg), 1000);
+		clearMSG(msg, NULL);
+		break;
+	case '3':
+		(command[ALARM_GAS_UN])(dateTime);
+		sprintf(msg, "\n\r");
+		HAL_UART_Transmit(huart1, (uint8_t*) msg, strlen(msg), 1000);
+		clearMSG(msg, NULL);
+		break;
+	case '4':
+		(command[ALARM_PRESSURE_UN])(dateTime);
+		sprintf(msg, "\n\r");
+		HAL_UART_Transmit(huart1, (uint8_t*) msg, strlen(msg), 1000);
+		clearMSG(msg, NULL);
+		break;
+	case '5':
+		(command[ALARM_HUMIDITY_UN])(dateTime);
+		sprintf(msg, "\n\r");
+		HAL_UART_Transmit(huart1, (uint8_t*) msg, strlen(msg), 1000);
+		clearMSG(msg, NULL);
+		break;
+	case '6':
+		(command[ALARM_AMBIENT_UN])(dateTime);
+		sprintf(msg, "\n\r");
+		HAL_UART_Transmit(huart1, (uint8_t*) msg, strlen(msg), 1000);
+		clearMSG(msg, NULL);
 		break;
 	case '7':
 		selectedMenu = DISPLAY_HELP_MENU;
@@ -368,8 +433,8 @@ void CommandAlarmHandler(DateTime_t *dateTime, SensData_t *SelectedSensor,
 		clearMSG(msg, NULL);
 		break;
 	}
-	HAL_UART_Transmit(huart1, (uint8_t*) msg, strlen(msg), 1000);
-	clearMSG(msg, NULL);
+	finished = 1;
+
 }
 void CLIHandler(SensData_t *SelectedSensor,
 		UART_HandleTypeDef *huart1, char *msg, short *msgIDX) {
@@ -381,10 +446,12 @@ void CLIHandler(SensData_t *SelectedSensor,
 		lowerString(msg);
 		if(changed!=0)
 		{
-			int Input = atoi(msg);
+			Input = atoi(msg);
 			(command[changed])(&dateTime,Input,huart1);
 			changed = 0;
 			finished = 1;
+			sprintf(msg, "\n\r");
+			HAL_UART_Transmit(huart1, (uint8_t*) msg, strlen(msg), 1000);
 			clearMSG(msg, msgIDX);
 		}
 		else{

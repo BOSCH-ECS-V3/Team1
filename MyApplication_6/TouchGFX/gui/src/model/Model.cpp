@@ -35,7 +35,7 @@ SensData_t data_from_UI;
 
 int Error_feedback(SensData_t data , int GAS_Preheat_FLAG , int SNOOZE_FLAG_TEMPIN , int SNOOZE_FLAG_GAS , int SNOOZE_FLAG_TEMPOUT , int SNOOZE_FLAG_HUMIDITY, int SNOOZE_FLAG_PRESSURE , int SNOOZE_FLAG_AMBIENT)
 {
-	int Error_ID = 0 ;
+	int Error_ID = 0;
 
 	//..Passing sensor values to Default page for presenting on screen
 	// [0]->TemperatureIn , [1]-> TemperatureOut , [2]-> Humidity , [3]-> Pressure ,[4]->Ambient light
@@ -81,7 +81,7 @@ int Error_feedback(SensData_t data , int GAS_Preheat_FLAG , int SNOOZE_FLAG_TEMP
 	{
 		if(data.tempIN == TEMP_IN_UNPLUGGED)
 		{
-			Error_ID = 101 ;
+			Error_ID = TEMP_IN_UNPLUGGED ;
 
 		}else if(data.tempIN < TEMP_IN_MIN_VALUE){
 
@@ -98,7 +98,7 @@ int Error_feedback(SensData_t data , int GAS_Preheat_FLAG , int SNOOZE_FLAG_TEMP
 	{
 		if(data.tempOUT == TEMP_OUT_UNPLUGGED)
 			{
-				Error_ID = 201 ;
+				Error_ID = TEMP_OUT_UNPLUGGED ;
 
 			}else if(data.tempOUT < TEMP_OUT_MIN_VALUE){
 
@@ -116,7 +116,7 @@ int Error_feedback(SensData_t data , int GAS_Preheat_FLAG , int SNOOZE_FLAG_TEMP
 	{
 		if(data.humidity == HUMIDITY_UNPLUGGED)
 		{
-			Error_ID = 301 ;
+			Error_ID = HUMIDITY_UNPLUGGED ;
 
 		}else if(data.humidity < HUMIDITY_MIN_VALUE){
 
@@ -135,7 +135,7 @@ int Error_feedback(SensData_t data , int GAS_Preheat_FLAG , int SNOOZE_FLAG_TEMP
 	{
 		if(data.pressure == PRESSURE_UNPLUGGED)
 			{
-				Error_ID = 401 ;
+				Error_ID = PRESSURE_UNPLUGGED ;
 			}
 	}
 
@@ -146,7 +146,7 @@ int Error_feedback(SensData_t data , int GAS_Preheat_FLAG , int SNOOZE_FLAG_TEMP
 	{
 		if(data.ambientLight == AMBIENT_UNPLUGGED)
 		{
-			Error_ID = 501 ;
+			Error_ID = AMBIENT_UNPLUGGED ;
 		}
 	}
 
