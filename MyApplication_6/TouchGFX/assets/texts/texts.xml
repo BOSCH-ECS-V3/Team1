@@ -559,7 +559,7 @@
         <Translation Language="GB">Weather station</Translation>
       </Text>
       <Text Id="__SingleUse_NJRH" Alignment="Left" TypographyId="Typography_01">
-        <Translation Language="GB">Name : Weather Station&#10;Ver : 0.3.5&#10;&#10;Product ID : 1001&#10;&#10;&#10;&#10;&#10;&#10;&#10;@Bosch Career Camp&#10;All Rights Reserved </Translation>
+        <Translation Language="GB">Name : Weather Station&#10;Ver : 1.0.0&#10;&#10;Product ID : 1001&#10;&#10;&#10;&#10;&#10;&#10;&#10;@Bosch Career Camp&#10;All Rights Reserved </Translation>
       </Text>
       <Text Id="__SingleUse_8Q8P" Alignment="Center" TypographyId="Large">
         <Translation Language="GB"></Translation>
